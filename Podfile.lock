@@ -1,0 +1,44 @@
+PODS:
+  - AlertActionBuilder (0.0.1)
+  - SKDataSources (0.0.1)
+  - SKPickerViewManager (0.0.1)
+  - SKTextInputs (0.0.1):
+    - SKPickerViewManager
+  - SKTextInputsManager (0.0.1)
+  - SwiftLint (0.21.0)
+
+DEPENDENCIES:
+  - AlertActionBuilder (from `/Users/sergey/Work/Pods/AlertActionBuilder`)
+  - SKDataSources (from `/Users/sergey/Work/Pods/DataSources`)
+  - SKPickerViewManager (from `/Users/sergey/Work/Pods/PickerViewManager`)
+  - SKTextInputs (from `/Users/sergey/Work/Pods/TextInputs`)
+  - SKTextInputsManager (from `/Users/sergey/Work/Pods/TextInputsManager`)
+  - SwiftLint (= 0.21.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  AlertActionBuilder:
+    :path: "/Users/sergey/Work/Pods/AlertActionBuilder"
+  SKDataSources:
+    :path: "/Users/sergey/Work/Pods/DataSources"
+  SKPickerViewManager:
+    :path: "/Users/sergey/Work/Pods/PickerViewManager"
+  SKTextInputs:
+    :path: "/Users/sergey/Work/Pods/TextInputs"
+  SKTextInputsManager:
+    :path: "/Users/sergey/Work/Pods/TextInputsManager"
+
+SPEC CHECKSUMS:
+  AlertActionBuilder: f8f8a764fd39ca215537240764081300461d1cf5
+  SKDataSources: d17adb1f79577a7dbbe161a6dc62391d4f50908e
+  SKPickerViewManager: 7d216d18971c956a79e0c00c99cb92abb1cc7eb3
+  SKTextInputs: 5b55b721565d29e173108dd7fc8425d5038be773
+  SKTextInputsManager: 8e4a9f4c9a1a84339d0ceac52ac4ae8a4295e5ff
+  SwiftLint: 6de8b2d15f43c482bdec2953b8cfd696faa876e8
+
+PODFILE CHECKSUM: 746f555f288e624c4c971c715d2ac8b6a6448f7b
+
+COCOAPODS: 1.5.0
