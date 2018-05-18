@@ -7,17 +7,17 @@ def shared_pods
     
     # UI components
     
-    pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
-    pod 'AlertActionBuilder'#, :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
-    pod 'SKTextInputsManager'#, :path => '/Users/sergey/Work/Pods/TextInputsManager'
-    pod 'SKPickerViewManager'#, :path => '/Users/sergey/Work/Pods/PickerViewManager'
-    pod 'SKTextInputs'#, :path => '/Users/sergey/Work/Pods/TextInputs'
-    pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
-    pod 'SKAppSettingsShowing'#, :path => '/Users/sergey/Work/Pods/AppSettingsShowing'
-    pod 'SKImagePicking'#, :path => '/Users/sergey/Work/Pods/ImagePicking'
     pod 'SKActivityViewable'#, :path => '/Users/sergey/Work/Pods/ActivityViewable'
     pod 'SKAlertViewable'#, :path => '/Users/sergey/Work/Pods/AlertViewable'
+    pod 'AlertActionBuilder'#, :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
+    pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
+    pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
+    pod 'SKTextInputsManager'#, :path => '/Users/sergey/Work/Pods/TextInputsManager'
+    pod 'SKTextInputs'#, :path => '/Users/sergey/Work/Pods/TextInputs'
+    pod 'SKPickerViewManager'#, :path => '/Users/sergey/Work/Pods/PickerViewManager'
+    pod 'SKImagePicking'#, :path => '/Users/sergey/Work/Pods/ImagePicking'
     pod 'SKXibLoadableView'#, :path => '/Users/sergey/Work/Pods/XibLoadableView'
+    pod 'SKAppSettingsShowing'#, :path => '/Users/sergey/Work/Pods/AppSettingsShowing'
     
     # Capabilities permissions
 

@@ -31,9 +31,30 @@ class ModuleBuilder: NSObject {
         return Module(presenter: presenter, interface: viewController)
     }
     
-    class func inputsManagerModule() -> Module<TextInputsManagerPresenter, UIViewController> {
-        let viewController = TextInputsManagerViewController()
-        let presenter = TextInputsManagerPresenter(with: viewController)
+    class func inputsManagerModule() -> Module<TextInputsManagerSettingsPresenter, UIViewController> {
+        let viewController = TextInputsManagerSettingsViewController()
+        let presenter = TextInputsManagerSettingsPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func activityViewableModule() -> Module<ActivityViewablePresenter, UIViewController> {
+        let viewController = ActivityViewableViewController()
+        let presenter = ActivityViewablePresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func alertViewableModule() -> Module<AlertViewablePresenter, UIViewController> {
+        let viewController = AlertViewableViewController()
+        let presenter = AlertViewablePresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func alertControllerShowingModule() -> Module<AlertControllerShowingPresenter, UIViewController> {
+        let viewController = AlertControllerShowingViewController()
+        let presenter = AlertControllerShowingPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }

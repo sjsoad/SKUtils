@@ -40,7 +40,10 @@ class MainMenuPresenter: NSObject {
     // MARK: - Private -
     
     private var examples: [Example] {
-        return [Example(title: "Text Inputs Manager Example", type: .inputsManager)]
+        return [Example(title: "Activity Viewable Example", type: .activityViewable),
+                Example(title: "Alert Viewable Example", type: .alertViewable),
+                Example(title: "Alert Controller Showing Example", type: .alertControllerShowing),
+                Example(title: "Text Inputs Manager Example", type: .inputsManager)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -67,6 +70,15 @@ extension MainMenuPresenter: MainMenuOutput {
         guard let dataSourceModel = dataSource.itemAtIndexPath(indexPath: indexPath) as? MainMenuDataSourceModelDataProviding else { return }
         var interface: UIViewController?
         switch dataSourceModel.type {
+        case .activityViewable:
+            let activityViewableModule = ModuleBuilder.activityViewableModule()
+            interface = activityViewableModule.interface
+        case .alertViewable:
+            let alertViewableModule = ModuleBuilder.alertViewableModule()
+            interface = alertViewableModule.interface
+        case .alertControllerShowing:
+            let alertControllerModule = ModuleBuilder.alertControllerShowingModule()
+            interface = alertControllerModule.interface
         case .inputsManager:
             let inputsManagerModule = ModuleBuilder.inputsManagerModule()
             interface = inputsManagerModule.interface

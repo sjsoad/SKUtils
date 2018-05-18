@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewableViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqY-OK-Xi4">
+                    <rect key="frame" x="151" y="328.5" width="73" height="30"/>
+                    <state key="normal" title="Show alert"/>
+                    <connections>
+                        <action selector="showAlertButtonPressed:" destination="-1" eventType="touchUpInside" id="zSx-3I-esY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by SwiftyDrop. Check SwiftyDrop github for more details about configuration." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn9-ZW-Xg8">
+                    <rect key="frame" x="20" y="611" width="335" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="Qn9-ZW-Xg8" secondAttribute="trailing" constant="20" id="3WD-cY-phH"/>
+                <constraint firstItem="gqY-OK-Xi4" firstAttribute="centerY" secondItem="fwJ-ZV-ZKT" secondAttribute="centerY" id="IoC-xR-29J"/>
+                <constraint firstItem="gqY-OK-Xi4" firstAttribute="centerX" secondItem="fwJ-ZV-ZKT" secondAttribute="centerX" id="hcM-s3-IbS"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="Qn9-ZW-Xg8" secondAttribute="bottom" constant="20" id="qCn-P8-2Xf"/>
+                <constraint firstItem="Qn9-ZW-Xg8" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="yjh-8K-Ms8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
+        </view>
+    </objects>
+</document>

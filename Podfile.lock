@@ -74,7 +74,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AERecord
     - AlertActionBuilder
     - NVActivityIndicatorView
@@ -130,4 +130,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1a3ed9f598800e25613f1cea28bd1061e70e9959
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2

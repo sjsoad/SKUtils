@@ -24,12 +24,24 @@
 		A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381820A31B3300BC7C7D /* MainMenuCell.swift */; };
 		A511381B20A31B3300BC7C7D /* MainMenuDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381920A31B3300BC7C7D /* MainMenuDataSourceModel.swift */; };
 		A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A511381C20A31B5000BC7C7D /* MainMenuCell.xib */; };
+		A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */; };
+		A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */; };
+		A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */; };
+		A5BF216D20AEC6CF0064B3F8 /* AlertViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216A20AEC6CF0064B3F8 /* AlertViewablePresenter.swift */; };
+		A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216B20AEC6CF0064B3F8 /* AlertViewableViewController.swift */; };
+		A5BF216F20AEC6CF0064B3F8 /* AlertViewableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF216C20AEC6CF0064B3F8 /* AlertViewableViewController.xib */; };
+		A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF217320AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift */; };
+		A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF217420AECB5B0064B3F8 /* AlertControllerShowingViewController.swift */; };
+		A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF217520AECB5B0064B3F8 /* AlertControllerShowingViewController.xib */; };
+		A5BF218020AEF9D70064B3F8 /* TextInputsManagerSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF217B20AEF9D70064B3F8 /* TextInputsManagerSettingsPresenter.swift */; };
+		A5BF218120AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF217D20AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.swift */; };
+		A5BF218220AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF217E20AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.xib */; };
+		A5BF218B20AEFA890064B3F8 /* TextInputsManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF218820AEFA890064B3F8 /* TextInputsManagerPresenter.swift */; };
+		A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF218920AEFA890064B3F8 /* TextInputsManagerViewController.swift */; };
+		A5BF218D20AEFA890064B3F8 /* TextInputsManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF218A20AEFA890064B3F8 /* TextInputsManagerViewController.xib */; };
 		A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8142090E69700DF7495 /* Assets.xcassets */; };
 		A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8152090E69700DF7495 /* LaunchScreen.storyboard */; };
 		A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6A8192090E69700DF7495 /* AppDelegate.swift */; };
-		A5D6A82A2090E90000DF7495 /* TextInputsManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6A8272090E90000DF7495 /* TextInputsManagerPresenter.swift */; };
-		A5D6A82F2090E91800DF7495 /* TextInputsManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A82D2090E91800DF7495 /* TextInputsManagerViewController.xib */; };
-		A5D6A8302090E91800DF7495 /* TextInputsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6A82E2090E91800DF7495 /* TextInputsManagerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,13 +64,25 @@
 		A511381920A31B3300BC7C7D /* MainMenuDataSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuDataSourceModel.swift; sourceTree = "<group>"; };
 		A511381C20A31B5000BC7C7D /* MainMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewablePresenter.swift; sourceTree = "<group>"; };
+		A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewableViewController.swift; sourceTree = "<group>"; };
+		A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewableViewController.xib; sourceTree = "<group>"; };
+		A5BF216A20AEC6CF0064B3F8 /* AlertViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewablePresenter.swift; sourceTree = "<group>"; };
+		A5BF216B20AEC6CF0064B3F8 /* AlertViewableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewableViewController.swift; sourceTree = "<group>"; };
+		A5BF216C20AEC6CF0064B3F8 /* AlertViewableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewableViewController.xib; sourceTree = "<group>"; };
+		A5BF217320AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerShowingPresenter.swift; sourceTree = "<group>"; };
+		A5BF217420AECB5B0064B3F8 /* AlertControllerShowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerShowingViewController.swift; sourceTree = "<group>"; };
+		A5BF217520AECB5B0064B3F8 /* AlertControllerShowingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertControllerShowingViewController.xib; sourceTree = "<group>"; };
+		A5BF217B20AEF9D70064B3F8 /* TextInputsManagerSettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerSettingsPresenter.swift; sourceTree = "<group>"; };
+		A5BF217D20AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerSettingsViewController.swift; sourceTree = "<group>"; };
+		A5BF217E20AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerSettingsViewController.xib; sourceTree = "<group>"; };
+		A5BF218820AEFA890064B3F8 /* TextInputsManagerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerPresenter.swift; sourceTree = "<group>"; };
+		A5BF218920AEFA890064B3F8 /* TextInputsManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerViewController.swift; sourceTree = "<group>"; };
+		A5BF218A20AEFA890064B3F8 /* TextInputsManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsManagerViewController.xib; sourceTree = "<group>"; };
 		A5D6A8142090E69700DF7495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D6A8162090E69700DF7495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5D6A8172090E69700DF7495 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D6A8192090E69700DF7495 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5D6A8272090E90000DF7495 /* TextInputsManagerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerPresenter.swift; sourceTree = "<group>"; };
-		A5D6A82D2090E91800DF7495 /* TextInputsManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerViewController.xib; sourceTree = "<group>"; };
-		A5D6A82E2090E91800DF7495 /* TextInputsManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerViewController.swift; sourceTree = "<group>"; };
 		D552F8AD29741206B67E18A3 /* Pods_SKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -227,35 +251,143 @@
 			path = SKUtils;
 			sourceTree = "<group>";
 		};
-		A58C0E5520AB4BA3005212C0 /* Activity Viewable Example */ = {
+		A5BF215E20AEB5730064B3F8 /* Activity Viewable Example */ = {
 			isa = PBXGroup;
 			children = (
-				A58C0E5620AB4BA3005212C0 /* Presenter */,
-				A58C0E5720AB4BA3005212C0 /* View */,
+				A5BF215F20AEB5730064B3F8 /* Presenter */,
+				A5BF216020AEB5730064B3F8 /* View */,
 			);
 			path = "Activity Viewable Example";
 			sourceTree = "<group>";
 		};
-		A58C0E5620AB4BA3005212C0 /* Presenter */ = {
+		A5BF215F20AEB5730064B3F8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		A58C0E5720AB4BA3005212C0 /* View */ = {
+		A5BF216020AEB5730064B3F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */,
+				A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A5BF216720AEC6AD0064B3F8 /* Alert Viewable Example */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF216820AEC6AD0064B3F8 /* Presenter */,
+				A5BF216920AEC6AD0064B3F8 /* View */,
+			);
+			path = "Alert Viewable Example";
+			sourceTree = "<group>";
+		};
+		A5BF216820AEC6AD0064B3F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF216A20AEC6CF0064B3F8 /* AlertViewablePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5BF216920AEC6AD0064B3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF216B20AEC6CF0064B3F8 /* AlertViewableViewController.swift */,
+				A5BF216C20AEC6CF0064B3F8 /* AlertViewableViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5BF217020AECB430064B3F8 /* Alert Controller Showing Example */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF217120AECB430064B3F8 /* Presenter */,
+				A5BF217220AECB430064B3F8 /* View */,
+			);
+			path = "Alert Controller Showing Example";
+			sourceTree = "<group>";
+		};
+		A5BF217120AECB430064B3F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF217320AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5BF217220AECB430064B3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF217420AECB5B0064B3F8 /* AlertControllerShowingViewController.swift */,
+				A5BF217520AECB5B0064B3F8 /* AlertControllerShowingViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5BF217920AEF9D70064B3F8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF217A20AEF9D70064B3F8 /* Presenter */,
+				A5BF217C20AEF9D70064B3F8 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A5BF217A20AEF9D70064B3F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF217B20AEF9D70064B3F8 /* TextInputsManagerSettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5BF217C20AEF9D70064B3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF217D20AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.swift */,
+				A5BF217E20AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5BF217F20AEF9D70064B3F8 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF218720AEFA080064B3F8 /* Presenter */,
+				A5BF218620AEFA080064B3F8 /* View */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		A5BF218620AEFA080064B3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF218920AEFA890064B3F8 /* TextInputsManagerViewController.swift */,
+				A5BF218A20AEFA890064B3F8 /* TextInputsManagerViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5BF218720AEFA080064B3F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF218820AEFA890064B3F8 /* TextInputsManagerPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A5D6A8112090E69700DF7495 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				A58C0E5520AB4BA3005212C0 /* Activity Viewable Example */,
 				A511380220A307A600BC7C7D /* Main Menu */,
-				A5D6A8312090F3D100DF7495 /* Data Sources Example */,
+				A5BF215E20AEB5730064B3F8 /* Activity Viewable Example */,
+				A5BF216720AEC6AD0064B3F8 /* Alert Viewable Example */,
+				A5BF217020AECB430064B3F8 /* Alert Controller Showing Example */,
 				A5D6A8122090E69700DF7495 /* Text Inputs Manager Example */,
 			);
 			path = Flows;
@@ -264,8 +396,8 @@
 		A5D6A8122090E69700DF7495 /* Text Inputs Manager Example */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6A8262090E8D300DF7495 /* Presenter */,
-				A5D6A8252090E8D300DF7495 /* View */,
+				A5BF217F20AEF9D70064B3F8 /* Example */,
+				A5BF217920AEF9D70064B3F8 /* Settings */,
 			);
 			path = "Text Inputs Manager Example";
 			sourceTree = "<group>";
@@ -289,46 +421,6 @@
 				A5D6A8192090E69700DF7495 /* AppDelegate.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		A5D6A8252090E8D300DF7495 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A5D6A82E2090E91800DF7495 /* TextInputsManagerViewController.swift */,
-				A5D6A82D2090E91800DF7495 /* TextInputsManagerViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A5D6A8262090E8D300DF7495 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				A5D6A8272090E90000DF7495 /* TextInputsManagerPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		A5D6A8312090F3D100DF7495 /* Data Sources Example */ = {
-			isa = PBXGroup;
-			children = (
-				A5D6A8322090F3D100DF7495 /* Presenter */,
-				A5D6A8332090F3D100DF7495 /* View */,
-			);
-			path = "Data Sources Example";
-			sourceTree = "<group>";
-		};
-		A5D6A8322090F3D100DF7495 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		A5D6A8332090F3D100DF7495 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,8 +486,12 @@
 			files = (
 				A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */,
 				A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */,
-				A5D6A82F2090E91800DF7495 /* TextInputsManagerViewController.xib in Resources */,
+				A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */,
+				A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */,
+				A5BF216F20AEC6CF0064B3F8 /* AlertViewableViewController.xib in Resources */,
 				A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */,
+				A5BF218D20AEFA890064B3F8 /* TextInputsManagerViewController.xib in Resources */,
+				A5BF218220AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.xib in Resources */,
 				A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,17 +603,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
-				A5D6A82A2090E90000DF7495 /* TextInputsManagerPresenter.swift in Sources */,
+				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
-				A5D6A8302090E91800DF7495 /* TextInputsManagerViewController.swift in Sources */,
+				A5BF218B20AEFA890064B3F8 /* TextInputsManagerPresenter.swift in Sources */,
 				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
 				A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */,
+				A5BF218020AEF9D70064B3F8 /* TextInputsManagerSettingsPresenter.swift in Sources */,
 				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
+				A5BF218120AEF9D70064B3F8 /* TextInputsManagerSettingsViewController.swift in Sources */,
+				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
+				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
+				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
 				A511381B20A31B3300BC7C7D /* MainMenuDataSourceModel.swift in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
+				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
+				A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */,
 				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
 				A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */,
+				A5BF216D20AEC6CF0064B3F8 /* AlertViewablePresenter.swift in Sources */,
 				A511375C20A2FAB700BC7C7D /* Windowable.swift in Sources */,
 				A511380F20A3095B00BC7C7D /* ModuleBuilder.swift in Sources */,
 				A511380120A3075100BC7C7D /* Module.swift in Sources */,
@@ -662,7 +766,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -678,7 +785,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
