@@ -17,29 +17,27 @@ class TextInputsManagerViewController: UIViewController, TextInputsManagerInterf
     // #1 add TextInputsManager property
     @IBOutlet private var textInputsManager: TextInputsManager!
     
-    /*
-    private var textInputsManager: TextInputsManager = {
-        let textInputsManager = TextInputsManager()
-        textInputsManager.reloadTextFieldsManager()
-        return textInputsManager
-    }()
-     */
-    
     // MARK: - Lifecycle -
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        textInputsManager.returnKeyProvider = { (index, isLast) -> UIReturnKeyType in
-//            guard isLast else { return .next }
-//            return .done
-//        }
+        presenter?.viewDidLoad()
     }
 
+    // MARK: - IBActions -
+    
+    @IBAction func hideKeyboardButtonPressed(_ sender: UIButton) {
+        presenter?.viewTriggeredHideKeyboardEvent()
+    }
+    
+    @IBAction func clearTextInputsButtonPressed(_ sender: UIButton) {
+        presenter?.viewTriggeredClearEvent()
+    }
+    
+    @IBAction func reloadTextFieldsManagerButtonPressed(_ sender: UIButton) {
+        presenter?.viewTriggeredReloadEvent()
+    }
+    
     // MARK: - TextInputsManagerInterface -
     
     func hideKeyboard() {

@@ -14,10 +14,16 @@ import SKTextInputsManager
 // #2 optionally: add support of protocol to your interface in case you want some custom actions or controlling behavior
 protocol TextInputsManagerInterface: class, KeyboardHiding, TextInputsClearing, TextFieldsManagerReloading {
     
+//    var hideOnTap: Bool { set }
+//    var nextBecomesFirstResponder: Bool { set }
+//    var handleReturnKey: Bool { set }
+//    var additionalSpace: Double { set }
+    
 }
 
 protocol TextInputsManagerOutput {
     
+    func viewDidLoad()
     func viewTriggeredHideKeyboardEvent()
     func viewTriggeredClearEvent()
     func viewTriggeredReloadEvent()
@@ -38,6 +44,10 @@ class TextInputsManagerPresenter: NSObject {
 
 extension TextInputsManagerPresenter: TextInputsManagerOutput {
 
+    func viewDidLoad() {
+        
+    }
+    
     func viewTriggeredHideKeyboardEvent() {
         view?.hideKeyboard()
     }

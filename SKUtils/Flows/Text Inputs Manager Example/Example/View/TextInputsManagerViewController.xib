@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,8 +18,71 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-YR-qie">
+                    <rect key="frame" x="20" y="90" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LpP-Vj-HI0">
+                    <rect key="frame" x="20" y="617" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cKf-Ma-LEJ">
+                    <rect key="frame" x="20" y="270" width="335" height="197"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zUl-q6-h2S">
+                    <rect key="frame" x="20" y="40" width="335" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoS-iJ-dm0">
+                            <rect key="frame" x="0.0" y="0.0" width="111.5" height="30"/>
+                            <state key="normal" title="Clear"/>
+                            <connections>
+                                <action selector="clearTextInputsButtonPressed:" destination="-1" eventType="touchUpInside" id="8e0-Ja-MGa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr8-ce-m64">
+                            <rect key="frame" x="111.5" y="0.0" width="112" height="30"/>
+                            <state key="normal" title="Hide keyboard"/>
+                            <connections>
+                                <action selector="hideKeyboardButtonPressed:" destination="-1" eventType="touchUpInside" id="dkL-Lc-z1l"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLZ-dL-Tb2">
+                            <rect key="frame" x="223.5" y="0.0" width="111.5" height="30"/>
+                            <state key="normal" title="Reload"/>
+                            <connections>
+                                <action selector="reloadTextFieldsManagerButtonPressed:" destination="-1" eventType="touchUpInside" id="mya-Tq-JLY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cKf-Ma-LEJ" firstAttribute="top" secondItem="8D4-YR-qie" secondAttribute="bottom" constant="150" id="AAi-lR-KqD"/>
+                <constraint firstItem="8D4-YR-qie" firstAttribute="top" secondItem="zUl-q6-h2S" secondAttribute="bottom" constant="20" id="AgG-Bu-vw5"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="8D4-YR-qie" secondAttribute="trailing" constant="20" id="CDT-Gg-0XV"/>
+                <constraint firstItem="zUl-q6-h2S" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="ELK-Sn-oPA"/>
+                <constraint firstItem="cKf-Ma-LEJ" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="FeJ-oF-phB"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="LpP-Vj-HI0" secondAttribute="bottom" constant="20" id="I7h-dx-jAn"/>
+                <constraint firstItem="LpP-Vj-HI0" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="QZe-ez-iwz"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="cKf-Ma-LEJ" secondAttribute="trailing" constant="20" id="ac3-b2-MUC"/>
+                <constraint firstItem="LpP-Vj-HI0" firstAttribute="top" secondItem="cKf-Ma-LEJ" secondAttribute="bottom" constant="150" id="bsv-4N-9VQ"/>
+                <constraint firstItem="zUl-q6-h2S" firstAttribute="top" secondItem="fwJ-ZV-ZKT" secondAttribute="top" constant="20" id="gDe-eR-Yuq"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="zUl-q6-h2S" secondAttribute="trailing" constant="20" id="lNr-sD-Cvg"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="LpP-Vj-HI0" secondAttribute="trailing" constant="20" id="vZG-yK-L0H"/>
+                <constraint firstItem="8D4-YR-qie" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="wYh-WA-9TI"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
         </view>
+        <customObject id="QQi-Ui-aP1" customClass="TextInputsManager" customModule="SKTextInputsManager"/>
     </objects>
 </document>
