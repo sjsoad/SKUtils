@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,8 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextInputsManagerViewController">
             <connections>
-                <outlet property="datePickerField" destination="QPl-Gb-2Gz" id="kzA-0X-Txb"/>
-                <outlet property="pickerViewField" destination="ZZd-ov-Jub" id="RC1-vc-gIh"/>
                 <outlet property="textInputsManager" destination="xvx-ur-2N9" id="Fsu-6K-k8r"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -44,7 +41,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8g7-I9-c3q" customClass="ToolbarTextField" customModule="SKTextInputs">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8g7-I9-c3q">
                             <rect key="frame" x="20" y="218" width="335" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -62,9 +59,6 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-N5-eMI">
                             <rect key="frame" x="132" y="20" width="39" height="30"/>
                             <state key="normal" title="Reset"/>
-                            <connections>
-                                <action selector="resetButtonPressed:" destination="-1" eventType="touchUpInside" id="3xD-Vr-Vh2"/>
-                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -103,6 +97,7 @@
                 <userDefinedRuntimeAttribute type="number" keyPath="additionalSpaceAboveKeyboard">
                     <real key="value" value="20"/>
                 </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="nextBecomesFirstResponder" value="YES"/>
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="containerView" destination="GZc-Ze-UNo" id="A9s-CD-oJz"/>

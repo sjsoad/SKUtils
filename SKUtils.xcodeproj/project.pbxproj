@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		370B420E62BE40D10C259692 /* Pods_SKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D552F8AD29741206B67E18A3 /* Pods_SKUtils.framework */; };
+		A511375C20A2FAB700BC7C7D /* Windowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375520A2FAB700BC7C7D /* Windowable.swift */; };
+		A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375620A2FAB700BC7C7D /* Navigatable.swift */; };
+		A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375820A2FAB700BC7C7D /* DesignableView.swift */; };
+		A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375920A2FAB700BC7C7D /* UIView+Load.swift */; };
+		A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */; };
+		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
+		A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */; };
+		A511380120A3075100BC7C7D /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380020A3075100BC7C7D /* Module.swift */; };
+		A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380620A307B700BC7C7D /* MainMenuViewController.swift */; };
+		A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A511380720A307B700BC7C7D /* MainMenuViewController.xib */; };
+		A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */; };
+		A511380F20A3095B00BC7C7D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380E20A3095B00BC7C7D /* ModuleBuilder.swift */; };
+		A511381220A31A3100BC7C7D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381120A31A3100BC7C7D /* Example.swift */; };
+		A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381820A31B3300BC7C7D /* MainMenuCell.swift */; };
+		A511381B20A31B3300BC7C7D /* MainMenuDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381920A31B3300BC7C7D /* MainMenuDataSourceModel.swift */; };
+		A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A511381C20A31B5000BC7C7D /* MainMenuCell.xib */; };
 		A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8142090E69700DF7495 /* Assets.xcassets */; };
 		A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8152090E69700DF7495 /* LaunchScreen.storyboard */; };
 		A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6A8192090E69700DF7495 /* AppDelegate.swift */; };
@@ -19,6 +35,22 @@
 /* Begin PBXFileReference section */
 		01DB9EE89C641BCEE366BCA1 /* Pods-SKUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils.release.xcconfig"; sourceTree = "<group>"; };
 		2A57DD245FC0CD92D382510F /* Pods-SKUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKUtils.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils.debug.xcconfig"; sourceTree = "<group>"; };
+		A511375520A2FAB700BC7C7D /* Windowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Windowable.swift; sourceTree = "<group>"; };
+		A511375620A2FAB700BC7C7D /* Navigatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
+		A511375820A2FAB700BC7C7D /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		A511375920A2FAB700BC7C7D /* UIView+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Load.swift"; sourceTree = "<group>"; };
+		A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
+		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesRepository.swift; sourceTree = "<group>"; };
+		A511380020A3075100BC7C7D /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		A511380620A307B700BC7C7D /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		A511380720A307B700BC7C7D /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
+		A511380E20A3095B00BC7C7D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		A511381120A31A3100BC7C7D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		A511381820A31B3300BC7C7D /* MainMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
+		A511381920A31B3300BC7C7D /* MainMenuDataSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuDataSourceModel.swift; sourceTree = "<group>"; };
+		A511381C20A31B5000BC7C7D /* MainMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D6A8142090E69700DF7495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D6A8162090E69700DF7495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +91,112 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A511374620A2FA7400BC7C7D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				A511374720A2FA7400BC7C7D /* Common */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		A511374720A2FA7400BC7C7D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A511375720A2FAB700BC7C7D /* Extensions */,
+				A511375420A2FAB700BC7C7D /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A511375420A2FAB700BC7C7D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A511375520A2FAB700BC7C7D /* Windowable.swift */,
+				A511375620A2FAB700BC7C7D /* Navigatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A511375720A2FAB700BC7C7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A511375820A2FAB700BC7C7D /* DesignableView.swift */,
+				A511375920A2FAB700BC7C7D /* UIView+Load.swift */,
+				A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */,
+				A511375B20A2FAB700BC7C7D /* Optional.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A51137FC20A305E100BC7C7D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A51137FD20A305E100BC7C7D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A511380020A3075100BC7C7D /* Module.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A511380220A307A600BC7C7D /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A511380320A307A600BC7C7D /* Presenter */,
+				A511380420A307A600BC7C7D /* View */,
+			);
+			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		A511380320A307A600BC7C7D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A511380420A307A600BC7C7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A511381320A31AF400BC7C7D /* Cell */,
+				A511380620A307B700BC7C7D /* MainMenuViewController.swift */,
+				A511380720A307B700BC7C7D /* MainMenuViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A511380D20A3095000BC7C7D /* Module Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A511380E20A3095B00BC7C7D /* ModuleBuilder.swift */,
+			);
+			path = "Module Builder";
+			sourceTree = "<group>";
+		};
+		A511381020A31A2500BC7C7D /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				A511381120A31A3100BC7C7D /* Example.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		A511381320A31AF400BC7C7D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A511381820A31B3300BC7C7D /* MainMenuCell.swift */,
+				A511381C20A31B5000BC7C7D /* MainMenuCell.xib */,
+				A511381920A31B3300BC7C7D /* MainMenuDataSourceModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A54DE43A2090DD97001C4410 = {
 			isa = PBXGroup;
 			children = (
@@ -80,16 +218,43 @@
 		A54DE4452090DD97001C4410 /* SKUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A511381020A31A2500BC7C7D /* Data Models */,
 				A5D6A8182090E69700DF7495 /* Core */,
 				A5D6A8112090E69700DF7495 /* Flows */,
+				A511374620A2FA7400BC7C7D /* Misc */,
 				A5D6A8132090E69700DF7495 /* Resources */,
 			);
 			path = SKUtils;
 			sourceTree = "<group>";
 		};
+		A58C0E5520AB4BA3005212C0 /* Activity Viewable Example */ = {
+			isa = PBXGroup;
+			children = (
+				A58C0E5620AB4BA3005212C0 /* Presenter */,
+				A58C0E5720AB4BA3005212C0 /* View */,
+			);
+			path = "Activity Viewable Example";
+			sourceTree = "<group>";
+		};
+		A58C0E5620AB4BA3005212C0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A58C0E5720AB4BA3005212C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A5D6A8112090E69700DF7495 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				A58C0E5520AB4BA3005212C0 /* Activity Viewable Example */,
+				A511380220A307A600BC7C7D /* Main Menu */,
 				A5D6A8312090F3D100DF7495 /* Data Sources Example */,
 				A5D6A8122090E69700DF7495 /* Text Inputs Manager Example */,
 			);
@@ -118,6 +283,9 @@
 		A5D6A8182090E69700DF7495 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A511380D20A3095000BC7C7D /* Module Builder */,
+				A51137FD20A305E100BC7C7D /* Module */,
+				A51137FC20A305E100BC7C7D /* Services */,
 				A5D6A8192090E69700DF7495 /* AppDelegate.swift */,
 			);
 			path = Core;
@@ -224,6 +392,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */,
+				A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */,
 				A5D6A82F2090E91800DF7495 /* TextInputsManagerViewController.xib in Resources */,
 				A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */,
 				A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */,
@@ -240,19 +410,57 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AERecord/AERecord.framework",
 				"${BUILT_PRODUCTS_DIR}/AlertActionBuilder/AlertActionBuilder.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SKActivityViewable/SKActivityViewable.framework",
+				"${BUILT_PRODUCTS_DIR}/SKAlertControllerBuilder/SKAlertControllerBuilder.framework",
+				"${BUILT_PRODUCTS_DIR}/SKAlertControllerShowing/SKAlertControllerShowing.framework",
+				"${BUILT_PRODUCTS_DIR}/SKAlertViewable/SKAlertViewable.framework",
+				"${BUILT_PRODUCTS_DIR}/SKAppSettingsShowing/SKAppSettingsShowing.framework",
+				"${BUILT_PRODUCTS_DIR}/SKBluetoothPermissions/SKBluetoothPermissions.framework",
+				"${BUILT_PRODUCTS_DIR}/SKCameraPermissions/SKCameraPermissions.framework",
+				"${BUILT_PRODUCTS_DIR}/SKContactsPermissions/SKContactsPermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKDataSources/SKDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/SKImagePicking/SKImagePicking.framework",
+				"${BUILT_PRODUCTS_DIR}/SKLocalDataStorage/SKLocalDataStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/SKLocationPermissions/SKLocationPermissions.framework",
+				"${BUILT_PRODUCTS_DIR}/SKMicrophonePermissions/SKMicrophonePermissions.framework",
+				"${BUILT_PRODUCTS_DIR}/SKPhotosPermissions/SKPhotosPermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKPickerViewManager/SKPickerViewManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SKServicePermissions/SKServicePermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKTextInputs/SKTextInputs.framework",
 				"${BUILT_PRODUCTS_DIR}/SKTextInputsManager/SKTextInputsManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SKValidationService/SKValidationService.framework",
+				"${BUILT_PRODUCTS_DIR}/SKXibLoadableView/SKXibLoadableView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyDrop/SwiftyDrop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AERecord.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertActionBuilder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKActivityViewable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAlertControllerBuilder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAlertControllerShowing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAlertViewable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAppSettingsShowing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKBluetoothPermissions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCameraPermissions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKContactsPermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePicking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocalDataStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocationPermissions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKMicrophonePermissions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotosPermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPickerViewManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKServicePermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKTextInputs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKTextInputsManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKValidationService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKXibLoadableView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyDrop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -298,9 +506,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
 				A5D6A82A2090E90000DF7495 /* TextInputsManagerPresenter.swift in Sources */,
+				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
+				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
 				A5D6A8302090E91800DF7495 /* TextInputsManagerViewController.swift in Sources */,
+				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
+				A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */,
+				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
+				A511381B20A31B3300BC7C7D /* MainMenuDataSourceModel.swift in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
+				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
+				A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */,
+				A511375C20A2FAB700BC7C7D /* Windowable.swift in Sources */,
+				A511380F20A3095B00BC7C7D /* ModuleBuilder.swift in Sources */,
+				A511380120A3075100BC7C7D /* Module.swift in Sources */,
+				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,
+				A511381220A31A3100BC7C7D /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +661,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,7 +677,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";

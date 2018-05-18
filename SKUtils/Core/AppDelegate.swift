@@ -7,14 +7,17 @@
 //
 
 import UIKit
-import TextInputsManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var servicesRepository = ServicesRepository()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
         startApplication()
         return true
     }
@@ -22,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Private -
     
     private func startApplication() {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        TextInputsManagerPresenter.showView(in: window)
-        
+        let mainMenuModule = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
+        let navigationController = UINavigationController(rootViewController: mainMenuModule.interface)
+        window?.rootViewController = navigationController
     }
     
 }
