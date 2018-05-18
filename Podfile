@@ -11,7 +11,7 @@ def shared_pods
     pod 'SKAlertViewable'#, :path => '/Users/sergey/Work/Pods/AlertViewable'
     pod 'AlertActionBuilder'#, :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
     pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
-    pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing' // to change name of protocol
+    pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
     pod 'SKTextInputsManager'#, :path => '/Users/sergey/Work/Pods/TextInputsManager' // to make public vars
     pod 'SKTextInputs'#, :path => '/Users/sergey/Work/Pods/TextInputs'
     pod 'SKPickerViewManager'#, :path => '/Users/sergey/Work/Pods/PickerViewManager'
