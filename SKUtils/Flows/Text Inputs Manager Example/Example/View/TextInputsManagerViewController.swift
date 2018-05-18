@@ -15,6 +15,7 @@ class TextInputsManagerViewController: UIViewController, TextInputsManagerInterf
     var presenter: TextInputsManagerOutput?
 
     // #1 add TextInputsManager property
+    // #2 configure textInputsManager from IB or in code
     @IBOutlet private var textInputsManager: TextInputsManager!
     
     // MARK: - Lifecycle -
@@ -22,6 +23,7 @@ class TextInputsManagerViewController: UIViewController, TextInputsManagerInterf
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+        // #3 assing keyboard return key type from IB or let textInputsManager manage it or assign handler for it
     }
 
     // MARK: - IBActions -
@@ -41,17 +43,17 @@ class TextInputsManagerViewController: UIViewController, TextInputsManagerInterf
     // MARK: - TextInputsManagerInterface -
     
     func hideKeyboard() {
-        // # hides keyboard
+        // #4 hides keyboard
         textInputsManager.hideKeyboard()
     }
     
     func clearTextInputs() {
-        // # clears all text inputs
+        // #5 clears all text inputs
         textInputsManager.clearTextInputs()
     }
     
     func reloadTextFieldsManager() {
-        // # if you add field dynamically by code - you can reload manager, so that manager search and collected all fields again
+        // #6 if you add field dynamically by code - you can reload manager, so that manager search and collected all fields again
         textInputsManager.reloadTextFieldsManager()
     }
     
