@@ -12,7 +12,7 @@ def shared_pods
     pod 'AlertActionBuilder'#, :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
     pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
     pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
-    pod 'SKTextInputsManager'#, :path => '/Users/sergey/Work/Pods/TextInputsManager' // to make public vars
+    pod 'SKTextInputsManager'#, :path => '/Users/sergey/Work/Pods/TextInputsManager'
     pod 'SKTextInputs'#, :path => '/Users/sergey/Work/Pods/TextInputs'
     pod 'SKPickerViewManager'#, :path => '/Users/sergey/Work/Pods/PickerViewManager'
     pod 'SKImagePicking'#, :path => '/Users/sergey/Work/Pods/ImagePicking'

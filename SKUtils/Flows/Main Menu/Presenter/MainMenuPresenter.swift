@@ -43,7 +43,8 @@ class MainMenuPresenter: NSObject {
         return [Example(title: "Activity Viewable Example", type: .activityViewable),
                 Example(title: "Alert Viewable Example", type: .alertViewable),
                 Example(title: "Alert Controller Showing Example", type: .alertControllerShowing),
-                Example(title: "Text Inputs Manager Example", type: .inputsManager)]
+                Example(title: "Text Inputs Manager View Example", type: .inputsManagerInView),
+                Example(title: "Text Inputs Manager Scroll Example", type: .inputsManagerInScroll)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -79,9 +80,12 @@ extension MainMenuPresenter: MainMenuOutput {
         case .alertControllerShowing:
             let alertControllerModule = ModuleBuilder.alertControllerShowingModule()
             interface = alertControllerModule.interface
-        case .inputsManager:
-            let inputsManagerModule = ModuleBuilder.inputsManagerModule()
-            interface = inputsManagerModule.interface
+        case .inputsManagerInView:
+            let inputsManagerSettingsModule = ModuleBuilder.textInputsManagerInViewModule()
+            interface = inputsManagerSettingsModule.interface
+        case .inputsManagerInScroll:
+            let inputsManagerSettingsModule = ModuleBuilder.textInputsManagerInScrollModule()
+            interface = inputsManagerSettingsModule.interface
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }

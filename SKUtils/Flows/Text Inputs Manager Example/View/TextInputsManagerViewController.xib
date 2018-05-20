@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextInputsManagerViewController">
             <connections>
+                <outlet property="textInputsManager" destination="QQi-Ui-aP1" id="eWt-aE-M8Z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,8 +35,7 @@
                 </textField>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cKf-Ma-LEJ">
                     <rect key="frame" x="20" y="270" width="335" height="197"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -64,25 +65,52 @@
                         </button>
                     </subviews>
                 </stackView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cs-Id-yHL">
+                    <rect key="frame" x="20" y="140" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1rj-Gg-34t">
+                    <rect key="frame" x="20" y="567" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="cKf-Ma-LEJ" firstAttribute="top" secondItem="8D4-YR-qie" secondAttribute="bottom" constant="150" id="AAi-lR-KqD"/>
                 <constraint firstItem="8D4-YR-qie" firstAttribute="top" secondItem="zUl-q6-h2S" secondAttribute="bottom" constant="20" id="AgG-Bu-vw5"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="8D4-YR-qie" secondAttribute="trailing" constant="20" id="CDT-Gg-0XV"/>
+                <constraint firstItem="cKf-Ma-LEJ" firstAttribute="top" secondItem="2cs-Id-yHL" secondAttribute="bottom" constant="100" id="CSG-FC-WRr"/>
+                <constraint firstItem="2cs-Id-yHL" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="CTf-Th-Sup"/>
                 <constraint firstItem="zUl-q6-h2S" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="ELK-Sn-oPA"/>
                 <constraint firstItem="cKf-Ma-LEJ" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="FeJ-oF-phB"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="LpP-Vj-HI0" secondAttribute="bottom" constant="20" id="I7h-dx-jAn"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="2cs-Id-yHL" secondAttribute="trailing" constant="20" id="IcZ-Mz-4mx"/>
+                <constraint firstItem="1rj-Gg-34t" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="LLe-Fu-DKQ"/>
                 <constraint firstItem="LpP-Vj-HI0" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="QZe-ez-iwz"/>
+                <constraint firstItem="1rj-Gg-34t" firstAttribute="top" secondItem="cKf-Ma-LEJ" secondAttribute="bottom" constant="100" id="TUT-hf-Gsg"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="cKf-Ma-LEJ" secondAttribute="trailing" constant="20" id="ac3-b2-MUC"/>
-                <constraint firstItem="LpP-Vj-HI0" firstAttribute="top" secondItem="cKf-Ma-LEJ" secondAttribute="bottom" constant="150" id="bsv-4N-9VQ"/>
+                <constraint firstItem="LpP-Vj-HI0" firstAttribute="top" secondItem="1rj-Gg-34t" secondAttribute="bottom" constant="20" id="cVf-g1-UCH"/>
                 <constraint firstItem="zUl-q6-h2S" firstAttribute="top" secondItem="fwJ-ZV-ZKT" secondAttribute="top" constant="20" id="gDe-eR-Yuq"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="zUl-q6-h2S" secondAttribute="trailing" constant="20" id="lNr-sD-Cvg"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="LpP-Vj-HI0" secondAttribute="trailing" constant="20" id="vZG-yK-L0H"/>
                 <constraint firstItem="8D4-YR-qie" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="wYh-WA-9TI"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="1rj-Gg-34t" secondAttribute="trailing" constant="20" id="wjr-AH-dTC"/>
+                <constraint firstItem="2cs-Id-yHL" firstAttribute="top" secondItem="8D4-YR-qie" secondAttribute="bottom" constant="20" id="y3C-se-EFq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
         </view>
-        <customObject id="QQi-Ui-aP1" customClass="TextInputsManager" customModule="SKTextInputsManager"/>
+        <customObject id="QQi-Ui-aP1" customClass="TextInputsManager" customModule="SKTextInputsManager">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="handleReturnKeyType" value="NO"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="hideOnTap" value="YES"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="nextBecomesFirstResponder" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="containerView" destination="i5M-Pr-FkT" id="mDQ-S4-dYR"/>
+            </connections>
+        </customObject>
     </objects>
 </document>

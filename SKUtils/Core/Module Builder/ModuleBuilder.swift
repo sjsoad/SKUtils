@@ -14,7 +14,8 @@ enum ModuleType {
     case alertViewable
     case servicePermissions
     case imagePicking
-    case inputsManager
+    case inputsManagerInView
+    case inputsManagerInScroll
     case textInputs
     case pickerViewManager
     case validationService
@@ -27,13 +28,6 @@ class ModuleBuilder: NSObject {
     class func mainMenuModule(servicesRepository: ServicesRepository) -> Module<MainMenuPresenter, UIViewController> {
         let viewController = MainMenuViewController()
         let presenter = MainMenuPresenter(with: viewController, servicesRepository: servicesRepository)
-        viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
-    }
-    
-    class func inputsManagerModule() -> Module<TextInputsManagerSettingsPresenter, UIViewController> {
-        let viewController = TextInputsManagerSettingsViewController()
-        let presenter = TextInputsManagerSettingsPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }
@@ -55,6 +49,20 @@ class ModuleBuilder: NSObject {
     class func alertControllerShowingModule() -> Module<AlertControllerShowingPresenter, UIViewController> {
         let viewController = AlertControllerShowingViewController()
         let presenter = AlertControllerShowingPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func textInputsManagerInViewModule() -> Module<TextInputsManagerPresenter, UIViewController> {
+        let viewController = TextInputsManagerViewController(nibName: "TextInputsManagerViewController", bundle: nil)
+        let presenter = TextInputsManagerPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func textInputsManagerInScrollModule() -> Module<TextInputsManagerPresenter, UIViewController> {
+        let viewController = TextInputsManagerViewController(nibName: "TextInputsManagerScrollController", bundle: nil)
+        let presenter = TextInputsManagerPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }

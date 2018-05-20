@@ -12,18 +12,12 @@ import UIKit
 import SKTextInputsManager
 
 // #2 optionally: add support of protocol to your interface in case you want some custom actions or controlling behavior
-protocol TextInputsManagerInterface: class, KeyboardHiding, TextInputsClearing, TextFieldsManagerReloading {
-    
-//    var hideOnTap: Bool { set }
-//    var nextBecomesFirstResponder: Bool { set }
-//    var handleReturnKey: Bool { set }
-//    var additionalSpace: Double { set }
+protocol TextInputsManagerInterface: class, KeyboardHiding, TextInputsClearing, TextInputsManagerReloading {
     
 }
 
 protocol TextInputsManagerOutput {
     
-    func viewDidLoad()
     func viewTriggeredHideKeyboardEvent()
     func viewTriggeredClearEvent()
     func viewTriggeredReloadEvent()
@@ -43,10 +37,6 @@ class TextInputsManagerPresenter: NSObject {
 // MARK: - TextInputsManagerPresenterOutput -
 
 extension TextInputsManagerPresenter: TextInputsManagerOutput {
-
-    func viewDidLoad() {
-        
-    }
     
     func viewTriggeredHideKeyboardEvent() {
         view?.hideKeyboard()
@@ -57,7 +47,7 @@ extension TextInputsManagerPresenter: TextInputsManagerOutput {
     }
     
     func viewTriggeredReloadEvent() {
-        view?.reloadTextFieldsManager()
+        view?.reloadTextInputsManager()
     }
     
 }
