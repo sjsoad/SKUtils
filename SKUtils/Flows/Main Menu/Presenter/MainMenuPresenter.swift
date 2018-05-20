@@ -46,7 +46,8 @@ class MainMenuPresenter: NSObject {
                 Example(title: "Text Inputs Manager View Example", type: .inputsManagerInView),
                 Example(title: "Text Inputs Manager Scroll Example", type: .inputsManagerInScroll),
                 Example(title: "Text Inputs + Picker View Manager Example", type: .textInputs),
-                Example(title: "Xib Loadable Example", type: .xibLoadable)]
+                Example(title: "Xib Loadable Example", type: .xibLoadable),
+                Example(title: "App Settings Example", type: .appSettings)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -94,6 +95,9 @@ extension MainMenuPresenter: MainMenuOutput {
         case .xibLoadable:
             let xibLoadableModule = ModuleBuilder.xibLoadableModule()
             interface = xibLoadableModule.interface
+        case .appSettings:
+            let appSettingsModule = ModuleBuilder.appSettingsModule()
+            interface = appSettingsModule.interface
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }

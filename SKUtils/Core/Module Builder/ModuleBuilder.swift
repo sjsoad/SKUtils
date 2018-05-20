@@ -16,6 +16,7 @@ enum ModuleType {
     case inputsManagerInScroll
     case textInputs
     case xibLoadable
+    case appSettings
     case imagePicking
     case servicePermissions
     case validationService
@@ -76,6 +77,13 @@ class ModuleBuilder: NSObject {
     class func xibLoadableModule() -> Module<XibLoadablePresenter, UIViewController> {
         let viewController = XibLoadableViewController()
         let presenter = XibLoadablePresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+
+    class func appSettingsModule() -> Module<AppSettingsPresenter, UIViewController> {
+        let viewController = AppSettingsViewController()
+        let presenter = AppSettingsPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }
