@@ -72,5 +72,12 @@ class ModuleBuilder: NSObject {
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }
+
+    class func xibLoadableModule() -> Module<XibLoadablePresenter, UIViewController> {
+        let viewController = XibLoadableViewController()
+        let presenter = XibLoadablePresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
     
 }
