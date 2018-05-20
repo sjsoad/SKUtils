@@ -94,5 +94,12 @@ class ModuleBuilder: NSObject {
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }
+
+    class func imagePickerModule() -> Module<ImagePickerPresenter, UIViewController> {
+        let viewController = ImagePickerViewController()
+        let presenter = ImagePickerPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
     
 }

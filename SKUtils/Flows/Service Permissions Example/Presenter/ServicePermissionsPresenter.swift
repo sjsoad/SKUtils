@@ -47,7 +47,7 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
     
     // #3 create permissions object
     private let bluetoothPermissions = BluetoothPermissions()
-    private let locationPermissions = LocationPermissions()
+    private let locationPermissions = LocationPermissions() // can set auth type .requestAlwaysAuthorization or requestWhenInUseAuthorization
     private let microphonePermissions = MicrophonePermissions()
     private let cameraPermissions = CameraPermissions()
     private let photosPermissions = PhotoLibraryPermissions()
