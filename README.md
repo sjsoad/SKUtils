@@ -1,34 +1,34 @@
-# SKUtils
+# SKUtils  
 
-# UI components
+# UI components  
 
-pod 'SKAlertControllerBuilder'\n
-pod 'AlertActionBuilder'
-pod 'SKTextInputsManager'
-pod 'SKPickerViewManager'
-pod 'SKTextInputs'
-pod 'SKAlertControllerShowing'
-pod 'SKAppSettingsShowing'
-pod 'SKImagePicking'
-pod 'SKActivityViewable'
-pod 'SKAlertViewable'
-pod 'SKXibLoadableView'
+pod 'SKAlertControllerBuilder'  
+pod 'AlertActionBuilder'  
+pod 'SKTextInputsManager'  
+pod 'SKPickerViewManager'  
+pod 'SKTextInputs'  
+pod 'SKAlertControllerShowing'  
+pod 'SKAppSettingsShowing'  
+pod 'SKImagePicking'  
+pod 'SKActivityViewable'  
+pod 'SKAlertViewable'  
+pod 'SKXibLoadableView'  
 
-# Capabilities permissions
+# Capabilities permissions  
 
-pod 'SKServicePermissions'
-pod 'SKBluetoothPermissions''
-pod 'SKCameraPermissions'
-pod 'SKPhotosPermissions'
-pod 'SKContactsPermissions'
-pod 'SKMicrophonePermissions'
-pod 'SKLocationPermissions'
+pod 'SKServicePermissions'  
+pod 'SKBluetoothPermissions'  
+pod 'SKCameraPermissions'  
+pod 'SKPhotosPermissions'  
+pod 'SKContactsPermissions'  
+pod 'SKMicrophonePermissions'  
+pod 'SKLocationPermissions'  
 
-# Services
+# Services  
 
-pod 'SKLocalDataStorage'
-pod 'SKValidationService'
+pod 'SKLocalDataStorage'  
+pod 'SKValidationService'  
 
-# Data Sources
+# Data Sources  
 
-pod 'SKDataSources'
+pod 'SKDataSources'  
