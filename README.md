@@ -2,7 +2,7 @@
 
 # UI components
 
-pod 'SKAlertControllerBuilder'
+pod 'SKAlertControllerBuilder'\n
 pod 'AlertActionBuilder'
 pod 'SKTextInputsManager'
 pod 'SKPickerViewManager'
