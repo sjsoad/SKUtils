@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServicePermissionsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-4c-f2x">
+                    <rect key="frame" x="102.5" y="228.5" width="169" height="230"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv6-Ct-lGq">
+                            <rect key="frame" x="0.0" y="0.0" width="169" height="30"/>
+                            <state key="normal" title="Bluetooth Permissions"/>
+                            <connections>
+                                <action selector="checkBluetoothPermissionsButtonPressed:" destination="-1" eventType="touchUpInside" id="Coq-dV-uBT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxt-pc-RUO">
+                            <rect key="frame" x="0.0" y="40" width="169" height="30"/>
+                            <state key="normal" title="Location Permissions"/>
+                            <connections>
+                                <action selector="checkLocationPermissionsButtonPressed:" destination="-1" eventType="touchUpInside" id="j5N-GX-noe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6C-gQ-A5H">
+                            <rect key="frame" x="0.0" y="80" width="169" height="30"/>
+                            <state key="normal" title="Microphone Permissions"/>
+                            <connections>
+                                <action selector="checkMicrophonePermissionsButtonPressed:" destination="-1" eventType="touchUpInside" id="2gv-CI-cjd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-pM-FNK">
+                            <rect key="frame" x="0.0" y="120" width="169" height="30"/>
+                            <state key="normal" title="Camera Permissions"/>
+                            <connections>
+                                <action selector="checkCameraPermissionsButtonPressed:" destination="-1" eventType="touchUpInside" id="qcC-lE-roh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWg-mc-zN3">
+                            <rect key="frame" x="0.0" y="160" width="169" height="30"/>
+                            <state key="normal" title="Photos Permissions"/>
+                            <connections>
+                                <action selector="checkPhotosPermissionsButtonPressed:" destination="-1" eventType="touchUpInside" id="fGc-ZR-bmx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKa-4Z-vkL">
+                            <rect key="frame" x="0.0" y="200" width="169" height="30"/>
+                            <state key="normal" title="Contacts Permissions"/>
+                            <connections>
+                                <action selector="checkContactsPermissionsButtonPressed:" destination="-1" eventType="touchUpInside" id="jU0-Ro-TFo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aEw-4c-f2x" firstAttribute="centerY" secondItem="fwJ-ZV-ZKT" secondAttribute="centerY" id="OII-Qf-Yq3"/>
+                <constraint firstItem="aEw-4c-f2x" firstAttribute="centerX" secondItem="fwJ-ZV-ZKT" secondAttribute="centerX" id="t7b-co-2Va"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
+        </view>
+    </objects>
+</document>

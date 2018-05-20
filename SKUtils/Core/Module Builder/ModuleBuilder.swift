@@ -88,4 +88,11 @@ class ModuleBuilder: NSObject {
         return Module(presenter: presenter, interface: viewController)
     }
     
+    class func servicePermissionsModule() -> Module<ServicePermissionsPresenter, UIViewController> {
+        let viewController = ServicePermissionsViewController()
+        let presenter = ServicePermissionsPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
 }

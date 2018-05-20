@@ -33,6 +33,9 @@
 		A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAA020B181A900E4E219 /* AppSettingsPresenter.swift */; };
 		A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAA120B181A900E4E219 /* AppSettingsViewController.swift */; };
 		A520FAA520B181A900E4E219 /* AppSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAA220B181A900E4E219 /* AppSettingsViewController.xib */; };
+		A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAA920B1962F00E4E219 /* ServicePermissionsPresenter.swift */; };
+		A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAAA20B1962F00E4E219 /* ServicePermissionsViewController.swift */; };
+		A520FAAE20B1962F00E4E219 /* ServicePermissionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAAB20B1962F00E4E219 /* ServicePermissionsViewController.xib */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
 		A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814B20B148A5003F3C68 /* TextInputsViewController.swift */; };
@@ -81,6 +84,9 @@
 		A520FAA020B181A900E4E219 /* AppSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsPresenter.swift; sourceTree = "<group>"; };
 		A520FAA120B181A900E4E219 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		A520FAA220B181A900E4E219 /* AppSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppSettingsViewController.xib; sourceTree = "<group>"; };
+		A520FAA920B1962F00E4E219 /* ServicePermissionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePermissionsPresenter.swift; sourceTree = "<group>"; };
+		A520FAAA20B1962F00E4E219 /* ServicePermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePermissionsViewController.swift; sourceTree = "<group>"; };
+		A520FAAB20B1962F00E4E219 /* ServicePermissionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicePermissionsViewController.xib; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
 		A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsPresenter.swift; sourceTree = "<group>"; };
@@ -309,6 +315,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A520FAA620B1962000E4E219 /* Service Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				A520FAA720B1962000E4E219 /* Presenter */,
+				A520FAA820B1962000E4E219 /* View */,
+			);
+			path = "Service Permissions";
+			sourceTree = "<group>";
+		};
+		A520FAA720B1962000E4E219 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A520FAA920B1962F00E4E219 /* ServicePermissionsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A520FAA820B1962000E4E219 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A520FAAA20B1962F00E4E219 /* ServicePermissionsViewController.swift */,
+				A520FAAB20B1962F00E4E219 /* ServicePermissionsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A54DE43A2090DD97001C4410 = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +496,7 @@
 				A576814720B14884003F3C68 /* Text Inputs Example */,
 				A520FA8F20B17AE300E4E219 /* Xib Loadable Example */,
 				A520FA9D20B1818E00E4E219 /* App Settings Showing */,
+				A520FAA620B1962000E4E219 /* Service Permissions */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -572,6 +605,7 @@
 				A5BF218D20AEFA890064B3F8 /* TextInputsManagerViewController.xib in Resources */,
 				A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */,
 				A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */,
+				A520FAAE20B1962F00E4E219 /* ServicePermissionsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +716,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
+				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
@@ -693,6 +728,7 @@
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
+				A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */,
 				A511381B20A31B3300BC7C7D /* MainMenuDataSourceModel.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,

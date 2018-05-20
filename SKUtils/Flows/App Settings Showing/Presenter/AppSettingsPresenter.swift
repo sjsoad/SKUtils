@@ -58,7 +58,13 @@ class AppSettingsPresenter: NSObject, AppSettingsShowing {
 extension AppSettingsPresenter: AppSettingsOutput {
 
     func viewTriggeredShowSettingsEvent() {
-        showAppSettingsAlert()
+        // #5 call showAppSettingsAlert to show alert, optionaly can assign handler that will be called when alert is presented and when
+        // Settings app will be opened
+        showAppSettingsAlert(alertPresentingCompletion: {
+            print("alert presented")
+        }, appSettingsShowingCompletion: { opened in
+            print("Settings app opened: \(opened)")
+        })
     }
 
 }
