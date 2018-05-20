@@ -10,16 +10,15 @@ import UIKit
 
 enum ModuleType {
     case activityViewable
-    case alertControllerShowing
     case alertViewable
-    case servicePermissions
-    case imagePicking
+    case alertControllerShowing
     case inputsManagerInView
     case inputsManagerInScroll
     case textInputs
-    case pickerViewManager
-    case validationService
     case xibLoadable
+    case imagePicking
+    case servicePermissions
+    case validationService
     case dataSources
 }
 
@@ -63,6 +62,13 @@ class ModuleBuilder: NSObject {
     class func textInputsManagerInScrollModule() -> Module<TextInputsManagerPresenter, UIViewController> {
         let viewController = TextInputsManagerViewController(nibName: "TextInputsManagerScrollController", bundle: nil)
         let presenter = TextInputsManagerPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func textInputsModule() -> Module<TextInputsPresenter, UIViewController> {
+        let viewController = TextInputsViewController()
+        let presenter = TextInputsPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }

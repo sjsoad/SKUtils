@@ -41,7 +41,7 @@ PODS:
     - SKServicePermissions
   - SKPickerViewManager (0.0.1)
   - SKServicePermissions (0.0.1)
-  - SKTextInputs (0.0.1):
+  - SKTextInputs (0.0.2):
     - SKPickerViewManager
   - SKTextInputsManager (0.0.5)
   - SKValidationService (0.0.1)
@@ -121,7 +121,7 @@ SPEC CHECKSUMS:
   SKPhotosPermissions: f4e3422ff8c8ecfc468e55b2ea33b5221391ec25
   SKPickerViewManager: 519aa6f95f869280ad57b68be97bd076b87ed7ea
   SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
-  SKTextInputs: b2f7dba754804f983ccae2fcca613ace4b2332dc
+  SKTextInputs: da08c61f5407025f6ba4fdd8c7398a5713163285
   SKTextInputsManager: 4865594146249b1e6ad16bb6bae08af72ed66e7b
   SKValidationService: defd1c9817e7b9ede5296755fea96c0a7dc5cd32
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128

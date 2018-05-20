@@ -7,21 +7,113 @@
 //
 
 import UIKit
+import SKTextInputsManager
+// #1 import module
+import SKTextInputs
+import SKPickerViewManager
 
 class TextInputsViewController: UIViewController, TextInputsInterface {
 
     var presenter: TextInputsOutput?
 
-    // MARK: - Lifecycle -
+    @IBOutlet private var textInputsManager: TextInputsManager!
+    @IBOutlet private var baseTextField: BaseTextField!
+    @IBOutlet private var datePickerField: DatePickerField!
+    @IBOutlet private var emailField: EmailTextField!
+    @IBOutlet private var passwordField: PassTextField!
+    @IBOutlet private var pickerViewField: PickerViewField!
+    @IBOutlet private var toolbarField: ToolbarTextField!
+    @IBOutlet private var toolbarTextView: ToolbarTextView!
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
+    // MARK: - Lifecycle -
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup(datePickerField: datePickerField)
+        setup(pickerViewField: pickerViewField)
+        setup(toolbarField: toolbarField)
+        setup(toolbarTextView: toolbarTextView)
+        presenter?.viewDidLoad()
     }
 
+    // MARK: - Private -
+    
+    private func setup(datePickerField: DatePickerField) {
+        // #2.1 ssetup DatePickerField with
+        // - setup datePicker if needed
+        datePickerField.datePicker.datePickerMode = .date
+        // - setup toolbar if needed
+        datePickerField.toolbar.tintColor = .black
+        // - date selection handler
+        datePickerField.set { (field, picker, date) in
+            print(field)
+            print(picker)
+            print(date)
+        }
+        // - done button title
+        datePickerField.set(doneTitle: "Date Selected")
+        // - done button pressed handler
+        datePickerField.set { (field, button) in
+            print(field)
+            print(button)
+        }
+    }
+    
+    private func setup(pickerViewField: PickerViewField) {
+        // #2.2 ssetup PickerViewField with
+        // - setup picker if needed
+        pickerViewField.picker.showsSelectionIndicator = true
+        // - setup toolbar if needed
+        pickerViewField.toolbar.barTintColor = .green
+        // - done button title
+        pickerViewField.set(doneTitle: "Done")
+        // - done button pressed handler
+        pickerViewField.set { (field, button) in
+            print(field)
+            print(button)
+        }
+    }
+
+    private func setup(toolbarField: ToolbarTextField) {
+        // #2.3 ssetup ToolbarTextField with
+        // - setup toolbar if needed
+        toolbarField.toolbar.barTintColor = .green
+        // - done button title
+        toolbarField.set(doneTitle: "Edititng finished")
+        // - done button pressed handler
+        toolbarField.set { (field, button) in
+            print(field)
+            print(button)
+        }
+    }
+    
+    private func setup(toolbarTextView: ToolbarTextView) {
+        // #2.4 ssetup ToolbarTextView with
+        // - setup toolbar if needed
+        toolbarTextView.toolbar.tintColor = .black
+        // - done button title
+        toolbarTextView.set(doneTitle: "Edititng finished")
+        // - done button pressed handler
+        toolbarTextView.set { (textView, button) in
+            print(textView)
+            print(button)
+        }
+    }
+    
+    // MARK: - IBActions -
+    
+    @IBAction func resetButtonPressed(_ sender: UIButton) {
+        presenter?.viewTriggeredResetPickerViewEvent()
+    }
+    
     // MARK: - TextInputsInterface -
+    
+    func reload(with manager: PickerManager) {
+        pickerViewField.reload(with: manager)
+    }
+    
+    func set(pickerViewText text: String?) {
+        pickerViewField.text = text
+    }
     
 }

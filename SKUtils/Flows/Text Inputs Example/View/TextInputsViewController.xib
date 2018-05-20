@@ -6,12 +6,21 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextInputsViewController">
             <connections>
+                <outlet property="baseTextField" destination="Y2f-Kb-Xh3" id="RbK-x3-VFE"/>
+                <outlet property="datePickerField" destination="jo4-bV-2I6" id="sHr-Y4-lkg"/>
+                <outlet property="emailField" destination="pDe-gE-X39" id="CjR-Tt-WWV"/>
+                <outlet property="passwordField" destination="Jke-HQ-nUA" id="Mrk-k1-9dZ"/>
+                <outlet property="pickerViewField" destination="SqQ-Ns-E6w" id="ndr-Qe-WyN"/>
+                <outlet property="textInputsManager" destination="orr-8L-snl" id="BwJ-h9-BGJ"/>
+                <outlet property="toolbarField" destination="XH7-XM-lmJ" id="8hg-ye-cDd"/>
+                <outlet property="toolbarTextView" destination="sNb-xQ-max" id="jfV-KM-Uhh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -70,7 +79,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jke-HQ-nUA" customClass="PassTextField" customModule="SKTextInputs">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jke-HQ-nUA" customClass="PassTextField" customModule="SKTextInputs">
                             <rect key="frame" x="0.0" y="323.5" width="335" height="46"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -82,12 +91,27 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SqQ-Ns-E6w" customClass="PickerViewField" customModule="SKTextInputs">
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ3-WR-rja">
                             <rect key="frame" x="0.0" y="416" width="335" height="46"/>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SqQ-Ns-E6w" customClass="PickerViewField" customModule="SKTextInputs">
+                                    <rect key="frame" x="0.0" y="0.0" width="279" height="46"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycE-mj-KCX">
+                                    <rect key="frame" x="289" y="0.0" width="46" height="46"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ycE-mj-KCX" secondAttribute="height" multiplier="1:1" id="yku-s2-bPm"/>
+                                    </constraints>
+                                    <state key="normal" title="Reset"/>
+                                    <connections>
+                                        <action selector="resetButtonPressed:" destination="-1" eventType="touchUpInside" id="JzN-YF-Jjq"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToolbarTextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvO-Ko-oSK">
                             <rect key="frame" x="0.0" y="462" width="335" height="46.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -106,10 +130,9 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sNb-xQ-max" customClass="ToolbarTextView" customModule="SKTextInputs">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sNb-xQ-max" customClass="ToolbarTextView" customModule="SKTextInputs">
                             <rect key="frame" x="0.0" y="601" width="335" height="46"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
@@ -126,5 +149,10 @@
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
+        <customObject id="orr-8L-snl" customClass="TextInputsManager" customModule="SKTextInputsManager">
+            <connections>
+                <outlet property="containerView" destination="i5M-Pr-FkT" id="Ctj-4H-bOj"/>
+            </connections>
+        </customObject>
     </objects>
 </document>
