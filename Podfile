@@ -47,3 +47,8 @@ end
 target 'SKUtils' do
     shared_pods
 end
+
+target 'SKUtilsTests' do
+    inherit! :complete
+    pod 'SKValidationService'
+end
