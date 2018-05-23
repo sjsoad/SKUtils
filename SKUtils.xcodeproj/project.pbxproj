@@ -44,6 +44,14 @@
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
 		A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814B20B148A5003F3C68 /* TextInputsViewController.swift */; };
 		A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A576814C20B148A5003F3C68 /* TextInputsViewController.xib */; };
+		A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6420B591FF0080B982 /* IpDetectingService.swift */; };
+		A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */; };
+		A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6820B5935B0080B982 /* IpDetectingRequest.swift */; };
+		A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6E20B59BBB0080B982 /* NetworkErrorParser.swift */; };
+		A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7320B5A08F0080B982 /* NetworkPresenter.swift */; };
+		A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7420B5A08F0080B982 /* NetworkViewController.swift */; };
+		A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5930C7520B5A08F0080B982 /* NetworkViewController.xib */; };
+		A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */; };
 		A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */; };
 		A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */; };
 		A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */; };
@@ -112,6 +120,14 @@
 		A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsPresenter.swift; sourceTree = "<group>"; };
 		A576814B20B148A5003F3C68 /* TextInputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsViewController.swift; sourceTree = "<group>"; };
 		A576814C20B148A5003F3C68 /* TextInputsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsViewController.xib; sourceTree = "<group>"; };
+		A5930C6420B591FF0080B982 /* IpDetectingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingService.swift; sourceTree = "<group>"; };
+		A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingResponse.swift; sourceTree = "<group>"; };
+		A5930C6820B5935B0080B982 /* IpDetectingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingRequest.swift; sourceTree = "<group>"; };
+		A5930C6E20B59BBB0080B982 /* NetworkErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorParser.swift; sourceTree = "<group>"; };
+		A5930C7320B5A08F0080B982 /* NetworkPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPresenter.swift; sourceTree = "<group>"; };
+		A5930C7420B5A08F0080B982 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		A5930C7520B5A08F0080B982 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
+		A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedRequestErrorHandling.swift; sourceTree = "<group>"; };
 		A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewablePresenter.swift; sourceTree = "<group>"; };
 		A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewableViewController.swift; sourceTree = "<group>"; };
 		A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewableViewController.xib; sourceTree = "<group>"; };
@@ -185,6 +201,7 @@
 		A511374620A2FA7400BC7C7D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				A5930C7920B5AC950080B982 /* Advanced Error Handling */,
 				A511374720A2FA7400BC7C7D /* Common */,
 			);
 			path = Misc;
@@ -222,6 +239,8 @@
 		A51137FC20A305E100BC7C7D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A5930C6D20B59BAD0080B982 /* Network Error Parser */,
+				A5930C6320B591F10080B982 /* IpDetectingService */,
 				A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */,
 			);
 			path = Services;
@@ -460,6 +479,65 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A5930C6320B591F10080B982 /* IpDetectingService */ = {
+			isa = PBXGroup;
+			children = (
+				A5930C6420B591FF0080B982 /* IpDetectingService.swift */,
+			);
+			path = IpDetectingService;
+			sourceTree = "<group>";
+		};
+		A5930C6620B592540080B982 /* Network Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */,
+				A5930C6820B5935B0080B982 /* IpDetectingRequest.swift */,
+			);
+			path = "Network Requests";
+			sourceTree = "<group>";
+		};
+		A5930C6D20B59BAD0080B982 /* Network Error Parser */ = {
+			isa = PBXGroup;
+			children = (
+				A5930C6E20B59BBB0080B982 /* NetworkErrorParser.swift */,
+			);
+			path = "Network Error Parser";
+			sourceTree = "<group>";
+		};
+		A5930C7020B5A0360080B982 /* Networking Example */ = {
+			isa = PBXGroup;
+			children = (
+				A5930C7120B5A0360080B982 /* Presenter */,
+				A5930C7220B5A0360080B982 /* View */,
+			);
+			path = "Networking Example";
+			sourceTree = "<group>";
+		};
+		A5930C7120B5A0360080B982 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5930C7320B5A08F0080B982 /* NetworkPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5930C7220B5A0360080B982 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5930C7420B5A08F0080B982 /* NetworkViewController.swift */,
+				A5930C7520B5A08F0080B982 /* NetworkViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5930C7920B5AC950080B982 /* Advanced Error Handling */ = {
+			isa = PBXGroup;
+			children = (
+				A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */,
+			);
+			path = "Advanced Error Handling";
+			sourceTree = "<group>";
+		};
 		A5BF215E20AEB5730064B3F8 /* Activity Viewable Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +656,7 @@
 				A520FA9D20B1818E00E4E219 /* App Settings Showing Example */,
 				A520FAAF20B1B07C00E4E219 /* Image Picking Example */,
 				A520FAA620B1962000E4E219 /* Service Permissions Example */,
+				A5930C7020B5A0360080B982 /* Networking Example */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -604,6 +683,7 @@
 		A5D6A8182090E69700DF7495 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A5930C6620B592540080B982 /* Network Requests */,
 				A511380D20A3095000BC7C7D /* Module Builder */,
 				A51137FD20A305E100BC7C7D /* Module */,
 				A51137FC20A305E100BC7C7D /* Services */,
@@ -700,6 +780,7 @@
 				A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */,
 				A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */,
 				A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */,
+				A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */,
 				A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */,
 				A520FAA520B181A900E4E219 /* AppSettingsViewController.xib in Resources */,
 				A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */,
@@ -851,6 +932,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
+				A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */,
 				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
@@ -861,6 +943,7 @@
 				A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */,
 				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
+				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
@@ -869,18 +952,23 @@
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
 				A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */,
+				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
 				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
+				A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */,
 				A520FAB620B1B0FC00E4E219 /* ImagePickerViewController.swift in Sources */,
 				A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */,
 				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
+				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,
+				A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */,
 				A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */,
 				A5BF216D20AEC6CF0064B3F8 /* AlertViewablePresenter.swift in Sources */,
 				A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */,
 				A511375C20A2FAB700BC7C7D /* Windowable.swift in Sources */,
 				A511380F20A3095B00BC7C7D /* ModuleBuilder.swift in Sources */,
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
+				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
 				A511380120A3075100BC7C7D /* Module.swift in Sources */,
 				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,
 				A511381220A31A3100BC7C7D /* Example.swift in Sources */,
@@ -1039,7 +1127,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1055,7 +1146,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1070,7 +1164,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1086,7 +1184,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

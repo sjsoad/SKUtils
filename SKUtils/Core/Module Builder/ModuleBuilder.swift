@@ -19,7 +19,7 @@ enum ModuleType {
     case appSettings
     case imagePicking
     case servicePermissions
-    case validationService
+    case networking
     case dataSources
 }
 
@@ -98,6 +98,13 @@ class ModuleBuilder: NSObject {
     class func imagePickerModule() -> Module<ImagePickerPresenter, UIViewController> {
         let viewController = ImagePickerViewController()
         let presenter = ImagePickerPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func networkModule(servicesRepository: ServicesRepository) -> Module<NetworkPresenter, UIViewController> {
+        let viewController = NetworkViewController()
+        let presenter = NetworkPresenter(with: viewController, servicesRepository: servicesRepository)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }

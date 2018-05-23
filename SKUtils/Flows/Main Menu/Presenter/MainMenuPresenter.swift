@@ -49,7 +49,8 @@ class MainMenuPresenter: NSObject {
                 Example(title: "Xib Loadable Example", type: .xibLoadable),
                 Example(title: "App Settings Example", type: .appSettings),
                 Example(title: "Image Picking Example", type: .imagePicking),
-                Example(title: "Service Permissions Example", type: .servicePermissions)]
+                Example(title: "Service Permissions Example", type: .servicePermissions),
+                Example(title: "Network Example", type: .networking)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -106,6 +107,9 @@ extension MainMenuPresenter: MainMenuOutput {
         case .servicePermissions:
             let servicePermissionsModule = ModuleBuilder.servicePermissionsModule()
             interface = servicePermissionsModule.interface
+        case .networking:
+            let networkModule = ModuleBuilder.networkModule(servicesRepository: servicesRepository)
+            interface = networkModule.interface
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }

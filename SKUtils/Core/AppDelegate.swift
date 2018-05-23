@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SKNetworking
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,11 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+        setup(servicesRepository: servicesRepository)
         startApplication()
         return true
     }
     
     // MARK: - Private -
+    
+    private func setup(servicesRepository: ServicesRepository) {
+        let networkErrorParser = NetworkErrorParser()
+        let requestExecutor = DefaultRequestExecutor(sessionManager: Alamofire.SessionManager.default, errorParser: networkErrorParser)
+        let networkService = DefaultNetworkService(requestExecutor: requestExecutor)
+        servicesRepository.registerService(service: networkService)
+        let ipDetectingService = IpDetectingService(networkService: networkService)
+        servicesRepository.registerService(service: ipDetectingService)
+    }
     
     private func startApplication() {
         let mainMenuModule = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
