@@ -13,6 +13,8 @@ typealias IpDetectingResponseType = String
 
 class IpDetectingRequest: APIRequesting {
     
+    var accessToken: String?
+    
     typealias ResponseType = IpDetectingResponse
     
     init() {

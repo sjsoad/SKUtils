@@ -30,11 +30,13 @@ class NetworkPresenter: NSObject {
     
     private var servicesRepository: ServicesRepository
     private var ipDetectingService: IpDetectingService?
+    private(set) var authentificationService: AuthentificationService?
     
     init(with view: NetworkInterface, servicesRepository: ServicesRepository) {
         self.view = view
         self.servicesRepository = servicesRepository
         self.ipDetectingService = servicesRepository.getService()
+        self.authentificationService = servicesRepository.getService()
     }
     
 }

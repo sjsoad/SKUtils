@@ -34,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         servicesRepository.registerService(service: networkService)
         let ipDetectingService = IpDetectingService(networkService: networkService)
         servicesRepository.registerService(service: ipDetectingService)
+        let authentificationService = AuthentificationService(networkService: networkService)
+        servicesRepository.registerService(service: authentificationService)
     }
     
     private func startApplication() {

@@ -11,14 +11,16 @@ import Foundation
 
 protocol AdvancedRequestErrorHandling: RequestErrorHandling {
     
+     var authentificationService: AuthentificationService? { get }
+    
 }
 
 extension AdvancedRequestErrorHandling where Self: NSObject {
     
     func requestErrorHandler<RequestType: APIRequesting>() -> ErrorHandler<RequestType> {
-        return { [weak self] (networkError, failedRequest)  in
+        return { [weak self] (networkError, failedRequest, handlers)  in
             if networkError.statusCode == NetworkErrorCode.unauthorized.rawValue {
-                print(failedRequest)
+                self?.authentificationService?.refreshTokenAndRepeat(request: failedRequest, handlers: handlers)
             } else {
                 guard let view = self?.alertView else { return }
                 view.show(message: networkError.error.localizedDescription, state: .error)
