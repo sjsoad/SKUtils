@@ -11,7 +11,7 @@ import SKNetworking
 
 typealias IpDetectingResponseType = String
 
-class IpDetectingRequest: APIRequesting {
+class IpDetectingRequest: AuthentificatedAPIRequesting {
     
     var accessToken: String?
     

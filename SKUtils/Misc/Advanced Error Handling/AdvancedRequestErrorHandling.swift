@@ -17,7 +17,7 @@ protocol AdvancedRequestErrorHandling: RequestErrorHandling {
 
 extension AdvancedRequestErrorHandling where Self: NSObject {
     
-    func requestErrorHandler<RequestType: APIRequesting>() -> ErrorHandler<RequestType> {
+    func requestErrorHandler<RequestType: AuthentificatedAPIRequesting>() -> ErrorHandler<RequestType> {
         return { [weak self] (networkError, failedRequest, handlers)  in
             if networkError.statusCode == NetworkErrorCode.unauthorized.rawValue {
                 self?.authentificationService?.refreshTokenAndRepeat(request: failedRequest, handlers: handlers)
