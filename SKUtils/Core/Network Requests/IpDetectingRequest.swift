@@ -13,9 +13,9 @@ typealias IpDetectingResponseType = String
 
 class IpDetectingRequest: AuthentificatedAPIRequesting {
     
-    var accessToken: String?
-    
     typealias ResponseType = IpDetectingResponse
+    
+    var accessToken: String?
     
     init() {
     }
