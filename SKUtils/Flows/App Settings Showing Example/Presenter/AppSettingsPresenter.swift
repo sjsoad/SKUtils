@@ -11,7 +11,7 @@ import UIKit
 // #1 import module
 import SKAppSettingsShowing
 
-// #1.1 write extension and declear default values if all calls of settings alert will have same texts
+// #1.1 write extension and declare default values if all calls of settings alert will have same texts
 extension AppSettingsShowing {
     
     var settingsActionTitle: String? { return "Go To Settings" }
