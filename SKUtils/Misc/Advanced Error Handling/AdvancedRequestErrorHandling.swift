@@ -9,6 +9,9 @@
 import SKNetworking
 import Foundation
 
+// AdvancedRequestErrorHandling
+// Allows you to handle 401 status code, refresh token and repeat failed request
+
 protocol AdvancedRequestErrorHandling: RequestErrorHandling {
     
      var authentificationService: AuthentificationService? { get }
