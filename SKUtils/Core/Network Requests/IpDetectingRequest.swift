@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SKNetworking
+import SKNetworkingLib
 
 typealias IpDetectingResponseType = String
 

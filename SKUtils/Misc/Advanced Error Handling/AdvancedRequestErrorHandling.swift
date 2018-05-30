@@ -6,7 +6,7 @@
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
-import SKNetworking
+import SKNetworkingLib
 import Foundation
 
 // AdvancedRequestErrorHandling

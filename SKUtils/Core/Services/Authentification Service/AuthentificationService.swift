@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SKNetworking
+import SKNetworkingLib
 
 class AuthentificationService: NSObject {
 

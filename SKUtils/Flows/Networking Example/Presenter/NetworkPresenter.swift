@@ -11,7 +11,7 @@ import UIKit
 // #1 import modules
 import SKActivityViewable
 import SKAlertViewable
-import SKNetworking
+import SKNetworkingLib
 
 // #2 add support of protocols: ActivityViewable, AlertViewable
 protocol NetworkInterface: class, ActivityViewable, AlertViewable {
