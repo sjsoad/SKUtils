@@ -83,7 +83,8 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
             }
         } else if state.authStatus == .denied {
             // #6 ask user to change permissions state in Settings
-            showAppSettingsAlert()
+            let stringsProvider = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Bluetooth permissions denied")
+            showAppSettingsAlert(with: stringsProvider)
         } else if state.authStatus == .authorized {
             // #7 do what you need
             showAuthorizedAlert()
@@ -97,7 +98,8 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
                 self?.checkLocationPermissions()
             }
         } else if state == .denied {
-            showAppSettingsAlert()
+            let stringsProvider = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Location permissions denied")
+            showAppSettingsAlert(with: stringsProvider)
         } else if state == .authorizedAlways || state == .authorizedWhenInUse {
             showAuthorizedAlert()
         }
@@ -110,7 +112,8 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
                 self?.checkMicrophonePermissions()
             }
         } else if state == .denied {
-            showAppSettingsAlert()
+            let stringsProvider = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Microphone permissions denied")
+            showAppSettingsAlert(with: stringsProvider)
         } else if state == .granted {
             showAuthorizedAlert()
         }
@@ -123,7 +126,8 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
                 self?.checkCameraPermissions()
             }
         } else if state == .denied {
-            showAppSettingsAlert()
+            let stringsProvider = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Camera permissions denied")
+            showAppSettingsAlert(with: stringsProvider)
         } else if state == .authorized {
             showAuthorizedAlert()
         }
@@ -136,7 +140,8 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
                 self?.checkPhotosPermissions()
             }
         } else if state == .denied {
-            showAppSettingsAlert()
+            let stringsProvider = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Photo Library permissions denied")
+            showAppSettingsAlert(with: stringsProvider)
         } else if state == .authorized {
             showAuthorizedAlert()
         }
@@ -149,7 +154,8 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
                 self?.checkContactsPermissions()
             }
         } else if state == .denied {
-            showAppSettingsAlert()
+            let stringsProvider = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Contacts permissions denied")
+            showAppSettingsAlert(with: stringsProvider)
         } else if state == .authorized {
             showAuthorizedAlert()
         }

@@ -6,6 +6,29 @@
 //Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
+// WARNING: You can create class that conforms to ImagePickerAlertSettingsProviding and make assign values in init
+
+class DefaultImagePickerAlertSettings: ImagePickerAlertSettingsProviding {
+    
+    private(set) var prefferedStyle: UIAlertControllerStyle
+    private(set) var alertTitle: String?
+    private(set) var alertMessage: String?
+    private(set) var cameraActionTitle: String
+    private(set) var libraryActionTitle: String
+    private(set) var cancelActionTitle: String
+    
+    public required init(prefferedStyle: UIAlertControllerStyle = .actionSheet, alertTitle: String? = nil, alertMessage: String? = nil,
+                         cameraActionTitle: String = "Camera", libraryActionTitle: String = "Photo Library", cancelActionTitle: String = "Cancel") {
+        self.prefferedStyle = prefferedStyle
+        self.alertTitle = alertTitle
+        self.alertMessage = alertMessage
+        self.cameraActionTitle = cameraActionTitle
+        self.libraryActionTitle = libraryActionTitle
+        self.cancelActionTitle = cancelActionTitle
+    }
+    
+}
+
 import Foundation
 import UIKit
 // #1 import module
@@ -28,7 +51,7 @@ protocol ImagePickerOutput: ImagePickingOutput {
 
 // #4 add support of ImagePicking
 class ImagePickerPresenter: NSObject, ImagePicking {
-    
+
     private weak var view: ImagePickerInterface?
     
     init(with view: ImagePickerInterface) {
@@ -45,17 +68,6 @@ class ImagePickerPresenter: NSObject, ImagePicking {
         return view
     }
     
-    var prefferedStyle: UIAlertControllerStyle {
-        guard UI_USER_INTERFACE_IDIOM() == .phone else { return .alert }
-        return .actionSheet
-    }
-    var cameraActionTitle: String? { return "Camera" }
-    var libraryActionTitle: String? { return "Library" }
-    var alertTitle: String? { return "Select source" }
-    var alertMessage: String? { return nil }
-    
-    // WARNING: titles for settings alert already decleared in extension in AppSettingsPresenter file
-    
 }
 
 // MARK: - ImagePickerPresenterOutput -
@@ -64,7 +76,16 @@ extension ImagePickerPresenter: ImagePickerOutput {
     
     func viewTriggeredCallImagePickerEvent() {
         // #6 call showImagePickerAlert to show user alert with options to choose
-        showImagePickerAlert()
+        let cameraAppSettingsAlert = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Camera denied. Please, change it in Settings")
+        let cameraRollAppSettingsAlert =
+        DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Photo Library denied. Please, change it in Settings")
+        let imagePickerAlertSettings = ImagePickerAlertSettings(prefferedStyle: .actionSheet, alertTitle: "", alertMessage: "Choose photo from:",
+                                                                cameraActionTitle: "Phone Camera", libraryActionTitle: "Camera Roll",
+                                                                cancelActionTitle: "Cancel")
+        // or
+//        let imagePickerAlertSettings = DefaultImagePickerAlertSettings()
+        showImagePickerAlert(imagePickerAlertSettings: imagePickerAlertSettings, cameraAppSettingsAlert: cameraAppSettingsAlert,
+                             cameraRollAppSettingsAlert: cameraRollAppSettingsAlert)
         // #7 also you can call imagePicker with spurce type dirrectly
 //        showImagePicker(with: .photoLibrary)
     }

@@ -6,20 +6,29 @@
 //Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
+// WARNING: You can create class that conforms to AppSettingsAlertStringsProviding and make assign values in init
+
+class DefaultAppSettingsAlertStringsProvider: AppSettingsAlertStringsProviding {
+    
+    private(set) var settingsAlertTitle: String?
+    private(set) var settingsAlertMessage: String?
+    private(set) var settingsActionTitle: String
+    private(set) var cancelActionTitle: String
+    
+    init(settingsAlertTitle: String? = "Access Denied", settingsAlertMessage: String? = "Need to change access state in Settings",
+         settingsActionTitle: String = "Open Settings", cancelActionTitle: String = "Continue anyway") {
+        self.settingsAlertTitle = settingsAlertTitle
+        self.settingsAlertMessage = settingsAlertMessage
+        self.settingsActionTitle = settingsActionTitle
+        self.cancelActionTitle = cancelActionTitle
+    }
+    
+}
+
 import Foundation
 import UIKit
 // #1 import module
 import SKAppSettingsShowing
-
-// #1.1 write extension and declare default values if all calls of settings alert will have same texts
-extension AppSettingsShowing {
-    
-    var settingsActionTitle: String? { return "Go To Settings" }
-    var cancelActionTitle: String? { return "Cancel" }
-    var settingsAlertTitle: String? { return "Warning" }
-    var settingsAlertMessage: String? { return "Change somethings in Settings" }
-    
-}
 
 // #2 add support of AppSettingsShowingInterface protocol
 protocol AppSettingsInterface: class, AppSettingsShowingInterface {
@@ -41,15 +50,12 @@ class AppSettingsPresenter: NSObject, AppSettingsShowing {
         self.view = view
     }
     
-    // #4 implement all necessary things of AppSettingsShowing protocol
+    // #4 implement necessary things of AppSettingsShowing protocol
     // MARK: - AppSettingsShowing -
     
     var appSettingsShowingInterface: AppSettingsShowingInterface? {
         return view
     }
-    
-    // #4.1 override or declear texts
-    var settingsAlertTitle: String? { return "Hey you should go to Settings" }
     
 }
 
@@ -59,8 +65,14 @@ extension AppSettingsPresenter: AppSettingsOutput {
 
     func viewTriggeredShowSettingsEvent() {
         // #5 call showAppSettingsAlert to show alert, optionaly can assign handler that will be called when alert is presented and when
+        // AppSettingsAlertStringsProvider provides titles for alert and alert actions
         // Settings app will be opened
-        showAppSettingsAlert(alertPresentingCompletion: {
+        // Provide AppSettingsAlertStringsProvider
+//        let stringsProvider = AppSettingsAlertStringsProvider(settingsAlertTitle: nil, settingsAlertMessage: "Message",
+//                                                              settingsActionTitle: "Go To Settings", cancelActionTitle: "Cancel")
+        // or
+        let stringsProvider = DefaultAppSettingsAlertStringsProvider()  // check Service Permissions Example for advanced example
+        showAppSettingsAlert(with: stringsProvider, alertPresentingCompletion: {
             print("alert presented")
         }, appSettingsShowingCompletion: { opened in
             print("Settings app opened: \(opened)")
