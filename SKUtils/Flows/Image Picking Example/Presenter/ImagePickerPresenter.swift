@@ -6,29 +6,6 @@
 //Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
-// WARNING: You can create class that conforms to ImagePickerAlertSettingsProviding and make assign values in init
-
-class DefaultImagePickerAlertSettings: ImagePickerAlertSettingsProviding {
-    
-    private(set) var prefferedStyle: UIAlertControllerStyle
-    private(set) var alertTitle: String?
-    private(set) var alertMessage: String?
-    private(set) var cameraActionTitle: String
-    private(set) var libraryActionTitle: String
-    private(set) var cancelActionTitle: String
-    
-    public required init(prefferedStyle: UIAlertControllerStyle = .actionSheet, alertTitle: String? = nil, alertMessage: String? = nil,
-                         cameraActionTitle: String = "Camera", libraryActionTitle: String = "Photo Library", cancelActionTitle: String = "Cancel") {
-        self.prefferedStyle = prefferedStyle
-        self.alertTitle = alertTitle
-        self.alertMessage = alertMessage
-        self.cameraActionTitle = cameraActionTitle
-        self.libraryActionTitle = libraryActionTitle
-        self.cancelActionTitle = cancelActionTitle
-    }
-    
-}
-
 import Foundation
 import UIKit
 // #1 import module
