@@ -36,7 +36,7 @@ def shared_pods
 
     # Data Sources
     
-    pod 'SKDataSources'#, :path => '/Users/sergey/Work/Pods/DataSources'
+    pod 'SKDataSources'#, :path => '/Users/Sergey/Projects/DataSources'
     
     # Networking
     

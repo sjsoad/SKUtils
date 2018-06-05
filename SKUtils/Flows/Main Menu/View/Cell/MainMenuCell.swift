@@ -11,11 +11,20 @@ import UIKit
 import Foundation
 import SKDataSources
 
-class MainMenuCell: UITableViewCell, ConfigurableCell {
-        
-    func configure<T>(viewModel: T) {
-        guard let viewModel = viewModel as? MainMenuDataSourceModelDisplaying else { return }
-        textLabel?.text = viewModel.title
+class MainMenuCell: UITableViewCell, DataSourceObjectInterface, Reusable, Nibable, MainMenuCellInterface {
+    
+    var presenter: MainMenuCellOutput?
+    
+    // MARK: - DataSourceObjectInterface -
+    
+    func set(presenter: DataSourceObjectPresenter) {
+        self.presenter = presenter as? MainMenuCellOutput
+    }
+    
+    // MARK: - MainMenuCellInterface -
+    
+    func set(_ title: String?) {
+        textLabel?.text = title
     }
     
 }

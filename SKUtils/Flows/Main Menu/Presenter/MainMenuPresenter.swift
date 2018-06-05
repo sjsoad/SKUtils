@@ -54,9 +54,9 @@ class MainMenuPresenter: NSObject {
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
-        var items = [DataSourceModel]()
+        var items = [DataSourceObjectPresenter]()
         for item in list {
-            let dataSourceModel = MainMenuDataSourceModel(with: item, cellIdentifier: MainMenuCell.reuseIdentifier)
+            let dataSourceModel = MainMenuCellPresenter(with: item, cellIdentifier: MainMenuCell.reuseIdentifier)
             items.append(dataSourceModel)
         }
         let section = SectionModel(withItems: items)
@@ -74,9 +74,9 @@ extension MainMenuPresenter: MainMenuOutput {
     }
     
     func viewTriggeredCellSelection(at indexPath: IndexPath) {
-        guard let dataSourceModel = dataSource.itemAtIndexPath(indexPath: indexPath) as? MainMenuDataSourceModelDataProviding else { return }
+        guard let dataSourceObjectPresenter: MainMenuCellPresenter = dataSource.itemAtIndexPath(indexPath: indexPath) else { return }
         var interface: UIViewController?
-        switch dataSourceModel.type {
+        switch dataSourceObjectPresenter.model.type {
         case .activityViewable:
             let activityViewableModule = ModuleBuilder.activityViewableModule()
             interface = activityViewableModule.interface
