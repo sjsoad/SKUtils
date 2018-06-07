@@ -9,10 +9,11 @@
 import UIKit
 import SKDataSources
 
-class MainMenuViewController: UIViewController, MainMenuInterface {
+class MainMenuViewController: UIViewController, MainMenuInterface, ViewControllerAnimatedTransitioningProvider {
 
     var presenter: MainMenuOutput?
-
+    var animationController: TransitionManaging? = TransitionManager(transitionAnimationProvider: FallTransitionAnimation())
+    
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Lifecycle -

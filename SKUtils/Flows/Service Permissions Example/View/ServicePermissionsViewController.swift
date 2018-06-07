@@ -11,7 +11,7 @@ import UIKit
 class ServicePermissionsViewController: UIViewController, ServicePermissionsInterface {
 
     var presenter: ServicePermissionsOutput?
-
+    
     // MARK: - IBActions -
     
     @IBAction func checkBluetoothPermissionsButtonPressed(_ sender: UIButton) {

@@ -21,6 +21,7 @@ enum ModuleType {
     case servicePermissions
     case networking
     case dataSources
+    case modalTransition
 }
 
 class ModuleBuilder: NSObject {
@@ -105,6 +106,13 @@ class ModuleBuilder: NSObject {
     class func networkModule(servicesRepository: ServicesRepository) -> Module<NetworkPresenter, UIViewController> {
         let viewController = NetworkViewController()
         let presenter = NetworkPresenter(with: viewController, servicesRepository: servicesRepository)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func modalNavigationModule() -> Module<ModalNavigationPresenter, UIViewController> {
+        let viewController = ModalNavigationViewController()
+        let presenter = ModalNavigationPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }

@@ -26,7 +26,7 @@ protocol MainMenuOutput {
 class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
-    
+    private var transitionManager = TransitionManager(transitionAnimationProvider: PushTransitionAnimation())
     private var servicesRepository: ServicesRepository
     private lazy var dataSource: TableViewArrayDataSource = { [unowned self] in
         return createDataSource(from: examples)
@@ -50,7 +50,8 @@ class MainMenuPresenter: NSObject {
                 Example(title: "App Settings Example", type: .appSettings),
                 Example(title: "Image Picking Example", type: .imagePicking),
                 Example(title: "Service Permissions Example", type: .servicePermissions),
-                Example(title: "Network Example", type: .networking)]
+                Example(title: "Network Example", type: .networking),
+                Example(title: "Custom Modal Transition Example", type: .modalTransition)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -110,6 +111,13 @@ extension MainMenuPresenter: MainMenuOutput {
         case .networking:
             let networkModule = ModuleBuilder.networkModule(servicesRepository: servicesRepository)
             interface = networkModule.interface
+        case .modalTransition:
+            let modalNavigationModule = ModuleBuilder.modalNavigationModule()
+            guard let viewController = view as? UIViewController else { return }
+            modalNavigationModule.interface.modalPresentationStyle = .custom
+            modalNavigationModule.interface.transitioningDelegate = transitionManager
+            viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
+            return
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }

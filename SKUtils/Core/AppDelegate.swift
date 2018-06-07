@@ -40,7 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func startApplication() {
         let mainMenuModule = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
-        let navigationController = UINavigationController(rootViewController: mainMenuModule.interface)
+        let navigationController = NavigationController(rootViewController: mainMenuModule.interface)
+        navigationController.set(interactive: true)
         window?.rootViewController = navigationController
     }
     
