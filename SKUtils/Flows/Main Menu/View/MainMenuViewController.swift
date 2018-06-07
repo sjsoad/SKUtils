@@ -8,11 +8,12 @@
 
 import UIKit
 import SKDataSources
+import SKCustomNavigation
 
-class MainMenuViewController: UIViewController, MainMenuInterface, ViewControllerAnimatedTransitioningProvider {
+class MainMenuViewController: UIViewController, MainMenuInterface, AnimationControllerProvider {
 
     var presenter: MainMenuOutput?
-    var animationController: TransitionManaging? = TransitionManager(transitionAnimationProvider: FallTransitionAnimation())
+    var animatedTransitioning: CustomAnimatedTransitioning? = CustomPushTransition()
     
     @IBOutlet private weak var tableView: UITableView!
     

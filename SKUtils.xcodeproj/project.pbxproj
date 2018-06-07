@@ -41,6 +41,9 @@
 		A520FAB620B1B0FC00E4E219 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAB320B1B0FC00E4E219 /* ImagePickerViewController.swift */; };
 		A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
+		A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */; };
+		A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */; };
+		A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD820C98E26000AD03F /* PanInteractionController.swift */; };
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
 		A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814B20B148A5003F3C68 /* TextInputsViewController.swift */; };
 		A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A576814C20B148A5003F3C68 /* TextInputsViewController.xib */; };
@@ -52,7 +55,6 @@
 		A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7420B5A08F0080B982 /* NetworkViewController.swift */; };
 		A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5930C7520B5A08F0080B982 /* NetworkViewController.xib */; };
 		A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */; };
-		A593D6B620C8234100378D51 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593D6B520C8234100378D51 /* TransitionManager.swift */; };
 		A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */; };
 		A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */; };
 		A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */; };
@@ -71,12 +73,10 @@
 		A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8142090E69700DF7495 /* Assets.xcassets */; };
 		A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8152090E69700DF7495 /* LaunchScreen.storyboard */; };
 		A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6A8192090E69700DF7495 /* AppDelegate.swift */; };
-		A5F47B5820C8FE510073FDC8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F47B5720C8FE510073FDC8 /* NavigationController.swift */; };
 		A5F47B5F20C910240073FDC8 /* ModalNavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F47B5C20C910240073FDC8 /* ModalNavigationPresenter.swift */; };
 		A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F47B5D20C910240073FDC8 /* ModalNavigationViewController.swift */; };
 		A5F47B6120C910240073FDC8 /* ModalNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F47B5E20C910240073FDC8 /* ModalNavigationViewController.xib */; };
-		A5F47B6320C915980073FDC8 /* AnimationsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F47B6220C915980073FDC8 /* AnimationsFactory.swift */; };
-		A5F47B6520C937470073FDC8 /* InteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F47B6420C937470073FDC8 /* InteractionManager.swift */; };
+		A5F47B6520C937470073FDC8 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F47B6420C937470073FDC8 /* PresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +127,9 @@
 		A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
+		A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushTransition.swift; sourceTree = "<group>"; };
+		A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFallAnimation.swift; sourceTree = "<group>"; };
+		A5664FD820C98E26000AD03F /* PanInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanInteractionController.swift; sourceTree = "<group>"; };
 		A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsPresenter.swift; sourceTree = "<group>"; };
 		A576814B20B148A5003F3C68 /* TextInputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsViewController.swift; sourceTree = "<group>"; };
 		A576814C20B148A5003F3C68 /* TextInputsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsViewController.xib; sourceTree = "<group>"; };
@@ -138,7 +141,6 @@
 		A5930C7420B5A08F0080B982 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		A5930C7520B5A08F0080B982 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
 		A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedRequestErrorHandling.swift; sourceTree = "<group>"; };
-		A593D6B520C8234100378D51 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppSettingsAlertStringsProvider.swift; sourceTree = "<group>"; };
 		A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImagePickerAlertSettings.swift; sourceTree = "<group>"; };
 		A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
@@ -160,12 +162,10 @@
 		A5D6A8162090E69700DF7495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5D6A8172090E69700DF7495 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D6A8192090E69700DF7495 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5F47B5720C8FE510073FDC8 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A5F47B5C20C910240073FDC8 /* ModalNavigationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationPresenter.swift; sourceTree = "<group>"; };
 		A5F47B5D20C910240073FDC8 /* ModalNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationViewController.swift; sourceTree = "<group>"; };
 		A5F47B5E20C910240073FDC8 /* ModalNavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalNavigationViewController.xib; sourceTree = "<group>"; };
-		A5F47B6220C915980073FDC8 /* AnimationsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsFactory.swift; sourceTree = "<group>"; };
-		A5F47B6420C937470073FDC8 /* InteractionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionManager.swift; sourceTree = "<group>"; };
+		A5F47B6420C937470073FDC8 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		D552F8AD29741206B67E18A3 /* Pods_SKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB398974DA59C56A2EF3141 /* Pods-SKUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKUtilsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKUtilsTests/Pods-SKUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,7 +221,7 @@
 		A511374620A2FA7400BC7C7D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				A593D6B420C8233000378D51 /* Transition Manager */,
+				A593D6B420C8233000378D51 /* Custom Transitions */,
 				A595D21D20C035AE00330556 /* Default Image Picker Alert Settings */,
 				A595D21820C0352E00330556 /* Default App Settings Alert Strings Provider */,
 				A5930C7920B5AC950080B982 /* Advanced Error Handling */,
@@ -477,6 +477,23 @@
 			path = SKUtils;
 			sourceTree = "<group>";
 		};
+		A5664FD420C98863000AD03F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */,
+				A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A5664FD720C98E09000AD03F /* Interactions */ = {
+			isa = PBXGroup;
+			children = (
+				A5664FD820C98E26000AD03F /* PanInteractionController.swift */,
+			);
+			path = Interactions;
+			sourceTree = "<group>";
+		};
 		A576814720B14884003F3C68 /* Text Inputs Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,14 +579,14 @@
 			path = "Advanced Error Handling";
 			sourceTree = "<group>";
 		};
-		A593D6B420C8233000378D51 /* Transition Manager */ = {
+		A593D6B420C8233000378D51 /* Custom Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				A593D6B520C8234100378D51 /* TransitionManager.swift */,
-				A5F47B6220C915980073FDC8 /* AnimationsFactory.swift */,
-				A5F47B6420C937470073FDC8 /* InteractionManager.swift */,
+				A5664FD720C98E09000AD03F /* Interactions */,
+				A5664FD420C98863000AD03F /* Animations */,
+				A5F47B6420C937470073FDC8 /* PresentationController.swift */,
 			);
-			path = "Transition Manager";
+			path = "Custom Transitions";
 			sourceTree = "<group>";
 		};
 		A595D21820C0352E00330556 /* Default App Settings Alert Strings Provider */ = {
@@ -742,7 +759,6 @@
 		A5D6A8182090E69700DF7495 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A5F47B5620C8FE410073FDC8 /* Custom Navigation Controller */,
 				A5930C6620B592540080B982 /* Network Requests */,
 				A511380D20A3095000BC7C7D /* Module Builder */,
 				A51137FD20A305E100BC7C7D /* Module */,
@@ -750,14 +766,6 @@
 				A5D6A8192090E69700DF7495 /* AppDelegate.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		A5F47B5620C8FE410073FDC8 /* Custom Navigation Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A5F47B5720C8FE510073FDC8 /* NavigationController.swift */,
-			);
-			path = "Custom Navigation Controller";
 			sourceTree = "<group>";
 		};
 		A5F47B5920C90FE80073FDC8 /* Custom Modal Navigation */ = {
@@ -920,6 +928,7 @@
 				"${BUILT_PRODUCTS_DIR}/SKBluetoothPermissions/SKBluetoothPermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKCameraPermissions/SKCameraPermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKContactsPermissions/SKContactsPermissions.framework",
+				"${BUILT_PRODUCTS_DIR}/SKCustomNavigation/SKCustomNavigation.framework",
 				"${BUILT_PRODUCTS_DIR}/SKDataSources/SKDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/SKImagePicking/SKImagePicking.framework",
 				"${BUILT_PRODUCTS_DIR}/SKLocalDataStorage/SKLocalDataStorage.framework",
@@ -949,6 +958,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKBluetoothPermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCameraPermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKContactsPermissions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCustomNavigation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePicking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocalDataStorage.framework",
@@ -1026,13 +1036,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */,
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
 				A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */,
+				A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */,
+				A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */,
 				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
-				A593D6B620C8234100378D51 /* TransitionManager.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
 				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
@@ -1042,7 +1054,6 @@
 				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
-				A5F47B5820C8FE510073FDC8 /* NavigationController.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
@@ -1060,13 +1071,12 @@
 				A5F47B5F20C910240073FDC8 /* ModalNavigationPresenter.swift in Sources */,
 				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
 				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
-				A5F47B6320C915980073FDC8 /* AnimationsFactory.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,
 				A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */,
 				A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */,
 				A5BF216D20AEC6CF0064B3F8 /* AlertViewablePresenter.swift in Sources */,
-				A5F47B6520C937470073FDC8 /* InteractionManager.swift in Sources */,
+				A5F47B6520C937470073FDC8 /* PresentationController.swift in Sources */,
 				A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */,
 				A511375C20A2FAB700BC7C7D /* Windowable.swift in Sources */,
 				A511380F20A3095B00BC7C7D /* ModuleBuilder.swift in Sources */,
@@ -1231,10 +1241,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1250,10 +1257,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1268,11 +1272,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1288,11 +1288,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

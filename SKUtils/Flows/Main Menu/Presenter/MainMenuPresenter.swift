@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SKDataSources
+import SKCustomNavigation
 
 protocol MainMenuInterface: class, Navigatable {
     
@@ -26,7 +27,7 @@ protocol MainMenuOutput {
 class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
-    private var transitionManager = TransitionManager(transitionAnimationProvider: PushTransitionAnimation())
+    private var transitioningDelegate = DefaultTransitioningDelegate(animatedTransitioning: CustomFallAnimation())
     private var servicesRepository: ServicesRepository
     private lazy var dataSource: TableViewArrayDataSource = { [unowned self] in
         return createDataSource(from: examples)
@@ -114,8 +115,8 @@ extension MainMenuPresenter: MainMenuOutput {
         case .modalTransition:
             let modalNavigationModule = ModuleBuilder.modalNavigationModule()
             guard let viewController = view as? UIViewController else { return }
-            modalNavigationModule.interface.modalPresentationStyle = .custom
-            modalNavigationModule.interface.transitioningDelegate = transitionManager
+            transitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
+            modalNavigationModule.interface.transitioningDelegate = transitioningDelegate
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
             return
         default: print("not implemented case")
