@@ -58,6 +58,7 @@
 		A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */; };
 		A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */; };
 		A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */; };
+		A5BDD06920CD7CBF0084B848 /* MyTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDD06820CD7CBF0084B848 /* MyTransitionDelegate.swift */; };
 		A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */; };
 		A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */; };
 		A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */; };
@@ -144,6 +145,7 @@
 		A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppSettingsAlertStringsProvider.swift; sourceTree = "<group>"; };
 		A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImagePickerAlertSettings.swift; sourceTree = "<group>"; };
 		A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
+		A5BDD06820CD7CBF0084B848 /* MyTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTransitionDelegate.swift; sourceTree = "<group>"; };
 		A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewablePresenter.swift; sourceTree = "<group>"; };
 		A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewableViewController.swift; sourceTree = "<group>"; };
 		A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewableViewController.xib; sourceTree = "<group>"; };
@@ -585,6 +587,7 @@
 				A5664FD720C98E09000AD03F /* Interactions */,
 				A5664FD420C98863000AD03F /* Animations */,
 				A5F47B6420C937470073FDC8 /* PresentationController.swift */,
+				A5BDD06820CD7CBF0084B848 /* MyTransitionDelegate.swift */,
 			);
 			path = "Custom Transitions";
 			sourceTree = "<group>";
@@ -1046,6 +1049,7 @@
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
+				A5BDD06920CD7CBF0084B848 /* MyTransitionDelegate.swift in Sources */,
 				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
 				A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */,
@@ -1241,7 +1245,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1257,7 +1264,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1272,7 +1282,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1288,7 +1302,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

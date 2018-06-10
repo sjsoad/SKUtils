@@ -27,7 +27,7 @@ protocol MainMenuOutput {
 class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
-    private var transitioningDelegate = DefaultTransitioningDelegate(animatedTransitioning: CustomFallAnimation())
+    private var transitioningDelegate = MyTransitionDelegate(animatedTransitioning: /*CustomFallAnimation()*/nil)
     private var servicesRepository: ServicesRepository
     private lazy var dataSource: TableViewArrayDataSource = { [unowned self] in
         return createDataSource(from: examples)
@@ -117,6 +117,7 @@ extension MainMenuPresenter: MainMenuOutput {
             guard let viewController = view as? UIViewController else { return }
             transitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
             modalNavigationModule.interface.transitioningDelegate = transitioningDelegate
+            modalNavigationModule.interface.modalPresentationStyle = .custom
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
             return
         default: print("not implemented case")

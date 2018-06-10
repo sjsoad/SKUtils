@@ -27,9 +27,10 @@ class CustomFallAnimation: NSObject, CustomAnimatedTransitioning {
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let container = transitionContext.containerView
-        
-        guard let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from) else { return }
-        guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
+        guard let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) else { return }
+        guard let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else { return }
+        guard let fromView = fromVC.view else { return }
+        guard let toView = toVC.view else { return }
         reverseTransition == false ? container.addSubview(toView) : container.insertSubview(toView, belowSubview: fromView)
         let detailView = reverseTransition == false ? toView : fromView
         toView.frame = reverseTransition == false ?  CGRect(x: 0, y: -toView.frame.height, width: toView.frame.width, height: toView.frame.height) :

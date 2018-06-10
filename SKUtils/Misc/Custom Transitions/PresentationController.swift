@@ -8,27 +8,14 @@
 
 import UIKit
 
-class PresentationController: UIPresentationController {
+class PresentationController: UIPresentationController, UIAdaptivePresentationControllerDelegate {
     
     private var dimmingView: UIView!
     
     override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
+        delegate = self
         setupDimmingView()
-    }
-    
-    func setupDimmingView() {
-        dimmingView = UIView()
-        dimmingView.translatesAutoresizingMaskIntoConstraints = false
-        dimmingView.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
-        dimmingView.alpha = 0.0
-        
-        let recognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))
-        dimmingView.addGestureRecognizer(recognizer)
-    }
-    
-    @objc func handleTap(recognizer: UITapGestureRecognizer) {
-        presentingViewController.dismiss(animated: true)
     }
     
     override var frameOfPresentedViewInContainerView: CGRect {
@@ -67,9 +54,29 @@ class PresentationController: UIPresentationController {
     
     override func containerViewWillLayoutSubviews() {
         presentedView?.frame = frameOfPresentedViewInContainerView
+        presentedView?.center = containerView?.center ?? CGPoint.zero
     }
     
     override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
-        return CGSize(width: parentSize.width, height: parentSize.height*(2.0/3.0))
+        return CGSize(width: 200, height: 200)
+    }
+    
+}
+
+// MARK: - Private
+private extension PresentationController {
+    
+    func setupDimmingView() {
+        dimmingView = UIView()
+        dimmingView.translatesAutoresizingMaskIntoConstraints = false
+        dimmingView.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
+        dimmingView.alpha = 0.0
+        
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        dimmingView.addGestureRecognizer(recognizer)
+    }
+    
+    @objc dynamic func handleTap(_ recognizer: UITapGestureRecognizer) {
+        presentingViewController.dismiss(animated: true)
     }
 }
