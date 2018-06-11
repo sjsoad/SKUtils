@@ -22,6 +22,7 @@ enum ModuleType {
     case networking
     case dataSources
     case modalTransition
+    case customPresentation
 }
 
 class ModuleBuilder: NSObject {

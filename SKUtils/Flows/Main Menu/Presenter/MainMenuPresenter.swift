@@ -27,7 +27,13 @@ protocol MainMenuOutput {
 class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
-    private var transitioningDelegate = MyTransitionDelegate(animatedTransitioning: /*CustomFallAnimation()*/nil)
+    private var transitioningDelegate = DefaultTransitioningDelegate(animatedTransitioning: CustomFallAnimation())
+    private var customTransitioningDelegate = DefaultTransitioningDelegate(presentationControllerProvider: {
+        (presented, presenting, _) -> UIPresentationController? in
+        let presentationController = DefaultPresentationController(presentedViewController: presented, presenting: presenting)
+        presentationController.verticalPosition = .bottom
+        return presentationController
+    })
     private var servicesRepository: ServicesRepository
     private lazy var dataSource: TableViewArrayDataSource = { [unowned self] in
         return createDataSource(from: examples)
@@ -52,7 +58,8 @@ class MainMenuPresenter: NSObject {
                 Example(title: "Image Picking Example", type: .imagePicking),
                 Example(title: "Service Permissions Example", type: .servicePermissions),
                 Example(title: "Network Example", type: .networking),
-                Example(title: "Custom Modal Transition Example", type: .modalTransition)]
+                Example(title: "Custom Modal Transition Example", type: .modalTransition),
+                Example(title: "Custom Presentation Example", type: .customPresentation)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -117,6 +124,12 @@ extension MainMenuPresenter: MainMenuOutput {
             guard let viewController = view as? UIViewController else { return }
             transitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
             modalNavigationModule.interface.transitioningDelegate = transitioningDelegate
+            viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
+            return
+        case .customPresentation:
+            let modalNavigationModule = ModuleBuilder.modalNavigationModule()
+            guard let viewController = view as? UIViewController else { return }
+            modalNavigationModule.interface.transitioningDelegate = customTransitioningDelegate
             modalNavigationModule.interface.modalPresentationStyle = .custom
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
             return

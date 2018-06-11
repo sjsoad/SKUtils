@@ -12,7 +12,7 @@ def shared_pods
     pod 'AlertActionBuilder'#, :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
     pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
     pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
-    pod 'SKTextInputsManager'#, :path => '/Users/sergey/Work/Pods/TextInputsManager'
+    pod 'SKTextInputsManager'#, :path => '/Users/sergey/Projects/TextInputsManager'
     pod 'SKTextInputs'#, :path => '/Users/sergey/Work/Pods/TextInputs'
     pod 'SKPickerViewManager'#, :path => '/Users/sergey/Work/Pods/PickerViewManager'
     pod 'SKXibLoadableView'#, :path => '/Users/sergey/Work/Pods/XibLoadableView'
@@ -44,7 +44,7 @@ def shared_pods
     
     # Custom Navigation
     
-    pod 'SKCustomNavigation'#, :path => '/Users/sergey/Work/Pods/CustomNavigation'
+    pod 'SKCustomNavigation'#, :path => '/Users/Sergey/Projects/CustomNavigation'
 
 end
 

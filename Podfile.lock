@@ -24,7 +24,7 @@ PODS:
     - SKServicePermissions
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
-  - SKCustomNavigation (0.0.1)
+  - SKCustomNavigation (0.0.2)
   - SKDataSources (0.0.4)
   - SKImagePicking (0.0.3):
     - AlertActionBuilder
@@ -51,7 +51,7 @@ PODS:
   - SKServicePermissions (0.0.1)
   - SKTextInputs (0.0.2):
     - SKPickerViewManager
-  - SKTextInputsManager (0.0.5)
+  - SKTextInputsManager (0.0.6)
   - SKValidationService (0.0.2)
   - SKXibLoadableView (0.0.1)
   - SwiftLint (0.25.1)
@@ -127,7 +127,7 @@ SPEC CHECKSUMS:
   SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
-  SKCustomNavigation: 98a3b33625a7360b6931b6fa9e742b71d743435e
+  SKCustomNavigation: 0cb4222cee639bda5fc7528a23a0a8b926af73cb
   SKDataSources: 2bd5088307872b2b94dca3b84475576db1c54d8b
   SKImagePicking: 4201ada80acc2fece66e0949a624ed9f2a6b86ad
   SKLocalDataStorage: 4aec2ab30882ce3e5fd4c5e97199dfbfd83cf8ef
@@ -138,12 +138,12 @@ SPEC CHECKSUMS:
   SKPickerViewManager: 519aa6f95f869280ad57b68be97bd076b87ed7ea
   SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
   SKTextInputs: da08c61f5407025f6ba4fdd8c7398a5713163285
-  SKTextInputsManager: 4865594146249b1e6ad16bb6bae08af72ed66e7b
+  SKTextInputsManager: 074d5f2c422d6bc4ac9c8d039ae53bb89278c2ed
   SKValidationService: 266a936b25be39e7a9d99e0e08d8c54d044e1f39
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 61ba475e59c0ea3d38b898bb0eb793807f59160d
+PODFILE CHECKSUM: b8966e3a60a671b12b93f70a12823edcc4d8a463
 
 COCOAPODS: 1.5.3

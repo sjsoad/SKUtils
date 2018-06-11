@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SKTextInputsManager
 
 class ModalNavigationViewController: UIViewController, ModalNavigationInterface {
 
     var presenter: ModalNavigationOutput?
+    
+    @IBOutlet private var textInputsManager: TextInputsManager!
     
     // MARK: - IBActions -
     
