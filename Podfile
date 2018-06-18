@@ -36,7 +36,7 @@ def shared_pods
 
     # Data Sources
     
-    pod 'SKDataSources'#, :path => '/Users/Sergey/Projects/DataSources'
+    pod 'SKDataSources'#, :path => '/Users/sergey/Work/Pods/DataSources'
     
     # Networking
     
@@ -44,7 +44,7 @@ def shared_pods
     
     # Custom Navigation
     
-    pod 'SKCustomNavigation'#, :path => '/Users/Sergey/Projects/CustomNavigation'
+    pod 'SKCustomNavigation', :path => '/Users/Sergey/Work/Pods/CustomNavigation'
 
 end
 
