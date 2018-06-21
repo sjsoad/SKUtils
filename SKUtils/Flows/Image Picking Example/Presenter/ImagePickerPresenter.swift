@@ -56,7 +56,8 @@ extension ImagePickerPresenter: ImagePickerOutput {
         let cameraAppSettingsAlert = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Camera denied. Please, change it in Settings")
         let cameraRollAppSettingsAlert =
         DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Photo Library denied. Please, change it in Settings")
-        let imagePickerAlertSettings = ImagePickerAlertSettings(prefferedStyle: .actionSheet, alertTitle: "", alertMessage: "Choose photo from:",
+        let prefferedStyle: UIAlertControllerStyle = UI_USER_INTERFACE_IDIOM() == .phone ? .actionSheet : .alert
+        let imagePickerAlertSettings = ImagePickerAlertSettings(prefferedStyle: prefferedStyle, alertTitle: "", alertMessage: "Choose photo from:",
                                                                 cameraActionTitle: "Phone Camera", libraryActionTitle: "Camera Roll",
                                                                 cancelActionTitle: "Cancel")
         // or
