@@ -10,7 +10,7 @@ import UIKit
 
 class PanInteractionController: UIPercentDrivenInteractiveTransition {
 
-    var interactionInProgress = false
+    private var interactionInProgress = false
     private var shouldCompleteTransition = false
     private weak var viewController: UIViewController?
     

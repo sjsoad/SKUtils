@@ -31,7 +31,8 @@ class MainMenuPresenter: NSObject {
     private var customTransitioningDelegate = DefaultTransitioningDelegate(presentationControllerProvider: {
         (presented, presenting, _) -> UIPresentationController? in
         let presentationController = DefaultPresentationController(presentedViewController: presented, presenting: presenting)
-        presentationController.verticalPosition = .bottom
+//        presentationController.position = Position(x: .center, y: .bottom)
+        presentationController.position.y = .bottom
         return presentationController
     })
     private var servicesRepository: ServicesRepository

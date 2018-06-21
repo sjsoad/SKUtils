@@ -15,6 +15,14 @@ class ModalNavigationViewController: UIViewController, ModalNavigationInterface 
     
     @IBOutlet private var textInputsManager: TextInputsManager!
     
+    @IBOutlet private weak var label: UILabel!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        label.text = "asdfasf\nasdfsadfasfd\nsdfasdfasfdasdfasfa\nasdfasfdasdfasdf\n"
+        self.presentationController?.containerView?.setNeedsLayout()
+    }
+    
     // MARK: - IBActions -
     
     @IBAction func dismissButtonPressed(_ sender: UIButton) {
