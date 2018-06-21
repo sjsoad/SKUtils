@@ -10,7 +10,8 @@ import UIKit
 // #1 import module
 import SKImagePicking
 
-class ImagePickerViewController: UIViewController, ImagePickerInterface {
+// #2 add support of ImagePickingConfigurating protocol
+class ImagePickerViewController: UIViewController, ImagePickerInterface, ImagePickingConfigurating {
 
     var presenter: ImagePickerOutput?
 
@@ -30,7 +31,7 @@ class ImagePickerViewController: UIViewController, ImagePickerInterface {
     
     // MARK: - ImagePickingInterface -
     
-    // #2 Optionaly you can override
+    // #3 Optionaly you can override
     var imagePickerController: UIImagePickerController {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = delegate
@@ -41,7 +42,7 @@ class ImagePickerViewController: UIViewController, ImagePickerInterface {
     
 }
 
-// #3 implement UIImagePickerControllerDelegate methods
+// #4 implement UIImagePickerControllerDelegate methods
 extension ImagePickerViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {

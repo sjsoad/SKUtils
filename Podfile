@@ -17,7 +17,7 @@ def shared_pods
     pod 'SKPickerViewManager'#, :path => '/Users/sergey/Work/Pods/PickerViewManager'
     pod 'SKXibLoadableView'#, :path => '/Users/sergey/Work/Pods/XibLoadableView'
     pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Projects/AppSettingsShowing'
-    pod 'SKImagePicking'#, :path => '/Users/Sergey/Projects/ImagePicking'
+    pod 'SKImagePicking', :path => '/Users/Sergey/Projects/ImagePicking'
     
     # Capabilities permissions
 
