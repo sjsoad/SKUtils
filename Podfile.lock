@@ -26,7 +26,7 @@ PODS:
     - SKServicePermissions
   - SKCustomNavigation (0.0.3)
   - SKDataSources (0.0.5)
-  - SKImagePicking (0.0.3):
+  - SKImagePicking (0.0.4):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -69,7 +69,7 @@ DEPENDENCIES:
   - SKContactsPermissions
   - SKCustomNavigation
   - SKDataSources
-  - SKImagePicking (from `/Users/Sergey/Projects/ImagePicking`)
+  - SKImagePicking
   - SKLocalDataStorage
   - SKLocationPermissions
   - SKMicrophonePermissions
@@ -99,6 +99,7 @@ SPEC REPOS:
     - SKContactsPermissions
     - SKCustomNavigation
     - SKDataSources
+    - SKImagePicking
     - SKLocalDataStorage
     - SKLocationPermissions
     - SKMicrophonePermissions
@@ -112,10 +113,6 @@ SPEC REPOS:
     - SKXibLoadableView
     - SwiftLint
     - SwiftyDrop
-
-EXTERNAL SOURCES:
-  SKImagePicking:
-    :path: "/Users/Sergey/Projects/ImagePicking"
 
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
@@ -132,7 +129,7 @@ SPEC CHECKSUMS:
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCustomNavigation: fea3ad208238b4ada128c0ffaab3b2d9130ca5d0
   SKDataSources: 366a136d7d69b5de234f109db8ac28d451d62725
-  SKImagePicking: 546d36b9618c69ba20007cab407bcb755d8106e8
+  SKImagePicking: c383fa7de9ba2e1cae121a1fe90df68ac25e9b5e
   SKLocalDataStorage: 4aec2ab30882ce3e5fd4c5e97199dfbfd83cf8ef
   SKLocationPermissions: 9eb44edf1e24269b4707d92768f6c559e096f967
   SKMicrophonePermissions: 54849d5100b08365db3f0d63aae9489968bbf398
@@ -147,6 +144,6 @@ SPEC CHECKSUMS:
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 199c188132372f715078ce4b173be1a40f6297c0
+PODFILE CHECKSUM: 96b6cb3534ec733a0e73a50b83544b52da19b0dd
 
 COCOAPODS: 1.5.3
