@@ -47,6 +47,7 @@
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
 		A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814B20B148A5003F3C68 /* TextInputsViewController.swift */; };
 		A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A576814C20B148A5003F3C68 /* TextInputsViewController.xib */; };
+		A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */; };
 		A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6420B591FF0080B982 /* IpDetectingService.swift */; };
 		A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */; };
 		A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6820B5935B0080B982 /* IpDetectingRequest.swift */; };
@@ -143,6 +144,7 @@
 		A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsPresenter.swift; sourceTree = "<group>"; };
 		A576814B20B148A5003F3C68 /* TextInputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsViewController.swift; sourceTree = "<group>"; };
 		A576814C20B148A5003F3C68 /* TextInputsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsViewController.xib; sourceTree = "<group>"; };
+		A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReloadAnimation.swift"; sourceTree = "<group>"; };
 		A5930C6420B591FF0080B982 /* IpDetectingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingService.swift; sourceTree = "<group>"; };
 		A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingResponse.swift; sourceTree = "<group>"; };
 		A5930C6820B5935B0080B982 /* IpDetectingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingRequest.swift; sourceTree = "<group>"; };
@@ -640,8 +642,9 @@
 				A5A5754920DB73D70052498D /* ViewAnimation.swift */,
 				A5A5754A20DB73D70052498D /* TransformAnimation.swift */,
 				A5A5754B20DB73D70052498D /* AlphaAnimation.swift */,
-				A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */,
 				A5A5754D20DB73D70052498D /* AnimatorProvider.swift */,
+				A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */,
+				A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -1103,6 +1106,7 @@
 				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
 				A5DF680520D4EEFF005743EE /* TableViewing.swift in Sources */,
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
+				A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5DF680B20D4F3F9005743EE /* TableViewDeleting.swift in Sources */,
