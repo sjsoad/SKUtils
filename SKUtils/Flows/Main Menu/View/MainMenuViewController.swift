@@ -21,10 +21,30 @@ class MainMenuViewController: UIViewController, MainMenuInterface, AnimationCont
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reload))
         setup(tableView: tableView)
         presenter?.viewDidLoad()
     }
-
+    
+    @objc func reload() {
+        // Animation examples
+        // 1
+//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.flipFromBottom()])
+        // 2
+//        tableView.reload(with: [AlphaAnimation()])
+        // 3
+        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromVertical(position: tableView.bounds.maxY)],
+                         animatorProvider: ControlPointAnimatorProvider())
+        // 4
+//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromVertical(position: -tableView.bounds.maxY)])
+        // 3
+//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromHorizontal(position: tableView.bounds.maxX)],
+//                         animatorProvider: SpringAnimatorProvider())
+        // 4
+//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromHorizontal(position: -tableView.bounds.maxX)],
+//                         animatorProvider: SpringAnimatorProvider())
+    }
+    
     // MARK: - Private -
     
     private func setup(tableView: UITableView) {
@@ -36,7 +56,7 @@ class MainMenuViewController: UIViewController, MainMenuInterface, AnimationCont
     
     func set(dataSource: TableViewArrayDataSource) {
         tableView.dataSource = dataSource
-        tableView.reloadData()
+        reload()
     }
     
 }

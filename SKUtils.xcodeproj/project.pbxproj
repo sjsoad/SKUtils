@@ -41,6 +41,11 @@
 		A520FAB620B1B0FC00E4E219 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAB320B1B0FC00E4E219 /* ImagePickerViewController.swift */; };
 		A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
+		A5554F5D20D92CE700E108A4 /* UITableView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5554F5C20D92CE700E108A4 /* UITableView+ReloadAnimation.swift */; };
+		A5554F5F20D9313D00E108A4 /* ViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5554F5E20D9313D00E108A4 /* ViewAnimation.swift */; };
+		A5554F6120D9316900E108A4 /* AlphaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5554F6020D9316900E108A4 /* AlphaAnimation.swift */; };
+		A5554F6320D9318F00E108A4 /* TransformAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5554F6220D9318F00E108A4 /* TransformAnimation.swift */; };
+		A5554F6520D93E3700E108A4 /* AnimatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5554F6420D93E3700E108A4 /* AnimatorProvider.swift */; };
 		A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */; };
 		A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */; };
 		A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD820C98E26000AD03F /* PanInteractionController.swift */; };
@@ -126,6 +131,11 @@
 		A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
+		A5554F5C20D92CE700E108A4 /* UITableView+ReloadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadAnimation.swift"; sourceTree = "<group>"; };
+		A5554F5E20D9313D00E108A4 /* ViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimation.swift; sourceTree = "<group>"; };
+		A5554F6020D9316900E108A4 /* AlphaAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAnimation.swift; sourceTree = "<group>"; };
+		A5554F6220D9318F00E108A4 /* TransformAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformAnimation.swift; sourceTree = "<group>"; };
+		A5554F6420D93E3700E108A4 /* AnimatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorProvider.swift; sourceTree = "<group>"; };
 		A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushTransition.swift; sourceTree = "<group>"; };
 		A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFallAnimation.swift; sourceTree = "<group>"; };
 		A5664FD820C98E26000AD03F /* PanInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanInteractionController.swift; sourceTree = "<group>"; };
@@ -219,6 +229,7 @@
 		A511374620A2FA7400BC7C7D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				A5554F5B20D92CD900E108A4 /* Animations */,
 				A593D6B420C8233000378D51 /* Custom Transitions */,
 				A595D21D20C035AE00330556 /* Default Image Picker Alert Settings */,
 				A595D21820C0352E00330556 /* Default App Settings Alert Strings Provider */,
@@ -473,6 +484,18 @@
 				A5D6A8132090E69700DF7495 /* Resources */,
 			);
 			path = SKUtils;
+			sourceTree = "<group>";
+		};
+		A5554F5B20D92CD900E108A4 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A5554F5C20D92CE700E108A4 /* UITableView+ReloadAnimation.swift */,
+				A5554F6420D93E3700E108A4 /* AnimatorProvider.swift */,
+				A5554F5E20D9313D00E108A4 /* ViewAnimation.swift */,
+				A5554F6020D9316900E108A4 /* AlphaAnimation.swift */,
+				A5554F6220D9318F00E108A4 /* TransformAnimation.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		A5664FD420C98863000AD03F /* Animations */ = {
@@ -1054,6 +1077,7 @@
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
+				A5554F5F20D9313D00E108A4 /* ViewAnimation.swift in Sources */,
 				A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */,
 				A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
@@ -1065,9 +1089,11 @@
 				A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */,
 				A520FAB620B1B0FC00E4E219 /* ImagePickerViewController.swift in Sources */,
 				A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */,
+				A5554F6520D93E3700E108A4 /* AnimatorProvider.swift in Sources */,
 				A5F47B5F20C910240073FDC8 /* ModalNavigationPresenter.swift in Sources */,
 				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
 				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
+				A5554F5D20D92CE700E108A4 /* UITableView+ReloadAnimation.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,
 				A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */,
@@ -1079,7 +1105,9 @@
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
+				A5554F6320D9318F00E108A4 /* TransformAnimation.swift in Sources */,
 				A511380120A3075100BC7C7D /* Module.swift in Sources */,
+				A5554F6120D9316900E108A4 /* AlphaAnimation.swift in Sources */,
 				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,
 				A511381220A31A3100BC7C7D /* Example.swift in Sources */,
 			);
