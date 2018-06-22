@@ -139,3 +139,39 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
     }
     
 }
+
+private extension UIImage {
+
+        func size(thatFits size: CGSize) -> CGSize {
+            let aspectWidth = calculateAspectWidth(width: size.width)
+            let aspectHeight = calculateAspectHeight(height: size.height)
+            let aspectRatio = minAspectRation(aspectWidth: aspectWidth, aspectHeight: aspectHeight)
+            return newSize(with: aspectRatio)
+        }
+        
+        // MARK: - Private -
+        
+        private func calculateAspectWidth(width: CGFloat) -> CGFloat {
+            return width / size.width
+        }
+        
+        private func calculateAspectHeight(height: CGFloat) -> CGFloat {
+            return height / size.height
+        }
+        
+        private func minAspectRation(aspectWidth: CGFloat, aspectHeight: CGFloat) -> CGFloat {
+            return min(aspectWidth, aspectHeight)
+        }
+        
+        private func maxAspectRation(aspectWidth: CGFloat, aspectHeight: CGFloat) -> CGFloat {
+            return max(aspectWidth, aspectHeight)
+        }
+        
+        private func newSize(with aspectRatio: CGFloat) -> CGSize {
+            var newSize = CGSize.zero
+            newSize.width = size.width * aspectRatio
+            newSize.height = size.height * aspectRatio
+            return newSize
+        }
+    
+}

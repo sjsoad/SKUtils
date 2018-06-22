@@ -49,7 +49,6 @@
 		A5445C0F20DD229C00B03832 /* ImagePreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5445C0E20DD229C00B03832 /* ImagePreviewCell.xib */; };
 		A5445C1120DD2B5B00B03832 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C1020DD2B5B00B03832 /* TestData.swift */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
-		A554CE3C20DD559C00E29B87 /* Image+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A554CE3B20DD559C00E29B87 /* Image+Resize.swift */; };
 		A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */; };
 		A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */; };
 		A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD820C98E26000AD03F /* PanInteractionController.swift */; };
@@ -155,7 +154,6 @@
 		A5445C1020DD2B5B00B03832 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
-		A554CE3B20DD559C00E29B87 /* Image+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+Resize.swift"; sourceTree = "<group>"; };
 		A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushTransition.swift; sourceTree = "<group>"; };
 		A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFallAnimation.swift; sourceTree = "<group>"; };
 		A5664FD820C98E26000AD03F /* PanInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanInteractionController.swift; sourceTree = "<group>"; };
@@ -294,7 +292,6 @@
 		A511375720A2FAB700BC7C7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A554CE3B20DD559C00E29B87 /* Image+Resize.swift */,
 				A511375820A2FAB700BC7C7D /* DesignableView.swift */,
 				A511375920A2FAB700BC7C7D /* UIView+Load.swift */,
 				A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */,
@@ -1197,7 +1194,6 @@
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
 				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
 				A5DF680F20D500F4005743EE /* DataSourceProviding.swift in Sources */,
-				A554CE3C20DD559C00E29B87 /* Image+Resize.swift in Sources */,
 				A5DF680D20D4F48E005743EE /* TableViewMoving.swift in Sources */,
 				A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */,
 				A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */,
