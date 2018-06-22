@@ -27,6 +27,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3VO-Ec-BQw">
                                 <rect key="frame" x="0.0" y="0.0" width="213" height="169"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="YV6-Ft-t7t"/>
+                                    <constraint firstAttribute="height" constant="169" id="sHQ-tu-PST"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,14 +46,12 @@
                     </scrollView>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="NuQ-sJ-Ebq" firstAttribute="leading" secondItem="FXL-qR-LE6" secondAttribute="leading" id="1gU-u4-3lo"/>
                 <constraint firstItem="DON-AU-z15" firstAttribute="centerY" secondItem="crx-bR-Kd3" secondAttribute="centerY" id="Atr-PR-hbw"/>
-                <constraint firstItem="3VO-Ec-BQw" firstAttribute="width" secondItem="FXL-qR-LE6" secondAttribute="width" id="K8U-sr-Dcd"/>
                 <constraint firstAttribute="trailing" secondItem="NuQ-sJ-Ebq" secondAttribute="trailing" id="Szo-VG-VO9"/>
                 <constraint firstItem="NuQ-sJ-Ebq" firstAttribute="top" secondItem="FXL-qR-LE6" secondAttribute="top" id="Trj-bp-2bT"/>
-                <constraint firstItem="3VO-Ec-BQw" firstAttribute="height" secondItem="FXL-qR-LE6" secondAttribute="height" id="ebV-n5-jOf"/>
                 <constraint firstItem="DON-AU-z15" firstAttribute="centerX" secondItem="crx-bR-Kd3" secondAttribute="centerX" id="ocr-b5-dH5"/>
                 <constraint firstAttribute="bottom" secondItem="NuQ-sJ-Ebq" secondAttribute="bottom" id="ues-Fl-r7q"/>
             </constraints>
@@ -59,9 +61,11 @@
                 <outlet property="activity" destination="DON-AU-z15" id="O3o-VD-2zd"/>
                 <outlet property="imagePreview" destination="3VO-Ec-BQw" id="PVv-u8-ADi"/>
                 <outlet property="imageViewBottomConstraint" destination="BkG-Zs-mNn" id="uUf-7l-Uy7"/>
+                <outlet property="imageViewHeightConstraint" destination="sHQ-tu-PST" id="NmV-89-Him"/>
                 <outlet property="imageViewLeadingConstraint" destination="Wg8-ww-lIi" id="bzh-kp-ZdH"/>
                 <outlet property="imageViewTopConstraint" destination="vu4-7a-ddv" id="Ybw-lC-a3A"/>
                 <outlet property="imageViewTrailingConstraint" destination="e0U-NR-uiP" id="3Rd-8w-Cla"/>
+                <outlet property="imageViewWidthConstraint" destination="YV6-Ft-t7t" id="zPu-cF-Yih"/>
                 <outlet property="scroll" destination="NuQ-sJ-Ebq" id="R6s-nB-kr6"/>
             </connections>
             <point key="canvasLocation" x="106.5" y="111.5"/>

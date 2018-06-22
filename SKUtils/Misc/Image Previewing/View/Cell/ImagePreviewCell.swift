@@ -14,6 +14,9 @@ import AlamofireImage
 
 class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusable, Nibable, ImagePreviewCellInterface, UIScrollViewDelegate {
     
+    private var miminumZoomScale: CGFloat = 1
+    private var maximumZoomScale: CGFloat = 3
+    
     var presenter: ImagePreviewOutput?
     
     @IBOutlet private(set) weak var activity: UIActivityIndicatorView!
@@ -24,6 +27,9 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
     @IBOutlet private(set) weak var imageViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet private(set) weak var imageViewLeadingConstraint: NSLayoutConstraint!
     @IBOutlet private(set) weak var imageViewTrailingConstraint: NSLayoutConstraint!
+    
+    @IBOutlet private(set) weak var imageViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet private(set) weak var imageViewHeightConstraint: NSLayoutConstraint!
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -40,36 +46,12 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
     // MARK: - Public -
     
     @objc func doubleTapped(_ sender: UITapGestureRecognizer) {
-//        var scale = CGFloat.minimum(scale, maximumZoomScale)
-//        scale = CGFloat.maximum(scale, self.minimumZoomScale)
-//
-//        var translatedZoomPoint : CGPoint = .zero
-//        translatedZoomPoint.x = zoomPoint.x + contentOffset.x
-//        translatedZoomPoint.y = zoomPoint.y + contentOffset.y
-//
-//        let zoomFactor = 1.0 / zoomScale
-//
-//        translatedZoomPoint.x *= zoomFactor
-//        translatedZoomPoint.y *= zoomFactor
-//
-//        var destinationRect : CGRect = .zero
-//        destinationRect.size.width = frame.width / scale
-//        destinationRect.size.height = frame.height / scale
-//        destinationRect.origin.x = translatedZoomPoint.x - destinationRect.width * 0.5
-//        destinationRect.origin.y = translatedZoomPoint.y - destinationRect.height * 0.5
-//
-//        if animated {
-//            UIView.animate(withDuration: 0.55, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.6, options: [.allowUserInteraction], animations: {
-//                self.zoom(to: destinationRect, animated: false)
-//            }, completion: {
-//                completed in
-//                if let delegate = self.delegate, delegate.responds(to: #selector(UIScrollViewDelegate.scrollViewDidEndZooming(_:with:atScale:))), let view = delegate.viewForZooming?(in: self) {
-//                    delegate.scrollViewDidEndZooming!(self, with: view, atScale: scale)
-//                }
-//            })
-//        } else {
-//            zoom(to: destinationRect, animated: false)
-//        }
+        guard scroll.zoomScale < scroll.maximumZoomScale else {
+            resetZoomScale()
+            return }
+        let location = sender.location(in: imagePreview)
+        let rect = CGRect(origin: location, size: .zero)
+        scroll.zoom(to: rect, animated: true)
     }
     
     // MARK: - Private -
@@ -97,10 +79,26 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
     }
     
     private func calculateZoomScale(for image: UIImage) {
-
+        let size = image.size(thatFits: bounds.size)
+        scroll.minimumZoomScale = miminumZoomScale
+        var calculatedMaximumZoomScale = maximumZoomScale
+        if size.width < size.height {
+            calculatedMaximumZoomScale = (bounds.size.width / size.width)
+        } else {
+            calculatedMaximumZoomScale = (bounds.size.height / size.height)
+        }
+        scroll.maximumZoomScale = max(calculatedMaximumZoomScale, maximumZoomScale)
+    }
+    
+    private func calculateSize(of image: UIImage) {
+        let size = image.size(thatFits: bounds.size)
+        imageViewWidthConstraint.constant = size.width
+        imageViewHeightConstraint.constant = size.height
+        layoutIfNeeded()
     }
     
     private func reset(for image: UIImage) {
+        calculateSize(of: image)
         calculateZoomScale(for: image)
         resetZoomScale()
         layoutImage()
