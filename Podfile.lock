@@ -1,6 +1,8 @@
 PODS:
   - AERecord (4.1.0)
   - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
   - AlertActionBuilder (0.0.2)
   - NVActivityIndicatorView (4.2.1):
     - NVActivityIndicatorView/Presenter (= 4.2.1)
@@ -58,6 +60,7 @@ PODS:
   - SwiftyDrop (4.1.0)
 
 DEPENDENCIES:
+  - AlamofireImage
   - AlertActionBuilder
   - SKActivityViewable
   - SKAlertControllerBuilder
@@ -87,6 +90,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AERecord
     - Alamofire
+    - AlamofireImage
     - AlertActionBuilder
     - NVActivityIndicatorView
     - SKActivityViewable
@@ -117,6 +121,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   AlertActionBuilder: fd594b58b267eb291d223a840d87ec8e2769339e
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   SKActivityViewable: 7ee5e9ef8cb24f66ef4605773518aba5a8f7a28e
@@ -144,6 +149,6 @@ SPEC CHECKSUMS:
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 96b6cb3534ec733a0e73a50b83544b52da19b0dd
+PODFILE CHECKSUM: 3daac6862c36942adf2742bc942e06e68120a769
 
 COCOAPODS: 1.5.3

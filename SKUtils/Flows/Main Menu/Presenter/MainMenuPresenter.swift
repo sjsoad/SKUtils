@@ -59,7 +59,8 @@ class MainMenuPresenter: NSObject {
                 Example(title: "Service Permissions Example", type: .servicePermissions),
                 Example(title: "Network Example", type: .networking),
                 Example(title: "Custom Modal Transition Example", type: .modalTransition),
-                Example(title: "Custom Presentation Example", type: .customPresentation)]
+                Example(title: "Custom Presentation Example", type: .customPresentation),
+                Example(title: "Image Previewing Example", type: .imagePreviewing)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -133,6 +134,9 @@ extension MainMenuPresenter: MainMenuOutput {
             modalNavigationModule.interface.modalPresentationStyle = .custom
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
             return
+        case .imagePreviewing:
+            let imagePreviewingModule = ModuleBuilder.imagePreviewingModule()
+            interface = imagePreviewingModule.interface
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }
