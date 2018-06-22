@@ -47,8 +47,8 @@ class AlertControllerShowingPresenter: NSObject {
         }
         // #4 call showAlertController with configurations
         // Use one of 2 provided methods
-//        view?.showAlertController(with: <#T##String?#>, message: <#T##String?#>, actionsConfiguration: <#T##[AlertActionConfig]#>, preferredStyle: <#T##UIAlertControllerStyle#>,
-//                                  completion: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
+//        view?.showAlertController(with: <#T##String?#>, message: <#T##String?#>, actionsConfiguration: <#T##[AlertActionConfig]#>,
+//        preferredStyle: <#T##UIAlertControllerStyle#>, completion: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
         view?.showAlertController(with: "Title", message: "Message", actionsConfiguration: [defaultAction, destructiveAction, cancelAction],
                                   preferredStyle: style, completion: {
                                     print("completion of presenting")

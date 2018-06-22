@@ -40,8 +40,7 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
     // MARK: - Public -
     
     @objc func doubleTapped(_ sender: UITapGestureRecognizer) {
-//        let zoomPoint = sender.
-//        var scale = CGFloat.minimum(scale, scroll)
+//        var scale = CGFloat.minimum(scale, maximumZoomScale)
 //        scale = CGFloat.maximum(scale, self.minimumZoomScale)
 //
 //        var translatedZoomPoint : CGPoint = .zero
@@ -53,11 +52,24 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
 //        translatedZoomPoint.x *= zoomFactor
 //        translatedZoomPoint.y *= zoomFactor
 //
-//        var destinationRect: CGRect = .zero
+//        var destinationRect : CGRect = .zero
 //        destinationRect.size.width = frame.width / scale
 //        destinationRect.size.height = frame.height / scale
 //        destinationRect.origin.x = translatedZoomPoint.x - destinationRect.width * 0.5
 //        destinationRect.origin.y = translatedZoomPoint.y - destinationRect.height * 0.5
+//
+//        if animated {
+//            UIView.animate(withDuration: 0.55, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.6, options: [.allowUserInteraction], animations: {
+//                self.zoom(to: destinationRect, animated: false)
+//            }, completion: {
+//                completed in
+//                if let delegate = self.delegate, delegate.responds(to: #selector(UIScrollViewDelegate.scrollViewDidEndZooming(_:with:atScale:))), let view = delegate.viewForZooming?(in: self) {
+//                    delegate.scrollViewDidEndZooming!(self, with: view, atScale: scale)
+//                }
+//            })
+//        } else {
+//            zoom(to: destinationRect, animated: false)
+//        }
     }
     
     // MARK: - Private -
@@ -75,10 +87,10 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
     
     private func layoutImage() {
         layoutIfNeeded()
-        let yOffset = max(0, (bounds.size.height - imagePreview.frame.height) / 2)
+        let yOffset = max(0, (bounds.size.height - imagePreview.frame.height) * 0.5)
         imageViewTopConstraint.constant = yOffset
         imageViewBottomConstraint.constant = yOffset
-        let xOffset = max(0, (bounds.size.width - imagePreview.frame.width) / 2)
+        let xOffset = max(0, (bounds.size.width - imagePreview.frame.width) * 0.5)
         imageViewLeadingConstraint.constant = xOffset
         imageViewTrailingConstraint.constant = xOffset
         layoutIfNeeded()
@@ -88,12 +100,7 @@ class ImagePreviewCell: UICollectionViewCell, DataSourceObjectInterface, Reusabl
 
     }
     
-    private func updateContaints(for image: UIImage) {
-        
-    }
-    
     private func reset(for image: UIImage) {
-        updateContaints(for: image)
         calculateZoomScale(for: image)
         resetZoomScale()
         layoutImage()
