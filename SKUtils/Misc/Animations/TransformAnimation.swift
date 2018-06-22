@@ -10,8 +10,8 @@ import UIKit
 
 open class TransformAnimation: ViewAnimation {
     
-    private var fromTransfrom: CGAffineTransform = .identity
-    private var toTransform: CGAffineTransform = .identity
+    private var fromTransfrom: CGAffineTransform
+    private var toTransform: CGAffineTransform
     
     public init(fromTransfrom: CGAffineTransform = .identity, toTransform: CGAffineTransform = .identity) {
         self.fromTransfrom = fromTransfrom
