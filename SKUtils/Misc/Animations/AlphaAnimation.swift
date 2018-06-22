@@ -10,8 +10,8 @@ import UIKit
 
 open class AlphaAnimation: ViewAnimation {
     
-    private var fromAlpha: CGFloat = 0
-    private var toAlpha: CGFloat = 1
+    private var fromAlpha: CGFloat
+    private var toAlpha: CGFloat
     
     public init(fromAlpha: CGFloat = 0, toAlpha: CGFloat = 1) {
         self.fromAlpha = fromAlpha
