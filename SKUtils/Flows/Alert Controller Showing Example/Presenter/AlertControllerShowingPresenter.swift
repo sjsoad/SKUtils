@@ -20,7 +20,7 @@ protocol AlertControllerShowingExampleInterface: class, AlertControllerShowingIn
 protocol AlertControllerShowingOutput {
     
     func viewTriggeredShowAlertEvent()
-    func viewTriggeredShowActionSheetEvent()
+    func viewTriggeredShowActionSheetEvent(sender: UIView)
     
 }
 
@@ -34,7 +34,7 @@ class AlertControllerShowingPresenter: NSObject {
     
     // MARK: - Private -
     
-    private func showAlertController(with style: UIAlertControllerStyle) {
+    private func showAlertController(with style: UIAlertControllerStyle, sender: UIView? = nil) {
         // #3 use AlertActionConfig for creating alert controller actions
         let defaultAction = AlertActionConfig(title: "Default Action", style: .default) { (_) in
             print("action handler")
@@ -46,10 +46,19 @@ class AlertControllerShowingPresenter: NSObject {
             print("action handler")
         }
         // #4 call showAlertController with configurations
+        // Use one of 2 provided methods
+//        view?.showAlertController(with: <#T##String?#>, message: <#T##String?#>, actionsConfiguration: <#T##[AlertActionConfig]#>, preferredStyle: <#T##UIAlertControllerStyle#>,
+//                                  completion: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
         view?.showAlertController(with: "Title", message: "Message", actionsConfiguration: [defaultAction, destructiveAction, cancelAction],
                                   preferredStyle: style, completion: {
                                     print("completion of presenting")
+        }, popoveConfigurationHandler: { (presentationController) in
+            // #5 configure poper controller if needed - required for actions sheet on iPad, in other cases can be ignored
+            presentationController.canOverlapSourceViewRect = true
+            presentationController.sourceView = sender
+            presentationController.sourceRect = sender?.frame ?? .zero
         })
+        
     }
     
 }
@@ -62,8 +71,8 @@ extension AlertControllerShowingPresenter: AlertControllerShowingOutput {
         showAlertController(with: .alert)
     }
     
-    func viewTriggeredShowActionSheetEvent() {
-        showAlertController(with: .actionSheet)
+    func viewTriggeredShowActionSheetEvent(sender: UIView) {
+        showAlertController(with: .actionSheet, sender: sender)
     }
 
 }

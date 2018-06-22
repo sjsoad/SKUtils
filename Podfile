@@ -9,15 +9,15 @@ def shared_pods
     
     pod 'SKActivityViewable'#, :path => '/Users/sergey/Work/Pods/ActivityViewable'
     pod 'SKAlertViewable'#, :path => '/Users/sergey/Work/Pods/AlertViewable'
-    pod 'AlertActionBuilder'#, :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
-    pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
-    pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
+    pod 'AlertActionBuilder', :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
+    pod 'SKAlertControllerBuilder', :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
+    pod 'SKAlertControllerShowing', :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
     pod 'SKTextInputsManager'#, :path => '/Users/sergey/Projects/TextInputsManager'
     pod 'SKTextInputs'#, :path => '/Users/sergey/Work/Pods/TextInputs'
     pod 'SKPickerViewManager'#, :path => '/Users/sergey/Work/Pods/PickerViewManager'
     pod 'SKXibLoadableView'#, :path => '/Users/sergey/Work/Pods/XibLoadableView'
-    pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Projects/AppSettingsShowing'
-    pod 'SKImagePicking'#, :path => '/Users/Sergey/Projects/ImagePicking'
+    pod 'SKAppSettingsShowing', :path => '/Users/Sergey/Work/Pods/AppSettingsShowing'
+    pod 'SKImagePicking', :path => '/Users/Sergey/Work/Pods/ImagePicking'
     
     # Capabilities permissions
 

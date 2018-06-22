@@ -68,7 +68,7 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
     private func showAuthorizedAlert() {
         let cancelAction = AlertActionConfig(title: "Ok", style: .cancel)
         view?.showAlertController(with: "Permissions Granted", message: nil, actionsConfiguration: [cancelAction], preferredStyle: .alert,
-                                  completion: nil)
+                                  completion: nil, popoveConfigurationHandler: nil)
     }
     
     // MARK: - Permissions -

@@ -21,21 +21,9 @@ class AlertControllerShowingViewController: UIViewController, AlertControllerSho
     }
 
     @IBAction func showActionSheetButtonPressed(_ sender: UIButton) {
-        presenter?.viewTriggeredShowActionSheetEvent()
+        presenter?.viewTriggeredShowActionSheetEvent(sender: sender)
     }
     
     // MARK: - AlertControllerShowingInterface -
-    
-}
-
-// #1 If you are showing action sheet on iPad you should implement UIPopoverPresentationControllerDelegate
-
-extension AlertControllerShowingViewController: UIPopoverPresentationControllerDelegate {
-    
-    func prepareForPopoverPresentation(_ popoverPresentationController: UIPopoverPresentationController) {
-        popoverPresentationController.canOverlapSourceViewRect = false
-        popoverPresentationController.sourceView = actionSheetButton
-        popoverPresentationController.sourceRect = actionSheetButton.frame
-    }
     
 }
