@@ -46,4 +46,8 @@ open class TransformAnimationProvider: ViewAnimationProvider {
         return TransformAnimationProvider(fromTransfrom: CGAffineTransform(translationX: position, y: 0))
     }
     
+    class func scale(scaleX: CGFloat = 1.05, scaleY: CGFloat = 1.05) -> ViewAnimationProvider {
+        return TransformAnimationProvider(toTransform: CGAffineTransform(scaleX: scaleX, y: scaleY))
+    }
+    
 }

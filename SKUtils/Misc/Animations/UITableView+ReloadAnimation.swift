@@ -10,17 +10,16 @@ import UIKit
 
 extension UITableView {
     
-    func reload(with animations: [ViewAnimationProvider]?, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(),
+    func reload(with animationsProviders: [ViewAnimationProvider], animatorProvider: AnimatorProvider = DefaultAnimatorProvider(),
                 delay: TimeInterval = 0.1) {
         reloadData()
-        guard let animations = animations else { return }
         let cells = visibleCells
-        prepare(cells: cells, for: animations)
+        prepare(cells: cells, for: animationsProviders)
         for (index, cell) in cells.enumerated() {
             let animator = animatorProvider.animator()
             animator.addAnimations {
-                for animation in animations {
-                    animation.perform(for: cell)
+                for animationProvider in animationsProviders {
+                    animationProvider.perform(for: cell)
                 }
             }
             animator.startAnimation(afterDelay: delay * Double(index))
@@ -29,10 +28,10 @@ extension UITableView {
     
     // MARK: - Private -
     
-    private func prepare(cells: [UITableViewCell], for animations: [ViewAnimationProvider]) {
+    private func prepare(cells: [UITableViewCell], for animationsProviders: [ViewAnimationProvider]) {
         cells.forEach { (cell) in
-            for animation in animations {
-                animation.prepare(cell)
+            for animationProvider in animationsProviders {
+                animationProvider.prepare(cell)
             }
         }
     }

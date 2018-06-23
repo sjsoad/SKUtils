@@ -25,6 +25,7 @@ enum ModuleType {
     case modalTransition
     case customPresentation
     case imagePreviewing
+    case viewAnimations
 }
 
 class ModuleBuilder: NSObject {
@@ -125,6 +126,13 @@ class ModuleBuilder: NSObject {
         let initialItemIndex = 2
         let viewController = ImagePreviewingViewController()
         let presenter = ImagePreviewingPresenter(with: viewController, previewItems: previewItems, initialItemIndex: initialItemIndex)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+
+    class func viewAnimationsModule() -> Module<ViewAnimationsPresenter, UIViewController> {
+        let viewController = ViewAnimationsViewController()
+        let presenter = ViewAnimationsPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }

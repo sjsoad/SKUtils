@@ -10,18 +10,17 @@ import UIKit
 
 extension UICollectionView {
     
-    func reload(with animations: [ViewAnimationProvider]?, random: Bool = false, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(),
-                delay: TimeInterval = 0.1) {
+    func reload(with animationsProviders: [ViewAnimationProvider], random: Bool = false,
+                animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.1) {
         reloadData()
         layoutSubviews()
-        guard let animations = animations else { return }
         let cells = random ? visibleCells : sortedCells()
-        prepare(cells: cells, for: animations)
+        prepare(cells: cells, for: animationsProviders)
         for (index, cell) in cells.enumerated() {
             let animator = animatorProvider.animator()
             animator.addAnimations {
-                for animation in animations {
-                    animation.perform(for: cell)
+                for animationProvider in animationsProviders {
+                    animationProvider.perform(for: cell)
                 }
             }
             animator.startAnimation(afterDelay: delay * Double(index))
@@ -34,10 +33,10 @@ extension UICollectionView {
         return indexPathsForVisibleItems.sorted().compactMap({ cellForItem(at: $0) })
     }
     
-    private func prepare(cells: [UICollectionViewCell], for animations: [ViewAnimationProvider]) {
+    private func prepare(cells: [UICollectionViewCell], for animationsProviders: [ViewAnimationProvider]) {
         cells.forEach { (cell) in
-            for animation in animations {
-                animation.prepare(cell)
+            for animationProvider in animationsProviders {
+                animationProvider.prepare(cell)
             }
         }
     }
