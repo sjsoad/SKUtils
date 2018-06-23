@@ -13,6 +13,7 @@ pod 'SKImagePicking' - to add provider for UIImagePickerController
 pod 'SKActivityViewable'  
 pod 'SKAlertViewable'  
 pod 'SKXibLoadableView'  
+pod 'SKImagePreviewing'  
 
 # Capabilities permissions  
 
