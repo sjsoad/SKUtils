@@ -10,6 +10,10 @@ import UIKit
 
 extension UIView {
 
+    func touchAnimation() {
+        animate(with: [TransformAnimationProvider.scale()], animatorProvider: DefaultAnimatorProvider(), reverse: true)
+    }
+    
     func animate(with animationProviders: [ViewAnimationProvider], animatorProvider: AnimatorProvider = DefaultAnimatorProvider(),
                  reverse: Bool = true) {
         let prepareAnimator = animatorProvider.animator()

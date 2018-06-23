@@ -25,8 +25,7 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
     // MARK: - IBActions -
     
     @IBAction func rippleEffectButtonPressed(_ sender: UIButton) {
-        sender.animate(with: [TransformAnimationProvider(fromTransfrom: .identity, toTransform: CGAffineTransform(scaleX: 1, y: -1)),
-                              AlphaAnimationProvider(fromAlpha: 1, toAlpha: 0.5)], reverse: false)
+        sender.touchAnimation()
     }
     
     // MARK: - ViewAnimationsInterface -
