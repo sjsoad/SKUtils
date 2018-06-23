@@ -1,5 +1,5 @@
 //
-//  ViewAnimation.swift
+//  ViewAnimationProvider.swift
 //  SKUtils
 //
 //  Created by Sergey on 19.06.2018.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-public protocol ViewAnimation {
+public protocol ViewAnimationProvider {
 
     func prepare(_ view: UIView)
     func perform(for view: UIView)

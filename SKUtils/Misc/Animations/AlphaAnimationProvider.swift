@@ -1,5 +1,5 @@
 //
-//  AlphaAnimation.swift
+//  AlphaAnimationProvider.swift
 //  SKUtils
 //
 //  Created by Sergey on 19.06.2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class AlphaAnimation: ViewAnimation {
+open class AlphaAnimationProvider: ViewAnimationProvider {
     
     private var fromAlpha: CGFloat
     private var toAlpha: CGFloat

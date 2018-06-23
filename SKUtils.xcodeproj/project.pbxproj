@@ -60,9 +60,9 @@
 		A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */; };
 		A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */; };
 		A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */; };
-		A5A5754E20DB73D70052498D /* ViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754920DB73D70052498D /* ViewAnimation.swift */; };
-		A5A5754F20DB73D70052498D /* TransformAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754A20DB73D70052498D /* TransformAnimation.swift */; };
-		A5A5755020DB73D70052498D /* AlphaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754B20DB73D70052498D /* AlphaAnimation.swift */; };
+		A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754920DB73D70052498D /* ViewAnimationProvider.swift */; };
+		A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */; };
+		A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */; };
 		A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */; };
 		A5A5755220DB73D70052498D /* AnimatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754D20DB73D70052498D /* AnimatorProvider.swift */; };
 		A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */; };
@@ -158,9 +158,9 @@
 		A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppSettingsAlertStringsProvider.swift; sourceTree = "<group>"; };
 		A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImagePickerAlertSettings.swift; sourceTree = "<group>"; };
 		A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
-		A5A5754920DB73D70052498D /* ViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimation.swift; sourceTree = "<group>"; };
-		A5A5754A20DB73D70052498D /* TransformAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformAnimation.swift; sourceTree = "<group>"; };
-		A5A5754B20DB73D70052498D /* AlphaAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAnimation.swift; sourceTree = "<group>"; };
+		A5A5754920DB73D70052498D /* ViewAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationProvider.swift; sourceTree = "<group>"; };
+		A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformAnimationProvider.swift; sourceTree = "<group>"; };
+		A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAnimationProvider.swift; sourceTree = "<group>"; };
 		A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadAnimation.swift"; sourceTree = "<group>"; };
 		A5A5754D20DB73D70052498D /* AnimatorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorProvider.swift; sourceTree = "<group>"; };
 		A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewablePresenter.swift; sourceTree = "<group>"; };
@@ -642,9 +642,9 @@
 		A5A5754820DB73D70052498D /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				A5A5754920DB73D70052498D /* ViewAnimation.swift */,
-				A5A5754A20DB73D70052498D /* TransformAnimation.swift */,
-				A5A5754B20DB73D70052498D /* AlphaAnimation.swift */,
+				A5A5754920DB73D70052498D /* ViewAnimationProvider.swift */,
+				A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */,
+				A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */,
 				A5A5754D20DB73D70052498D /* AnimatorProvider.swift */,
 				A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */,
 				A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */,
@@ -1093,13 +1093,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */,
-				A5A5754E20DB73D70052498D /* ViewAnimation.swift in Sources */,
+				A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */,
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
 				A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */,
 				A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */,
 				A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */,
 				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
-				A5A5755020DB73D70052498D /* AlphaAnimation.swift in Sources */,
+				A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */,
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
@@ -1124,7 +1124,7 @@
 				A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */,
 				A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
-				A5A5754F20DB73D70052498D /* TransformAnimation.swift in Sources */,
+				A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
 				A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,

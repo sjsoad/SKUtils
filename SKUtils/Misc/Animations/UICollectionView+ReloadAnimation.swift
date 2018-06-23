@@ -10,7 +10,7 @@ import UIKit
 
 extension UICollectionView {
     
-    func reload(with animations: [ViewAnimation]?, random: Bool = false, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(),
+    func reload(with animations: [ViewAnimationProvider]?, random: Bool = false, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(),
                 delay: TimeInterval = 0.1) {
         reloadData()
         layoutSubviews()
@@ -34,7 +34,7 @@ extension UICollectionView {
         return indexPathsForVisibleItems.sorted().compactMap({ cellForItem(at: $0) })
     }
     
-    private func prepare(cells: [UICollectionViewCell], for animations: [ViewAnimation]) {
+    private func prepare(cells: [UICollectionViewCell], for animations: [ViewAnimationProvider]) {
         cells.forEach { (cell) in
             for animation in animations {
                 animation.prepare(cell)

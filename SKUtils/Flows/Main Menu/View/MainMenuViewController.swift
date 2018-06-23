@@ -29,19 +29,19 @@ class MainMenuViewController: UIViewController, MainMenuInterface, AnimationCont
     @objc func reload() {
         // Animation examples
         // 1
-//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.flipFromBottom()])
+//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.flipFromBottom()])
         // 2
-//        tableView.reload(with: [AlphaAnimation()])
+//        tableView.reload(with: [AlphaAnimationProvider()])
         // 3
-        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromVertical(position: tableView.bounds.maxY)],
+        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromVertical(position: tableView.bounds.maxY)],
                          animatorProvider: ControlPointAnimatorProvider())
         // 4
-//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromVertical(position: -tableView.bounds.maxY)])
+//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromVertical(position: -tableView.bounds.maxY)])
         // 3
-//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromHorizontal(position: tableView.bounds.maxX)],
+//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromHorizontal(position: tableView.bounds.maxX)],
 //                         animatorProvider: SpringAnimatorProvider())
         // 4
-//        tableView.reload(with: [AlphaAnimation(), TransformAnimation.moveFromHorizontal(position: -tableView.bounds.maxX)],
+//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromHorizontal(position: -tableView.bounds.maxX)],
 //                         animatorProvider: SpringAnimatorProvider())
     }
     

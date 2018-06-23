@@ -10,7 +10,8 @@ import UIKit
 
 extension UITableView {
     
-    func reload(with animations: [ViewAnimation]?, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.1) {
+    func reload(with animations: [ViewAnimationProvider]?, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(),
+                delay: TimeInterval = 0.1) {
         reloadData()
         guard let animations = animations else { return }
         let cells = visibleCells
@@ -28,7 +29,7 @@ extension UITableView {
     
     // MARK: - Private -
     
-    private func prepare(cells: [UITableViewCell], for animations: [ViewAnimation]) {
+    private func prepare(cells: [UITableViewCell], for animations: [ViewAnimationProvider]) {
         cells.forEach { (cell) in
             for animation in animations {
                 animation.prepare(cell)
