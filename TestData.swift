@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import SKImagePreviewing
+import SKDataSources
 
 class TestsDataProvider {
     

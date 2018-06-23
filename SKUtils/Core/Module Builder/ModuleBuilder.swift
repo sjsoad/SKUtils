@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SKImagePreviewing
 
 enum ModuleType {
     case activityViewable

@@ -40,13 +40,6 @@
 		A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAB220B1B0FC00E4E219 /* ImagePickerPresenter.swift */; };
 		A520FAB620B1B0FC00E4E219 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAB320B1B0FC00E4E219 /* ImagePickerViewController.swift */; };
 		A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */; };
-		A5445C0320DD158E00B03832 /* ImagePreviewingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C0020DD158E00B03832 /* ImagePreviewingPresenter.swift */; };
-		A5445C0420DD158E00B03832 /* ImagePreviewingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C0120DD158E00B03832 /* ImagePreviewingViewController.swift */; };
-		A5445C0520DD158E00B03832 /* ImagePreviewingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5445C0220DD158E00B03832 /* ImagePreviewingViewController.xib */; };
-		A5445C0820DD1DA600B03832 /* ImagePreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C0720DD1DA600B03832 /* ImagePreviewItem.swift */; };
-		A5445C0B20DD21D100B03832 /* ImagePreviewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C0920DD21D100B03832 /* ImagePreviewCellPresenter.swift */; };
-		A5445C0C20DD21D100B03832 /* ImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C0A20DD21D100B03832 /* ImagePreviewCell.swift */; };
-		A5445C0F20DD229C00B03832 /* ImagePreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5445C0E20DD229C00B03832 /* ImagePreviewCell.xib */; };
 		A5445C1120DD2B5B00B03832 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C1020DD2B5B00B03832 /* TestData.swift */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
 		A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */; };
@@ -144,13 +137,6 @@
 		A520FAB220B1B0FC00E4E219 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
 		A520FAB320B1B0FC00E4E219 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
-		A5445C0020DD158E00B03832 /* ImagePreviewingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewingPresenter.swift; sourceTree = "<group>"; };
-		A5445C0120DD158E00B03832 /* ImagePreviewingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewingViewController.swift; sourceTree = "<group>"; };
-		A5445C0220DD158E00B03832 /* ImagePreviewingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePreviewingViewController.xib; sourceTree = "<group>"; };
-		A5445C0720DD1DA600B03832 /* ImagePreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewItem.swift; sourceTree = "<group>"; };
-		A5445C0920DD21D100B03832 /* ImagePreviewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewCellPresenter.swift; sourceTree = "<group>"; };
-		A5445C0A20DD21D100B03832 /* ImagePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewCell.swift; sourceTree = "<group>"; };
-		A5445C0E20DD229C00B03832 /* ImagePreviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePreviewCell.xib; sourceTree = "<group>"; };
 		A5445C1020DD2B5B00B03832 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
@@ -259,7 +245,6 @@
 		A511374620A2FA7400BC7C7D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				A5445BFD20DD157A00B03832 /* Image Previewing */,
 				A5A5754820DB73D70052498D /* Animations */,
 				A5DF680320D4EEE7005743EE /* TableView Protocols */,
 				A593D6B420C8233000378D51 /* Custom Transitions */,
@@ -484,52 +469,6 @@
 				A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A5445BFD20DD157A00B03832 /* Image Previewing */ = {
-			isa = PBXGroup;
-			children = (
-				A5445C0620DD1D9A00B03832 /* Model */,
-				A5445BFE20DD157A00B03832 /* Presenter */,
-				A5445BFF20DD157A00B03832 /* View */,
-			);
-			path = "Image Previewing";
-			sourceTree = "<group>";
-		};
-		A5445BFE20DD157A00B03832 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				A5445C0020DD158E00B03832 /* ImagePreviewingPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		A5445BFF20DD157A00B03832 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A5445C0D20DD21DA00B03832 /* Cell */,
-				A5445C0120DD158E00B03832 /* ImagePreviewingViewController.swift */,
-				A5445C0220DD158E00B03832 /* ImagePreviewingViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A5445C0620DD1D9A00B03832 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A5445C0720DD1DA600B03832 /* ImagePreviewItem.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A5445C0D20DD21DA00B03832 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				A5445C0920DD21D100B03832 /* ImagePreviewCellPresenter.swift */,
-				A5445C0E20DD229C00B03832 /* ImagePreviewCell.xib */,
-				A5445C0A20DD21D100B03832 /* ImagePreviewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		A54DE43A2090DD97001C4410 = {
@@ -998,7 +937,6 @@
 				A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */,
 				A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */,
 				A520FAA520B181A900E4E219 /* AppSettingsViewController.xib in Resources */,
-				A5445C0520DD158E00B03832 /* ImagePreviewingViewController.xib in Resources */,
 				A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */,
 				A5F47B6120C910240073FDC8 /* ModalNavigationViewController.xib in Resources */,
 				A520FA9720B17B1900E4E219 /* XibLoadableViewController.xib in Resources */,
@@ -1008,7 +946,6 @@
 				A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */,
 				A5BF218D20AEFA890064B3F8 /* TextInputsManagerViewController.xib in Resources */,
 				A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */,
-				A5445C0F20DD229C00B03832 /* ImagePreviewCell.xib in Resources */,
 				A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */,
 				A520FAAE20B1962F00E4E219 /* ServicePermissionsViewController.xib in Resources */,
 			);
@@ -1047,6 +984,7 @@
 				"${BUILT_PRODUCTS_DIR}/SKCustomNavigation/SKCustomNavigation.framework",
 				"${BUILT_PRODUCTS_DIR}/SKDataSources/SKDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/SKImagePicking/SKImagePicking.framework",
+				"${BUILT_PRODUCTS_DIR}/SKImagePreviewing/SKImagePreviewing.framework",
 				"${BUILT_PRODUCTS_DIR}/SKLocalDataStorage/SKLocalDataStorage.framework",
 				"${BUILT_PRODUCTS_DIR}/SKLocationPermissions/SKLocationPermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKMicrophonePermissions/SKMicrophonePermissions.framework",
@@ -1078,6 +1016,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCustomNavigation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePicking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePreviewing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocalDataStorage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocationPermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKMicrophonePermissions.framework",
@@ -1158,14 +1097,12 @@
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
 				A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */,
 				A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */,
-				A5445C0820DD1DA600B03832 /* ImagePreviewItem.swift in Sources */,
 				A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */,
 				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
 				A5A5755020DB73D70052498D /* AlphaAnimation.swift in Sources */,
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
-				A5445C0C20DD21D100B03832 /* ImagePreviewCell.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
 				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
@@ -1178,7 +1115,6 @@
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
 				A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
-				A5445C0420DD158E00B03832 /* ImagePreviewingViewController.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5DF680B20D4F3F9005743EE /* TableViewDeleting.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
@@ -1200,7 +1136,6 @@
 				A520FAB620B1B0FC00E4E219 /* ImagePickerViewController.swift in Sources */,
 				A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */,
 				A5F47B5F20C910240073FDC8 /* ModalNavigationPresenter.swift in Sources */,
-				A5445C0320DD158E00B03832 /* ImagePreviewingPresenter.swift in Sources */,
 				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
 				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
@@ -1216,7 +1151,6 @@
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
-				A5445C0B20DD21D100B03832 /* ImagePreviewCellPresenter.swift in Sources */,
 				A511380120A3075100BC7C7D /* Module.swift in Sources */,
 				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,
 				A511381220A31A3100BC7C7D /* Example.swift in Sources */,
