@@ -19,7 +19,7 @@ def shared_pods
     pod 'SKXibLoadableView'#, :path => '/Users/sergey/Work/Pods/XibLoadableView'
     pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Work/Pods/AppSettingsShowing'
     pod 'SKImagePicking'#, :path => '/Users/Sergey/Work/Pods/ImagePicking'
-    pod 'SKImagePreviewing'#, :path => '/Users/Sergey/Projects/Image-Previewing'
+    pod 'SKImagePreviewing'#, :path => '/Users/Sergey/Work/Pods/Image-Previewing'
     
     # Capabilities permissions
 
@@ -42,11 +42,11 @@ def shared_pods
     
     # Networking
     
-    pod 'SKNetworkingLib'#, :path => '/Users/Sergey/Projects/Networking'
+    pod 'SKNetworkingLib'#, :path => '/Users/Sergey/Work/Pods/Networking'
     
     # Custom Navigation
     
-    pod 'SKCustomNavigation'#, :path => '/Users/Sergey/Projects/CustomNavigation'
+    pod 'SKCustomNavigation'#, :path => '/Users/Sergey/Work/Pods/CustomNavigation'
 
 end
 
