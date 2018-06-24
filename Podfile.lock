@@ -28,7 +28,7 @@ PODS:
     - SKServicePermissions
   - SKCustomNavigation (0.0.5)
   - SKDataSources (0.0.6)
-  - SKImagePicking (0.0.4):
+  - SKImagePicking (0.0.5):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -139,7 +139,7 @@ SPEC CHECKSUMS:
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCustomNavigation: eb16bd8656e542769d59a8a8463e9ad9febbb325
   SKDataSources: 1f7f155cc79d917a6e284d89260473b51555a6f6
-  SKImagePicking: c383fa7de9ba2e1cae121a1fe90df68ac25e9b5e
+  SKImagePicking: c112454b99b50cd1081f3cdb688a905c358d9be0
   SKImagePreviewing: beb608a63cc0c560810027acb71fedea65241438
   SKLocalDataStorage: 4aec2ab30882ce3e5fd4c5e97199dfbfd83cf8ef
   SKLocationPermissions: 9eb44edf1e24269b4707d92768f6c559e096f967
@@ -155,6 +155,6 @@ SPEC CHECKSUMS:
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: f4bb8dcff93aae1ce968e19ea636a1a747bfa0a3
+PODFILE CHECKSUM: 239560281547642b081f102538d047700c424aec
 
 COCOAPODS: 1.5.3

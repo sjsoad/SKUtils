@@ -7,11 +7,8 @@
 //
 
 import UIKit
-// #1 import module
-import SKImagePicking
 
-// #2 add support of ImagePickingConfigurating protocol
-class ImagePickerViewController: UIViewController, ImagePickerInterface, ImagePickingConfigurating {
+class ImagePickerViewController: UIViewController, ImagePickerInterface {
 
     var presenter: ImagePickerOutput?
 
@@ -20,7 +17,7 @@ class ImagePickerViewController: UIViewController, ImagePickerInterface, ImagePi
     // MARK: - IBActions -
     
     @IBAction func pickImageButtonPressed(_ sender: UIButton) {
-        presenter?.viewTriggeredCallImagePickerEvent()
+        presenter?.viewTriggeredShowImagePickerAlert()
     }
     
     // MARK: - ImagePickerInterface -
@@ -28,17 +25,6 @@ class ImagePickerViewController: UIViewController, ImagePickerInterface, ImagePi
     func set(image: UIImage?) {
         imageView.image = image
     }
-    
-    // MARK: - ImagePickingInterface -
-    
-    // #3 Optionaly you can override
-    var imagePickerController: UIImagePickerController {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = delegate
-        imagePicker.allowsEditing = true
-        return imagePicker
-    }
-//    var delegate: (UIImagePickerControllerDelegate & UINavigationControllerDelegate)? can be overriden
     
 }
 

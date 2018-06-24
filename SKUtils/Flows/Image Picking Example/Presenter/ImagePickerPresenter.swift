@@ -51,8 +51,15 @@ class ImagePickerPresenter: NSObject, ImagePicking {
 
 extension ImagePickerPresenter: ImagePickerOutput {
     
-    func viewTriggeredCallImagePickerEvent() {
+    func viewTriggeredShowImagePickerAlert() {
         // #6 call showImagePickerAlert to show user alert with options to choose
+        // Provide strings providers for alerts
+        // 1. ImagePickerAlertSettings - configuration for alert controller that will be prompted to user with options to choose source type
+        // 2. cameraAppSettingsAlert - configuration for alert controller that will be prompted if user restricted acces to camera
+        // 3. cameraRollAppSettingsAlert - configuration for alert controller that will be prompted if user restricted acces to photosLibrary
+        // showImagePickerAlert has popoverConfigurationHandler to configure popover in case you showing actionSheet on iPad.
+        // imagePickerProvider - you can set custom class, that conforms to protocol ImagePickerProviding, for providing image picker with
+        // different configurations
         let cameraAppSettingsAlert = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Camera denied. Please, change it in Settings")
         let cameraRollAppSettingsAlert =
         DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Photo Library denied. Please, change it in Settings")
@@ -60,17 +67,27 @@ extension ImagePickerPresenter: ImagePickerOutput {
         let imagePickerAlertSettings = ImagePickerAlertSettings(prefferedStyle: prefferedStyle, alertTitle: "", alertMessage: "Choose photo from:",
                                                                 cameraActionTitle: "Phone Camera", libraryActionTitle: "Camera Roll",
                                                                 cancelActionTitle: "Cancel")
-        // or
-//        let imagePickerAlertSettings = DefaultImagePickerAlertSettings()
-        showImagePickerAlert(imagePickerAlertSettings: imagePickerAlertSettings, cameraAppSettingsAlert: cameraAppSettingsAlert,
-                             cameraRollAppSettingsAlert: cameraRollAppSettingsAlert)
-        // #7 also you can call imagePicker with spurce type dirrectly
-//        showImagePicker(with: .photoLibrary)
+        // Also you can set handler for alert presentation, settings presentation, etc.
+        showImagePickerAlert(imagePickerAlertSettings: imagePickerAlertSettings) { [weak self] (sourceType) in
+            switch sourceType {
+            case .camera:
+                self?.checkCameraPermissions(with: cameraAppSettingsAlert, authorizedCompletion: { [weak self] in
+                    self?.showImagePicker(with: sourceType)
+                })
+            case .photoLibrary:
+                self?.checkCameraRollPermissions(with: cameraRollAppSettingsAlert, authorizedCompletion: {[weak self] in
+                    self?.showImagePicker(with: sourceType)
+                })
+            default:
+                print("default implementation")
+            }
+        }
+        
     }
     
     func viewTriggedImageSelectionEvent(with info: [String: Any]) {
         // #7 handle selection
-        let image = info[UIImagePickerControllerEditedImage] as? UIImage
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         view?.set(image: image)
     }
     
