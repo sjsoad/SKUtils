@@ -14,7 +14,7 @@ class CustomPushTransition: NSObject, CustomAnimatedTransitioning {
     var duration: TimeInterval
     var reverseTransition: Bool
     
-    required init(duration: TimeInterval = 1, reverseTransition: Bool = false) {
+    init(duration: TimeInterval = 1, reverseTransition: Bool = false) {
         self.duration = duration
         self.reverseTransition = reverseTransition
     }
