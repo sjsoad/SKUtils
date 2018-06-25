@@ -80,7 +80,6 @@
 		A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF217520AECB5B0064B3F8 /* AlertControllerShowingViewController.xib */; };
 		A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF218920AEFA890064B3F8 /* TextInputsManagerViewController.swift */; };
 		A5BF218D20AEFA890064B3F8 /* TextInputsManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF218A20AEFA890064B3F8 /* TextInputsManagerViewController.xib */; };
-		A5C40A9B20E0C1D0003AC97C /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C40A9A20E0C1D0003AC97C /* CustomTransition.swift */; };
 		A5D56A5C20B29F5000A4985B /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D56A5B20B29F5000A4985B /* ValidationServiceTests.swift */; };
 		A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8142090E69700DF7495 /* Assets.xcassets */; };
 		A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8152090E69700DF7495 /* LaunchScreen.storyboard */; };
@@ -183,7 +182,6 @@
 		A5BF217520AECB5B0064B3F8 /* AlertControllerShowingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertControllerShowingViewController.xib; sourceTree = "<group>"; };
 		A5BF218920AEFA890064B3F8 /* TextInputsManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerViewController.swift; sourceTree = "<group>"; };
 		A5BF218A20AEFA890064B3F8 /* TextInputsManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsManagerViewController.xib; sourceTree = "<group>"; };
-		A5C40A9A20E0C1D0003AC97C /* CustomTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
 		A5D56A5020B29E9500A4985B /* SKUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D56A5420B29E9500A4985B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D56A5B20B29F5000A4985B /* ValidationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
@@ -519,7 +517,6 @@
 			children = (
 				A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */,
 				A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */,
-				A5C40A9A20E0C1D0003AC97C /* CustomTransition.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -1146,7 +1143,6 @@
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
 				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
-				A5C40A9B20E0C1D0003AC97C /* CustomTransition.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
 				A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */,
 				A5DF680720D4F0EC005743EE /* TableViewInserting.swift in Sources */,

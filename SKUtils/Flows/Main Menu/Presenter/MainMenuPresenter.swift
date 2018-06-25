@@ -26,11 +26,10 @@ protocol MainMenuOutput {
 class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
-    private var transitioningDelegate = DefaultTransitioningDelegate(animatedTransitioning: CustomFallAnimation())
-    private var customTransitioningDelegate = DefaultTransitioningDelegate(presentationControllerProvider: {
-        (presented, presenting, _) -> UIPresentationController? in
+    private var transitioningDelegate = DefaultTransitioningDelegate(animatedTransitioning: CustomTransition(transitionType: .slide))
+    private var customTransitioningDelegate = DefaultTransitioningDelegate(
+        presentationControllerProvider: { (presented, presenting, _) -> UIPresentationController? in
         let presentationController = DefaultPresentationController(presentedViewController: presented, presenting: presenting)
-//        presentationController.position = Position(x: .center, y: .bottom)
         presentationController.position.y = .bottom
         return presentationController
     })
