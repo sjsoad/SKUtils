@@ -13,7 +13,7 @@ import SKCustomNavigation
 class MainMenuViewController: UIViewController, MainMenuInterface, AnimationControllerProvider {
 
     var presenter: MainMenuOutput?
-    var animatedTransitioning: CustomAnimatedTransitioning? = CustomTransition(transitionType: .push(direction: .fromLeft))
+    var animatedTransitioning: CustomAnimatedTransitioning? = TransitionManager(transitionProvider: Cover())
     
     @IBOutlet private weak var tableView: UITableView!
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SKCustomNavigation
 
 extension UICollectionView {
     

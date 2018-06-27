@@ -42,8 +42,6 @@
 		A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */; };
 		A5445C1120DD2B5B00B03832 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C1020DD2B5B00B03832 /* TestData.swift */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
-		A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */; };
-		A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */; };
 		A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD820C98E26000AD03F /* PanInteractionController.swift */; };
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
 		A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814B20B148A5003F3C68 /* TextInputsViewController.swift */; };
@@ -68,7 +66,6 @@
 		A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */; };
 		A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */; };
 		A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */; };
-		A5A5755220DB73D70052498D /* AnimatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754D20DB73D70052498D /* AnimatorProvider.swift */; };
 		A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */; };
 		A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */; };
 		A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */; };
@@ -144,8 +141,6 @@
 		A5445C1020DD2B5B00B03832 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
-		A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushTransition.swift; sourceTree = "<group>"; };
-		A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFallAnimation.swift; sourceTree = "<group>"; };
 		A5664FD820C98E26000AD03F /* PanInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanInteractionController.swift; sourceTree = "<group>"; };
 		A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsPresenter.swift; sourceTree = "<group>"; };
 		A576814B20B148A5003F3C68 /* TextInputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsViewController.swift; sourceTree = "<group>"; };
@@ -170,7 +165,6 @@
 		A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformAnimationProvider.swift; sourceTree = "<group>"; };
 		A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAnimationProvider.swift; sourceTree = "<group>"; };
 		A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadAnimation.swift"; sourceTree = "<group>"; };
-		A5A5754D20DB73D70052498D /* AnimatorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorProvider.swift; sourceTree = "<group>"; };
 		A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewablePresenter.swift; sourceTree = "<group>"; };
 		A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewableViewController.swift; sourceTree = "<group>"; };
 		A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewableViewController.xib; sourceTree = "<group>"; };
@@ -515,8 +509,6 @@
 		A5664FD420C98863000AD03F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				A5664FD220C987FC000AD03F /* CustomFallAnimation.swift */,
-				A5664FCD20C97F53000AD03F /* CustomPushTransition.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -680,7 +672,6 @@
 				A5A5754920DB73D70052498D /* ViewAnimationProvider.swift */,
 				A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */,
 				A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */,
-				A5A5754D20DB73D70052498D /* AnimatorProvider.swift */,
 				A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */,
 				A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */,
 				A59C85FA20DE69CD0049BEA0 /* UIView+Animations.swift */,
@@ -1134,8 +1125,6 @@
 				A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */,
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
 				A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */,
-				A5664FCE20C97F53000AD03F /* CustomPushTransition.swift in Sources */,
-				A5664FD320C987FC000AD03F /* CustomFallAnimation.swift in Sources */,
 				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
 				A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */,
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
@@ -1160,7 +1149,6 @@
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
-				A5A5755220DB73D70052498D /* AnimatorProvider.swift in Sources */,
 				A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */,
 				A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
