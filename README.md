@@ -9,7 +9,7 @@ pod 'SKPickerViewManager'
 pod 'SKTextInputs'  
 pod 'SKAlertControllerShowing'  
 pod 'SKAppSettingsShowing'  
-pod 'SKImagePicking' - to add provider for UIImagePickerController  
+pod 'SKImagePicking'  
 pod 'SKActivityViewable'  
 pod 'SKAlertViewable'  
 pod 'SKXibLoadableView'  
