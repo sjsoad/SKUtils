@@ -11,7 +11,7 @@ PODS:
     - NVActivityIndicatorView
   - SKAlertControllerBuilder (0.0.1):
     - AlertActionBuilder
-  - SKAlertControllerShowing (0.0.7):
+  - SKAlertControllerShowing (0.0.8):
     - AlertActionBuilder
     - SKAlertControllerBuilder
   - SKAlertViewable (0.0.1):
@@ -131,7 +131,7 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   SKActivityViewable: 7ee5e9ef8cb24f66ef4605773518aba5a8f7a28e
   SKAlertControllerBuilder: 1ba0b7c9327d931a813de24009edc88822dad74f
-  SKAlertControllerShowing: 39c5fb936954848ac45f1f52105baec33f3e924f
+  SKAlertControllerShowing: 0900e49ca3bd4530a2b65608b9029cb0ad5c33d1
   SKAlertViewable: 431917d11186579dfa4f7265764150c231fba1bf
   SKAppSettingsShowing: a08cccfe1f70bbb1cd11b42153b0b13ed17e3202
   SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d

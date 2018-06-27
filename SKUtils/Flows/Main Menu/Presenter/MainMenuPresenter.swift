@@ -27,7 +27,7 @@ class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
     private var transitioningDelegate = DefaultTransitioningDelegate(animatedTransitioning: CustomTransition(transitionType: .slide))
-    private var customTransitioningDelegate = DefaultTransitioningDelegate(
+    private var customTransitioningDelegate = DefaultTransitioningDelegate(animatedTransitioning: CustomTransition(transitionType: .slide),
         presentationControllerProvider: { (presented, presenting, _) -> UIPresentationController? in
         let presentationController = DefaultPresentationController(presentedViewController: presented, presenting: presenting)
         presentationController.position.y = .bottom
