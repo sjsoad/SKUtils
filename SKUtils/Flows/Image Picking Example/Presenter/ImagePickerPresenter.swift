@@ -60,7 +60,8 @@ extension ImagePickerPresenter: ImagePickerOutput {
         // showImagePickerAlert has popoverConfigurationHandler to configure popover in case you showing actionSheet on iPad.
         // imagePickerProvider - you can set custom class, that conforms to protocol ImagePickerProviding, for providing image picker with
         // different configurations
-        let cameraAppSettingsAlert = DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Camera denied. Please, change it in Settings")
+        let cameraAppSettingsAlert =
+            DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Camera denied. Please, change it in Settings")
         let cameraRollAppSettingsAlert =
         DefaultAppSettingsAlertStringsProvider(settingsAlertMessage: "Access to Photo Library denied. Please, change it in Settings")
         let prefferedStyle: UIAlertControllerStyle = UI_USER_INTERFACE_IDIOM() == .phone ? .actionSheet : .alert

@@ -20,7 +20,7 @@ class ModalNavigationViewController: UIViewController, ModalNavigationInterface 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         label.text = "asdfasf\nasdfsadfasfd\nsdfasdfasfdasdfasfa\nasdfasfdasdfasdf\n"
-        self.presentationController?.containerView?.setNeedsLayout()
+        presentationController?.containerView?.setNeedsLayout()
     }
     
     // MARK: - IBActions -
