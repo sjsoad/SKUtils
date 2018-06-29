@@ -27,7 +27,7 @@ class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
     private var transitioningDelegate: DefaultTransitioningDelegate = {
-        return DefaultTransitioningDelegate()
+        return DefaultTransitioningDelegate(animatedTransitioning: Page(transitionDirection: .fromLeft))
     }()
     private var customTransitioningDelegate: DefaultTransitioningDelegate = {
         return DefaultTransitioningDelegate(animatedTransitioning: ZoomSlide(transitionDirection: .fromBottom),
@@ -127,13 +127,14 @@ extension MainMenuPresenter: MainMenuOutput {
         case .modalTransition:
             let modalNavigationModule = ModuleBuilder.modalNavigationModule()
             guard let viewController = view as? UIViewController else { return }
-            transitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
             modalNavigationModule.interface.transitioningDelegate = transitioningDelegate
+            transitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
             return
         case .customPresentation:
             let modalNavigationModule = ModuleBuilder.modalNavigationModule()
             guard let viewController = view as? UIViewController else { return }
+            customTransitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
             modalNavigationModule.interface.transitioningDelegate = customTransitioningDelegate
             modalNavigationModule.interface.modalPresentationStyle = .custom
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)

@@ -7,49 +7,58 @@
 //
 
 import UIKit
+import SKCustomNavigation
 
-class PanInteractionController: UIPercentDrivenInteractiveTransition {
+class PanInteractionController: UIPercentDrivenInteractiveTransition, InteractionControlling, UIGestureRecognizerDelegate {
 
-    private var interactionInProgress = false
+    open weak var viewController: UIViewController? {
+        didSet {
+            guard let view = viewController?.view else {
+                return
+            }
+            prepareGestureRecognizer(in: view)
+        }
+    }
     private var shouldCompleteTransition = false
-    private weak var viewController: UIViewController?
+    open var interactionInProgress = false
+    open var completeOnPercentage: CGFloat = 0.5
     
     init(viewController: UIViewController) {
         super.init()
         self.viewController = viewController
-        prepareGestureRecognizer(in: viewController.view)
+        update(0.01)
     }
     
     private func prepareGestureRecognizer(in view: UIView) {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
+        gesture.delegate = self
         view.addGestureRecognizer(gesture)
     }
     
     @objc func handleGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
-        let translation = gestureRecognizer.translation(in: gestureRecognizer.view!.superview!)
-        var progress = (translation.y / 10)
-        progress = CGFloat(fminf(fmaxf(Float(progress), 0.0), 1.0))
+        guard let view = gestureRecognizer.view else { return }
+        let progress = gestureRecognizer.translation(in: view).y / view.bounds.size.height
         
         switch gestureRecognizer.state {
         case .began:
             interactionInProgress = true
             viewController?.dismiss(animated: true, completion: nil)
         case .changed:
-            shouldCompleteTransition = progress > 0.5
+            shouldCompleteTransition = progress > completeOnPercentage
             update(progress)
-        case .cancelled:
-            interactionInProgress = false
-            cancel()
-        case .ended:
-            interactionInProgress = false
-            if shouldCompleteTransition {
-                finish()
-            } else {
-                cancel()
+        case .cancelled, .ended:
+            if interactionInProgress {
+                interactionInProgress = false
             }
+            shouldCompleteTransition ? finish() : cancel()
         default:
             break
         }
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
+                           shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
     
 }

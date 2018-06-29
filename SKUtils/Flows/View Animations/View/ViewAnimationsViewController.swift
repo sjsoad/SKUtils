@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SKCustomNavigation
 
 class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
 
@@ -25,7 +26,11 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
     // MARK: - IBActions -
     
     @IBAction func rippleEffectButtonPressed(_ sender: UIButton) {
-        sender.touchAnimation()
+        sender.animate(animation: { (view) in
+            view.shakeAnimation()
+        }) {
+            print("completion")
+        }
     }
     
     // MARK: - ViewAnimationsInterface -

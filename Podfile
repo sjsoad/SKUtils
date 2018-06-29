@@ -46,7 +46,7 @@ def shared_pods
     
     # Custom Navigation
     
-    pod 'SKCustomNavigation'#, :path => '/Users/Sergey/Work/Pods/CustomNavigation'
+    pod 'SKCustomNavigation', :path => '/Users/Sergey/Work/Pods/CustomNavigation'
 
 end
 
