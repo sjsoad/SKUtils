@@ -128,13 +128,13 @@ extension MainMenuPresenter: MainMenuOutput {
             let modalNavigationModule = ModuleBuilder.modalNavigationModule()
             guard let viewController = view as? UIViewController else { return }
             modalNavigationModule.interface.transitioningDelegate = transitioningDelegate
-            transitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
+            transitioningDelegate.interactionController = PanForDismiss(viewController: modalNavigationModule.interface)
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
             return
         case .customPresentation:
             let modalNavigationModule = ModuleBuilder.modalNavigationModule()
             guard let viewController = view as? UIViewController else { return }
-            customTransitioningDelegate.interactionController = PanInteractionController(viewController: modalNavigationModule.interface)
+            customTransitioningDelegate.interactionController = PanForDismiss(viewController: modalNavigationModule.interface)
             modalNavigationModule.interface.transitioningDelegate = customTransitioningDelegate
             modalNavigationModule.interface.modalPresentationStyle = .custom
             viewController.present(modalNavigationModule.interface, animated: true, completion: nil)

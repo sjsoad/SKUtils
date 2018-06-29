@@ -1,18 +1,17 @@
 //
-//  PanInteractionController.swift
+//  PanForDismiss.swift
 //  SKUtils
 //
-//  Created by Sergey Kostyan on 07.06.2018.
+//  Created by Sergey Kostyan on 29.06.2018.
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
 import UIKit
 import SKCustomNavigation
 
-class PanInteractionController: UIPercentDrivenInteractiveTransition, InteractionControlling, UIGestureRecognizerDelegate {
-
+class PanForDismiss: UIPercentDrivenInteractiveTransition, InteractionControlling, UIGestureRecognizerDelegate {
+    
     weak var viewController: UIViewController?
-    private var lastVC: UIViewController?
     private var shouldCompleteTransition = false
     open var interactionInProgress = false
     open var completeOnPercentage: CGFloat = 0.5
@@ -36,11 +35,7 @@ class PanInteractionController: UIPercentDrivenInteractiveTransition, Interactio
         switch gestureRecognizer.state {
         case .began:
             interactionInProgress = true
-            if let navigationController = viewController as? UINavigationController {
-                lastVC = navigationController.viewControllers.last
-                navigationController.popViewController(animated: true)
-            }
-//            viewController?.dismiss(animated: true, completion: nil)
+            viewController?.dismiss(animated: true, completion: nil)
         case .changed:
             shouldCompleteTransition = progress > completeOnPercentage
             update(progress)
