@@ -40,7 +40,6 @@ class PanInteractionController: UIPercentDrivenInteractiveTransition, Interactio
                 lastVC = navigationController.viewControllers.last
                 navigationController.popViewController(animated: true)
             }
-//            viewController?.dismiss(animated: true, completion: nil)
         case .changed:
             shouldCompleteTransition = progress > completeOnPercentage
             update(progress)
