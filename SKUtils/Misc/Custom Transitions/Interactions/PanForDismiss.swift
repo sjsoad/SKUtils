@@ -11,7 +11,7 @@ import SKCustomNavigation
 
 class PanForDismiss: UIPercentDrivenInteractiveTransition, InteractionControlling, UIGestureRecognizerDelegate {
     
-    weak var viewController: UIViewController?
+    private weak var viewController: UIViewController?
     private var shouldCompleteTransition = false
     open var interactionInProgress = false
     open var completeOnPercentage: CGFloat = 0.5

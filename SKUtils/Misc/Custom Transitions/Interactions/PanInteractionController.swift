@@ -11,16 +11,15 @@ import SKCustomNavigation
 
 class PanInteractionController: UIPercentDrivenInteractiveTransition, InteractionControlling, UIGestureRecognizerDelegate {
 
-    weak var viewController: UIViewController?
-    private var lastVC: UIViewController?
+    private weak var navigationController: UINavigationController?
     private var shouldCompleteTransition = false
     open var interactionInProgress = false
     open var completeOnPercentage: CGFloat = 0.5
     
-    init(viewController: UIViewController) {
+    init(navigationController: UINavigationController) {
         super.init()
-        self.viewController = viewController
-        self.prepareGestureRecognizer(in: viewController.view)
+        self.navigationController = navigationController
+        self.prepareGestureRecognizer(in: navigationController.view)
     }
     
     private func prepareGestureRecognizer(in view: UIView) {
@@ -36,10 +35,7 @@ class PanInteractionController: UIPercentDrivenInteractiveTransition, Interactio
         switch gestureRecognizer.state {
         case .began:
             interactionInProgress = true
-            if let navigationController = viewController as? UINavigationController {
-                lastVC = navigationController.viewControllers.last
-                navigationController.popViewController(animated: true)
-            }
+            navigationController?.popViewController(animated: true)
         case .changed:
             shouldCompleteTransition = progress > completeOnPercentage
             update(progress)
