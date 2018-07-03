@@ -21,7 +21,7 @@ class IpDetectingService: NSObject {
     
     func detectIp(handlers: NetworkHandlers<IpDetectingRequest>) {
         let request = IpDetectingRequest()
-        networkService.execut(request: request, handlers: handlers)
+        networkService.execute(request: request, handlers: handlers)
     }
     
 }
