@@ -21,6 +21,7 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         button.move(from: CGPoint(x: view.bounds.width, y: 0), delay: 0.5)
+        button.scale(to: CGPoint(x: 2, y: 2), delay: 0.5)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

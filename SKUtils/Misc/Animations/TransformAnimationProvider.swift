@@ -28,6 +28,10 @@ open class TransformAnimationProvider: ViewAnimationProvider {
         view.transform = toTransform
     }
     
+    public func complete(for view: UIView) {
+        
+    }
+    
     // MARK: - Animations -
     
     class func flipFromLeft() -> ViewAnimationProvider {

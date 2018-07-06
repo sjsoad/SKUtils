@@ -11,31 +11,41 @@ import SKAnimator
 
 public extension UIView {
     
+    // MARK: - Movement -
+    
     func move(from point: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-        transform = CGAffineTransform(translationX: point.x, y: point.y)
+        let originalTransform = transform
+        transform = transform.translatedBy(x: point.x, y: point.y)
         animate(block: { [weak self] in
-            self?.transform = .identity
+            self?.transform = originalTransform
             }, with: animatorProvider, delay: delay)
     }
 
     func move(to point: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
         animate(block: { [weak self] in
-            self?.transform = CGAffineTransform(translationX: point.x, y: point.y)
+            guard let strongSelf = self else { return }
+            strongSelf.transform = strongSelf.transform.translatedBy(x: point.x, y: point.y)
             }, with: animatorProvider, delay: delay)
     }
     
+    // MARK: - Scaling -
+    
     func scale(from scale: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-        transform = CGAffineTransform(scaleX: scale.x, y: scale.y)
+        let originalTransform = transform
+        transform = transform.scaledBy(x: scale.x, y: scale.y)
         animate(block: { [weak self] in
-            self?.transform = .identity
+            self?.transform = originalTransform
             }, with: animatorProvider, delay: delay)
     }
     
     func scale(to scale: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
         animate(block: { [weak self] in
-            self?.transform = CGAffineTransform(scaleX: scale.x, y: scale.y)
+            guard let strongSelf = self else { return }
+            strongSelf.transform = strongSelf.transform.scaledBy(x: scale.x, y: scale.y)
             }, with: animatorProvider, delay: delay)
     }
+    
+    // MARK: - Alpha -
     
     func alpha(form alpha: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
         let originalAlpha = self.alpha
@@ -50,6 +60,8 @@ public extension UIView {
             self?.alpha = alpha
             }, with: animatorProvider, delay: delay)
     }
+    
+    // MARK: - Private -
     
     private func animate(block: @escaping () -> Void, with animatorProvider: AnimatorProvider, delay: TimeInterval) {
         let animator = animatorProvider.animator()
