@@ -16,6 +16,7 @@ PODS:
     - SKAlertControllerBuilder
   - SKAlertViewable (0.0.1):
     - SwiftyDrop
+  - SKAnimator (0.0.1)
   - SKAppSettingsShowing (0.0.6):
     - AlertActionBuilder
     - SKAlertControllerBuilder
@@ -26,7 +27,8 @@ PODS:
     - SKServicePermissions
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
-  - SKCustomNavigation (0.0.9)
+  - SKCustomNavigation (0.1.0):
+    - SKAnimator
   - SKDataSources (0.0.6)
   - SKImagePicking (0.0.5):
     - AlertActionBuilder
@@ -69,6 +71,7 @@ DEPENDENCIES:
   - SKAlertControllerBuilder
   - SKAlertControllerShowing
   - SKAlertViewable
+  - SKAnimator
   - SKAppSettingsShowing
   - SKBluetoothPermissions
   - SKCameraPermissions
@@ -101,6 +104,7 @@ SPEC REPOS:
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
     - SKAlertViewable
+    - SKAnimator
     - SKAppSettingsShowing
     - SKBluetoothPermissions
     - SKCameraPermissions
@@ -133,11 +137,12 @@ SPEC CHECKSUMS:
   SKAlertControllerBuilder: 1ba0b7c9327d931a813de24009edc88822dad74f
   SKAlertControllerShowing: 0900e49ca3bd4530a2b65608b9029cb0ad5c33d1
   SKAlertViewable: 431917d11186579dfa4f7265764150c231fba1bf
+  SKAnimator: 6b7821ecedf61fec9b6c447172031192ff0289a4
   SKAppSettingsShowing: a08cccfe1f70bbb1cd11b42153b0b13ed17e3202
   SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
-  SKCustomNavigation: 18f3a8a5acb8fe4cc9f24e290b431d632883140b
+  SKCustomNavigation: f6d51daa30e24290c5e8b62e72c214c50c342e43
   SKDataSources: 1f7f155cc79d917a6e284d89260473b51555a6f6
   SKImagePicking: c112454b99b50cd1081f3cdb688a905c358d9be0
   SKImagePreviewing: beb608a63cc0c560810027acb71fedea65241438
@@ -155,6 +160,6 @@ SPEC CHECKSUMS:
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 239560281547642b081f102538d047700c424aec
+PODFILE CHECKSUM: 8257e043981a07ff55f3f29973c5bcae04ff0997
 
 COCOAPODS: 1.5.3

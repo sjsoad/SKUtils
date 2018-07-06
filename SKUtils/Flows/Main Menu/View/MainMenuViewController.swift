@@ -9,11 +9,12 @@
 import UIKit
 import SKDataSources
 import SKCustomNavigation
+import SKAnimator
 
 class MainMenuViewController: UIViewController, MainMenuInterface, AnimationControllerProvider {
 
     var presenter: MainMenuOutput?
-    var animatedTransitioning: CustomAnimatedTransitioning? = Slide(transitionDirection: .fromBottom)
+    var animatedTransitioning: CustomAnimatedTransitioning? = Push(transitionDirection: .fromRight)
     
     @IBOutlet private weak var tableView: UITableView!
     

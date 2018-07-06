@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SKCustomNavigation
+import SKAnimator
 
 extension UITableView {
     

@@ -48,6 +48,10 @@ def shared_pods
     
     pod 'SKCustomNavigation'#, :path => '/Users/Sergey/Work/Pods/CustomNavigation'
 
+    # Animations
+
+    pod 'SKAnimator'#, :path => '/Users/Sergey/Work/Pods/Animator'
+
 end
 
 target 'SKUtils' do

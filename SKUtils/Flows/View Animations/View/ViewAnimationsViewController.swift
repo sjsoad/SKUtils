@@ -13,12 +13,21 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
 
     var presenter: ViewAnimationsOutput?
 
+    @IBOutlet private weak var testView: UIView!
+    @IBOutlet private weak var button: UIButton!
+    
     // MARK: - Lifecycle -
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        button.move(from: CGPoint(x: view.bounds.width, y: 0), delay: 0.5)
     }
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        button.move(to: CGPoint(x: view.bounds.width, y: 0))
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,11 +35,7 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
     // MARK: - IBActions -
     
     @IBAction func rippleEffectButtonPressed(_ sender: UIButton) {
-        sender.animate(animation: { (view) in
-            view.shakeAnimation()
-        }) {
-            print("completion")
-        }
+
     }
     
     // MARK: - ViewAnimationsInterface -

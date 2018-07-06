@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewAnimationsViewController">
             <connections>
+                <outlet property="button" destination="RYv-cE-lsW" id="tqg-kQ-5fo"/>
+                <outlet property="testView" destination="eTC-NF-DKw" id="tVk-pu-m2N"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,12 +37,22 @@
                         <action selector="rippleEffectButtonPressed:" destination="-1" eventType="touchUpInside" id="YYr-AD-GEK"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTC-NF-DKw">
+                    <rect key="frame" x="305" y="597" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.63529411759999999" blue="0.7843137255" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="7T0-IH-JOT"/>
+                        <constraint firstAttribute="height" constant="50" id="m2J-sg-y9n"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="RYv-cE-lsW" firstAttribute="top" secondItem="fwJ-ZV-ZKT" secondAttribute="top" constant="20" id="H8a-qg-ldI"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="eTC-NF-DKw" secondAttribute="trailing" constant="20" id="YDN-HU-YbS"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="RYv-cE-lsW" secondAttribute="trailing" constant="20" id="gto-Pv-OnJ"/>
                 <constraint firstItem="RYv-cE-lsW" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="lKI-aE-sKg"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="eTC-NF-DKw" secondAttribute="bottom" constant="20" id="tIJ-Wi-mIz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
         </view>
