@@ -40,4 +40,8 @@ pod 'SKNetworkingLib'
 
 # Custom Navigation
 
-pod 'SKCustomNavigation'
+pod 'SKCustomNavigation'  
+
+# Animations  
+
+pod 'SKAnimator'  
