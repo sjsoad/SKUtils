@@ -14,4 +14,5 @@ public protocol ViewAnimationProvider {
     func prepare(_ view: UIView)
     func perform(for view: UIView)
     func complete(for view: UIView)
+    
 }

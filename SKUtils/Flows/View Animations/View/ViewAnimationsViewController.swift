@@ -20,13 +20,13 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        button.move(from: CGPoint(x: view.bounds.width, y: 0), delay: 0.5)
-        button.scale(to: CGPoint(x: 2, y: 2), delay: 0.5)
+//        button.move(from: CGPoint(x: view.bounds.width, y: 0), delay: 0.5)
+//        button.scale(to: CGPoint(x: 2, y: 2), delay: 0.5)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        button.move(to: CGPoint(x: view.bounds.width, y: 0))
+//        button.move(to: CGPoint(x: view.bounds.width, y: 0))
     }
     
     override func viewDidLoad() {
@@ -36,7 +36,19 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
     // MARK: - IBActions -
     
     @IBAction func rippleEffectButtonPressed(_ sender: UIButton) {
-
+        animate(animationBlock: {
+            sender.move(to: CGPoint(x: 0, y: 150))
+        }, completion: {
+            print("1 completion")
+        }).thenAnimate(animationBlock: {
+            sender.alpha(to: 0.4)
+        }, completion: {
+            print("2 completion")
+        }).thenAnimate(animationBlock: {
+            sender.alpha(to: 1)
+        }, completion: {
+            print("3 completion")
+        })
     }
     
     // MARK: - ViewAnimationsInterface -

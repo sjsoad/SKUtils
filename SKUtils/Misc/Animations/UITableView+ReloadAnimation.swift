@@ -16,14 +16,18 @@ extension UITableView {
         reloadData()
         let cells = visibleCells
         prepare(cells: cells, for: animationsProviders)
-        for (index, cell) in cells.enumerated() {
-            let animator = animatorProvider.animator()
-            animator.addAnimations {
-                for animationProvider in animationsProviders {
+        for animationProvider in animationsProviders {
+            for (index, cell) in cells.enumerated() {
+                let animator = animatorProvider.animator()
+                animator.addAnimations {
                     animationProvider.perform(for: cell)
                 }
+                animator.addCompletion { (position) in
+                    guard position == .end else {
+                        return }
+                }
+                animator.startAnimation(afterDelay: delay * Double(index))
             }
-            animator.startAnimation(afterDelay: delay * Double(index))
         }
     }
     
