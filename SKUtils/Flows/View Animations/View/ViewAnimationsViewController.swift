@@ -9,8 +9,12 @@
 import UIKit
 import SKCustomNavigation
 
-class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
+class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface, SubviewsForAnimatedTransitionProviding {
 
+    var subviewsToAnimate: [UIView] {
+        return [button, testView]
+    }
+    
     var presenter: ViewAnimationsOutput?
 
     @IBOutlet private weak var testView: UIView!
@@ -37,15 +41,20 @@ class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
     
     @IBAction func rippleEffectButtonPressed(_ sender: UIButton) {
         animate(animationBlock: {
-            sender.move(to: CGPoint(x: 0, y: 150))
+            sender.rotate(by: 90)
+//            sender.moveY(by: 150)
+//            sender.scaleY(by: 1.4)
         }, completion: {
             print("1 completion")
         }).thenAnimate(animationBlock: {
             sender.alpha(to: 0.4)
+            sender.rotate(to: 270)
+//            sender.moveX(by: 100)
         }, completion: {
             print("2 completion")
         }).thenAnimate(animationBlock: {
             sender.alpha(to: 1)
+            sender.cancelAllTransformations()
         }, completion: {
             print("3 completion")
         })

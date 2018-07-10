@@ -27,64 +27,92 @@ public extension UIView {
 
 public extension UIView {
     
+    // MARK: - Identity -
+    
+    func cancelAllTransformations(animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = .identity
+    }
+    
     // MARK: - Movement -
     
-//    func move(from point: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-//        let originalTransform = transform
-//        transform = transform.translatedBy(x: point.x, y: point.y)
-//        animate(block: { [weak self] in
-//            self?.transform = originalTransform
-//            }, with: animatorProvider, delay: delay)
-//    }
+    func move(by point: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = transform.translatedBy(x: point.x, y: point.y)
+    }
+    
+    func moveX(by xPosition: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = transform.translatedBy(x: xPosition, y: 0)
+    }
+    
+    func moveY(by yPosition: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = transform.translatedBy(x: 0, y: yPosition)
+    }
+    
+    func set(position: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = CGAffineTransform(translationX: position.x, y: position.y)
+    }
 
-    func move(to point: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-//        animate(block: { [weak self] in
-//            guard let strongSelf = self else { return }
-            transform = transform.translatedBy(x: point.x, y: point.y)
-//            }, with: animatorProvider, delay: delay)
+    func set(xPosition: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = CGAffineTransform(translationX: xPosition, y: transform.ty)
+    }
+    
+    func set(yPosition: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = CGAffineTransform(translationX: transform.tx, y: yPosition)
     }
     
     // MARK: - Scaling -
     
-//    func scale(from scale: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-//        let originalTransform = transform
-//        transform = transform.scaledBy(x: scale.x, y: scale.y)
-//        animate(block: { [weak self] in
-//            self?.transform = originalTransform
-//            }, with: animatorProvider, delay: delay)
-//    }
-//
-//    func scale(to scale: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-//        animate(block: { [weak self] in
-//            guard let strongSelf = self else { return }
-//            strongSelf.transform = strongSelf.transform.scaledBy(x: scale.x, y: scale.y)
-//            }, with: animatorProvider, delay: delay)
-//    }
+    func scale(by scale: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = transform.scaledBy(x: scale.x, y: scale.y)
+    }
+    
+    func scaleX(by xScale: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = transform.scaledBy(x: xScale, y: yScale)
+    }
+    
+    func scaleY(by yScale: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = transform.scaledBy(x: xScale, y: yScale)
+    }
+    
+    func set(scale: CGPoint, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = CGAffineTransform(scaleX: scale.x, y: scale.y)
+    }
+
+    func set(xScale: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = CGAffineTransform(scaleX: xScale, y: yScale)
+    }
+    
+    func set(yScale: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = CGAffineTransform(scaleX: xScale, y: yScale)
+    }
     
     // MARK: - Alpha -
     
-//    func alpha(form alpha: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-//        let originalAlpha = self.alpha
-//        self.alpha = alpha
-//        animate(block: { [weak self] in
-//            self?.alpha = originalAlpha
-//            }, with: animatorProvider, delay: delay)
-//    }
-    
     func alpha(to alpha: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
-//        animate(block: { [weak self] in
-            self.alpha = alpha
-//            }, with: animatorProvider, delay: delay)
+        self.alpha = alpha
+    }
+    
+    // MARK: - Rotation -
+    
+    func rotate(to angle: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = CGAffineTransform(rotationAngle: radians(from: angle))
+    }
+    
+    func rotate(by angle: CGFloat, animatorProvider: AnimatorProvider = DefaultAnimatorProvider(), delay: TimeInterval = 0.0) {
+        transform = transform.rotated(by: radians(from: angle))
     }
     
     // MARK: - Private -
     
-//    private func animate(block: @escaping () -> Void, with animatorProvider: AnimatorProvider, delay: TimeInterval) {
-//        let animator = animatorProvider.animator()
-//        animator.addAnimations {
-//            block()
-//        }
-//        animator.startAnimation(afterDelay: delay)
-//    }
+    private func radians(from angle: CGFloat) -> CGFloat {
+        return angle * (180 / CGFloat.pi)
+    }
+    
+    private var xScale: CGFloat {
+        return sqrt(pow(transform.a, 2) + pow(transform.c, 2))
+    }
+
+    private var yScale: CGFloat {
+        return sqrt(pow(transform.b, 2) + pow(transform.d, 2))
+    }
     
 }

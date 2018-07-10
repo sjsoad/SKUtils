@@ -42,6 +42,7 @@
 		A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */; };
 		A5349F7520E6C7B8009EBF3A /* PanForDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5349F7420E6C7B8009EBF3A /* PanForDismiss.swift */; };
 		A5445C1120DD2B5B00B03832 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C1020DD2B5B00B03832 /* TestData.swift */; };
+		A5456FCF20F4E55200783223 /* SubviewsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5456FCE20F4E55200783223 /* SubviewsAnimator.swift */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
 		A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD820C98E26000AD03F /* PanInteractionController.swift */; };
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
@@ -143,6 +144,7 @@
 		A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
 		A5349F7420E6C7B8009EBF3A /* PanForDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanForDismiss.swift; sourceTree = "<group>"; };
 		A5445C1020DD2B5B00B03832 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		A5456FCE20F4E55200783223 /* SubviewsAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubviewsAnimator.swift; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
 		A5664FD820C98E26000AD03F /* PanInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanInteractionController.swift; sourceTree = "<group>"; };
@@ -515,6 +517,7 @@
 		A5664FD420C98863000AD03F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				A5456FCE20F4E55200783223 /* SubviewsAnimator.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -1178,6 +1181,7 @@
 				A5F47B5F20C910240073FDC8 /* ModalNavigationPresenter.swift in Sources */,
 				A5349F7520E6C7B8009EBF3A /* PanForDismiss.swift in Sources */,
 				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
+				A5456FCF20F4E55200783223 /* SubviewsAnimator.swift in Sources */,
 				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,

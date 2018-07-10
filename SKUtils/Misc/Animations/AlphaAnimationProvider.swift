@@ -28,8 +28,4 @@ open class AlphaAnimationProvider: ViewAnimationProvider {
         view.alpha = toAlpha
     }
     
-    public func complete(for view: UIView) {
-        
-    }
-    
 }

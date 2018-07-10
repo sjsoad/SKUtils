@@ -11,12 +11,18 @@ import SKDataSources
 import SKCustomNavigation
 import SKAnimator
 
-class MainMenuViewController: UIViewController, MainMenuInterface, AnimationControllerProvider {
+class MainMenuViewController: UIViewController, MainMenuInterface, AnimationControllerProvider, SubviewsForAnimatedTransitionProviding {
 
     var presenter: MainMenuOutput?
     var animatedTransitioning: CustomAnimatedTransitioning? = Push(transitionDirection: .fromRight)
     
+    var subviewsToAnimate: [UIView] {
+        return [button, label]
+    }
+    
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var label: UILabel!
+    @IBOutlet private weak var button: UIButton!
     
     // MARK: - Lifecycle -
 
