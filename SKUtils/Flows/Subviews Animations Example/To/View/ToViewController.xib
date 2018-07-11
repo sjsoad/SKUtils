@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToViewController">
+            <connections>
+                <outlet property="backButton" destination="2Ew-Ut-Xdi" id="Fvw-Bm-ORy"/>
+                <outlet property="pictureView" destination="jkv-o7-sxR" id="s5a-4Z-pD6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ew-Ut-Xdi">
+                    <rect key="frame" x="20" y="40" width="107" height="30"/>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.63529411759999999" blue="0.7843137255" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="yi0-ia-QgI"/>
+                    </constraints>
+                    <state key="normal" title="Close picture"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="E0Y-Wp-UwJ"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gal" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-o7-sxR">
+                    <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jkv-o7-sxR" secondAttribute="height" multiplier="1:1" id="EtF-g1-Cmq"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jkv-o7-sxR" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" id="1OX-fT-tEO"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="jkv-o7-sxR" secondAttribute="trailing" id="9G0-V6-ABq"/>
+                <constraint firstItem="jkv-o7-sxR" firstAttribute="centerX" secondItem="fwJ-ZV-ZKT" secondAttribute="centerX" id="Hih-jP-pfL"/>
+                <constraint firstItem="jkv-o7-sxR" firstAttribute="width" secondItem="jkv-o7-sxR" secondAttribute="height" multiplier="1:1" id="kPl-Eb-6Sx"/>
+                <constraint firstItem="2Ew-Ut-Xdi" firstAttribute="top" secondItem="fwJ-ZV-ZKT" secondAttribute="top" constant="20" id="maC-Kq-oSf"/>
+                <constraint firstItem="jkv-o7-sxR" firstAttribute="centerY" secondItem="fwJ-ZV-ZKT" secondAttribute="centerY" id="oDM-Ou-K1U"/>
+                <constraint firstItem="2Ew-Ut-Xdi" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="tDa-ip-Hvh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Gal" width="500" height="615"/>
+    </resources>
+</document>

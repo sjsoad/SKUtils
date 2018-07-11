@@ -42,7 +42,6 @@
 		A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */; };
 		A5349F7520E6C7B8009EBF3A /* PanForDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5349F7420E6C7B8009EBF3A /* PanForDismiss.swift */; };
 		A5445C1120DD2B5B00B03832 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5445C1020DD2B5B00B03832 /* TestData.swift */; };
-		A5456FCF20F4E55200783223 /* SubviewsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5456FCE20F4E55200783223 /* SubviewsAnimator.swift */; };
 		A554696E20B06EC700919C85 /* TextInputsManagerScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */; };
 		A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664FD820C98E26000AD03F /* PanInteractionController.swift */; };
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
@@ -79,6 +78,12 @@
 		A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF217520AECB5B0064B3F8 /* AlertControllerShowingViewController.xib */; };
 		A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF218920AEFA890064B3F8 /* TextInputsManagerViewController.swift */; };
 		A5BF218D20AEFA890064B3F8 /* TextInputsManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF218A20AEFA890064B3F8 /* TextInputsManagerViewController.xib */; };
+		A5CDADE020F6275000E199E9 /* FromPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDADDD20F6275000E199E9 /* FromPresenter.swift */; };
+		A5CDADE120F6275000E199E9 /* FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDADDE20F6275000E199E9 /* FromViewController.swift */; };
+		A5CDADE220F6275000E199E9 /* FromViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CDADDF20F6275000E199E9 /* FromViewController.xib */; };
+		A5CDADE620F6275F00E199E9 /* ToPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDADE320F6275F00E199E9 /* ToPresenter.swift */; };
+		A5CDADE720F6275F00E199E9 /* ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDADE420F6275F00E199E9 /* ToViewController.swift */; };
+		A5CDADE820F6275F00E199E9 /* ToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CDADE520F6275F00E199E9 /* ToViewController.xib */; };
 		A5D56A5C20B29F5000A4985B /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D56A5B20B29F5000A4985B /* ValidationServiceTests.swift */; };
 		A5D6A81A2090E69700DF7495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8142090E69700DF7495 /* Assets.xcassets */; };
 		A5D6A81B2090E69700DF7495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D6A8152090E69700DF7495 /* LaunchScreen.storyboard */; };
@@ -144,7 +149,6 @@
 		A520FAB420B1B0FC00E4E219 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
 		A5349F7420E6C7B8009EBF3A /* PanForDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanForDismiss.swift; sourceTree = "<group>"; };
 		A5445C1020DD2B5B00B03832 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
-		A5456FCE20F4E55200783223 /* SubviewsAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubviewsAnimator.swift; sourceTree = "<group>"; };
 		A54DE4432090DD97001C4410 /* SKUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A554696D20B06EC700919C85 /* TextInputsManagerScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputsManagerScrollController.xib; sourceTree = "<group>"; };
 		A5664FD820C98E26000AD03F /* PanInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanInteractionController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,12 @@
 		A5BF217520AECB5B0064B3F8 /* AlertControllerShowingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertControllerShowingViewController.xib; sourceTree = "<group>"; };
 		A5BF218920AEFA890064B3F8 /* TextInputsManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerViewController.swift; sourceTree = "<group>"; };
 		A5BF218A20AEFA890064B3F8 /* TextInputsManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsManagerViewController.xib; sourceTree = "<group>"; };
+		A5CDADDD20F6275000E199E9 /* FromPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromPresenter.swift; sourceTree = "<group>"; };
+		A5CDADDE20F6275000E199E9 /* FromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromViewController.swift; sourceTree = "<group>"; };
+		A5CDADDF20F6275000E199E9 /* FromViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FromViewController.xib; sourceTree = "<group>"; };
+		A5CDADE320F6275F00E199E9 /* ToPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPresenter.swift; sourceTree = "<group>"; };
+		A5CDADE420F6275F00E199E9 /* ToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToViewController.swift; sourceTree = "<group>"; };
+		A5CDADE520F6275F00E199E9 /* ToViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToViewController.xib; sourceTree = "<group>"; };
 		A5D56A5020B29E9500A4985B /* SKUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D56A5420B29E9500A4985B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D56A5B20B29F5000A4985B /* ValidationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
@@ -514,14 +524,6 @@
 			path = SKUtils;
 			sourceTree = "<group>";
 		};
-		A5664FD420C98863000AD03F /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				A5456FCE20F4E55200783223 /* SubviewsAnimator.swift */,
-			);
-			path = Animations;
-			sourceTree = "<group>";
-		};
 		A5664FD720C98E09000AD03F /* Interactions */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,7 +622,6 @@
 			isa = PBXGroup;
 			children = (
 				A5664FD720C98E09000AD03F /* Interactions */,
-				A5664FD420C98863000AD03F /* Animations */,
 			);
 			path = "Custom Transitions";
 			sourceTree = "<group>";
@@ -779,6 +780,67 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A5CDADD020F61FEF00E199E9 /* Subviews Animations Example */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDADD120F6200900E199E9 /* From */,
+				A5CDADD420F6200900E199E9 /* To */,
+			);
+			path = "Subviews Animations Example";
+			sourceTree = "<group>";
+		};
+		A5CDADD120F6200900E199E9 /* From */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDADD220F6200900E199E9 /* Presenter */,
+				A5CDADD320F6200900E199E9 /* View */,
+			);
+			path = From;
+			sourceTree = "<group>";
+		};
+		A5CDADD220F6200900E199E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDADDD20F6275000E199E9 /* FromPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5CDADD320F6200900E199E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDADDE20F6275000E199E9 /* FromViewController.swift */,
+				A5CDADDF20F6275000E199E9 /* FromViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5CDADD420F6200900E199E9 /* To */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDADD520F6200900E199E9 /* Presenter */,
+				A5CDADD620F6200900E199E9 /* View */,
+			);
+			path = To;
+			sourceTree = "<group>";
+		};
+		A5CDADD520F6200900E199E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDADE320F6275F00E199E9 /* ToPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5CDADD620F6200900E199E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDADE420F6275F00E199E9 /* ToViewController.swift */,
+				A5CDADE520F6275F00E199E9 /* ToViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A5D56A5120B29E9500A4985B /* SKUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -812,6 +874,7 @@
 				A5930C7020B5A0360080B982 /* Networking Example */,
 				A5F47B5920C90FE80073FDC8 /* Custom Modal Navigation */,
 				A59C85F120DE68E30049BEA0 /* View Animations */,
+				A5CDADD020F61FEF00E199E9 /* Subviews Animations Example */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -978,7 +1041,9 @@
 				A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */,
 				A520FAA520B181A900E4E219 /* AppSettingsViewController.xib in Resources */,
 				A59C85F920DE69170049BEA0 /* ViewAnimationsViewController.xib in Resources */,
+				A5CDADE820F6275F00E199E9 /* ToViewController.xib in Resources */,
 				A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */,
+				A5CDADE220F6275000E199E9 /* FromViewController.xib in Resources */,
 				A5F47B6120C910240073FDC8 /* ModalNavigationViewController.xib in Resources */,
 				A520FA9720B17B1900E4E219 /* XibLoadableViewController.xib in Resources */,
 				A520FA9C20B17B6200E4E219 /* CustomView.xib in Resources */,
@@ -1154,9 +1219,11 @@
 				A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */,
 				A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */,
 				A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */,
+				A5CDADE620F6275F00E199E9 /* ToPresenter.swift in Sources */,
 				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
 				A5DF680520D4EEFF005743EE /* TableViewing.swift in Sources */,
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
+				A5CDADE020F6275000E199E9 /* FromPresenter.swift in Sources */,
 				A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
@@ -1170,7 +1237,9 @@
 				A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
 				A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */,
+				A5CDADE720F6275F00E199E9 /* ToViewController.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
+				A5CDADE120F6275000E199E9 /* FromViewController.swift in Sources */,
 				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
 				A5DF680F20D500F4005743EE /* DataSourceProviding.swift in Sources */,
 				A5DF680D20D4F48E005743EE /* TableViewMoving.swift in Sources */,
@@ -1181,7 +1250,6 @@
 				A5F47B5F20C910240073FDC8 /* ModalNavigationPresenter.swift in Sources */,
 				A5349F7520E6C7B8009EBF3A /* PanForDismiss.swift in Sources */,
 				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
-				A5456FCF20F4E55200783223 /* SubviewsAnimator.swift in Sources */,
 				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,

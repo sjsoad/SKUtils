@@ -26,6 +26,7 @@ enum ModuleType {
     case customPresentation
     case imagePreviewing
     case viewAnimations
+    case subviewsAnimations
 }
 
 class ModuleBuilder: NSObject {
@@ -133,6 +134,20 @@ class ModuleBuilder: NSObject {
     class func viewAnimationsModule() -> Module<ViewAnimationsPresenter, UIViewController> {
         let viewController = ViewAnimationsViewController()
         let presenter = ViewAnimationsPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func fromModule() -> Module<FromPresenter, UIViewController> {
+        let viewController = FromViewController()
+        let presenter = FromPresenter(with: viewController)
+        viewController.presenter = presenter
+        return Module(presenter: presenter, interface: viewController)
+    }
+    
+    class func toModule() -> Module<ToPresenter, UIViewController> {
+        let viewController = ToViewController()
+        let presenter = ToPresenter(with: viewController)
         viewController.presenter = presenter
         return Module(presenter: presenter, interface: viewController)
     }

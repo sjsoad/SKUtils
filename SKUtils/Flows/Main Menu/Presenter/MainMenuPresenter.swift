@@ -6,6 +6,10 @@
 //Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
+// disable some swiftlint rules for this file
+
+// swiftlint:disable cyclomatic_complexity
+
 import Foundation
 import SKDataSources
 import SKCustomNavigation
@@ -64,7 +68,8 @@ class MainMenuPresenter: NSObject {
                 Example(title: "Custom Modal Transition Example", type: .modalTransition),
                 Example(title: "Custom Presentation Example", type: .customPresentation),
                 Example(title: "Image Previewing Example", type: .imagePreviewing),
-                Example(title: "View Animations Example", type: .viewAnimations)]
+                Example(title: "View Animations Example", type: .viewAnimations),
+                Example(title: "Subviews Animations Example", type: .subviewsAnimations)]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {
@@ -145,6 +150,9 @@ extension MainMenuPresenter: MainMenuOutput {
         case .viewAnimations:
             let viewAnimationsModule = ModuleBuilder.viewAnimationsModule()
             interface = viewAnimationsModule.interface
+        case .subviewsAnimations:
+            let fromModule = ModuleBuilder.fromModule()
+            interface = fromModule.interface
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }
@@ -152,3 +160,7 @@ extension MainMenuPresenter: MainMenuOutput {
     }
     
 }
+
+// enable swiftlint rules disabled for this file
+
+// swiftlint:enable cyclomatic_complexity

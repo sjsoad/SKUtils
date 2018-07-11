@@ -9,12 +9,8 @@
 import UIKit
 import SKCustomNavigation
 
-class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface, SubviewsForAnimatedTransitionProviding {
+class ViewAnimationsViewController: UIViewController, ViewAnimationsInterface {
 
-    var subviewsToAnimate: [UIView] {
-        return [button, testView]
-    }
-    
     var presenter: ViewAnimationsOutput?
 
     @IBOutlet private weak var testView: UIView!
