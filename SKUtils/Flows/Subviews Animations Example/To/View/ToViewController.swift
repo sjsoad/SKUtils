@@ -18,6 +18,14 @@ class ToViewController: UIViewController, ToInterface, SubviewsForAnimatiedTrans
     
     // MARK: - Lifecycle -
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     // MARK: - IBActions -
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
