@@ -22,10 +22,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gal" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-o7-sxR">
+                    <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jkv-o7-sxR" secondAttribute="height" multiplier="1:1" id="EtF-g1-Cmq"/>
+                    </constraints>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ew-Ut-Xdi">
-                    <rect key="frame" x="20" y="40" width="107" height="30"/>
+                    <rect key="frame" x="127.5" y="617" width="120" height="30"/>
                     <color key="backgroundColor" red="0.17254901959999999" green="0.63529411759999999" blue="0.7843137255" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
+                        <constraint firstAttribute="width" constant="120" id="hXn-g1-oiA"/>
                         <constraint firstAttribute="height" constant="30" id="yi0-ia-QgI"/>
                     </constraints>
                     <state key="normal" title="Close picture"/>
@@ -38,22 +45,16 @@
                         <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="E0Y-Wp-UwJ"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gal" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-o7-sxR">
-                    <rect key="frame" x="0.0" y="156" width="375" height="375"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="jkv-o7-sxR" secondAttribute="height" multiplier="1:1" id="EtF-g1-Cmq"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="jkv-o7-sxR" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" id="1OX-fT-tEO"/>
+                <constraint firstItem="2Ew-Ut-Xdi" firstAttribute="centerX" secondItem="fwJ-ZV-ZKT" secondAttribute="centerX" id="5kl-Z7-mRx"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="jkv-o7-sxR" secondAttribute="trailing" id="9G0-V6-ABq"/>
                 <constraint firstItem="jkv-o7-sxR" firstAttribute="centerX" secondItem="fwJ-ZV-ZKT" secondAttribute="centerX" id="Hih-jP-pfL"/>
                 <constraint firstItem="jkv-o7-sxR" firstAttribute="width" secondItem="jkv-o7-sxR" secondAttribute="height" multiplier="1:1" id="kPl-Eb-6Sx"/>
-                <constraint firstItem="2Ew-Ut-Xdi" firstAttribute="top" secondItem="fwJ-ZV-ZKT" secondAttribute="top" constant="20" id="maC-Kq-oSf"/>
                 <constraint firstItem="jkv-o7-sxR" firstAttribute="centerY" secondItem="fwJ-ZV-ZKT" secondAttribute="centerY" id="oDM-Ou-K1U"/>
-                <constraint firstItem="2Ew-Ut-Xdi" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="tDa-ip-Hvh"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="2Ew-Ut-Xdi" secondAttribute="bottom" constant="20" id="yXH-BY-k8G"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
         </view>
