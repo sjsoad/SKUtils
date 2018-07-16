@@ -9,7 +9,7 @@
 import UIKit
 import SKCustomNavigation
 
-class ToViewController: UIViewController, ToInterface, SubviewsForAnimatiedTransitionProvider {
+class ToViewController: UIViewController, ToInterface {
 
     var presenter: ToOutput?
 

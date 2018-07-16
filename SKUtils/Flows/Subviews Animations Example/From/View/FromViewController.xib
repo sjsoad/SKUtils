@@ -29,6 +29,9 @@
                         <constraint firstAttribute="width" constant="100" id="DPQ-Pt-mwQ"/>
                         <constraint firstAttribute="width" secondItem="vs4-0D-1R6" secondAttribute="height" multiplier="1:1" id="yZj-qj-5tQ"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="subviewId" value="avatar"/>
+                    </userDefinedRuntimeAttributes>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3q-2h-DXO">
                     <rect key="frame" x="140" y="110" width="140" height="30"/>
@@ -42,6 +45,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="15"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="subviewId" value="button"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="QhG-fY-gSP"/>
