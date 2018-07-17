@@ -10,6 +10,7 @@
 import UIKit
 import Foundation
 import SKDataSources
+import SKCustomNavigation
 
 class MainMenuCell: UITableViewCell, DataSourceObjectInterface, Reusable, Nibable, MainMenuCellInterface {
     
@@ -24,6 +25,7 @@ class MainMenuCell: UITableViewCell, DataSourceObjectInterface, Reusable, Nibabl
     // MARK: - MainMenuCellInterface -
     
     func set(_ title: String?) {
+        textLabel?.subviewId = "text"
         textLabel?.text = title
     }
     
