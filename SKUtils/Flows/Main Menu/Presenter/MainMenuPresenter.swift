@@ -3,7 +3,7 @@
 //  SKUtils
 //
 //  Created by Sergey Kostyan on 09.05.2018.
-//Copyright © 2018 Sergey Kostyan. All rights reserved.
+//  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
 // disable some swiftlint rules for this file
