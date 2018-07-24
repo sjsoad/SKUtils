@@ -69,7 +69,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="subviewId" value="text"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="subviewId" value="Subviews Animations Example"/>
                     </userDefinedRuntimeAttributes>
                 </label>
             </subviews>

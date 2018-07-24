@@ -25,7 +25,7 @@ class MainMenuCell: UITableViewCell, DataSourceObjectInterface, Reusable, Nibabl
     // MARK: - MainMenuCellInterface -
     
     func set(_ title: String?) {
-        textLabel?.subviewId = "text"
+        textLabel?.subviewId = title
         textLabel?.text = title
     }
     
