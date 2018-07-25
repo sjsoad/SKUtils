@@ -61,6 +61,9 @@
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="2Ew-Ut-Xdi" secondAttribute="bottom" constant="20" id="yXH-BY-k8G"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="subviewsAnimationEnabled" value="YES"/>
+            </userDefinedRuntimeAttributes>
         </view>
     </objects>
     <resources>

@@ -84,6 +84,9 @@
                 <constraint firstItem="03H-pj-6zC" firstAttribute="top" secondItem="vs4-0D-1R6" secondAttribute="top" id="pV4-bK-LdR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="subviewsAnimationEnabled" value="YES"/>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
