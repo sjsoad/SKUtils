@@ -8,12 +8,16 @@
 
 import UIKit
 
-public typealias AsyncOperationBlock = ((AsyncOperation) -> Void)
+public typealias AsyncOperationBlock = ((AsyncBlockOperation) -> Void)
 
-open class AsyncOperation: Operation {
+open class AsyncBlockOperation: Operation {
 
     private var operationBlock: AsyncOperationBlock?
     private var finishedBlock: AsyncOperationBlock?
+    
+    open override var isAsynchronous: Bool {
+        return !Thread.isMainThread
+    }
     
     init(operationBlock: AsyncOperationBlock?, finishedBlock: AsyncOperationBlock?) {
         self.operationBlock = operationBlock
@@ -27,11 +31,18 @@ open class AsyncOperation: Operation {
     
     override open func main() {
         guard isCancelled == false else { return }
-        operationBlock?(self)
+        DispatchQueue.global().async { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.operationBlock?(strongSelf)
+        }
     }
     
     func finish() {
-        finishedBlock?(self)
+        guard isCancelled == false else { return }
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.finishedBlock?(strongSelf)
+        }
     }
     
 }

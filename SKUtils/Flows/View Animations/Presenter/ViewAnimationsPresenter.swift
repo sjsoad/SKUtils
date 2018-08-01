@@ -22,6 +22,8 @@ class ViewAnimationsPresenter: NSObject {
     
     private weak var view: ViewAnimationsInterface?
 
+    private var operation: AsyncBlockOperation?
+    
     init(with view: ViewAnimationsInterface) {
         self.view = view
     }
@@ -33,15 +35,16 @@ class ViewAnimationsPresenter: NSObject {
 extension ViewAnimationsPresenter: ViewAnimationsOutput {
 
     func viewTriggeredActionEvent() {
-        let operation = AsyncOperation(operationBlock: { (operation) in
+        operation?.cancel()
+        operation = AsyncBlockOperation(operationBlock: { (operation) in
             print("do something")
-            operation.cancel()
+            sleep(10)
             operation.finish()
         }, finishedBlock: { (operation) in
             print(operation.isCancelled)
             print("finished")
         })
-        operation.start()
+        operation?.start()
     }
     
 }
