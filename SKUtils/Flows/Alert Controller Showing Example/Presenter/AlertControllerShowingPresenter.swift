@@ -63,7 +63,7 @@ class AlertControllerShowingPresenter: NSObject {
     
 }
 
-// MARK: - AlertControllerShowingPresenterOutput -
+// MARK: - AlertControllerShowingOutput -
 
 extension AlertControllerShowingPresenter: AlertControllerShowingOutput {
 

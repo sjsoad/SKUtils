@@ -40,7 +40,7 @@ class AppSettingsPresenter: NSObject, AppSettingsShowing {
     
 }
 
-// MARK: - AppSettingsPresenterOutput -
+// MARK: - AppSettingsOutput -
 
 extension AppSettingsPresenter: AppSettingsOutput {
 

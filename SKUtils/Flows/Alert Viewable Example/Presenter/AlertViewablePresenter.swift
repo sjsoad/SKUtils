@@ -33,7 +33,7 @@ class AlertViewablePresenter: NSObject {
     
 }
 
-// MARK: - AlertViewablePresenterOutput -
+// MARK: - AlertViewableOutput -
 
 extension AlertViewablePresenter: AlertViewableOutput {
 

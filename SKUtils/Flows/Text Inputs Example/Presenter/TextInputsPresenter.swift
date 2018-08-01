@@ -56,7 +56,7 @@ class TextInputsPresenter: NSObject {
     
 }
 
-// MARK: - TextInputsPresenterOutput -
+// MARK: - TextInputsOutput -
 
 extension TextInputsPresenter: TextInputsOutput {
 

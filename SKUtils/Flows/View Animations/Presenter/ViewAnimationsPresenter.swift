@@ -14,6 +14,8 @@ protocol ViewAnimationsInterface: class {
 
 protocol ViewAnimationsOutput {
     
+    func viewTriggeredActionEvent()
+    
 }
 
 class ViewAnimationsPresenter: NSObject {
@@ -26,8 +28,20 @@ class ViewAnimationsPresenter: NSObject {
     
 }
 
-// MARK: - ViewAnimationsPresenterOutput -
+// MARK: - ViewAnimationsOutput -
 
 extension ViewAnimationsPresenter: ViewAnimationsOutput {
 
+    func viewTriggeredActionEvent() {
+        let operation = AsyncOperation(operationBlock: { (operation) in
+            print("do something")
+            operation.cancel()
+            operation.finish()
+        }, finishedBlock: { (operation) in
+            print(operation.isCancelled)
+            print("finished")
+        })
+        operation.start()
+    }
+    
 }

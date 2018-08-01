@@ -34,7 +34,7 @@ class TextInputsManagerPresenter: NSObject {
     
 }
 
-// MARK: - TextInputsManagerPresenterOutput -
+// MARK: - TextInputsManagerOutput -
 
 extension TextInputsManagerPresenter: TextInputsManagerOutput {
     

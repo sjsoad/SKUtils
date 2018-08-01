@@ -28,7 +28,7 @@ class ToPresenter: NSObject {
     
 }
 
-// MARK: - ToPresenterOutput -
+// MARK: - ToOutput -
 
 extension ToPresenter: ToOutput {
 

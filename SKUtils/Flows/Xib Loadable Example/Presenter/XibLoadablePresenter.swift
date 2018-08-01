@@ -27,7 +27,7 @@ class XibLoadablePresenter: NSObject {
     
 }
 
-// MARK: - XibLoadablePresenterOutput -
+// MARK: - XibLoadableOutput -
 
 extension XibLoadablePresenter: XibLoadableOutput {
 

@@ -47,7 +47,7 @@ class ImagePickerPresenter: NSObject, ImagePicking {
     
 }
 
-// MARK: - ImagePickerPresenterOutput -
+// MARK: - ImagePickerOutput -
 
 extension ImagePickerPresenter: ImagePickerOutput {
     

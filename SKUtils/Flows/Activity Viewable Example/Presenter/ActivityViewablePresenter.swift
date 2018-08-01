@@ -32,7 +32,7 @@ class ActivityViewablePresenter: NSObject {
     
 }
 
-// MARK: - ActivityViewablePresenterOutput -
+// MARK: - ActivityViewableOutput -
 
 extension ActivityViewablePresenter: ActivityViewableOutput {
 

@@ -27,7 +27,7 @@ PODS:
     - SKServicePermissions
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
-  - SKCustomNavigation (0.1.0):
+  - SKCustomNavigation (0.1.1):
     - SKAnimator
   - SKDataSources (0.0.6)
   - SKImagePicking (0.0.5):
@@ -61,7 +61,7 @@ PODS:
   - SKTextInputsManager (0.0.6)
   - SKValidationService (0.0.2)
   - SKXibLoadableView (0.0.1)
-  - SwiftLint (0.26.0)
+  - SwiftLint (0.27.0)
   - SwiftyDrop (4.1.0)
 
 DEPENDENCIES:
@@ -76,7 +76,7 @@ DEPENDENCIES:
   - SKBluetoothPermissions
   - SKCameraPermissions
   - SKContactsPermissions
-  - SKCustomNavigation (from `/Users/Sergey/Work/Pods/CustomNavigation`)
+  - SKCustomNavigation
   - SKDataSources
   - SKImagePicking
   - SKImagePreviewing
@@ -109,6 +109,7 @@ SPEC REPOS:
     - SKBluetoothPermissions
     - SKCameraPermissions
     - SKContactsPermissions
+    - SKCustomNavigation
     - SKDataSources
     - SKImagePicking
     - SKImagePreviewing
@@ -126,10 +127,6 @@ SPEC REPOS:
     - SwiftLint
     - SwiftyDrop
 
-EXTERNAL SOURCES:
-  SKCustomNavigation:
-    :path: "/Users/Sergey/Work/Pods/CustomNavigation"
-
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -145,7 +142,7 @@ SPEC CHECKSUMS:
   SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
-  SKCustomNavigation: e177ad3e7e2b002d31b4794602dfff2b08ab4089
+  SKCustomNavigation: 9caf800829f9c0203503f798ea5506213785e1fa
   SKDataSources: 1f7f155cc79d917a6e284d89260473b51555a6f6
   SKImagePicking: c112454b99b50cd1081f3cdb688a905c358d9be0
   SKImagePreviewing: beb608a63cc0c560810027acb71fedea65241438
@@ -160,9 +157,9 @@ SPEC CHECKSUMS:
   SKTextInputsManager: 074d5f2c422d6bc4ac9c8d039ae53bb89278c2ed
   SKValidationService: 266a936b25be39e7a9d99e0e08d8c54d044e1f39
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
-  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 497bbd42984c8fd031e7a1716c6f6b032ef113c3
+PODFILE CHECKSUM: 8257e043981a07ff55f3f29973c5bcae04ff0997
 
 COCOAPODS: 1.5.3

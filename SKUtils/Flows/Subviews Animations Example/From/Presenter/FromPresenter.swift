@@ -28,7 +28,7 @@ class FromPresenter: NSObject {
     
 }
 
-// MARK: - FromPresenterOutput -
+// MARK: - FromOutput -
 
 extension FromPresenter: FromOutput {
 

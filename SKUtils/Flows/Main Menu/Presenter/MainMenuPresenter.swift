@@ -84,7 +84,7 @@ class MainMenuPresenter: NSObject {
     
 }
 
-// MARK: - MainMenuPresenterOutput -
+// MARK: - MainMenuOutput -
 
 extension MainMenuPresenter: MainMenuOutput {
 

@@ -29,7 +29,7 @@ class ModalNavigationPresenter: NSObject {
     
 }
 
-// MARK: - ModalNavigationPresenterOutput -
+// MARK: - ModalNavigationOutput -
 
 extension ModalNavigationPresenter: ModalNavigationOutput {
 

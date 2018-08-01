@@ -163,7 +163,7 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
     
 }
 
-// MARK: - ServicePermissionsPresenterOutput -
+// MARK: - ServicePermissionsOutput -
 
 extension ServicePermissionsPresenter: ServicePermissionsOutput {
 
