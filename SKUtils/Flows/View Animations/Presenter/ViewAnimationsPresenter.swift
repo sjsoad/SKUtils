@@ -23,6 +23,7 @@ class ViewAnimationsPresenter: NSObject {
     private weak var view: ViewAnimationsInterface?
 
     private var operation: AsyncBlockOperation?
+    private var queue: OperationQueue = OperationQueue()
     
     init(with view: ViewAnimationsInterface) {
         self.view = view
@@ -40,10 +41,13 @@ extension ViewAnimationsPresenter: ViewAnimationsOutput {
             print("do something")
             sleep(10)
             operation.finish()
-        }, finishedBlock: { (operation) in
-            print(operation.isCancelled)
-            print("finished")
         })
+        operation?.completionBlock = { [weak self] in
+            print("operation")
+            print(self?.operation?.isFinished ?? "nothing")
+        }
+//        guard let operation = operation else { return }
+//        queue.addOperation(operation)
         operation?.start()
     }
     

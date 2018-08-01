@@ -11,21 +11,43 @@ import UIKit
 public typealias AsyncOperationBlock = ((AsyncBlockOperation) -> Void)
 
 open class AsyncBlockOperation: Operation {
-
-    private var operationBlock: AsyncOperationBlock?
-    private var finishedBlock: AsyncOperationBlock?
     
-    open override var isAsynchronous: Bool {
-        return !Thread.isMainThread
+    enum State: String {
+        case isReady, isExecuting, isFinished
     }
     
-    init(operationBlock: AsyncOperationBlock?, finishedBlock: AsyncOperationBlock?) {
+    private var operationBlock: AsyncOperationBlock?
+    
+    var state = State.isReady {
+        willSet {
+            willChangeValue(forKey: state.rawValue)
+            willChangeValue(forKey: newValue.rawValue)
+        }
+        didSet {
+            didChangeValue(forKey: oldValue.rawValue)
+            didChangeValue(forKey: state.rawValue)
+        }
+    }
+    
+    open override var isAsynchronous: Bool {
+        return true
+    }
+    
+    open override var isExecuting: Bool {
+        return state == .isExecuting
+    }
+    
+    open override var isFinished: Bool {
+        return state == .isFinished
+    }
+    
+    init(operationBlock: AsyncOperationBlock?) {
         self.operationBlock = operationBlock
-        self.finishedBlock = finishedBlock
     }
     
     override open func start() {
         guard isCancelled == false else { return }
+        state = .isExecuting
         main()
     }
     
@@ -41,7 +63,7 @@ open class AsyncBlockOperation: Operation {
         guard isCancelled == false else { return }
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
-            strongSelf.finishedBlock?(strongSelf)
+            strongSelf.state = .isFinished
         }
     }
     
