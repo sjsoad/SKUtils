@@ -53,6 +53,7 @@ extension AppSettingsPresenter: AppSettingsOutput {
 //                                                              settingsActionTitle: "Go To Settings", cancelActionTitle: "Cancel")
         // or
         let stringsProvider = DefaultAppSettingsAlertStringsProvider()  // check Service Permissions Example for advanced example
+//        showAppSettingsAlert(with: stringsProvider)
         showAppSettingsAlert(with: stringsProvider, alertPresentingCompletion: {
             print("alert presented")
         }, appSettingsShowingCompletion: { opened in
