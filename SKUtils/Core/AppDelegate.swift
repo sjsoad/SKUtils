@@ -44,7 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = DefaultNavigationController(rootViewController: mainMenuModule.interface)
         navigationController.set(defaultInteractionEnabled: true)
         window?.rootViewController = navigationController
-        navigationController.interactionController = PanInteractionController(navigationController: navigationController)
     }
     
 }

@@ -7,17 +7,17 @@ PODS:
   - NVActivityIndicatorView (4.3.0):
     - NVActivityIndicatorView/Presenter (= 4.3.0)
   - NVActivityIndicatorView/Presenter (4.3.0)
-  - SKActivityViewable (0.0.1):
+  - SKActivityViewable (0.0.2):
     - NVActivityIndicatorView
   - SKAlertControllerBuilder (0.0.1):
     - AlertActionBuilder
-  - SKAlertControllerShowing (0.0.8):
+  - SKAlertControllerShowing (0.0.9):
     - AlertActionBuilder
     - SKAlertControllerBuilder
   - SKAlertViewable (0.0.1):
     - SwiftyDrop
   - SKAnimator (0.0.2)
-  - SKAppSettingsShowing (0.0.6):
+  - SKAppSettingsShowing (0.0.7):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -30,7 +30,7 @@ PODS:
   - SKCustomNavigation (0.1.1):
     - SKAnimator
   - SKDataSources (0.0.6)
-  - SKImagePicking (0.0.5):
+  - SKImagePicking (0.0.6):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -60,37 +60,37 @@ PODS:
     - SKPickerViewManager
   - SKTextInputsManager (0.0.6)
   - SKValidationService (0.0.2)
-  - SKXibLoadableView (0.0.2)
+  - SKXibLoadableView (0.0.1)
   - SwiftLint (0.27.0)
   - SwiftyDrop (4.1.0)
 
 DEPENDENCIES:
   - AlamofireImage
-  - AlertActionBuilder (from `/Users/Sergey/Work/Pods/AlertActionBuilder`)
-  - SKActivityViewable (from `/Users/Sergey/Work/Pods/ActivityViewable`)
-  - SKAlertControllerBuilder (from `/Users/Sergey/Work/Pods/AlertControllerBuilder`)
-  - SKAlertControllerShowing (from `/Users/Sergey/Work/Pods/AlertControllerShowing`)
-  - SKAlertViewable (from `/Users/Sergey/Work/Pods/AlertViewable`)
-  - SKAnimator (from `/Users/Sergey/Work/Pods/Animator`)
-  - SKAppSettingsShowing (from `/Users/Sergey/Work/Pods/AppSettingsShowing`)
-  - SKBluetoothPermissions (from `/Users/Sergey/Work/Pods/BluetoothPermissions`)
-  - SKCameraPermissions (from `/Users/Sergey/Work/Pods/CameraPermissions`)
-  - SKContactsPermissions (from `/Users/Sergey/Work/Pods/ContactsPermissions`)
-  - SKCustomNavigation (from `/Users/Sergey/Work/Pods/CustomNavigation`)
-  - SKDataSources (from `/Users/Sergey/Work/Pods/DataSources`)
-  - SKImagePicking (from `/Users/sergey/Work/Pods/ImagePicking`)
-  - SKImagePreviewing (from `/Users/Sergey/Work/Pods/Image-Previewing`)
-  - SKLocalDataStorage (from `/Users/Sergey/Work/Pods/LocalDataStorage`)
-  - SKLocationPermissions (from `/Users/Sergey/Work/Pods/LocationPermissions`)
-  - SKMicrophonePermissions (from `/Users/Sergey/Work/Pods/MicrophonePermissions`)
-  - SKNetworkingLib (from `/Users/Sergey/Work/Pods/Networking`)
-  - SKPhotosPermissions (from `/Users/Sergey/Work/Pods/PhotosPermissions`)
-  - SKPickerViewManager (from `/Users/Sergey/Work/Pods/PickerViewManager`)
-  - SKServicePermissions (from `/Users/Sergey/Work/Pods/ServicePermission`)
-  - SKTextInputs (from `/Users/Sergey/Work/Pods/TextInputs`)
-  - SKTextInputsManager (from `/Users/Sergey/Work/Pods/TextInputsManager`)
-  - SKValidationService (from `/Users/Sergey/Work/Pods/ValidationService`)
-  - SKXibLoadableView (from `/Users/Sergey/Work/Pods/XibLoadableView`)
+  - AlertActionBuilder
+  - SKActivityViewable
+  - SKAlertControllerBuilder
+  - SKAlertControllerShowing
+  - SKAlertViewable
+  - SKAnimator
+  - SKAppSettingsShowing
+  - SKBluetoothPermissions
+  - SKCameraPermissions
+  - SKContactsPermissions
+  - SKCustomNavigation (from `/Users/sergey/Work/Pods/CustomNavigation`)
+  - SKDataSources
+  - SKImagePicking
+  - SKImagePreviewing
+  - SKLocalDataStorage
+  - SKLocationPermissions
+  - SKMicrophonePermissions
+  - SKNetworkingLib
+  - SKPhotosPermissions
+  - SKPickerViewManager
+  - SKServicePermissions
+  - SKTextInputs
+  - SKTextInputsManager
+  - SKValidationService
+  - SKXibLoadableView
   - SwiftLint
 
 SPEC REPOS:
@@ -98,95 +98,71 @@ SPEC REPOS:
     - AERecord
     - Alamofire
     - AlamofireImage
+    - AlertActionBuilder
     - NVActivityIndicatorView
+    - SKActivityViewable
+    - SKAlertControllerBuilder
+    - SKAlertControllerShowing
+    - SKAlertViewable
+    - SKAnimator
+    - SKAppSettingsShowing
+    - SKBluetoothPermissions
+    - SKCameraPermissions
+    - SKContactsPermissions
+    - SKDataSources
+    - SKImagePicking
+    - SKImagePreviewing
+    - SKLocalDataStorage
+    - SKLocationPermissions
+    - SKMicrophonePermissions
+    - SKNetworkingLib
+    - SKPhotosPermissions
+    - SKPickerViewManager
+    - SKServicePermissions
+    - SKTextInputs
+    - SKTextInputsManager
+    - SKValidationService
+    - SKXibLoadableView
     - SwiftLint
     - SwiftyDrop
 
 EXTERNAL SOURCES:
-  AlertActionBuilder:
-    :path: "/Users/Sergey/Work/Pods/AlertActionBuilder"
-  SKActivityViewable:
-    :path: "/Users/Sergey/Work/Pods/ActivityViewable"
-  SKAlertControllerBuilder:
-    :path: "/Users/Sergey/Work/Pods/AlertControllerBuilder"
-  SKAlertControllerShowing:
-    :path: "/Users/Sergey/Work/Pods/AlertControllerShowing"
-  SKAlertViewable:
-    :path: "/Users/Sergey/Work/Pods/AlertViewable"
-  SKAnimator:
-    :path: "/Users/Sergey/Work/Pods/Animator"
-  SKAppSettingsShowing:
-    :path: "/Users/Sergey/Work/Pods/AppSettingsShowing"
-  SKBluetoothPermissions:
-    :path: "/Users/Sergey/Work/Pods/BluetoothPermissions"
-  SKCameraPermissions:
-    :path: "/Users/Sergey/Work/Pods/CameraPermissions"
-  SKContactsPermissions:
-    :path: "/Users/Sergey/Work/Pods/ContactsPermissions"
   SKCustomNavigation:
-    :path: "/Users/Sergey/Work/Pods/CustomNavigation"
-  SKDataSources:
-    :path: "/Users/Sergey/Work/Pods/DataSources"
-  SKImagePicking:
-    :path: "/Users/sergey/Work/Pods/ImagePicking"
-  SKImagePreviewing:
-    :path: "/Users/Sergey/Work/Pods/Image-Previewing"
-  SKLocalDataStorage:
-    :path: "/Users/Sergey/Work/Pods/LocalDataStorage"
-  SKLocationPermissions:
-    :path: "/Users/Sergey/Work/Pods/LocationPermissions"
-  SKMicrophonePermissions:
-    :path: "/Users/Sergey/Work/Pods/MicrophonePermissions"
-  SKNetworkingLib:
-    :path: "/Users/Sergey/Work/Pods/Networking"
-  SKPhotosPermissions:
-    :path: "/Users/Sergey/Work/Pods/PhotosPermissions"
-  SKPickerViewManager:
-    :path: "/Users/Sergey/Work/Pods/PickerViewManager"
-  SKServicePermissions:
-    :path: "/Users/Sergey/Work/Pods/ServicePermission"
-  SKTextInputs:
-    :path: "/Users/Sergey/Work/Pods/TextInputs"
-  SKTextInputsManager:
-    :path: "/Users/Sergey/Work/Pods/TextInputsManager"
-  SKValidationService:
-    :path: "/Users/Sergey/Work/Pods/ValidationService"
-  SKXibLoadableView:
-    :path: "/Users/Sergey/Work/Pods/XibLoadableView"
+    :path: "/Users/sergey/Work/Pods/CustomNavigation"
 
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  AlertActionBuilder: ea4a4af7ded7100a8675647c665f87eca064ea54
+  AlertActionBuilder: fd594b58b267eb291d223a840d87ec8e2769339e
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
-  SKActivityViewable: 2afa0cd6395989719e1cdb769e667fe11378a629
-  SKAlertControllerBuilder: 21b0bcd7dac43e8f89ac35e2e48a3580808c4f26
-  SKAlertControllerShowing: ad0fbda2459332098ba51f7a27d7dbdb802694b5
-  SKAlertViewable: d2d8ba951036c74fb971ae684f41f951b4cd266d
-  SKAnimator: 441e075ad2d5e141dd5da96282ecffd9734a4fa7
-  SKAppSettingsShowing: 5597f2b48c7f3eccebb2e76d7dacf17589617bbb
-  SKBluetoothPermissions: fa62e511ef35dceb2fa2fc041a9142fbee62a947
-  SKCameraPermissions: 4e2927d4d359eaa261ba301784b9f5efe7259117
-  SKContactsPermissions: cf412c22758c5f8d8a29d67ef8e2e0ada84d6af2
+  SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
+  SKAlertControllerBuilder: 1ba0b7c9327d931a813de24009edc88822dad74f
+  SKAlertControllerShowing: 48e3caa0b26881de5d0342556b448526487e55a7
+  SKAlertViewable: 431917d11186579dfa4f7265764150c231fba1bf
+  SKAnimator: 35a71ae524636f263fb2916a186451a11a02ff3c
+  SKAppSettingsShowing: f28f288eaa90a0dbc3e6ebdce399e574c8ccf80f
+  SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
+  SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
+  SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
-  SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
-  SKImagePicking: 99d18672578cf553e30efaa935b967b3a0705a56
-  SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
-  SKLocalDataStorage: 1671a59b6b58081c74fcafc5130926e9eff33439
-  SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
-  SKMicrophonePermissions: 8d22b390e3e372749014f08e06d500bd78bb2f3f
-  SKNetworkingLib: 63e6d96b5d3484c1cc1faf089f733ce5070a514a
-  SKPhotosPermissions: a1eb67132dab47fa948876333ec190629732f118
-  SKPickerViewManager: 7d216d18971c956a79e0c00c99cb92abb1cc7eb3
-  SKServicePermissions: e44db83279e5b9c412718519c8247890da27693f
-  SKTextInputs: 00fbbfc75260e51c23a7574698458588e0536194
-  SKTextInputsManager: d83da18042a67ab4185a71b94a0cc6898f4e172e
-  SKValidationService: 9469f490204f0e3840b0b5a548dbac62fc53cb8d
-  SKXibLoadableView: 0f679b06c940454f9b8fbb9d56349d8727b0a7ca
+  SKDataSources: 1f7f155cc79d917a6e284d89260473b51555a6f6
+  SKImagePicking: 4fd5327a4e3835c5c8ee222c394b3d68b07fcab2
+  SKImagePreviewing: beb608a63cc0c560810027acb71fedea65241438
+  SKLocalDataStorage: 4aec2ab30882ce3e5fd4c5e97199dfbfd83cf8ef
+  SKLocationPermissions: 9eb44edf1e24269b4707d92768f6c559e096f967
+  SKMicrophonePermissions: 54849d5100b08365db3f0d63aae9489968bbf398
+  SKNetworkingLib: a96b9a380394c68a360a7602701380dbc1dac40d
+  SKPhotosPermissions: f4e3422ff8c8ecfc468e55b2ea33b5221391ec25
+  SKPickerViewManager: 519aa6f95f869280ad57b68be97bd076b87ed7ea
+  SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
+  SKTextInputs: 80da1bc11cc7c295ddefbeec2ba1fd9c32be8bb0
+  SKTextInputsManager: 074d5f2c422d6bc4ac9c8d039ae53bb89278c2ed
+  SKValidationService: 266a936b25be39e7a9d99e0e08d8c54d044e1f39
+  SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: b4a5ea8a0a4d29e9d93080c22ef7610b1ce70eb3
+PODFILE CHECKSUM: 1afa1c9b7cf8f9f3f4fc9dbd4501e91070bf13f6
 
 COCOAPODS: 1.5.3

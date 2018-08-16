@@ -9,9 +9,11 @@
 import UIKit
 import SKCustomNavigation
 
-class PanInteractionController: UIPercentDrivenInteractiveTransition, InteractionControlling, UIGestureRecognizerDelegate {
+class PanInteractionController: NSObject, UIViewControllerInteractiveTransitioning, InteractionControlling, UIGestureRecognizerDelegate {
 
     private weak var navigationController: UINavigationController?
+    private var context: UIViewControllerContextTransitioning?
+    private var animator: UIViewPropertyAnimator?
     private var shouldCompleteTransition = false
     open var interactionInProgress = false
     open var completeOnPercentage: CGFloat = 0.5
@@ -20,6 +22,10 @@ class PanInteractionController: UIPercentDrivenInteractiveTransition, Interactio
         super.init()
         self.navigationController = navigationController
         self.prepareGestureRecognizer(in: navigationController.view)
+    }
+    
+    func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
+        context = transitionContext
     }
     
     private func prepareGestureRecognizer(in view: UIView) {
@@ -38,15 +44,15 @@ class PanInteractionController: UIPercentDrivenInteractiveTransition, Interactio
             navigationController?.popViewController(animated: true)
         case .changed:
             shouldCompleteTransition = progress > completeOnPercentage
-            update(progress)
+            context?.updateInteractiveTransition(progress)
         case .cancelled, .ended:
             if interactionInProgress {
                 interactionInProgress = false
             }
             if shouldCompleteTransition {
-                finish()
+                
             } else {
-                cancel()
+
             }
         default:
             break
