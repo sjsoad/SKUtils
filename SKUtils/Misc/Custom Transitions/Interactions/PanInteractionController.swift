@@ -44,6 +44,7 @@ class PanInteractionController: NSObject, InteractionControlling, UIGestureRecog
         self.navigationController = navigationController
         self.panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
         self.panGesture?.delegate = self
+        activate()
     }
     
     // MARK: - Private -

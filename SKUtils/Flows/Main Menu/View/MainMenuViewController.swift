@@ -15,10 +15,7 @@ class MainMenuViewController: UIViewController, MainMenuInterface, AnimationCont
 
     var presenter: MainMenuOutput?
     
-    lazy var animatedTransitioning: CustomAnimatedTransitioning? = { [unowned self] in
-        let interactor = PanInteractionController(navigationController: navigationController)
-        return Page(transitionDirection: .fromRight, interactionController: interactor)
-    }()
+    var animatedTransitioning: CustomAnimatedTransitioning? = Page(transitionDirection: .fromRight)
     
     @IBOutlet private weak var tableView: UITableView!
     
