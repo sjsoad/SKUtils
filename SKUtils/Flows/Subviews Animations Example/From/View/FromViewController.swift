@@ -11,7 +11,7 @@ import SKCustomNavigation
 
 class FromViewController: UIViewController, FromInterface, AnimationControllerProvider {
 
-    var animatedTransitioning: CustomAnimatedTransitioning? = Push(transitionDirection: .fromRight)
+    var animatedTransitioning: CustomAnimatedTransitioning? = Push(transitionDirection: .fromTop)
     
     var presenter: FromOutput?
 

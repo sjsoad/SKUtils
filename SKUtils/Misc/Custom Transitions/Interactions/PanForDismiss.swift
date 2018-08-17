@@ -9,7 +9,7 @@
 import UIKit
 import SKCustomNavigation
 
-class PanForDismiss: UIPercentDrivenInteractiveTransition, InteractionControlling, UIGestureRecognizerDelegate {
+class PanForDismiss: NSObject, InteractionControlling, UIGestureRecognizerDelegate {
     
     private weak var viewController: UIViewController?
     private var shouldCompleteTransition = false

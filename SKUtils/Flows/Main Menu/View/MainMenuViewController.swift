@@ -3,7 +3,7 @@
 //  SKUtils
 //
 //  Created by Sergey Kostyan on 09.05.2018.
-//Copyright © 2018 Sergey Kostyan. All rights reserved.
+//  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,11 @@ import SKAnimator
 class MainMenuViewController: UIViewController, MainMenuInterface, AnimationControllerProvider {
 
     var presenter: MainMenuOutput?
-    var animatedTransitioning: CustomAnimatedTransitioning? = Page(transitionDirection: .fromRight)
+    
+    lazy var animatedTransitioning: CustomAnimatedTransitioning? = { [unowned self] in
+        let interactor = PanInteractionController(navigationController: navigationController)
+        return Page(transitionDirection: .fromRight, interactionController: interactor)
+    }()
     
     @IBOutlet private weak var tableView: UITableView!
     

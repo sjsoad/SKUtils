@@ -9,30 +9,56 @@
 import UIKit
 import SKCustomNavigation
 
-class PanInteractionController: NSObject, UIViewControllerInteractiveTransitioning, InteractionControlling, UIGestureRecognizerDelegate {
+class PanInteractionController: NSObject, InteractionControlling, UIGestureRecognizerDelegate {
 
-    private weak var navigationController: UINavigationController?
-    private var context: UIViewControllerContextTransitioning?
-    private var animator: UIViewPropertyAnimator?
-    private var shouldCompleteTransition = false
-    open var interactionInProgress = false
-    open var completeOnPercentage: CGFloat = 0.5
+    // MARK: - Your properties -
     
-    init(navigationController: UINavigationController) {
+    private weak var navigationController: UINavigationController?
+    private var shouldCompleteTransition = false
+    private var completeOnPercentage: CGFloat = 0.5
+    private var panGesture: UIPanGestureRecognizer?
+    
+    // MARK: - InteractionControlling -
+    
+    open weak var interactionDelegate: InteractionControllingDelegate?
+    open var interactionInProgress = false
+    
+    func activate() {
+        guard let panGesture = panGesture, !viewHasGesture(panGesture) else { return }
+        navigationController?.view.addGestureRecognizer(panGesture)
+    }
+    
+    func deactivate() {
+        guard let panGesture = panGesture, viewHasGesture(panGesture) else { return }
+        navigationController?.view.removeGestureRecognizer(panGesture)
+    }
+    
+    // MARK: - Lifecycle -
+    
+    deinit {
+        deactivate()
+    }
+    
+    init(navigationController: UINavigationController?) {
         super.init()
         self.navigationController = navigationController
-        self.prepareGestureRecognizer(in: navigationController.view)
+        self.panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
+        self.panGesture?.delegate = self
     }
+    
+    // MARK: - Private -
+    
+    private func viewHasGesture(_ gesture: UIPanGestureRecognizer) -> Bool {
+        return navigationController?.view.gestureRecognizers?.contains(gesture) ?? false
+    }
+    
+    // MARK: - UIViewControllerInteractiveTransitioning -
     
     func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
-        context = transitionContext
+        
     }
     
-    private func prepareGestureRecognizer(in view: UIView) {
-        let gesture = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
-        gesture.delegate = self
-        view.addGestureRecognizer(gesture)
-    }
+    // MARK: - Gesture Handler -
     
     @objc func handleGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
         guard let view = gestureRecognizer.view else { return }
@@ -42,22 +68,23 @@ class PanInteractionController: NSObject, UIViewControllerInteractiveTransitioni
         case .began:
             interactionInProgress = true
             navigationController?.popViewController(animated: true)
+            interactionDelegate?.interactionDidBegan()
         case .changed:
             shouldCompleteTransition = progress > completeOnPercentage
-            context?.updateInteractiveTransition(progress)
+            interactionDelegate?.interactionDidUpdate(with: progress)
         case .cancelled, .ended:
-            if interactionInProgress {
-                interactionInProgress = false
-            }
+            interactionInProgress = false
             if shouldCompleteTransition {
-                
+                interactionDelegate?.interactionDidEnded()
             } else {
-
+                interactionDelegate?.interactionDidCanceled()
             }
         default:
             break
         }
     }
+    
+    // MARK: - UIGestureRecognizerDelegate -
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
