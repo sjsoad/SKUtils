@@ -17,7 +17,6 @@
 		A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */; };
 		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
 		A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */; };
-		A511380120A3075100BC7C7D /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380020A3075100BC7C7D /* Module.swift */; };
 		A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380620A307B700BC7C7D /* MainMenuViewController.swift */; };
 		A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A511380720A307B700BC7C7D /* MainMenuViewController.xib */; };
 		A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */; };
@@ -124,7 +123,6 @@
 		A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
 		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesRepository.swift; sourceTree = "<group>"; };
-		A511380020A3075100BC7C7D /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		A511380620A307B700BC7C7D /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		A511380720A307B700BC7C7D /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
@@ -315,14 +313,6 @@
 				A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		A51137FD20A305E100BC7C7D /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				A511380020A3075100BC7C7D /* Module.swift */,
-			);
-			path = Module;
 			sourceTree = "<group>";
 		};
 		A511380220A307A600BC7C7D /* Main Menu */ = {
@@ -903,7 +893,6 @@
 			children = (
 				A5930C6620B592540080B982 /* Network Requests */,
 				A511380D20A3095000BC7C7D /* Module Builder */,
-				A51137FD20A305E100BC7C7D /* Module */,
 				A51137FC20A305E100BC7C7D /* Services */,
 				A5D6A8192090E69700DF7495 /* AppDelegate.swift */,
 			);
@@ -1266,7 +1255,6 @@
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
-				A511380120A3075100BC7C7D /* Module.swift in Sources */,
 				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,
 				A511381220A31A3100BC7C7D /* Example.swift in Sources */,
 			);

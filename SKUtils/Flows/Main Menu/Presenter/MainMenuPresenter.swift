@@ -97,62 +97,62 @@ extension MainMenuPresenter: MainMenuOutput {
         var interface: UIViewController?
         switch dataSourceObjectPresenter.model.type {
         case .activityViewable:
-            let activityViewableModule = ModuleBuilder.activityViewableModule()
-            interface = activityViewableModule.interface
+            let activityViewableVC = ModuleBuilder.activityViewableModule()
+            interface = activityViewableVC
         case .alertViewable:
-            let alertViewableModule = ModuleBuilder.alertViewableModule()
-            interface = alertViewableModule.interface
+            let alertViewableVC = ModuleBuilder.alertViewableModule()
+            interface = alertViewableVC
         case .alertControllerShowing:
-            let alertControllerModule = ModuleBuilder.alertControllerShowingModule()
-            interface = alertControllerModule.interface
+            let alertControllerVC = ModuleBuilder.alertControllerShowingModule()
+            interface = alertControllerVC
         case .inputsManagerInView:
-            let inputsManagerModule = ModuleBuilder.textInputsManagerInViewModule()
-            interface = inputsManagerModule.interface
+            let inputsManagerVC = ModuleBuilder.textInputsManagerInViewModule()
+            interface = inputsManagerVC
         case .inputsManagerInScroll:
-            let inputsManagerModule = ModuleBuilder.textInputsManagerInScrollModule()
-            interface = inputsManagerModule.interface
+            let inputsManagerVC = ModuleBuilder.textInputsManagerInScrollModule()
+            interface = inputsManagerVC
         case .textInputs:
-            let textInputsModule = ModuleBuilder.textInputsModule()
-            interface = textInputsModule.interface
+            let textInputsVC = ModuleBuilder.textInputsModule()
+            interface = textInputsVC
         case .xibLoadable:
-            let xibLoadableModule = ModuleBuilder.xibLoadableModule()
-            interface = xibLoadableModule.interface
+            let xibLoadableVC = ModuleBuilder.xibLoadableModule()
+            interface = xibLoadableVC
         case .appSettings:
-            let appSettingsModule = ModuleBuilder.appSettingsModule()
-            interface = appSettingsModule.interface
+            let appSettingsVC = ModuleBuilder.appSettingsModule()
+            interface = appSettingsVC
         case .imagePicking:
-            let imagePickerModule = ModuleBuilder.imagePickerModule()
-            interface = imagePickerModule.interface
+            let imagePickerVC = ModuleBuilder.imagePickerModule()
+            interface = imagePickerVC
         case .servicePermissions:
-            let servicePermissionsModule = ModuleBuilder.servicePermissionsModule()
-            interface = servicePermissionsModule.interface
+            let servicePermissionsVC = ModuleBuilder.servicePermissionsModule()
+            interface = servicePermissionsVC
         case .networking:
-            let networkModule = ModuleBuilder.networkModule(servicesRepository: servicesRepository)
-            interface = networkModule.interface
+            let networkVC = ModuleBuilder.networkModule(servicesRepository: servicesRepository)
+            interface = networkVC
         case .modalTransition:
-            let modalNavigationModule = ModuleBuilder.modalNavigationModule()
+            let modalNavigationVC = ModuleBuilder.modalNavigationModule()
             guard let viewController = view as? UIViewController else { return }
 //            modalNavigationModule.interface.transitioningDelegate = transitioningDelegate
 //            transitioningDelegate.interactionController = PanForDismiss(viewController: modalNavigationModule.interface)
-            viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
+            viewController.present(modalNavigationVC, animated: true, completion: nil)
             return
         case .customPresentation:
-            let modalNavigationModule = ModuleBuilder.modalNavigationModule()
+            let modalNavigationVC = ModuleBuilder.modalNavigationModule()
             guard let viewController = view as? UIViewController else { return }
 //            customTransitioningDelegate.interactionController = PanForDismiss(viewController: modalNavigationModule.interface)
 //            modalNavigationModule.interface.transitioningDelegate = customTransitioningDelegate
 //            modalNavigationModule.interface.modalPresentationStyle = .custom
-            viewController.present(modalNavigationModule.interface, animated: true, completion: nil)
+            viewController.present(modalNavigationVC, animated: true, completion: nil)
             return
         case .imagePreviewing:
-            let imagePreviewingModule = ModuleBuilder.imagePreviewingModule()
-            interface = imagePreviewingModule.interface
+            let imagePreviewingVC = ModuleBuilder.imagePreviewingModule()
+            interface = imagePreviewingVC
         case .viewAnimations:
-            let viewAnimationsModule = ModuleBuilder.viewAnimationsModule()
-            interface = viewAnimationsModule.interface
+            let viewAnimationsVC = ModuleBuilder.viewAnimationsModule()
+            interface = viewAnimationsVC
         case .subviewsAnimations:
-            let fromModule = ModuleBuilder.fromModule()
-            interface = fromModule.interface
+            let fromVC = ModuleBuilder.fromModule()
+            interface = fromVC
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }

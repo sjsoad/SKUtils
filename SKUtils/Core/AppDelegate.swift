@@ -40,10 +40,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func startApplication() {
-        let mainMenuModule = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
-        let navigationController = DefaultNavigationController(rootViewController: mainMenuModule.interface)
+        let mainMenuVC = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
+        let navigationController = UINavigationController(rootViewController: mainMenuVC)
         let panInteractionController = PanInteractionController(navigationController: navigationController)
-        navigationController.interactionController = panInteractionController
+        navigationController.delegate = DefaultNavigationControllerDelegate(with: panInteractionController)
         window?.rootViewController = navigationController
     }
     

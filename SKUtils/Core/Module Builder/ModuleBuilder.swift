@@ -31,125 +31,125 @@ enum ModuleType {
 
 class ModuleBuilder: NSObject {
 
-    class func mainMenuModule(servicesRepository: ServicesRepository) -> Module<MainMenuPresenter, UIViewController> {
+    class func mainMenuModule(servicesRepository: ServicesRepository) -> UIViewController {
         let viewController = MainMenuViewController()
         let presenter = MainMenuPresenter(with: viewController, servicesRepository: servicesRepository)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func activityViewableModule() -> Module<ActivityViewablePresenter, UIViewController> {
+    class func activityViewableModule() -> UIViewController {
         let viewController = ActivityViewableViewController()
         let presenter = ActivityViewablePresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func alertViewableModule() -> Module<AlertViewablePresenter, UIViewController> {
+    class func alertViewableModule() -> UIViewController {
         let viewController = AlertViewableViewController()
         let presenter = AlertViewablePresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func alertControllerShowingModule() -> Module<AlertControllerShowingPresenter, UIViewController> {
+    class func alertControllerShowingModule() -> UIViewController {
         let viewController = AlertControllerShowingViewController()
         let presenter = AlertControllerShowingPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func textInputsManagerInViewModule() -> Module<TextInputsManagerPresenter, UIViewController> {
+    class func textInputsManagerInViewModule() -> UIViewController {
         let viewController = TextInputsManagerViewController(nibName: "TextInputsManagerViewController", bundle: nil)
         let presenter = TextInputsManagerPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func textInputsManagerInScrollModule() -> Module<TextInputsManagerPresenter, UIViewController> {
+    class func textInputsManagerInScrollModule() -> UIViewController {
         let viewController = TextInputsManagerViewController(nibName: "TextInputsManagerScrollController", bundle: nil)
         let presenter = TextInputsManagerPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func textInputsModule() -> Module<TextInputsPresenter, UIViewController> {
+    class func textInputsModule() -> UIViewController {
         let viewController = TextInputsViewController()
         let presenter = TextInputsPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
 
-    class func xibLoadableModule() -> Module<XibLoadablePresenter, UIViewController> {
+    class func xibLoadableModule() -> UIViewController {
         let viewController = XibLoadableViewController()
         let presenter = XibLoadablePresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
 
-    class func appSettingsModule() -> Module<AppSettingsPresenter, UIViewController> {
+    class func appSettingsModule() -> UIViewController {
         let viewController = AppSettingsViewController()
         let presenter = AppSettingsPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func servicePermissionsModule() -> Module<ServicePermissionsPresenter, UIViewController> {
+    class func servicePermissionsModule() -> UIViewController {
         let viewController = ServicePermissionsViewController()
         let presenter = ServicePermissionsPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
 
-    class func imagePickerModule() -> Module<ImagePickerPresenter, UIViewController> {
+    class func imagePickerModule() -> UIViewController {
         let viewController = ImagePickerViewController()
         let presenter = ImagePickerPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func networkModule(servicesRepository: ServicesRepository) -> Module<NetworkPresenter, UIViewController> {
+    class func networkModule(servicesRepository: ServicesRepository) -> UIViewController {
         let viewController = NetworkViewController()
         let presenter = NetworkPresenter(with: viewController, servicesRepository: servicesRepository)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func modalNavigationModule() -> Module<ModalNavigationPresenter, UIViewController> {
+    class func modalNavigationModule() -> UIViewController {
         let viewController = ModalNavigationViewController()
         let presenter = ModalNavigationPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
 
-    class func imagePreviewingModule() -> Module<ImagePreviewingPresenter, UIViewController> {
+    class func imagePreviewingModule() -> UIViewController {
         let previewItems = TestsDataProvider.imagesForPreview()
         let initialItemIndex = 2
         let viewController = ImagePreviewingViewController()
         let presenter = ImagePreviewingPresenter(with: viewController, previewItems: previewItems, initialItemIndex: initialItemIndex)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
 
-    class func viewAnimationsModule() -> Module<ViewAnimationsPresenter, UIViewController> {
+    class func viewAnimationsModule() -> UIViewController {
         let viewController = ViewAnimationsViewController()
         let presenter = ViewAnimationsPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func fromModule() -> Module<FromPresenter, UIViewController> {
+    class func fromModule() -> UIViewController {
         let viewController = FromViewController()
         let presenter = FromPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
-    class func toModule() -> Module<ToPresenter, UIViewController> {
+    class func toModule() -> UIViewController {
         let viewController = ToViewController()
         let presenter = ToPresenter(with: viewController)
         viewController.presenter = presenter
-        return Module(presenter: presenter, interface: viewController)
+        return viewController
     }
     
 }

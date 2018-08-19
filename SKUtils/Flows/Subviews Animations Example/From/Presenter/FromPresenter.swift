@@ -33,8 +33,8 @@ class FromPresenter: NSObject {
 extension FromPresenter: FromOutput {
 
     func viewTriggeredActionEvent() {
-        let toModule = ModuleBuilder.toModule()
-        view?.navigationController?.pushViewController(toModule.interface, animated: true)
+        let toVC = ModuleBuilder.toModule()
+        view?.navigationController?.pushViewController(toVC, animated: true)
     }
 
 }
