@@ -69,7 +69,6 @@ class PanInteractionController: NSObject, InteractionControlling, UIGestureRecog
         case .began:
             interactionInProgress = true
             navigationController?.popViewController(animated: true)
-            interactionDelegate?.interactionDidBegan()
         case .changed:
             shouldCompleteTransition = progress > completeOnPercentage
             interactionDelegate?.interactionDidUpdate(with: progress)
