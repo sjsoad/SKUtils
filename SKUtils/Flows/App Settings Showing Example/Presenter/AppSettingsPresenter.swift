@@ -59,6 +59,7 @@ extension AppSettingsPresenter: AppSettingsOutput {
         }, appSettingsShowingCompletion: { opened in
             print("Settings app opened: \(opened)")
         })
+//        showAppSettings()
     }
 
 }
