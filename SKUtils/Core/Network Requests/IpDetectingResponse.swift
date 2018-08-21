@@ -12,7 +12,7 @@ class IpDetectingResponse: APIResponsing {
     
     var result: IpDetectingResponseType?
     
-    required init(JSON: AnyObject) {
+    required init(JSON: Any) {
         guard let json = JSON as? [String: Any] else {
             result = nil
             return

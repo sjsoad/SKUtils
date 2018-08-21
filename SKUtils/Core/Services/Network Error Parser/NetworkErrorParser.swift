@@ -11,10 +11,11 @@ import SKNetworkingLib
 
 class NetworkErrorParser: ErrorParsing {
     
-    func parseError(from JSON: AnyObject, response: HTTPURLResponse?) -> NetworkError? {
+    func parseError(from JSON: Any, httpURLResponse: HTTPURLResponse?) -> NetworkError? {
         guard let json = JSON as? [String: Any], let errorMessage = json["error"] else { return nil }
-        let error = NSError(domain: response?.url?.host ?? "", code: response?.statusCode ?? 0, userInfo: [NSLocalizedDescriptionKey: errorMessage])
-        return NetworkError(error: error, statusCode: response?.statusCode)
+        let error = NSError(domain: httpURLResponse?.url?.host ?? "", code: httpURLResponse?.statusCode ?? 0,
+                            userInfo: [NSLocalizedDescriptionKey: errorMessage])
+        return NetworkError(error: error, statusCode: httpURLResponse?.statusCode)
     }
     
 }

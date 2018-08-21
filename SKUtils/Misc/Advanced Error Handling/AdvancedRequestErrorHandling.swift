@@ -9,6 +9,10 @@
 import SKNetworkingLib
 import Foundation
 
+enum NetworkErrorCode: Int {
+    case unauthorized = 401
+}
+
 // AdvancedRequestErrorHandling
 // Allows you to handle 401 status code, refresh token and repeat failed request
 
