@@ -30,17 +30,17 @@ protocol MainMenuOutput {
 class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
-    private var transitioningDelegate: DefaultTransitioningDelegate = {
-        return DefaultTransitioningDelegate(animatedTransitioning: Page(transitionDirection: .fromLeft))
-    }()
-    private var customTransitioningDelegate: DefaultTransitioningDelegate = {
-        return DefaultTransitioningDelegate(animatedTransitioning: ZoomSlide(transitionDirection: .fromBottom),
-                                            presentationControllerProvider: { (presented, presenting, _) -> UIPresentationController? in
-            let presentationController = DefaultPresentationController(presentedViewController: presented, presenting: presenting)
-                                                presentationController.position = Position(x: .center, y: .center)
-                                                return presentationController
-        })
-    }()
+//    private var transitioningDelegate: DefaultTransitioningDelegate = {
+//        return DefaultTransitioningDelegate(animatedTransitioning: Page(transitionDirection: .fromLeft))
+//    }()
+//    private var customTransitioningDelegate: DefaultTransitioningDelegate = {
+//        return DefaultTransitioningDelegate(animatedTransitioning: ZoomSlide(transitionDirection: .fromBottom),
+//                                            presentationControllerProvider: { (presented, presenting, _) -> UIPresentationController? in
+//            let presentationController = DefaultPresentationController(presentedViewController: presented, presenting: presenting)
+//                                                presentationController.position = Position(x: .center, y: .center)
+//                                                return presentationController
+//        })
+//    }()
     private var servicesRepository: ServicesRepository
     private lazy var dataSource: TableViewArrayDataSource = { [unowned self] in
         return createDataSource(from: examples)
@@ -65,11 +65,11 @@ class MainMenuPresenter: NSObject {
                 Example(title: "Image Picking Example", type: .imagePicking),
                 Example(title: "Service Permissions Example", type: .servicePermissions),
                 Example(title: "Network Example", type: .networking),
-                Example(title: "Custom Modal Transition Example", type: .modalTransition),
-                Example(title: "Custom Presentation Example", type: .customPresentation),
+                /*Example(title: "Custom Modal Transition Example", type: .modalTransition),
+                Example(title: "Custom Presentation Example", type: .customPresentation),*/
                 Example(title: "Image Previewing Example", type: .imagePreviewing),
-                Example(title: "View Animations Example", type: .viewAnimations),
-                Example(title: "Subviews Animations Example", type: .subviewsAnimations)]
+                /*Example(title: "View Animations Example", type: .viewAnimations),
+                Example(title: "Subviews Animations Example", type: .subviewsAnimations)*/]
     }
     
     private func createDataSource(from list: [Example]) -> TableViewArrayDataSource {

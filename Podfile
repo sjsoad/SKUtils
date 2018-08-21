@@ -8,49 +8,49 @@ def shared_pods
     
     # UI components
     
-    pod 'SKActivityViewable'#, :path => '/Users/sergey/Work/Pods/ActivityViewable'
-    pod 'SKAlertViewable'#, :path => '/Users/sergey/Work/Pods/AlertViewable'
-    pod 'AlertActionBuilder'#, :path => '/Users/sergey/Work/Pods/AlertActionBuilder'
-    pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
-    pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
-    pod 'SKTextInputsManager', :path => '/Users/Sergey/Work/Pods/TextInputsManager'
-    pod 'SKTextInputs', :path => '/Users/Sergey/Work/Pods/TextInputs'
-    pod 'SKPickerViewManager', :path => '/Users/Sergey/Work/Pods/PickerViewManager'
-    pod 'SKXibLoadableView', :path => '/Users/Sergey/Work/Pods/XibLoadableView'
-    pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Work/Pods/AppSettingsShowing'
-    pod 'SKImagePicking', :path => '/Users/Sergey/Work/Pods/ImagePicking'
-    pod 'SKImagePreviewing', :path => '/Users/Sergey/Work/Pods/Image-Previewing'
+    pod 'SKActivityViewable'
+    pod 'SKAlertViewable'
+    pod 'AlertActionBuilder'
+    pod 'SKAlertControllerBuilder'
+    pod 'SKAlertControllerShowing'
+    pod 'SKTextInputsManager'
+    pod 'SKTextInputs'
+    pod 'SKPickerViewManager'
+    pod 'SKXibLoadableView'
+    pod 'SKAppSettingsShowing'
+    pod 'SKImagePicking'
+    pod 'SKImagePreviewing'
     
     # Capabilities permissions
 
-    pod 'SKServicePermissions', :path => '/Users/Sergey/Work/Pods/ServicePermission'
-    pod 'SKBluetoothPermissions', :path => '/Users/Sergey/Work/Pods/BluetoothPermissions'
-    pod 'SKCameraPermissions', :path => '/Users/Sergey/Work/Pods/CameraPermissions'
-    pod 'SKPhotosPermissions', :path => '/Users/Sergey/Work/Pods/PhotosPermissions'
-    pod 'SKContactsPermissions', :path => '/Users/Sergey/Work/Pods/ContactsPermissions'
-    pod 'SKMicrophonePermissions', :path => '/Users/Sergey/Work/Pods/MicrophonePermissions'
-    pod 'SKLocationPermissions', :path => '/Users/Sergey/Work/Pods/LocationPermissions'
+    pod 'SKServicePermissions'
+    pod 'SKBluetoothPermissions'
+    pod 'SKCameraPermissions'
+    pod 'SKPhotosPermissions'
+    pod 'SKContactsPermissions'
+    pod 'SKMicrophonePermissions'
+    pod 'SKLocationPermissions'
 
     # Services
 
-    pod 'SKLocalDataStorage', :path => '/Users/Sergey/Work/Pods/LocalDataStorage'
-    pod 'SKValidationService', :path => '/Users/Sergey/Work/Pods/ValidationService'
+    pod 'SKLocalDataStorage'
+    pod 'SKValidationService'
 
     # Data Sources
     
-    pod 'SKDataSources', :path => '/Users/Sergey/Work/Pods/DataSources'
+    pod 'SKDataSources'
     
     # Networking
     
-    pod 'SKNetworkingLib', :path => '/Users/Sergey/Work/Pods/Networking'
+    pod 'SKNetworkingLib'
     
     # Custom Navigation
     
-    pod 'SKCustomNavigation', :path => '/Users/Sergey/Work/Pods/CustomNavigation'
+    pod 'SKCustomNavigation'
 
     # Animations
 
-    pod 'SKAnimator'#, :path => '/Users/Sergey/Work/Pods/Animator'
+    pod 'SKAnimator'
 
 end
 
@@ -60,5 +60,5 @@ end
 
 target 'SKUtilsTests' do
     inherit! :complete
-    pod 'SKValidationService', :path => '/Users/Sergey/Work/Pods/ValidationService'
+    pod 'SKValidationService'
 end

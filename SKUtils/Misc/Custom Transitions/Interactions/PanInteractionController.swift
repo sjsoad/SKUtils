@@ -20,7 +20,7 @@ class PanInteractionController: NSObject, InteractionControlling, UIGestureRecog
     
     // MARK: - InteractionControlling -
     
-    open weak var interactionDelegate: InteractionControllingDelegate?
+//    open weak var interactionDelegate: InteractionControllingDelegate?
     open var interactionInProgress = false
     
     func activate() {
@@ -71,13 +71,13 @@ class PanInteractionController: NSObject, InteractionControlling, UIGestureRecog
             navigationController?.popViewController(animated: true)
         case .changed:
             shouldCompleteTransition = progress > completeOnPercentage
-            interactionDelegate?.interactionDidUpdate(with: progress)
+//            interactionDelegate?.interactionDidUpdate(with: progress)
         case .cancelled, .ended:
             interactionInProgress = false
             if shouldCompleteTransition {
-                interactionDelegate?.interactionDidEnded()
+//                interactionDelegate?.interactionDidEnded()
             } else {
-                interactionDelegate?.interactionDidCanceled()
+//                interactionDelegate?.interactionDidCanceled()
             }
         default:
             break

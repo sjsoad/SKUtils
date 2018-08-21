@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var servicesRepository = ServicesRepository()
     
-    private var navControllerDelegate: DefaultNavigationControllerDelegate?
+//    private var navControllerDelegate: DefaultNavigationControllerDelegate?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -44,14 +44,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func startApplication() {
         let mainMenuVC = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
         let navigationController = UINavigationController(rootViewController: mainMenuVC)
-        navigationController.delegate = delegate(for: navigationController)
+//        navigationController.delegate = delegate(for: navigationController)
         window?.rootViewController = navigationController
     }
     
-    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
-        let panInteractionController = PanInteractionController(navigationController: navigationController)
-        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
-        return navControllerDelegate
-    }
+//    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
+//        let panInteractionController = PanInteractionController(navigationController: navigationController)
+//        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
+//        return navControllerDelegate
+//    }
     
 }
