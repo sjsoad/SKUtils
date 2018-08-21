@@ -30,7 +30,7 @@ PODS:
   - SKCustomNavigation (0.1.1):
     - SKAnimator
   - SKDataSources (0.0.6)
-  - SKImagePicking (0.0.6):
+  - SKImagePicking (0.0.7):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -164,7 +164,7 @@ SPEC CHECKSUMS:
   SKContactsPermissions: cf412c22758c5f8d8a29d67ef8e2e0ada84d6af2
   SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
   SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
-  SKImagePicking: 94c683ccbb5a5ad9dea929e1b595c6b9d86d7cf2
+  SKImagePicking: 8a84fd52cd2097344e07df74e966a78d3ce3c04f
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
   SKLocalDataStorage: a25a34474b58473cffe1dc14a89c32d40e97d882
   SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
@@ -182,4 +182,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3a4716ac9db262bf414557ea65e390c77f5c6169
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1
