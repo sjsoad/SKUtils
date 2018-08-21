@@ -22,12 +22,11 @@ extension AdvancedRequestErrorHandling where Self: NSObject {
     
     func requestErrorHandler<RequestType: AuthentificatedAPIRequesting>() -> ErrorHandler<RequestType> {
         return { [weak self] (networkError, failedRequest, handlers)  in
-            if networkError.statusCode == NetworkErrorCode.unauthorized.rawValue {
-                self?.authentificationService?.refreshTokenAndRepeat(request: failedRequest, handlers: handlers)
-            } else {
-                guard let view = self?.alertView else { return }
-                view.show(message: networkError.error.localizedDescription, state: .error)
+            guard networkError.statusCode == NetworkErrorCode.unauthorized.rawValue else {
+                self?.alertView?.show(message: networkError.error.localizedDescription, state: .error)
+                return
             }
+            self?.authentificationService?.refreshTokenAndRepeat(request: failedRequest, handlers: handlers)
         }
     }
 
