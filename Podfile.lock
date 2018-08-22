@@ -30,7 +30,7 @@ PODS:
   - SKCustomNavigation (0.1.1):
     - SKAnimator
   - SKDataSources (0.0.6)
-  - SKImagePicking (0.0.7):
+  - SKImagePicking (0.0.6):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -66,13 +66,13 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireImage
-  - AlertActionBuilder
+  - AlertActionBuilder (from `/Users/sergey/Work/Pods/AlertActionBuilder`)
   - SKActivityViewable
-  - SKAlertControllerBuilder
-  - SKAlertControllerShowing
-  - SKAlertViewable
+  - SKAlertControllerBuilder (from `/Users/sergey/Work/Pods/AlertControllerBuilder`)
+  - SKAlertControllerShowing (from `/Users/sergey/Work/Pods/AlertControllerShowing`)
+  - SKAlertViewable (from `/Users/sergey/Work/Pods/AlertViewable`)
   - SKAnimator
-  - SKAppSettingsShowing
+  - SKAppSettingsShowing (from `/Users/Sergey/Work/Pods/AppSettingsShowing`)
   - SKBluetoothPermissions (from `/Users/Sergey/Work/Pods/BluetoothPermissions`)
   - SKCameraPermissions (from `/Users/Sergey/Work/Pods/CameraPermissions`)
   - SKContactsPermissions (from `/Users/Sergey/Work/Pods/ContactsPermissions`)
@@ -98,18 +98,23 @@ SPEC REPOS:
     - AERecord
     - Alamofire
     - AlamofireImage
-    - AlertActionBuilder
     - NVActivityIndicatorView
     - SKActivityViewable
-    - SKAlertControllerBuilder
-    - SKAlertControllerShowing
-    - SKAlertViewable
     - SKAnimator
-    - SKAppSettingsShowing
     - SwiftLint
     - SwiftyDrop
 
 EXTERNAL SOURCES:
+  AlertActionBuilder:
+    :path: "/Users/sergey/Work/Pods/AlertActionBuilder"
+  SKAlertControllerBuilder:
+    :path: "/Users/sergey/Work/Pods/AlertControllerBuilder"
+  SKAlertControllerShowing:
+    :path: "/Users/sergey/Work/Pods/AlertControllerShowing"
+  SKAlertViewable:
+    :path: "/Users/sergey/Work/Pods/AlertViewable"
+  SKAppSettingsShowing:
+    :path: "/Users/Sergey/Work/Pods/AppSettingsShowing"
   SKBluetoothPermissions:
     :path: "/Users/Sergey/Work/Pods/BluetoothPermissions"
   SKCameraPermissions:
@@ -151,20 +156,20 @@ SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  AlertActionBuilder: 3ce6b8dd5eb8f15a4f986ba3da6d33da63443fd6
+  AlertActionBuilder: 52ade3089bd5d0d47f2f2006c8a83231eff42ea3
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
-  SKAlertControllerBuilder: d95f9dd91ac69d8098aa3139d28d0aba4f801057
-  SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
-  SKAlertViewable: 431917d11186579dfa4f7265764150c231fba1bf
+  SKAlertControllerBuilder: ef220522f76005f45a99528ccc068c4abffee4d8
+  SKAlertControllerShowing: e95b458e08fef92d227d2e55e96d2bfbb3a8e8ea
+  SKAlertViewable: d2d8ba951036c74fb971ae684f41f951b4cd266d
   SKAnimator: 35a71ae524636f263fb2916a186451a11a02ff3c
-  SKAppSettingsShowing: 0c557737b9130c8cbda13fa996b8822e235367b4
+  SKAppSettingsShowing: c1d1206105b89d38b0ea4f3efbe37ef25682ba9f
   SKBluetoothPermissions: fa62e511ef35dceb2fa2fc041a9142fbee62a947
   SKCameraPermissions: 4e2927d4d359eaa261ba301784b9f5efe7259117
   SKContactsPermissions: cf412c22758c5f8d8a29d67ef8e2e0ada84d6af2
   SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
   SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
-  SKImagePicking: 8a84fd52cd2097344e07df74e966a78d3ce3c04f
+  SKImagePicking: 94c683ccbb5a5ad9dea929e1b595c6b9d86d7cf2
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
   SKLocalDataStorage: a25a34474b58473cffe1dc14a89c32d40e97d882
   SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
@@ -180,6 +185,6 @@ SPEC CHECKSUMS:
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 3a4716ac9db262bf414557ea65e390c77f5c6169
+PODFILE CHECKSUM: c125d79f05d742e43780460847845ba0a178db91
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.5.3

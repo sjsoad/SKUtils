@@ -39,7 +39,7 @@ extension AlertViewablePresenter: AlertViewableOutput {
 
     func viewTriggredShowAlertEvent() {
         // #3 call show method with message and state, for more details check SwiftyDrop github
-        view?.show(message: "Alert Viewable Example", state: .info)
+        view?.show(message: "Alert Viewable Example", for: .info)
     }
 
 }

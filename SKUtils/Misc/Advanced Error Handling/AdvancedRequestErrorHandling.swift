@@ -27,7 +27,7 @@ extension AdvancedRequestErrorHandling where Self: NSObject {
     func requestErrorHandler<RequestType: AuthentificatedAPIRequesting>() -> ErrorHandler<RequestType> {
         return { [weak self] (networkError, failedRequest, handlers)  in
             guard networkError.statusCode == NetworkErrorCode.unauthorized.rawValue else {
-                self?.alertView?.show(message: networkError.error.localizedDescription, state: .error)
+                self?.alertView?.show(message: networkError.error.localizedDescription, for: .error)
                 return
             }
             self?.authentificationService?.refreshTokenAndRepeat(request: failedRequest, handlers: handlers)
