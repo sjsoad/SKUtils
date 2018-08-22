@@ -23,7 +23,7 @@ class TextInputsManagerViewController: UIViewController, TextInputsManagerInterf
     override func viewDidLoad() {
         super.viewDidLoad()
         // #3 assing keyboard return key type from IB or let textInputsManager manage it or assign handler for it
-        textInputsManager.set(returnKeyProvider: { (_, isLast) -> UIReturnKeyType in
+        textInputsManager.set(returnKeyTypeProvider: { (_, isLast) -> UIReturnKeyType in
             guard isLast else { return .go }
             return .search
         })
