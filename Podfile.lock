@@ -3,7 +3,7 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
-  - AlertActionBuilder (0.0.5)
+  - AlertActionBuilder (0.0.6)
   - NVActivityIndicatorView (4.3.0):
     - NVActivityIndicatorView/Presenter (= 4.3.0)
   - NVActivityIndicatorView/Presenter (4.3.0)
@@ -14,10 +14,10 @@ PODS:
   - SKAlertControllerShowing (0.1.2):
     - AlertActionBuilder
     - SKAlertControllerBuilder
-  - SKAlertViewable (0.0.1):
+  - SKAlertViewable (0.0.2):
     - SwiftyDrop
   - SKAnimator (0.0.2)
-  - SKAppSettingsShowing (0.0.8):
+  - SKAppSettingsShowing (0.0.9):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -58,7 +58,7 @@ PODS:
   - SKServicePermissions (0.0.1)
   - SKTextInputs (0.0.3):
     - SKPickerViewManager
-  - SKTextInputsManager (0.0.6)
+  - SKTextInputsManager (0.0.7)
   - SKValidationService (0.0.2)
   - SKXibLoadableView (0.0.1)
   - SwiftLint (0.27.0)
@@ -131,14 +131,14 @@ SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  AlertActionBuilder: 3ce6b8dd5eb8f15a4f986ba3da6d33da63443fd6
+  AlertActionBuilder: c44dc68333eae21c98fde86bb50604b578f0c1da
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
   SKAlertControllerBuilder: d95f9dd91ac69d8098aa3139d28d0aba4f801057
   SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
-  SKAlertViewable: 431917d11186579dfa4f7265764150c231fba1bf
+  SKAlertViewable: f647b9a4d94c48267140bb1b4aba69a16e2b9ec6
   SKAnimator: 35a71ae524636f263fb2916a186451a11a02ff3c
-  SKAppSettingsShowing: 0c557737b9130c8cbda13fa996b8822e235367b4
+  SKAppSettingsShowing: bcd62947aee9565299a8a23561a2494a534c951e
   SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
@@ -154,7 +154,7 @@ SPEC CHECKSUMS:
   SKPickerViewManager: 519aa6f95f869280ad57b68be97bd076b87ed7ea
   SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
   SKTextInputs: 80da1bc11cc7c295ddefbeec2ba1fd9c32be8bb0
-  SKTextInputsManager: 074d5f2c422d6bc4ac9c8d039ae53bb89278c2ed
+  SKTextInputsManager: 4e89972524f463c4e2cd472579b9647e75a8b8b2
   SKValidationService: 266a936b25be39e7a9d99e0e08d8c54d044e1f39
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
@@ -162,4 +162,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c57f41a78ea8f355c6e0dca15ccc71670d26bd04
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.5.3

@@ -67,7 +67,7 @@ class MainMenuPresenter: NSObject {
                 Example(title: "Network Example", type: .networking),
                 /*Example(title: "Custom Modal Transition Example", type: .modalTransition),
                 Example(title: "Custom Presentation Example", type: .customPresentation),*/
-                Example(title: "Image Previewing Example", type: .imagePreviewing),
+                Example(title: "Image Previewing Example", type: .imagePreviewing)
                 /*Example(title: "View Animations Example", type: .viewAnimations),
                 Example(title: "Subviews Animations Example", type: .subviewsAnimations)*/]
     }
