@@ -3,7 +3,7 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
-  - AlertActionBuilder (0.0.5)
+  - AlertActionBuilder (0.0.6)
   - NVActivityIndicatorView (4.3.0):
     - NVActivityIndicatorView/Presenter (= 4.3.0)
   - NVActivityIndicatorView/Presenter (4.3.0)
@@ -14,10 +14,10 @@ PODS:
   - SKAlertControllerShowing (0.1.2):
     - AlertActionBuilder
     - SKAlertControllerBuilder
-  - SKAlertViewable (0.0.1):
+  - SKAlertViewable (0.0.2):
     - SwiftyDrop
   - SKAnimator (0.0.2)
-  - SKAppSettingsShowing (0.0.8):
+  - SKAppSettingsShowing (0.0.9):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -150,14 +150,14 @@ SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  AlertActionBuilder: 3ce6b8dd5eb8f15a4f986ba3da6d33da63443fd6
+  AlertActionBuilder: c44dc68333eae21c98fde86bb50604b578f0c1da
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
   SKAlertControllerBuilder: d95f9dd91ac69d8098aa3139d28d0aba4f801057
   SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
-  SKAlertViewable: 431917d11186579dfa4f7265764150c231fba1bf
+  SKAlertViewable: f647b9a4d94c48267140bb1b4aba69a16e2b9ec6
   SKAnimator: 35a71ae524636f263fb2916a186451a11a02ff3c
-  SKAppSettingsShowing: 0c557737b9130c8cbda13fa996b8822e235367b4
+  SKAppSettingsShowing: bcd62947aee9565299a8a23561a2494a534c951e
   SKBluetoothPermissions: fa62e511ef35dceb2fa2fc041a9142fbee62a947
   SKCameraPermissions: 4e2927d4d359eaa261ba301784b9f5efe7259117
   SKContactsPermissions: cf412c22758c5f8d8a29d67ef8e2e0ada84d6af2
@@ -181,4 +181,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d241e6fef4bdd8e05a2bfc6d1f3e48eef3b7a5dc
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.5.3
