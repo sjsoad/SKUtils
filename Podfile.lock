@@ -58,7 +58,7 @@ PODS:
   - SKServicePermissions (0.0.1)
   - SKTextInputs (0.0.3):
     - SKPickerViewManager
-  - SKTextInputsManager (0.0.7)
+  - SKTextInputsManager (0.0.8)
   - SKValidationService (0.0.2)
   - SKXibLoadableView (0.0.1)
   - SwiftLint (0.27.0)
@@ -154,7 +154,7 @@ SPEC CHECKSUMS:
   SKPickerViewManager: 519aa6f95f869280ad57b68be97bd076b87ed7ea
   SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
   SKTextInputs: 80da1bc11cc7c295ddefbeec2ba1fd9c32be8bb0
-  SKTextInputsManager: 4e89972524f463c4e2cd472579b9647e75a8b8b2
+  SKTextInputsManager: 48f69fc9abb5499caaf85dace23adcf7b8cfedee
   SKValidationService: 266a936b25be39e7a9d99e0e08d8c54d044e1f39
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
@@ -162,4 +162,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c57f41a78ea8f355c6e0dca15ccc71670d26bd04
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1
