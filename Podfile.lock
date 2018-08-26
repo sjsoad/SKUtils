@@ -42,7 +42,7 @@ PODS:
   - SKImagePreviewing (0.0.2):
     - AlamofireImage
     - SKDataSources
-  - SKLocalDataStorage (0.0.2):
+  - SKLocalDataStorage (0.0.3):
     - AERecord
   - SKLocationPermissions (0.0.3):
     - SKServicePermissions
@@ -173,7 +173,7 @@ SPEC CHECKSUMS:
   SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
   SKImagePicking: 8a84fd52cd2097344e07df74e966a78d3ce3c04f
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
-  SKLocalDataStorage: 13449f02ce6bc5627b04f5422cb0fa87ffe8bc95
+  SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
   SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
   SKMicrophonePermissions: 8d22b390e3e372749014f08e06d500bd78bb2f3f
   SKNetworkingLib: 63e6d96b5d3484c1cc1faf089f733ce5070a514a

@@ -43,13 +43,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         servicesRepository.registerService(service: ipDetectingService)
         let authentificationService = AuthentificationService(networkService: networkService)
         servicesRepository.registerService(service: authentificationService)
-        DefaultCoreDataStack.buildAsync(completion: { (stack) in
+        SimpleCoreDataStack.buildAsync(completion: { (stack) in
             let context = stack.importerContext()
             guard let user = User.create(in: context) else { return }
             _ = Mapper<User>().map(JSONObject: ["id": "1234", "name": "Serhii"], toObject: user)
             print(user)
             context.save({ (error) in
-                print(error)
+                print(error ?? "no error")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
                 guard let testUser = User.first(in: stack.mainContext) else { return }
