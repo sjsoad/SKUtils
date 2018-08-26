@@ -10,6 +10,9 @@ import UIKit
 import SKNetworkingLib
 import Alamofire
 import SKCustomNavigation
+import SKCoreDataStack
+import ObjectMapper
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private var navControllerDelegate: DefaultNavigationControllerDelegate?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         setup(servicesRepository: servicesRepository)
@@ -39,6 +43,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         servicesRepository.registerService(service: ipDetectingService)
         let authentificationService = AuthentificationService(networkService: networkService)
         servicesRepository.registerService(service: authentificationService)
+        DefaultCoreDataStack.buildAsync(completion: { (stack) in
+            let context = stack.importerContext()
+            guard let user = User.create(in: context) else { return }
+            _ = Mapper<User>().map(JSONObject: ["id": "1234", "name": "Serhii"], toObject: user)
+            print(user)
+            context.save({ (error) in
+                print(error)
+            })
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+                guard let testUser = User.first(in: stack.mainContext) else { return }
+                print(User.count(in: stack.mainContext))
+                print(testUser.id ?? "")
+            })
+        })
     }
     
     private func startApplication() {

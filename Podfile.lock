@@ -7,6 +7,7 @@ PODS:
   - NVActivityIndicatorView (4.3.0):
     - NVActivityIndicatorView/Presenter (= 4.3.0)
   - NVActivityIndicatorView/Presenter (4.3.0)
+  - ObjectMapper (3.3.0)
   - SKActivityViewable (0.0.2):
     - NVActivityIndicatorView
   - SKAlertControllerBuilder (0.0.4):
@@ -27,6 +28,7 @@ PODS:
     - SKServicePermissions
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
+  - SKCoreDataStack (0.0.1)
   - SKCustomNavigation (0.1.1):
     - SKAnimator
   - SKDataSources (0.0.6)
@@ -58,7 +60,7 @@ PODS:
   - SKServicePermissions (0.0.1)
   - SKTextInputs (0.0.3):
     - SKPickerViewManager
-  - SKTextInputsManager (0.0.7)
+  - SKTextInputsManager (0.0.8)
   - SKValidationService (0.0.2)
   - SKXibLoadableView (0.0.2)
   - SwiftLint (0.27.0)
@@ -67,6 +69,7 @@ PODS:
 DEPENDENCIES:
   - AlamofireImage
   - AlertActionBuilder
+  - ObjectMapper
   - SKActivityViewable
   - SKAlertControllerBuilder
   - SKAlertControllerShowing
@@ -76,6 +79,7 @@ DEPENDENCIES:
   - SKBluetoothPermissions (from `/Users/Sergey/Work/Pods/BluetoothPermissions`)
   - SKCameraPermissions (from `/Users/Sergey/Work/Pods/CameraPermissions`)
   - SKContactsPermissions (from `/Users/Sergey/Work/Pods/ContactsPermissions`)
+  - SKCoreDataStack (from `/Users/Sergey/Work/Pods/CoreDataStack`)
   - SKCustomNavigation (from `/Users/Sergey/Work/Pods/CustomNavigation`)
   - SKDataSources (from `/Users/Sergey/Work/Pods/DataSources`)
   - SKImagePicking (from `/Users/Sergey/Work/Pods/ImagePicking`)
@@ -100,6 +104,7 @@ SPEC REPOS:
     - AlamofireImage
     - AlertActionBuilder
     - NVActivityIndicatorView
+    - ObjectMapper
     - SKActivityViewable
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -118,6 +123,8 @@ EXTERNAL SOURCES:
     :path: "/Users/Sergey/Work/Pods/CameraPermissions"
   SKContactsPermissions:
     :path: "/Users/Sergey/Work/Pods/ContactsPermissions"
+  SKCoreDataStack:
+    :path: "/Users/Sergey/Work/Pods/CoreDataStack"
   SKCustomNavigation:
     :path: "/Users/Sergey/Work/Pods/CustomNavigation"
   SKDataSources:
@@ -151,6 +158,7 @@ SPEC CHECKSUMS:
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   AlertActionBuilder: c44dc68333eae21c98fde86bb50604b578f0c1da
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
   SKAlertControllerBuilder: d95f9dd91ac69d8098aa3139d28d0aba4f801057
   SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
@@ -160,6 +168,7 @@ SPEC CHECKSUMS:
   SKBluetoothPermissions: fa62e511ef35dceb2fa2fc041a9142fbee62a947
   SKCameraPermissions: 4e2927d4d359eaa261ba301784b9f5efe7259117
   SKContactsPermissions: cf412c22758c5f8d8a29d67ef8e2e0ada84d6af2
+  SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
   SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
   SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
   SKImagePicking: 8a84fd52cd2097344e07df74e966a78d3ce3c04f
@@ -172,12 +181,12 @@ SPEC CHECKSUMS:
   SKPickerViewManager: 7d216d18971c956a79e0c00c99cb92abb1cc7eb3
   SKServicePermissions: e44db83279e5b9c412718519c8247890da27693f
   SKTextInputs: 00fbbfc75260e51c23a7574698458588e0536194
-  SKTextInputsManager: 4e89972524f463c4e2cd472579b9647e75a8b8b2
+  SKTextInputsManager: 48f69fc9abb5499caaf85dace23adcf7b8cfedee
   SKValidationService: 9469f490204f0e3840b0b5a548dbac62fc53cb8d
   SKXibLoadableView: 0f679b06c940454f9b8fbb9d56349d8727b0a7ca
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: b1bdfad8a837fd3a3dd744ad26b7de97d3152336
+PODFILE CHECKSUM: dc31d9ac24a1d7e7bfd49cdc100182263e715334
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1

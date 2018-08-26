@@ -5,6 +5,7 @@ def shared_pods
     use_frameworks!
 	pod 'SwiftLint'
     pod 'AlamofireImage'
+    pod 'ObjectMapper'
     
     # UI components
     
@@ -34,6 +35,7 @@ def shared_pods
     # Services
 
     pod 'SKLocalDataStorage'#, :path => '/Users/Sergey/Work/Pods/LocalDataStorage'
+    pod 'SKCoreDataStack', :path => '/Users/Sergey/Work/Pods/CoreDataStack'
     pod 'SKValidationService', :path => '/Users/Sergey/Work/Pods/ValidationService'
 
     # Data Sources
