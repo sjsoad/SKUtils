@@ -47,8 +47,6 @@
 		A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814B20B148A5003F3C68 /* TextInputsViewController.swift */; };
 		A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A576814C20B148A5003F3C68 /* TextInputsViewController.xib */; };
 		A5889AD6212EDC2400B840FC /* TextInputsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5889AD5212EDC2400B840FC /* TextInputsManagerTests.swift */; };
-		A58D3CA92132AA00000B33E2 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D3CA72132AA00000B33E2 /* User+CoreDataClass.swift */; };
-		A58D3CAA2132AA00000B33E2 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D3CA82132AA00000B33E2 /* User+CoreDataProperties.swift */; };
 		A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */; };
 		A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6420B591FF0080B982 /* IpDetectingService.swift */; };
 		A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */; };
@@ -70,6 +68,8 @@
 		A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */; };
 		A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */; };
 		A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */; };
+		A5A9FF0E2133D0BF00B976AA /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9FF0C2133D0BF00B976AA /* User+CoreDataProperties.swift */; };
+		A5A9FF0F2133D0BF00B976AA /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9FF0D2133D0BF00B976AA /* User+CoreDataClass.swift */; };
 		A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */; };
 		A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */; };
 		A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */; };
@@ -168,8 +168,6 @@
 		A5889ACD212EDBE100B840FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5889AD4212EDC2400B840FC /* SKUtilsUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKUtilsUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5889AD5212EDC2400B840FC /* TextInputsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerTests.swift; sourceTree = "<group>"; };
-		A58D3CA72132AA00000B33E2 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "/Users/Sergey/Work/SKUtils/SKUtils/Data Models/User+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		A58D3CA82132AA00000B33E2 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "/Users/Sergey/Work/SKUtils/SKUtils/Data Models/User+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReloadAnimation.swift"; sourceTree = "<group>"; };
 		A5930C6420B591FF0080B982 /* IpDetectingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingService.swift; sourceTree = "<group>"; };
 		A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpDetectingResponse.swift; sourceTree = "<group>"; };
@@ -191,6 +189,8 @@
 		A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformAnimationProvider.swift; sourceTree = "<group>"; };
 		A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAnimationProvider.swift; sourceTree = "<group>"; };
 		A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadAnimation.swift"; sourceTree = "<group>"; };
+		A5A9FF0C2133D0BF00B976AA /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5A9FF0D2133D0BF00B976AA /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewablePresenter.swift; sourceTree = "<group>"; };
 		A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewableViewController.swift; sourceTree = "<group>"; };
 		A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewableViewController.xib; sourceTree = "<group>"; };
@@ -378,8 +378,8 @@
 		A511381020A31A2500BC7C7D /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				A58D3CA72132AA00000B33E2 /* User+CoreDataClass.swift */,
-				A58D3CA82132AA00000B33E2 /* User+CoreDataProperties.swift */,
+				A5A9FF0D2133D0BF00B976AA /* User+CoreDataClass.swift */,
+				A5A9FF0C2133D0BF00B976AA /* User+CoreDataProperties.swift */,
 				A511381120A31A3100BC7C7D /* Example.swift */,
 			);
 			path = "Data Models";
@@ -1141,7 +1141,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AERecord/AERecord.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -1212,7 +1212,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7201312A314754A73FEACC49 /* [CP] Check Pods Manifest.lock */ = {
@@ -1281,6 +1281,7 @@
 				A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */,
 				A511375D20A2FAB700BC7C7D /* Navigatable.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
+				A5A9FF0F2133D0BF00B976AA /* User+CoreDataClass.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
 				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
@@ -1298,6 +1299,7 @@
 				A5CDADE020F6275000E199E9 /* FromPresenter.swift in Sources */,
 				A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
+				A5A9FF0E2133D0BF00B976AA /* User+CoreDataProperties.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5DF680B20D4F3F9005743EE /* TableViewDeleting.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
@@ -1306,7 +1308,6 @@
 				A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */,
 				A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
-				A58D3CA92132AA00000B33E2 /* User+CoreDataClass.swift in Sources */,
 				A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */,
 				A50713B9213188CF00586D0E /* SKUtils.xcdatamodeld in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
@@ -1328,7 +1329,6 @@
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,
 				A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */,
-				A58D3CAA2132AA00000B33E2 /* User+CoreDataProperties.swift in Sources */,
 				A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */,
 				A5BF216D20AEC6CF0064B3F8 /* AlertViewablePresenter.swift in Sources */,
 				A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */,

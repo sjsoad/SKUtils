@@ -9,7 +9,7 @@ import Foundation
 import SKNetworkingLib
 
 class IpDetectingResponse: APIResponsing {
-    
+
     var result: IpDetectingResponseType?
     
     required init(JSON: Any) {
