@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         servicesRepository.registerService(service: authentificationService)
         SimpleCoreDataStack.buildAsync(completion: { (stack) in
             let context = stack.importerContext()
-            guard let user = User.create(in: context) else { return }
+            let user = User.create(in: context)
             _ = Mapper<User>().map(JSONObject: ["id": "1234", "name": "Serhii"], toObject: user)
             print(user)
             context.save({ (error) in
