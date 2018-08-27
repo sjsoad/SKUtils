@@ -40,7 +40,7 @@ PODS:
   - SKImagePreviewing (0.0.2):
     - AlamofireImage
     - SKDataSources
-  - SKLocalDataStorage (0.0.2):
+  - SKLocalDataStorage (0.0.3):
     - AERecord
   - SKLocationPermissions (0.0.3):
     - SKServicePermissions
@@ -58,7 +58,7 @@ PODS:
   - SKServicePermissions (0.0.1)
   - SKTextInputs (0.0.3):
     - SKPickerViewManager
-  - SKTextInputsManager (0.0.7)
+  - SKTextInputsManager (0.0.8)
   - SKValidationService (0.0.2)
   - SKXibLoadableView (0.0.2)
   - SwiftLint (0.27.0)
@@ -164,7 +164,7 @@ SPEC CHECKSUMS:
   SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
   SKImagePicking: 8a84fd52cd2097344e07df74e966a78d3ce3c04f
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
-  SKLocalDataStorage: 13449f02ce6bc5627b04f5422cb0fa87ffe8bc95
+  SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
   SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
   SKMicrophonePermissions: 8d22b390e3e372749014f08e06d500bd78bb2f3f
   SKNetworkingLib: 63e6d96b5d3484c1cc1faf089f733ce5070a514a
@@ -172,7 +172,7 @@ SPEC CHECKSUMS:
   SKPickerViewManager: 7d216d18971c956a79e0c00c99cb92abb1cc7eb3
   SKServicePermissions: e44db83279e5b9c412718519c8247890da27693f
   SKTextInputs: 00fbbfc75260e51c23a7574698458588e0536194
-  SKTextInputsManager: 4e89972524f463c4e2cd472579b9647e75a8b8b2
+  SKTextInputsManager: 48f69fc9abb5499caaf85dace23adcf7b8cfedee
   SKValidationService: 9469f490204f0e3840b0b5a548dbac62fc53cb8d
   SKXibLoadableView: 0f679b06c940454f9b8fbb9d56349d8727b0a7ca
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
