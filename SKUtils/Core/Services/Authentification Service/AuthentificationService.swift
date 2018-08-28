@@ -19,7 +19,8 @@ class AuthentificationService: NSObject {
     
     // MARK: - Public -
     
-    func refreshTokenAndRepeat<RequestType: AuthentificatedAPIRequesting>(request: RequestType, handlers: NetworkHandlers<RequestType>?) {
+    func refreshTokenAndRepeat<RequestType: AuthentificatedAPIRequesting,
+        ResponseType: APIResponsing>(request: RequestType, handlers: NetworkHandlers<RequestType, ResponseType>?) {
         request.update(accessToken: nil) // assign new token here
         networkService.execute(request: request, handlers: handlers)
     }

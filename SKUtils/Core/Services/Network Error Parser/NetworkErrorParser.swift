@@ -15,7 +15,7 @@ class NetworkErrorParser: ErrorParsing {
         guard let json = JSON as? [String: Any], let errorMessage = json["error"] else { return nil }
         let error = NSError(domain: httpURLResponse?.url?.host ?? "", code: httpURLResponse?.statusCode ?? 0,
                             userInfo: [NSLocalizedDescriptionKey: errorMessage])
-        return NetworkError(error: error, statusCode: httpURLResponse?.statusCode)
+        return (error: error, code: httpURLResponse?.statusCode)
     }
     
 }

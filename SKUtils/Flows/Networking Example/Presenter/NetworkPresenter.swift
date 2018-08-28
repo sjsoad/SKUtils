@@ -53,12 +53,12 @@ extension NetworkPresenter: NetworkOutput {
         // executingHandler: use default to show UI blocker, or custom if you need some specific actions
         // errorHandler: use default to show error message, or custom if you need some specific actions
         // requestHandler: if you need to store request object
-        let handlers = NetworkHandlers<IpDetectingRequest>(successHandler: { [weak self] (response) in
+        let handlers = NetworkHandlers<IpDetectingRequest, IpDetectingResponse>(successHandler: { [weak self] (response) in
             guard let ipAddress = response.result else { return }
             self?.view?.set(ipAddress: ipAddress)
-        }, executingHandler: requestExecutingHandler(), errorHandler: requestErrorHandler(), requestHandler: { (request, error) in
-            print(request ?? "no request")
-            print(error?.localizedDescription ?? "no error")
+            }, executingHandler: requestExecutingHandler(), errorHandler: requestErrorHandler(), requestHandler: { (request, error) in
+                print(request ?? "no request")
+                print(error?.localizedDescription ?? "no error")
         })
         // #7 use service to execute request
         ipDetectingService?.detectIp(handlers: handlers)

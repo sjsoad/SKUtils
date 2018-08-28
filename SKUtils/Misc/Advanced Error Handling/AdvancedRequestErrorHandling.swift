@@ -24,9 +24,9 @@ protocol AdvancedRequestErrorHandling: RequestErrorHandling {
 
 extension AdvancedRequestErrorHandling where Self: NSObject {
     
-    func requestErrorHandler<RequestType: AuthentificatedAPIRequesting>() -> ErrorHandler<RequestType> {
+    func requestErrorHandler<RequestType: AuthentificatedAPIRequesting, ResponseType: APIResponsing>() -> ErrorHandler<RequestType, ResponseType> {
         return { [weak self] (networkError, failedRequest, handlers)  in
-            guard networkError.statusCode == NetworkErrorCode.unauthorized.rawValue else {
+            guard networkError.code == NetworkErrorCode.unauthorized.rawValue else {
                 self?.alertView?.show(message: networkError.error.localizedDescription, for: .error)
                 return
             }
