@@ -8,11 +8,11 @@
 import Foundation
 import SKNetworkingLib
 
-class IpDetectingResponse: APIResponsing {
+struct IpDetectingResponse: APIResponsing {
 
-    var result: IpDetectingResponseType?
+    var result: String?
     
-    required init(JSON: Any) {
+    init(JSON: Any) {
         guard let json = JSON as? [String: Any] else {
             result = nil
             return

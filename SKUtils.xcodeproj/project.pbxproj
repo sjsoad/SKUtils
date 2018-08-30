@@ -55,7 +55,6 @@
 		A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7320B5A08F0080B982 /* NetworkPresenter.swift */; };
 		A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7420B5A08F0080B982 /* NetworkViewController.swift */; };
 		A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5930C7520B5A08F0080B982 /* NetworkViewController.xib */; };
-		A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */; };
 		A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */; };
 		A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */; };
 		A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */; };
@@ -176,7 +175,6 @@
 		A5930C7320B5A08F0080B982 /* NetworkPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPresenter.swift; sourceTree = "<group>"; };
 		A5930C7420B5A08F0080B982 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		A5930C7520B5A08F0080B982 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
-		A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedRequestErrorHandling.swift; sourceTree = "<group>"; };
 		A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppSettingsAlertStringsProvider.swift; sourceTree = "<group>"; };
 		A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImagePickerAlertSettings.swift; sourceTree = "<group>"; };
 		A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsPresenter.swift; sourceTree = "<group>"; };
@@ -293,7 +291,6 @@
 				A593D6B420C8233000378D51 /* Custom Transitions */,
 				A595D21D20C035AE00330556 /* Default Image Picker Alert Settings */,
 				A595D21820C0352E00330556 /* Default App Settings Alert Strings Provider */,
-				A5930C7920B5AC950080B982 /* Advanced Error Handling */,
 				A511374720A2FA7400BC7C7D /* Common */,
 				A59DFFCE2111C941004F41B9 /* AsyncOperation.swift */,
 			);
@@ -645,14 +642,6 @@
 				A5930C7520B5A08F0080B982 /* NetworkViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A5930C7920B5AC950080B982 /* Advanced Error Handling */ = {
-			isa = PBXGroup;
-			children = (
-				A5930C7A20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift */,
-			);
-			path = "Advanced Error Handling";
 			sourceTree = "<group>";
 		};
 		A593D6B420C8233000378D51 /* Custom Transitions */ = {
@@ -1328,7 +1317,6 @@
 				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,
-				A5930C7B20B5ACAB0080B982 /* AdvancedRequestErrorHandling.swift in Sources */,
 				A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */,
 				A5BF216D20AEC6CF0064B3F8 /* AlertViewablePresenter.swift in Sources */,
 				A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */,

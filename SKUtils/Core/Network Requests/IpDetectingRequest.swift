@@ -9,16 +9,7 @@
 import Foundation
 import SKNetworkingLib
 
-typealias IpDetectingResponseType = String
-
-class IpDetectingRequest: AuthentificatedAPIRequesting {
-    
-    typealias ResponseType = IpDetectingResponse
-    
-    var accessToken: String?
-    
-    init() {
-    }
+struct IpDetectingRequest: APIRequesting {
     
     // MARK: - APIRequesting -
     

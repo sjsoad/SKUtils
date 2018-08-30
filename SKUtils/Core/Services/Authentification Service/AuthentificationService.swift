@@ -9,20 +9,18 @@
 import UIKit
 import SKNetworkingLib
 
-class AuthentificationService: NSObject {
-
+class AuthentificationService: ReAuthorizable {
+    
     private var networkService: NetworkService
     
     init(networkService: NetworkService) {
         self.networkService = networkService
     }
     
-    // MARK: - Public -
+    // MARK: - ReAuthorizable -
     
-    func refreshTokenAndRepeat<RequestType: AuthentificatedAPIRequesting,
-        ResponseType: APIResponsing>(request: RequestType, handlers: NetworkHandlers<RequestType, ResponseType>?) {
-        request.update(accessToken: nil) // assign new token here
-        networkService.execute(request: request, handlers: handlers)
+    func reAuthAndRepeat<RequestType>(_ request: RequestType, completion: (RequestType?) -> Void) {
+        
     }
     
 }
