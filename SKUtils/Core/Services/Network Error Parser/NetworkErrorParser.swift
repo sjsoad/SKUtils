@@ -9,7 +9,7 @@
 import Foundation
 import SKNetworkingLib
 
-class NetworkErrorParser: ErrorParsing {
+class NetworkErrorParser: ErrorParsable {
     
     func parseError(from JSON: Any, httpURLResponse: HTTPURLResponse?) -> NetworkError? {
         guard let json = JSON as? [String: Any], let errorMessage = json["error"] else { return nil }

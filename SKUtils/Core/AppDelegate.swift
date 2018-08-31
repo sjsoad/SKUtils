@@ -8,7 +8,6 @@
 
 import UIKit
 import SKNetworkingLib
-import Alamofire
 import SKCustomNavigation
 import SKCoreDataStack
 import ObjectMapper
@@ -36,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setup(servicesRepository: ServicesRepository) {
         let networkErrorParser = NetworkErrorParser()
-        let requestExecutor = DefaultRequestExecutor(sessionManager: Alamofire.SessionManager.default)
+        let requestExecutor = DefaultRequestExecutor()
         let networkService = DefaultNetworkService(requestExecutor: requestExecutor, errorParser: networkErrorParser)
         servicesRepository.registerService(service: networkService)
         let ipDetectingService = IpDetectingService(networkService: networkService)

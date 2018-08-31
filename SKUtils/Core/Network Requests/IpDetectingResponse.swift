@@ -12,8 +12,8 @@ struct IpDetectingResponse: APIResponsing {
 
     var result: String?
     
-    init(JSON: Any) {
-        guard let json = JSON as? [String: Any] else {
+    init(with value: Any) {
+        guard let json = value as? [String: Any] else {
             result = nil
             return
         }
