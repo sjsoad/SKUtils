@@ -57,7 +57,7 @@ extension NetworkPresenter: NetworkOutput {
             guard let ipAddress = response.result else { return }
             self?.view?.set(ipAddress: ipAddress)
             }, executingHandler: requestExecutingHandler(), errorHandler: requestErrorHandler(), requestHandler: { (request, error) in
-                print(request ?? "no request")
+                print(request?.debugDescription ?? "no request")
                 print(error?.localizedDescription ?? "no error")
         })
         // #7 use service to execute request

@@ -19,7 +19,10 @@ class AuthentificationService: ReAuthorizable {
     
     // MARK: - ReAuthorizable -
     
-    func reAuthAndRepeat<RequestType>(_ request: RequestType, completion: (RequestType?) -> Void) {
+    func reAuthAndRepeat<RequestType>(_ request: RequestType, completion: @escaping (RequestType?) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 5) {
+            completion(request)
+        }
         
     }
     

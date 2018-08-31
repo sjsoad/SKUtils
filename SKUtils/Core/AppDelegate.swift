@@ -34,14 +34,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Private -
     
     private func setup(servicesRepository: ServicesRepository) {
+        // AuthentificationService
         let networkErrorParser = NetworkErrorParser()
         let requestExecutor = DefaultRequestExecutor()
         let networkService = DefaultNetworkService(requestExecutor: requestExecutor, errorParser: networkErrorParser)
-        servicesRepository.registerService(service: networkService)
-        let ipDetectingService = IpDetectingService(networkService: networkService)
-        servicesRepository.registerService(service: ipDetectingService)
         let authentificationService = AuthentificationService(networkService: networkService)
         servicesRepository.registerService(service: authentificationService)
+        
+        // DefaultNetworkService
+        let defaultNetworkService = DefaultNetworkService(requestExecutor: requestExecutor, reAuthorizer: authentificationService,
+                                                          errorParser: networkErrorParser)
+        servicesRepository.registerService(service: defaultNetworkService)
+        
+        // Other
+        let ipDetectingService = IpDetectingService(networkService: defaultNetworkService)
+        servicesRepository.registerService(service: ipDetectingService)
+
         SimpleCoreDataStack.buildAsync(completion: { (stack) in
             let context = stack.importerContext()
             let user = User.create(in: context)
