@@ -36,14 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setup(servicesRepository: ServicesRepository) {
         // AuthentificationService
         let networkErrorParser = NetworkErrorParser()
-        let requestExecutor = DefaultRequestExecutor()
-        let networkService = DefaultNetworkService(requestExecutor: requestExecutor, errorParser: networkErrorParser)
+        let networkService = DefaultNetworkService(errorParser: networkErrorParser)
         let authentificationService = AuthentificationService(networkService: networkService)
         servicesRepository.registerService(service: authentificationService)
         
         // DefaultNetworkService
-        let defaultNetworkService = DefaultNetworkService(requestExecutor: requestExecutor, reAuthorizer: authentificationService,
-                                                          errorParser: networkErrorParser)
+        let defaultNetworkService = DefaultNetworkService(reAuthorizer: authentificationService, errorParser: networkErrorParser)
         servicesRepository.registerService(service: defaultNetworkService)
         
         // Other
