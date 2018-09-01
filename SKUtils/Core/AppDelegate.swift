@@ -47,21 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Other
         let ipDetectingService = IpDetectingService(networkService: defaultNetworkService)
         servicesRepository.registerService(service: ipDetectingService)
-
-        SimpleCoreDataStack.buildAsync(completion: { (stack) in
-            let context = stack.importerContext()
-            let user = User.create(in: context)
-            _ = Mapper<User>().map(JSONObject: ["id": "1234", "name": "Serhii"], toObject: user)
-            print(user)
-            context.save({ (error) in
-                print(error ?? "no error")
-            })
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
-                guard let testUser = User.first(in: stack.mainContext) else { return }
-                print(User.count(in: stack.mainContext))
-                print(testUser.id ?? "")
-            })
-        })
     }
     
     private func startApplication() {

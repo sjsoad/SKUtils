@@ -1,8 +1,13 @@
 disabled_rules:
   - trailing_whitespace
 excluded: # paths to ignore during linting. Takes precedence over `included`.
-  - Pods
   - SKUtilsUITests
+  - Pods/AERecord
+  - Pods/AlamofireImage
+  - Pods/Alamofire
+  - Pods/ObjectMapper
+  - Pods/NVActivityIndicatorView
+  - Pods/SwiftyDrop
 file_length:
   warning: 300
   error: 350

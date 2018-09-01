@@ -10,7 +10,7 @@ PODS:
   - ObjectMapper (3.3.0)
   - SKActivityViewable (0.0.2):
     - NVActivityIndicatorView
-  - SKAlertControllerBuilder (0.0.4):
+  - SKAlertControllerBuilder (0.0.5):
     - AlertActionBuilder
   - SKAlertControllerShowing (0.1.2):
     - AlertActionBuilder
@@ -92,7 +92,7 @@ DEPENDENCIES:
   - SKPickerViewManager (from `/Users/Sergey/Work/Pods/PickerViewManager`)
   - SKServicePermissions (from `/Users/Sergey/Work/Pods/ServicePermission`)
   - SKTextInputs (from `/Users/Sergey/Work/Pods/TextInputs`)
-  - SKTextInputsManager (from `/Users/Sergey/Work/Pods/TextInputsManager`)
+  - SKTextInputsManager
   - SKValidationService (from `/Users/Sergey/Work/Pods/ValidationService`)
   - SKXibLoadableView (from `/Users/Sergey/Work/Pods/XibLoadableView`)
   - SwiftLint
@@ -112,6 +112,7 @@ SPEC REPOS:
     - SKAnimator
     - SKAppSettingsShowing
     - SKLocalDataStorage
+    - SKTextInputsManager
     - SwiftLint
     - SwiftyDrop
 
@@ -146,8 +147,6 @@ EXTERNAL SOURCES:
     :path: "/Users/Sergey/Work/Pods/ServicePermission"
   SKTextInputs:
     :path: "/Users/Sergey/Work/Pods/TextInputs"
-  SKTextInputsManager:
-    :path: "/Users/Sergey/Work/Pods/TextInputsManager"
   SKValidationService:
     :path: "/Users/Sergey/Work/Pods/ValidationService"
   SKXibLoadableView:
@@ -161,7 +160,7 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
-  SKAlertControllerBuilder: d95f9dd91ac69d8098aa3139d28d0aba4f801057
+  SKAlertControllerBuilder: 3e00f3d4e44f8a50193f608115819ddce0c83af2
   SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
   SKAlertViewable: f647b9a4d94c48267140bb1b4aba69a16e2b9ec6
   SKAnimator: 35a71ae524636f263fb2916a186451a11a02ff3c
@@ -182,12 +181,12 @@ SPEC CHECKSUMS:
   SKPickerViewManager: 7d216d18971c956a79e0c00c99cb92abb1cc7eb3
   SKServicePermissions: e44db83279e5b9c412718519c8247890da27693f
   SKTextInputs: 00fbbfc75260e51c23a7574698458588e0536194
-  SKTextInputsManager: 257ec12bb59a09f98560fe84865148fbf662bc2d
+  SKTextInputsManager: e9511905db3d32b1714629f56254e984bf90d5d0
   SKValidationService: 9469f490204f0e3840b0b5a548dbac62fc53cb8d
   SKXibLoadableView: 0f679b06c940454f9b8fbb9d56349d8727b0a7ca
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: cfe476d3f2be7f3e5a0c665f7f6be547835002d0
+PODFILE CHECKSUM: dc31d9ac24a1d7e7bfd49cdc100182263e715334
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1
