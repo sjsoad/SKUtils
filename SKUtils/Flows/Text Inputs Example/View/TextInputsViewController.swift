@@ -112,6 +112,10 @@ class TextInputsViewController: UIViewController, TextInputsInterface {
         pickerViewField.reload(with: manager)
     }
     
+    func select(_ row: Int, inComponent component: Int) {
+        pickerViewField.select(row, inComponent: component)
+    }
+    
     func set(pickerViewText text: String?) {
         pickerViewField.text = text
     }

@@ -12,7 +12,7 @@ import UIKit
 import SKTextInputs
 import SKPickerViewManager
 
-// #2 add support of PickerViewFieldReloading for PickerViewField reloading
+// #2 add support of PickerViewFieldReloading for PickerViewField reloading if you have on pickerViewField
 protocol TextInputsInterface: class, PickerViewFieldReloadable {
     
     func set(pickerViewText text: String?)
@@ -61,10 +61,15 @@ extension TextInputsPresenter: TextInputsOutput {
     func viewDidLoad() {
         // #4 assign PickerManager to PickerViewField
         view?.reload(with: pickerDataSource)
+        // #5 select components if needed
+        view?.select(2, inComponent: 0)
+        print(pickerDataSource.selectedIndexes)
     }
     
     func viewTriggeredResetPickerViewEvent() {
         view?.set(pickerViewText: nil)
+        view?.select(0, inComponent: 0)
+        print(pickerDataSource.selectedIndexes)
     }
     
 }
