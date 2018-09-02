@@ -5,6 +5,7 @@ def shared_pods
     use_frameworks!
 	pod 'SwiftLint'
     pod 'AlamofireImage'
+    pod 'ObjectMapper'
     
     # UI components
     

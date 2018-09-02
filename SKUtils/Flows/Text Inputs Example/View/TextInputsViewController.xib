@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -30,16 +29,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hEE-dc-qyc">
-                    <rect key="frame" x="20" y="20" width="335" height="647"/>
+                    <rect key="frame" x="20" y="120" width="335" height="497"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BaseTextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMi-Ux-BQs">
-                            <rect key="frame" x="0.0" y="0.0" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="35.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placholder Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y2f-Kb-Xh3" customClass="BaseTextField" customModule="SKTextInputs">
-                            <rect key="frame" x="0.0" y="46" width="335" height="46.5"/>
+                            <rect key="frame" x="0.0" y="35.5" width="335" height="35.5"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -50,58 +49,58 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DatePickerField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-Lp-8aJ">
-                            <rect key="frame" x="0.0" y="92.5" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="71" width="335" height="35.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jo4-bV-2I6" customClass="DatePickerField" customModule="SKTextInputs">
-                            <rect key="frame" x="0.0" y="138.5" width="335" height="46.5"/>
+                            <rect key="frame" x="0.0" y="106.5" width="335" height="35.5"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmailTextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35F-Xg-u3y">
-                            <rect key="frame" x="0.0" y="185" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="142" width="335" height="35.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pDe-gE-X39" customClass="EmailTextField" customModule="SKTextInputs">
-                            <rect key="frame" x="0.0" y="231" width="335" height="46.5"/>
+                            <rect key="frame" x="0.0" y="177.5" width="335" height="35.5"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PassTextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w64-si-qBg">
-                            <rect key="frame" x="0.0" y="277.5" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="213" width="335" height="35.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jke-HQ-nUA" customClass="PassTextField" customModule="SKTextInputs">
-                            <rect key="frame" x="0.0" y="323.5" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="248.5" width="335" height="35.5"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PickerViewField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWA-Lj-f9o">
-                            <rect key="frame" x="0.0" y="369.5" width="335" height="46.5"/>
+                            <rect key="frame" x="0.0" y="284" width="335" height="35.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ3-WR-rja">
-                            <rect key="frame" x="0.0" y="416" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="319.5" width="335" height="35.5"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SqQ-Ns-E6w" customClass="PickerViewField" customModule="SKTextInputs">
-                                    <rect key="frame" x="0.0" y="0.0" width="279" height="46"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="289.5" height="35.5"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycE-mj-KCX">
-                                    <rect key="frame" x="289" y="0.0" width="46" height="46"/>
+                                    <rect key="frame" x="299.5" y="0.0" width="35.5" height="35.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="ycE-mj-KCX" secondAttribute="height" multiplier="1:1" id="yku-s2-bPm"/>
                                     </constraints>
@@ -113,25 +112,25 @@
                             </subviews>
                         </stackView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToolbarTextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvO-Ko-oSK">
-                            <rect key="frame" x="0.0" y="462" width="335" height="46.5"/>
+                            <rect key="frame" x="0.0" y="355" width="335" height="35.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XH7-XM-lmJ" customClass="ToolbarTextField" customModule="SKTextInputs">
-                            <rect key="frame" x="0.0" y="508.5" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="390.5" width="335" height="35.5"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToolbarTextView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aR-St-zws">
-                            <rect key="frame" x="0.0" y="554.5" width="335" height="46.5"/>
+                            <rect key="frame" x="0.0" y="426" width="335" height="35.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sNb-xQ-max" customClass="ToolbarTextView" customModule="SKTextInputs">
-                            <rect key="frame" x="0.0" y="601" width="335" height="46"/>
+                            <rect key="frame" x="0.0" y="461.5" width="335" height="35.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -143,15 +142,15 @@
             <constraints>
                 <constraint firstItem="hEE-dc-qyc" firstAttribute="leading" secondItem="fwJ-ZV-ZKT" secondAttribute="leading" constant="20" id="7lQ-T2-teI"/>
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="trailing" secondItem="hEE-dc-qyc" secondAttribute="trailing" constant="20" id="EJh-i2-MCp"/>
-                <constraint firstItem="hEE-dc-qyc" firstAttribute="top" secondItem="fwJ-ZV-ZKT" secondAttribute="top" id="X91-Pp-gMq"/>
-                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="hEE-dc-qyc" secondAttribute="bottom" id="Ztb-F3-pTp"/>
+                <constraint firstItem="hEE-dc-qyc" firstAttribute="top" secondItem="fwJ-ZV-ZKT" secondAttribute="top" constant="100" id="X91-Pp-gMq"/>
+                <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="hEE-dc-qyc" secondAttribute="bottom" constant="50" id="Ztb-F3-pTp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
         <customObject id="orr-8L-snl" customClass="TextInputsManager" customModule="SKTextInputsManager">
             <connections>
-                <outlet property="containerView" destination="i5M-Pr-FkT" id="Ctj-4H-bOj"/>
+                <outlet property="containerView" destination="hEE-dc-qyc" id="jHj-Gb-zDt"/>
             </connections>
         </customObject>
     </objects>

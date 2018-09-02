@@ -12,8 +12,8 @@ import UIKit
 import SKTextInputs
 import SKPickerViewManager
 
-// #2 add support of PickerViewFieldReloading for PickerViewField reloading
-protocol TextInputsInterface: class, PickerViewFieldReloading {
+// #2 add support of PickerViewFieldReloading for PickerViewField reloading if you have on pickerViewField
+protocol TextInputsInterface: class, PickerViewFieldReloadable {
     
     func set(pickerViewText text: String?)
     
@@ -32,8 +32,8 @@ class TextInputsPresenter: NSObject {
     
     // #3 setup PickerManager
     private lazy var pickerDataSource: PickerManager = { [unowned self] in
-        var components = [PickerComponentObject]()
-        var componentObjects = [PickerRowObject]()
+        var components = [PickerComponent]()
+        var componentObjects = [PickerRow]()
         for index in 0...10 {
             let rowObject = PickerRowObject(title: String(describing: index))
             componentObjects.append(rowObject)
@@ -41,12 +41,10 @@ class TextInputsPresenter: NSObject {
         let componentObject = PickerComponentObject(items: componentObjects)
         components.append(componentObject)
         let pickerConfigurator = PickerDataSourceConfigurator(components: components)
-        let pickerManager = PickerManager(configuration: pickerConfigurator) { [weak self] (_, component, row) in
+        let pickerManager = DefaultPickerManager(configuration: pickerConfigurator) { [weak self] (_, component, row) in
             let text = "C: \(component), R: \(row)"
             self?.view?.set(pickerViewText: text)
         }
-        // set selected values if needed
-        pickerManager.set(selectedIndexes: [IndexPath(row: 2, section: 0)])
         return pickerManager
         }()
     
@@ -63,15 +61,15 @@ extension TextInputsPresenter: TextInputsOutput {
     func viewDidLoad() {
         // #4 assign PickerManager to PickerViewField
         view?.reload(with: pickerDataSource)
+        // #5 select components if needed
+        view?.select(2, inComponent: 0)
+        print(pickerDataSource.selectedIndexes)
     }
     
     func viewTriggeredResetPickerViewEvent() {
-        // #5 reset selected values
-        pickerDataSource.set(selectedIndexes: [])
         view?.set(pickerViewText: nil)
-        // or
-        // set default value
-//        pickerDataSource.set(selectedIndexes: [IndexPath(row: 0, section: 0)])
+        view?.select(0, inComponent: 0)
+        print(pickerDataSource.selectedIndexes)
     }
     
 }
