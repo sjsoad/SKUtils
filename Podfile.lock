@@ -62,7 +62,7 @@ PODS:
     - SKPickerViewManager
   - SKTextInputsManager (0.1.0)
   - SKValidationService (0.0.2)
-  - SKXibLoadableView (0.0.2)
+  - SKXibLoadableView (0.0.1)
   - SwiftLint (0.27.0)
   - SwiftyDrop (4.1.0)
 
@@ -82,7 +82,7 @@ DEPENDENCIES:
   - SKCoreDataStack (from `/Users/Sergey/Work/Pods/CoreDataStack`)
   - SKCustomNavigation (from `/Users/Sergey/Work/Pods/CustomNavigation`)
   - SKDataSources (from `/Users/Sergey/Work/Pods/DataSources`)
-  - SKImagePicking (from `/Users/Sergey/Work/Pods/ImagePicking`)
+  - SKImagePicking
   - SKImagePreviewing (from `/Users/Sergey/Work/Pods/Image-Previewing`)
   - SKLocalDataStorage
   - SKLocationPermissions (from `/Users/Sergey/Work/Pods/LocationPermissions`)
@@ -94,7 +94,7 @@ DEPENDENCIES:
   - SKTextInputs
   - SKTextInputsManager
   - SKValidationService (from `/Users/Sergey/Work/Pods/ValidationService`)
-  - SKXibLoadableView (from `/Users/Sergey/Work/Pods/XibLoadableView`)
+  - SKXibLoadableView
   - SwiftLint
 
 SPEC REPOS:
@@ -111,10 +111,12 @@ SPEC REPOS:
     - SKAlertViewable
     - SKAnimator
     - SKAppSettingsShowing
+    - SKImagePicking
     - SKLocalDataStorage
     - SKPickerViewManager
     - SKTextInputs
     - SKTextInputsManager
+    - SKXibLoadableView
     - SwiftLint
     - SwiftyDrop
 
@@ -131,8 +133,6 @@ EXTERNAL SOURCES:
     :path: "/Users/Sergey/Work/Pods/CustomNavigation"
   SKDataSources:
     :path: "/Users/Sergey/Work/Pods/DataSources"
-  SKImagePicking:
-    :path: "/Users/Sergey/Work/Pods/ImagePicking"
   SKImagePreviewing:
     :path: "/Users/Sergey/Work/Pods/Image-Previewing"
   SKLocationPermissions:
@@ -147,8 +147,6 @@ EXTERNAL SOURCES:
     :path: "/Users/Sergey/Work/Pods/ServicePermission"
   SKValidationService:
     :path: "/Users/Sergey/Work/Pods/ValidationService"
-  SKXibLoadableView:
-    :path: "/Users/Sergey/Work/Pods/XibLoadableView"
 
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
@@ -169,7 +167,7 @@ SPEC CHECKSUMS:
   SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
   SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
   SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
-  SKImagePicking: 8a84fd52cd2097344e07df74e966a78d3ce3c04f
+  SKImagePicking: 54a80ef46b1117b85e49d31a50c765c7850b5d2f
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
   SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
   SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
@@ -181,10 +179,10 @@ SPEC CHECKSUMS:
   SKTextInputs: 4478b69fc4db468ea27b5f833f89d252674571ac
   SKTextInputsManager: e9511905db3d32b1714629f56254e984bf90d5d0
   SKValidationService: 9469f490204f0e3840b0b5a548dbac62fc53cb8d
-  SKXibLoadableView: 0f679b06c940454f9b8fbb9d56349d8727b0a7ca
+  SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 9705127adfa31647765c1a82c8bed56a68c1294c
+PODFILE CHECKSUM: 8c1f5995ae4dd7f644756bb63b94cee93a256aa4
 
 COCOAPODS: 1.6.0.beta.1

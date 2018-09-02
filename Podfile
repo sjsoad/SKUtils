@@ -17,9 +17,9 @@ def shared_pods
     pod 'SKTextInputsManager'#, :path => '/Users/Sergey/Work/Pods/TextInputsManager'
     pod 'SKTextInputs'#, :path => '/Users/Sergey/Work/Pods/TextInputs'
     pod 'SKPickerViewManager'#, :path => '/Users/Sergey/Work/Pods/PickerViewManager'
-    pod 'SKXibLoadableView', :path => '/Users/Sergey/Work/Pods/XibLoadableView'
+    pod 'SKXibLoadableView'#, :path => '/Users/Sergey/Work/Pods/XibLoadableView'
     pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Work/Pods/AppSettingsShowing'
-    pod 'SKImagePicking', :path => '/Users/Sergey/Work/Pods/ImagePicking'
+    pod 'SKImagePicking'#, :path => '/Users/Sergey/Work/Pods/ImagePicking'
     pod 'SKImagePreviewing', :path => '/Users/Sergey/Work/Pods/Image-Previewing'
     
     # Capabilities permissions
