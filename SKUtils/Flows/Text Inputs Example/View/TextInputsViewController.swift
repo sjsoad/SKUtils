@@ -45,15 +45,15 @@ class TextInputsViewController: UIViewController, TextInputsInterface {
         // - setup toolbar if needed
         datePickerField.toolbar.tintColor = .black
         // - date selection handler
-        datePickerField.set { (field, picker, date) in
+        datePickerField.dateSelectionHandler = { (field, picker, date) in
             print(field)
             print(picker)
             print(date)
         }
         // - done button title
-        datePickerField.set(doneTitle: "Date Selected")
+        datePickerField.doneButtonTitle = "Date Selected"
         // - done button pressed handler
-        datePickerField.set { (field, button) in
+        datePickerField.doneButtonHandler = { (field, button) in
             print(field)
             print(button)
         }
@@ -66,9 +66,9 @@ class TextInputsViewController: UIViewController, TextInputsInterface {
         // - setup toolbar if needed
         pickerViewField.toolbar.barTintColor = .green
         // - done button title
-        pickerViewField.set(doneTitle: "Done")
+        pickerViewField.doneButtonTitle = "Done"
         // - done button pressed handler
-        pickerViewField.set { (field, button) in
+        pickerViewField.doneButtonHandler = { (field, button) in            
             print(field)
             print(button)
         }
@@ -79,9 +79,9 @@ class TextInputsViewController: UIViewController, TextInputsInterface {
         // - setup toolbar if needed
         toolbarField.toolbar.barTintColor = .green
         // - done button title
-        toolbarField.set(doneTitle: "Edititng finished")
+        toolbarField.doneButtonTitle = "Edititng finished"
         // - done button pressed handler
-        toolbarField.set { (field, button) in
+        toolbarField.doneButtonHandler = { (field, button) in
             print(field)
             print(button)
         }
@@ -92,9 +92,9 @@ class TextInputsViewController: UIViewController, TextInputsInterface {
         // - setup toolbar if needed
         toolbarTextView.toolbar.tintColor = .black
         // - done button title
-        toolbarTextView.set(doneTitle: "Edititng finished")
+        toolbarTextView.doneButtonTitle = "Edititng finished"
         // - done button pressed handler
-        toolbarTextView.set { (textView, button) in
+        toolbarTextView.doneButtonHandler = { (textView, button) in
             print(textView)
             print(button)
         }
