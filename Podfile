@@ -15,7 +15,7 @@ def shared_pods
     pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
     pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
     pod 'SKTextInputsManager'#, :path => '/Users/Sergey/Work/Pods/TextInputsManager'
-    pod 'SKTextInputs', :path => '/Users/Sergey/Work/Pods/TextInputs'
+    pod 'SKTextInputs'#, :path => '/Users/Sergey/Work/Pods/TextInputs'
     pod 'SKPickerViewManager'#, :path => '/Users/Sergey/Work/Pods/PickerViewManager'
     pod 'SKXibLoadableView'#, :path => '/Users/Sergey/Work/Pods/XibLoadableView'
     pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Work/Pods/AppSettingsShowing'
