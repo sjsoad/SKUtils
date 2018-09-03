@@ -13,8 +13,7 @@ struct IpDetectingRequest: APIRequesting {
     
     // MARK: - APIRequesting -
     
-    var urlString: String {
-        return "https://api.ipify.org?format=json"
-    }
+    var requestType: RequestType { return .simple(nil) }
+    var urlString: String { return "https://api.ipify.org?format=json" }
     
 }
