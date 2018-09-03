@@ -15,11 +15,11 @@ def shared_pods
     pod 'SKAlertControllerBuilder'#, :path => '/Users/sergey/Work/Pods/AlertControllerBuilder'
     pod 'SKAlertControllerShowing'#, :path => '/Users/sergey/Work/Pods/AlertControllerShowing'
     pod 'SKTextInputsManager'#, :path => '/Users/Sergey/Work/Pods/TextInputsManager'
-    pod 'SKTextInputs'#, :path => '/Users/Sergey/Work/Pods/TextInputs'
+    pod 'SKTextInputs', :path => '/Users/Sergey/Work/Pods/TextInputs'
     pod 'SKPickerViewManager'#, :path => '/Users/Sergey/Work/Pods/PickerViewManager'
     pod 'SKXibLoadableView'#, :path => '/Users/Sergey/Work/Pods/XibLoadableView'
     pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Work/Pods/AppSettingsShowing'
-    pod 'SKImagePicking'#, :path => '/Users/Sergey/Work/Pods/ImagePicking'
+    pod 'SKImagePicking', :path => '/Users/Sergey/Work/Pods/ImagePicking'
     pod 'SKImagePreviewing', :path => '/Users/Sergey/Work/Pods/Image-Previewing'
     
     # Capabilities permissions
@@ -44,7 +44,7 @@ def shared_pods
     
     # Networking
     
-    pod 'SKNetworkingLib', :path => '/Users/Sergey/Work/Pods/Networking'
+    pod 'SKNetworkingLib'#, :path => '/Users/Sergey/Work/Pods/Networking'
     
     # Custom Navigation
     

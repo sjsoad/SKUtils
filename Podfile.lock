@@ -48,7 +48,7 @@ PODS:
     - SKServicePermissions
   - SKMicrophonePermissions (0.0.3):
     - SKServicePermissions
-  - SKNetworkingLib (0.0.2):
+  - SKNetworkingLib (0.0.7):
     - Alamofire
     - NVActivityIndicatorView
     - SKActivityViewable
@@ -82,16 +82,16 @@ DEPENDENCIES:
   - SKCoreDataStack (from `/Users/Sergey/Work/Pods/CoreDataStack`)
   - SKCustomNavigation (from `/Users/Sergey/Work/Pods/CustomNavigation`)
   - SKDataSources (from `/Users/Sergey/Work/Pods/DataSources`)
-  - SKImagePicking
+  - SKImagePicking (from `/Users/Sergey/Work/Pods/ImagePicking`)
   - SKImagePreviewing (from `/Users/Sergey/Work/Pods/Image-Previewing`)
   - SKLocalDataStorage
   - SKLocationPermissions (from `/Users/Sergey/Work/Pods/LocationPermissions`)
   - SKMicrophonePermissions (from `/Users/Sergey/Work/Pods/MicrophonePermissions`)
-  - SKNetworkingLib (from `/Users/Sergey/Work/Pods/Networking`)
+  - SKNetworkingLib
   - SKPhotosPermissions (from `/Users/Sergey/Work/Pods/PhotosPermissions`)
   - SKPickerViewManager
   - SKServicePermissions (from `/Users/Sergey/Work/Pods/ServicePermission`)
-  - SKTextInputs
+  - SKTextInputs (from `/Users/Sergey/Work/Pods/TextInputs`)
   - SKTextInputsManager
   - SKValidationService (from `/Users/Sergey/Work/Pods/ValidationService`)
   - SKXibLoadableView
@@ -111,10 +111,9 @@ SPEC REPOS:
     - SKAlertViewable
     - SKAnimator
     - SKAppSettingsShowing
-    - SKImagePicking
     - SKLocalDataStorage
+    - SKNetworkingLib
     - SKPickerViewManager
-    - SKTextInputs
     - SKTextInputsManager
     - SKXibLoadableView
     - SwiftLint
@@ -133,18 +132,20 @@ EXTERNAL SOURCES:
     :path: "/Users/Sergey/Work/Pods/CustomNavigation"
   SKDataSources:
     :path: "/Users/Sergey/Work/Pods/DataSources"
+  SKImagePicking:
+    :path: "/Users/Sergey/Work/Pods/ImagePicking"
   SKImagePreviewing:
     :path: "/Users/Sergey/Work/Pods/Image-Previewing"
   SKLocationPermissions:
     :path: "/Users/Sergey/Work/Pods/LocationPermissions"
   SKMicrophonePermissions:
     :path: "/Users/Sergey/Work/Pods/MicrophonePermissions"
-  SKNetworkingLib:
-    :path: "/Users/Sergey/Work/Pods/Networking"
   SKPhotosPermissions:
     :path: "/Users/Sergey/Work/Pods/PhotosPermissions"
   SKServicePermissions:
     :path: "/Users/Sergey/Work/Pods/ServicePermission"
+  SKTextInputs:
+    :path: "/Users/Sergey/Work/Pods/TextInputs"
   SKValidationService:
     :path: "/Users/Sergey/Work/Pods/ValidationService"
 
@@ -167,22 +168,22 @@ SPEC CHECKSUMS:
   SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
   SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
   SKDataSources: caf809a3e186a9c70d7b856aedb5196b20ee05c0
-  SKImagePicking: 54a80ef46b1117b85e49d31a50c765c7850b5d2f
+  SKImagePicking: 8a84fd52cd2097344e07df74e966a78d3ce3c04f
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
   SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
   SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
   SKMicrophonePermissions: 8d22b390e3e372749014f08e06d500bd78bb2f3f
-  SKNetworkingLib: 63e6d96b5d3484c1cc1faf089f733ce5070a514a
+  SKNetworkingLib: 7ed956f39d9dbbb1c85ea7dc1d5a2ab97825354d
   SKPhotosPermissions: a1eb67132dab47fa948876333ec190629732f118
   SKPickerViewManager: 296952388703a3ee767c71a6e0ff0b91bee4c0d1
   SKServicePermissions: e44db83279e5b9c412718519c8247890da27693f
-  SKTextInputs: 4478b69fc4db468ea27b5f833f89d252674571ac
+  SKTextInputs: 8a718726b9bc536447aacc95467e21862b7d4529
   SKTextInputsManager: e9511905db3d32b1714629f56254e984bf90d5d0
   SKValidationService: 9469f490204f0e3840b0b5a548dbac62fc53cb8d
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 8c1f5995ae4dd7f644756bb63b94cee93a256aa4
+PODFILE CHECKSUM: 3ae1f0aade2fd29db5611b11df9fe5b9c5665c77
 
 COCOAPODS: 1.5.3
