@@ -31,14 +31,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Private -
     
     private func setup(servicesRepository: ServicesRepository) {
+        // AuthentificationService
         let networkErrorParser = NetworkErrorParser()
-        let requestExecutor = DefaultRequestExecutor(sessionManager: Alamofire.SessionManager.default, errorParser: networkErrorParser)
-        let networkService = DefaultNetworkService(requestExecutor: requestExecutor)
-        servicesRepository.registerService(service: networkService)
-        let ipDetectingService = IpDetectingService(networkService: networkService)
-        servicesRepository.registerService(service: ipDetectingService)
+        let networkService = DefaultNetworkService(errorParser: networkErrorParser)
         let authentificationService = AuthentificationService(networkService: networkService)
         servicesRepository.registerService(service: authentificationService)
+        
+        // DefaultNetworkService
+        let defaultNetworkService = DefaultNetworkService(reAuthorizer: authentificationService, errorParser: networkErrorParser)
+        servicesRepository.registerService(service: defaultNetworkService)
+        
+        // Other
+        let ipDetectingService = IpDetectingService(networkService: defaultNetworkService)
+        servicesRepository.registerService(service: ipDetectingService)
     }
     
     private func startApplication() {

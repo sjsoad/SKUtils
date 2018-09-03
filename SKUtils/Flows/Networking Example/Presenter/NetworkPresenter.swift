@@ -53,7 +53,7 @@ extension NetworkPresenter: NetworkOutput {
         // executingHandler: use default to show UI blocker, or custom if you need some specific actions
         // errorHandler: use default to show error message, or custom if you need some specific actions
         // requestHandler: if you need to store request object
-        let handlers = NetworkHandlers<IpDetectingRequest>(successHandler: { [weak self] (response) in
+        let handlers = NetworkHandlers<IpDetectingResponse>(successHandler: { [weak self] (response) in
             guard let ipAddress = response.result else { return }
             self?.view?.set(ipAddress: ipAddress)
         }, executingHandler: requestExecutingHandler(), errorHandler: requestErrorHandler(), requestHandler: { (request, error) in
@@ -76,22 +76,12 @@ extension NetworkPresenter: RequestExecuting {
     
 }
 
-//// MARK: - RequestErrorHandling -
+// MARK: - RequestErrorHandling -
 // #4 add support of RequestErrorHandling to show error and for default requestErrorHandler
-//extension NetworkPresenter: RequestErrorHandling {
-//
-//    var alertView: AlertViewable? {
-//        return view
-//    }
-//
-//}
+extension NetworkPresenter: RequestErrorHandling {
 
-// MARK: - AdvancedRequestErrorHandling -
-// #5 you can inherit from RequestErrorHandling and create your custom error handler, for example check AdvancedRequestErrorHandling
-extension NetworkPresenter: AdvancedRequestErrorHandling {
-    
     var alertView: AlertViewable? {
         return view
     }
-    
+
 }

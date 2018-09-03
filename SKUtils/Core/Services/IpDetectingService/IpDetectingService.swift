@@ -19,9 +19,9 @@ class IpDetectingService: NSObject {
     
     // MARK: - Public -
     
-    func detectIp(handlers: NetworkHandlers<IpDetectingRequest>) {
+    func detectIp(handlers: NetworkHandlers<IpDetectingResponse>) {
         let request = IpDetectingRequest()
-        networkService.execute(request: request, handlers: handlers)
+        networkService.execute(request, with: handlers)
     }
     
 }

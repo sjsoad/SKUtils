@@ -9,21 +9,11 @@
 import Foundation
 import SKNetworkingLib
 
-typealias IpDetectingResponseType = String
-
-class IpDetectingRequest: AuthentificatedAPIRequesting {
-    
-    typealias ResponseType = IpDetectingResponse
-    
-    var accessToken: String?
-    
-    init() {
-    }
+struct IpDetectingRequest: APIRequesting {
     
     // MARK: - APIRequesting -
     
-    var urlString: String {
-        return "https://api.ipify.org?format=json"
-    }
+    var requestType: RequestType { return .simple(nil) }
+    var urlString: String { return "https://api.ipify.org?format=json" }
     
 }
