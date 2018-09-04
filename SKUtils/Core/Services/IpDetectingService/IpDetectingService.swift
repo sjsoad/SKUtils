@@ -9,7 +9,13 @@
 import UIKit
 import SKNetworkingLib
 
-class IpDetectingService: NSObject {
+protocol IpDetectingService {
+ 
+    func detectIp(handlers: NetworkHandlers<IpDetectingResponse>)
+    
+}
+
+class DefaultIpDetectingService: IpDetectingService {
 
     private var networkService: NetworkService
     

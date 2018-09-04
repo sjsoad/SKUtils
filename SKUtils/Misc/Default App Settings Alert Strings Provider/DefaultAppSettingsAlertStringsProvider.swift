@@ -11,12 +11,12 @@ import SKAppSettingsShowing
 
 // WARNING: You can create class that conforms to AppSettingsAlertStringsProviding and make assign values in init
 
-class DefaultAppSettingsAlertStringsProvider: AppSettingsAlertStringsProviding {
+struct DefaultAppSettingsAlertStringsProvider: AppSettingsAlertStringsProviding {
     
-    private(set) var settingsAlertTitle: String?
-    private(set) var settingsAlertMessage: String?
-    private(set) var settingsActionTitle: String
-    private(set) var cancelActionTitle: String
+    let settingsAlertTitle: String?
+    let settingsAlertMessage: String?
+    let settingsActionTitle: String
+    let cancelActionTitle: String
     
     init(settingsAlertTitle: String? = "Access Denied", settingsAlertMessage: String? = "Need to change access state in Settings",
          settingsActionTitle: String = "Open Settings", cancelActionTitle: String = "Continue anyway") {

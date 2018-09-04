@@ -18,7 +18,7 @@ PODS:
   - SKAlertViewable (0.0.2):
     - SwiftyDrop
   - SKAnimator (0.0.2)
-  - SKAppSettingsShowing (0.0.9):
+  - SKAppSettingsShowing (0.1.0):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -32,7 +32,7 @@ PODS:
   - SKCustomNavigation (0.1.1):
     - SKAnimator
   - SKDataSources (0.0.6)
-  - SKImagePicking (0.0.7):
+  - SKImagePicking (0.0.8):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -150,14 +150,14 @@ SPEC CHECKSUMS:
   SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
   SKAlertViewable: f647b9a4d94c48267140bb1b4aba69a16e2b9ec6
   SKAnimator: 35a71ae524636f263fb2916a186451a11a02ff3c
-  SKAppSettingsShowing: bcd62947aee9565299a8a23561a2494a534c951e
+  SKAppSettingsShowing: 7d2eb6a266a56a064509a82b2cbe79ed60de3937
   SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
   SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
   SKDataSources: 1f7f155cc79d917a6e284d89260473b51555a6f6
-  SKImagePicking: 54a80ef46b1117b85e49d31a50c765c7850b5d2f
+  SKImagePicking: d8335707cc016e4042cf09451818984a2b33bdd3
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546
   SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
   SKLocationPermissions: 9eb44edf1e24269b4707d92768f6c559e096f967

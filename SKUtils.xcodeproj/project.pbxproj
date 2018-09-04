@@ -17,7 +17,6 @@
 		A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375920A2FAB700BC7C7D /* UIView+Load.swift */; };
 		A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */; };
 		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
-		A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */; };
 		A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380620A307B700BC7C7D /* MainMenuViewController.swift */; };
 		A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A511380720A307B700BC7C7D /* MainMenuViewController.xib */; };
 		A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */; };
@@ -46,6 +45,7 @@
 		A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */; };
 		A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576814B20B148A5003F3C68 /* TextInputsViewController.swift */; };
 		A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A576814C20B148A5003F3C68 /* TextInputsViewController.xib */; };
+		A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875603213E862B0025D3FE /* DefaultServiceRepository.swift */; };
 		A5889AD6212EDC2400B840FC /* TextInputsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5889AD5212EDC2400B840FC /* TextInputsManagerTests.swift */; };
 		A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */; };
 		A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6420B591FF0080B982 /* IpDetectingService.swift */; };
@@ -127,7 +127,6 @@
 		A511375920A2FAB700BC7C7D /* UIView+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Load.swift"; sourceTree = "<group>"; };
 		A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
 		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
-		A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesRepository.swift; sourceTree = "<group>"; };
 		A511380620A307B700BC7C7D /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		A511380720A307B700BC7C7D /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
@@ -157,6 +156,7 @@
 		A576814A20B148A5003F3C68 /* TextInputsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsPresenter.swift; sourceTree = "<group>"; };
 		A576814B20B148A5003F3C68 /* TextInputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsViewController.swift; sourceTree = "<group>"; };
 		A576814C20B148A5003F3C68 /* TextInputsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsViewController.xib; sourceTree = "<group>"; };
+		A5875603213E862B0025D3FE /* DefaultServiceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultServiceRepository.swift; sourceTree = "<group>"; };
 		A5889AC9212EDBE100B840FC /* SKUtilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKUtilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5889ACD212EDBE100B840FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5889AD4212EDC2400B840FC /* SKUtilsUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKUtilsUITests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 				A5A4DA3E20B6BC8D005F55B0 /* Authentification Service */,
 				A5930C6D20B59BAD0080B982 /* Network Error Parser */,
 				A5930C6320B591F10080B982 /* IpDetectingService */,
-				A51137FE20A3074C00BC7C7D /* ServicesRepository.swift */,
+				A5875603213E862B0025D3FE /* DefaultServiceRepository.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -591,8 +591,8 @@
 		A5930C6620B592540080B982 /* Network Requests */ = {
 			isa = PBXGroup;
 			children = (
-				A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */,
 				A5930C6820B5935B0080B982 /* IpDetectingRequest.swift */,
+				A5930C6720B5935B0080B982 /* IpDetectingResponse.swift */,
 			);
 			path = "Network Requests";
 			sourceTree = "<group>";
@@ -1247,7 +1247,6 @@
 				A5A9FF0F2133D0BF00B976AA /* User+CoreDataClass.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
-				A51137FF20A3074C00BC7C7D /* ServicesRepository.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
 				A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */,
 				A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */,
@@ -1273,6 +1272,7 @@
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
 				A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */,
 				A5CDADE720F6275F00E199E9 /* ToViewController.swift in Sources */,
+				A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
 				A5CDADE120F6275000E199E9 /* FromViewController.swift in Sources */,
 				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
