@@ -12,6 +12,7 @@ import SKCustomNavigation
 import SKCoreDataStack
 import ObjectMapper
 import CoreData
+import SKValidationService
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

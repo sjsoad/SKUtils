@@ -36,7 +36,7 @@ def shared_pods
 
     pod 'SKLocalDataStorage'#, :path => '/Users/Sergey/Work/Pods/LocalDataStorage'
     pod 'SKCoreDataStack', :path => '/Users/Sergey/Work/Pods/CoreDataStack'
-    pod 'SKValidationService', :path => '/Users/Sergey/Work/Pods/ValidationService'
+    pod 'SKValidationService'#, :path => '/Users/Sergey/Work/Pods/ValidationService'
 
     # Data Sources
     
@@ -62,5 +62,5 @@ end
 
 target 'SKUtilsTests' do
     inherit! :complete
-    pod 'SKValidationService', :path => '/Users/Sergey/Work/Pods/ValidationService'
+    pod 'SKValidationService'#, :path => '/Users/Sergey/Work/Pods/ValidationService'
 end

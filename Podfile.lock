@@ -61,7 +61,7 @@ PODS:
   - SKTextInputs (0.0.5):
     - SKPickerViewManager
   - SKTextInputsManager (0.1.0)
-  - SKValidationService (0.0.2)
+  - SKValidationService (0.0.3)
   - SKXibLoadableView (0.0.1)
   - SwiftLint (0.27.0)
   - SwiftyDrop (4.1.0)
@@ -93,7 +93,7 @@ DEPENDENCIES:
   - SKServicePermissions (from `/Users/Sergey/Work/Pods/ServicePermission`)
   - SKTextInputs
   - SKTextInputsManager
-  - SKValidationService (from `/Users/Sergey/Work/Pods/ValidationService`)
+  - SKValidationService
   - SKXibLoadableView
   - SwiftLint
 
@@ -116,6 +116,7 @@ SPEC REPOS:
     - SKPickerViewManager
     - SKTextInputs
     - SKTextInputsManager
+    - SKValidationService
     - SKXibLoadableView
     - SwiftLint
     - SwiftyDrop
@@ -145,8 +146,6 @@ EXTERNAL SOURCES:
     :path: "/Users/Sergey/Work/Pods/PhotosPermissions"
   SKServicePermissions:
     :path: "/Users/Sergey/Work/Pods/ServicePermission"
-  SKValidationService:
-    :path: "/Users/Sergey/Work/Pods/ValidationService"
 
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
@@ -178,11 +177,11 @@ SPEC CHECKSUMS:
   SKServicePermissions: e44db83279e5b9c412718519c8247890da27693f
   SKTextInputs: 4478b69fc4db468ea27b5f833f89d252674571ac
   SKTextInputsManager: e9511905db3d32b1714629f56254e984bf90d5d0
-  SKValidationService: 9469f490204f0e3840b0b5a548dbac62fc53cb8d
+  SKValidationService: d5d4f1a8f03e0e2a5f1d12e481133306d7b86cda
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 4cfb313ca4c51c8ded1267d2cef1089f1472f4c1
+PODFILE CHECKSUM: 6982db7f591c5167992d65b03a45df89106bc7d1
 
 COCOAPODS: 1.5.3
