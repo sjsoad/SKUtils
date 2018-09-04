@@ -12,8 +12,7 @@ struct ActivityViewableModuleBuilder: ModuleBuilder {
     
     func build() -> UIViewController {
         let viewController = ActivityViewableViewController()
-        let router = DefaultPopRouter(with: viewController)
-        let presenter = ActivityViewablePresenter(with: viewController, router: router)
+        let presenter = ActivityViewablePresenter(with: viewController)
         viewController.presenter = presenter
         return viewController
     }

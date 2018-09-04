@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		370B420E62BE40D10C259692 /* Pods_SKUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D552F8AD29741206B67E18A3 /* Pods_SKUtils.framework */; };
 		7D8D631EBEFB4CAA9B01C45B /* libPods-SKUtilsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4260814E174C9FAD83EA78 /* libPods-SKUtilsTests.a */; };
+		A502C798213EED4400A63432 /* TextInputsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C797213EED4400A63432 /* TextInputsBuilder.swift */; };
+		A502C7A3213EEDE100A63432 /* XibLoadableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A2213EEDE100A63432 /* XibLoadableBuilder.swift */; };
 		A50713B9213188CF00586D0E /* SKUtils.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A50713B7213188CE00586D0E /* SKUtils.xcdatamodeld */; };
 		A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */; };
 		A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375820A2FAB700BC7C7D /* DesignableView.swift */; };
@@ -62,6 +64,10 @@
 		A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5930C7520B5A08F0080B982 /* NetworkViewController.xib */; };
 		A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */; };
 		A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */; };
+		A59698EB213EEA7C007FB480 /* AlertViewableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698EA213EEA7C007FB480 /* AlertViewableBuilder.swift */; };
+		A59698EE213EEBC6007FB480 /* AlertControllerShowingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698ED213EEBC6007FB480 /* AlertControllerShowingBuilder.swift */; };
+		A59698F1213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698F0213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift */; };
+		A59698F3213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698F2213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift */; };
 		A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */; };
 		A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */; };
 		A59C85F920DE69170049BEA0 /* ViewAnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */; };
@@ -124,6 +130,8 @@
 		2A57DD245FC0CD92D382510F /* Pods-SKUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKUtils.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		42D55529B406DB0773C98375 /* Pods-SKUtilsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKUtilsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKUtilsTests/Pods-SKUtilsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A4260814E174C9FAD83EA78 /* libPods-SKUtilsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKUtilsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A502C797213EED4400A63432 /* TextInputsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsBuilder.swift; sourceTree = "<group>"; };
+		A502C7A2213EEDE100A63432 /* XibLoadableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadableBuilder.swift; sourceTree = "<group>"; };
 		A50713B8213188CE00586D0E /* SKUtils.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SKUtils.xcdatamodel; sourceTree = "<group>"; };
 		A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerPresenter.swift; sourceTree = "<group>"; };
 		A511375820A2FAB700BC7C7D /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
@@ -181,6 +189,10 @@
 		A5930C7520B5A08F0080B982 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
 		A595D21920C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppSettingsAlertStringsProvider.swift; sourceTree = "<group>"; };
 		A595D21B20C0355B00330556 /* DefaultImagePickerAlertSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImagePickerAlertSettings.swift; sourceTree = "<group>"; };
+		A59698EA213EEA7C007FB480 /* AlertViewableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewableBuilder.swift; sourceTree = "<group>"; };
+		A59698ED213EEBC6007FB480 /* AlertControllerShowingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerShowingBuilder.swift; sourceTree = "<group>"; };
+		A59698F0213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerViewBuilder.swift; sourceTree = "<group>"; };
+		A59698F2213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerScrollBuilder.swift; sourceTree = "<group>"; };
 		A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsPresenter.swift; sourceTree = "<group>"; };
 		A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsViewController.swift; sourceTree = "<group>"; };
 		A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAnimationsViewController.xib; sourceTree = "<group>"; };
@@ -273,6 +285,78 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A502C796213EED2F00A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A502C797213EED4400A63432 /* TextInputsBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C799213EED9C00A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A502C7A2213EEDE100A63432 /* XibLoadableBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C79A213EEDA200A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C79B213EEDA700A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C79C213EEDAD00A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C79D213EEDB200A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C79E213EEDB700A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C79F213EEDBE00A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C7A0213EEDCA00A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A502C7A1213EEDD000A63432 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		A50EE35F20B0B2E7007DAFAD /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +429,7 @@
 		A520FA8F20B17AE300E4E219 /* Xib Loadable Example */ = {
 			isa = PBXGroup;
 			children = (
+				A502C799213EED9C00A63432 /* Builder */,
 				A520FA9020B17B0700E4E219 /* Presenter */,
 				A520FA9120B17B0700E4E219 /* View */,
 			);
@@ -381,6 +466,7 @@
 		A520FA9D20B1818E00E4E219 /* App Settings Showing Example */ = {
 			isa = PBXGroup;
 			children = (
+				A502C79A213EEDA200A63432 /* Builder */,
 				A520FA9E20B1818E00E4E219 /* Presenter */,
 				A520FA9F20B1818E00E4E219 /* View */,
 			);
@@ -407,6 +493,7 @@
 		A520FAA620B1962000E4E219 /* Service Permissions Example */ = {
 			isa = PBXGroup;
 			children = (
+				A502C79C213EEDAD00A63432 /* Builder */,
 				A520FAA720B1962000E4E219 /* Presenter */,
 				A520FAA820B1962000E4E219 /* View */,
 			);
@@ -433,6 +520,7 @@
 		A520FAAF20B1B07C00E4E219 /* Image Picking Example */ = {
 			isa = PBXGroup;
 			children = (
+				A502C79B213EEDA700A63432 /* Builder */,
 				A520FAB020B1B07C00E4E219 /* Presenter */,
 				A520FAB120B1B07C00E4E219 /* View */,
 			);
@@ -503,6 +591,7 @@
 		A576814720B14884003F3C68 /* Text Inputs Example */ = {
 			isa = PBXGroup;
 			children = (
+				A502C796213EED2F00A63432 /* Builder */,
 				A576814820B14884003F3C68 /* Presenter */,
 				A576814920B14884003F3C68 /* View */,
 			);
@@ -669,6 +758,7 @@
 		A5930C7020B5A0360080B982 /* Networking Example */ = {
 			isa = PBXGroup;
 			children = (
+				A502C79D213EEDB200A63432 /* Builder */,
 				A5930C7120B5A0360080B982 /* Presenter */,
 				A5930C7220B5A0360080B982 /* View */,
 			);
@@ -716,9 +806,35 @@
 			path = "Default Image Picker Alert Settings";
 			sourceTree = "<group>";
 		};
+		A59698E9213EE9DD007FB480 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A59698EA213EEA7C007FB480 /* AlertViewableBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A59698EC213EEBB6007FB480 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A59698ED213EEBC6007FB480 /* AlertControllerShowingBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A59698EF213EEC12007FB480 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A59698F0213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift */,
+				A59698F2213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		A59C85F120DE68E30049BEA0 /* View Animations */ = {
 			isa = PBXGroup;
 			children = (
+				A502C79F213EEDBE00A63432 /* Builder */,
 				A59C85F220DE68E30049BEA0 /* Presenter */,
 				A59C85F320DE68E30049BEA0 /* View */,
 			);
@@ -796,6 +912,7 @@
 		A5BF216720AEC6AD0064B3F8 /* Alert Viewable Example */ = {
 			isa = PBXGroup;
 			children = (
+				A59698E9213EE9DD007FB480 /* Builder */,
 				A5BF216820AEC6AD0064B3F8 /* Presenter */,
 				A5BF216920AEC6AD0064B3F8 /* View */,
 			);
@@ -822,6 +939,7 @@
 		A5BF217020AECB430064B3F8 /* Alert Controller Showing Example */ = {
 			isa = PBXGroup;
 			children = (
+				A59698EC213EEBB6007FB480 /* Builder */,
 				A5BF217120AECB430064B3F8 /* Presenter */,
 				A5BF217220AECB430064B3F8 /* View */,
 			);
@@ -867,6 +985,7 @@
 		A5CDADD120F6200900E199E9 /* From */ = {
 			isa = PBXGroup;
 			children = (
+				A502C7A0213EEDCA00A63432 /* Builder */,
 				A5CDADD220F6200900E199E9 /* Presenter */,
 				A5CDADD320F6200900E199E9 /* View */,
 			);
@@ -893,6 +1012,7 @@
 		A5CDADD420F6200900E199E9 /* To */ = {
 			isa = PBXGroup;
 			children = (
+				A502C7A1213EEDD000A63432 /* Builder */,
 				A5CDADD520F6200900E199E9 /* Presenter */,
 				A5CDADD620F6200900E199E9 /* View */,
 			);
@@ -957,6 +1077,7 @@
 		A5D6A8122090E69700DF7495 /* Text Inputs Manager Example */ = {
 			isa = PBXGroup;
 			children = (
+				A59698EF213EEC12007FB480 /* Builder */,
 				A50EE35F20B0B2E7007DAFAD /* Presenter */,
 				A5BF218620AEFA080064B3F8 /* View */,
 			);
@@ -989,6 +1110,7 @@
 		A5F47B5920C90FE80073FDC8 /* Custom Modal Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				A502C79E213EEDB700A63432 /* Builder */,
 				A5F47B5B20C910090073FDC8 /* Presenter */,
 				A5F47B5A20C910090073FDC8 /* View */,
 			);
@@ -1167,7 +1289,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AERecord/AERecord.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -1238,7 +1360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7201312A314754A73FEACC49 /* [CP] Check Pods Manifest.lock */ = {
@@ -1299,6 +1421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */,
+				A59698EE213EEBC6007FB480 /* AlertControllerShowingBuilder.swift in Sources */,
 				A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */,
 				A587562C213EB0C60025D3FE /* Popable.swift in Sources */,
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
@@ -1339,6 +1462,8 @@
 				A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */,
 				A5CDADE720F6275F00E199E9 /* ToViewController.swift in Sources */,
 				A5875630213EB42A0025D3FE /* ViewLifecycleOutput.swift in Sources */,
+				A502C7A3213EEDE100A63432 /* XibLoadableBuilder.swift in Sources */,
+				A59698F1213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift in Sources */,
 				A587560E213EA1ED0025D3FE /* ExamplesRouter.swift in Sources */,
 				A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
@@ -1359,7 +1484,9 @@
 				A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */,
 				A5F6C30720EF9BE8005C9DC2 /* UIViewPropertyAnimator+Chain.swift in Sources */,
 				A5445C1120DD2B5B00B03832 /* TestData.swift in Sources */,
+				A59698F3213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift in Sources */,
 				A59C85FB20DE69CD0049BEA0 /* UIView+Animations.swift in Sources */,
+				A502C798213EED4400A63432 /* TextInputsBuilder.swift in Sources */,
 				A5875606213E8DBD0025D3FE /* AppDelegateRouter.swift in Sources */,
 				A511380F20A3095B00BC7C7D /* ModuleBuilderN.swift in Sources */,
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
@@ -1367,6 +1494,7 @@
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
 				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,
 				A511381220A31A3100BC7C7D /* Example.swift in Sources */,
+				A59698EB213EEA7C007FB480 /* AlertViewableBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

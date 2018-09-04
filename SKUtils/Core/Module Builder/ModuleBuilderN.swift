@@ -10,63 +10,6 @@ import UIKit
 import SKImagePreviewing
 
 //struct ModuleBuilder {
-
-//    static func mainMenuModule(servicesRepository: ServicesRepository) -> UIViewController {
-//        let viewController = MainMenuViewController()
-//        let presenter = MainMenuPresenter(with: viewController, servicesRepository: servicesRepository)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func activityViewableModule() -> UIViewController {
-//        let viewController = ActivityViewableViewController()
-//        let presenter = ActivityViewablePresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func alertViewableModule() -> UIViewController {
-//        let viewController = AlertViewableViewController()
-//        let presenter = AlertViewablePresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func alertControllerShowingModule() -> UIViewController {
-//        let viewController = AlertControllerShowingViewController()
-//        let presenter = AlertControllerShowingPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func textInputsManagerInViewModule() -> UIViewController {
-//        let viewController = TextInputsManagerViewController(nibName: "TextInputsManagerViewController", bundle: nil)
-//        let presenter = TextInputsManagerPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func textInputsManagerInScrollModule() -> UIViewController {
-//        let viewController = TextInputsManagerViewController(nibName: "TextInputsManagerScrollController", bundle: nil)
-//        let presenter = TextInputsManagerPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func textInputsModule() -> UIViewController {
-//        let viewController = TextInputsViewController()
-//        let presenter = TextInputsPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func xibLoadableModule() -> UIViewController {
-//        let viewController = XibLoadableViewController()
-//        let presenter = XibLoadablePresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
 //    static func appSettingsModule() -> UIViewController {
 //        let viewController = AppSettingsViewController()
 //        let presenter = AppSettingsPresenter(with: viewController)

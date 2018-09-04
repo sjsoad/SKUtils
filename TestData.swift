@@ -25,8 +25,8 @@ class TestsDataProvider {
     }
     
     class func examples() -> [Example] {
-        return [Example(title: "Activity Viewable Example", builder: ActivityViewableModuleBuilder())/*,
-                Example(title: "Alert Viewable Example", type: .alertViewable),
+        return [Example(title: "Activity Viewable Example", builder: ActivityViewableModuleBuilder()),
+                Example(title: "Alert Viewable Example", builder: AlertViewableBuilder())/*,
                 Example(title: "Alert Controller Showing Example", type: .alertControllerShowing),
                 Example(title: "Text Inputs Manager View Example", type: .inputsManagerInView),
                 Example(title: "Text Inputs Manager Scroll Example", type: .inputsManagerInScroll),
