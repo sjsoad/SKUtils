@@ -15,7 +15,6 @@
 		A502C7A7213EEF7300A63432 /* ImagePickerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A6213EEF7300A63432 /* ImagePickerBuilder.swift */; };
 		A502C7A9213EEFA800A63432 /* ServicePermissionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A8213EEFA800A63432 /* ServicePermissionsBuilder.swift */; };
 		A502C7AB213EEFD700A63432 /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */; };
-		A50713B9213188CF00586D0E /* SKUtils.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A50713B7213188CE00586D0E /* SKUtils.xcdatamodeld */; };
 		A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */; };
 		A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375820A2FAB700BC7C7D /* DesignableView.swift */; };
 		A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375920A2FAB700BC7C7D /* UIView+Load.swift */; };
@@ -138,7 +137,6 @@
 		A502C7A6213EEF7300A63432 /* ImagePickerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerBuilder.swift; sourceTree = "<group>"; };
 		A502C7A8213EEFA800A63432 /* ServicePermissionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePermissionsBuilder.swift; sourceTree = "<group>"; };
 		A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
-		A50713B8213188CE00586D0E /* SKUtils.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SKUtils.xcdatamodel; sourceTree = "<group>"; };
 		A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerPresenter.swift; sourceTree = "<group>"; };
 		A511375820A2FAB700BC7C7D /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		A511375920A2FAB700BC7C7D /* UIView+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Load.swift"; sourceTree = "<group>"; };
@@ -1096,7 +1094,6 @@
 				A5D6A8142090E69700DF7495 /* Assets.xcassets */,
 				A5D6A8152090E69700DF7495 /* LaunchScreen.storyboard */,
 				A5D6A8172090E69700DF7495 /* Info.plist */,
-				A50713B7213188CE00586D0E /* SKUtils.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1463,7 +1460,6 @@
 				A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
 				A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */,
-				A50713B9213188CF00586D0E /* SKUtils.xcdatamodeld in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
 				A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */,
 				A5CDADE720F6275F00E199E9 /* ToViewController.swift in Sources */,
@@ -1826,19 +1822,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A50713B7213188CE00586D0E /* SKUtils.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A50713B8213188CE00586D0E /* SKUtils.xcdatamodel */,
-			);
-			currentVersion = A50713B8213188CE00586D0E /* SKUtils.xcdatamodel */;
-			path = SKUtils.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A54DE43B2090DD97001C4410 /* Project object */;
 }
