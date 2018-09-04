@@ -10,34 +10,7 @@ import UIKit
 import SKImagePreviewing
 
 //struct ModuleBuilder {
-//    static func appSettingsModule() -> UIViewController {
-//        let viewController = AppSettingsViewController()
-//        let presenter = AppSettingsPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func servicePermissionsModule() -> UIViewController {
-//        let viewController = ServicePermissionsViewController()
-//        let presenter = ServicePermissionsPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func imagePickerModule() -> UIViewController {
-//        let viewController = ImagePickerViewController()
-//        let presenter = ImagePickerPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
-//    static func networkModule(servicesRepository: ServicesRepository) -> UIViewController {
-//        let viewController = NetworkViewController()
-//        let presenter = NetworkPresenter(with: viewController, servicesRepository: servicesRepository)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
-//
+
 //    static func modalNavigationModule() -> UIViewController {
 //        let viewController = ModalNavigationViewController()
 //        let presenter = ModalNavigationPresenter(with: viewController)

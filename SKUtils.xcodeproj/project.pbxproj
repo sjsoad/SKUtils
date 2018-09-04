@@ -11,6 +11,10 @@
 		7D8D631EBEFB4CAA9B01C45B /* libPods-SKUtilsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4260814E174C9FAD83EA78 /* libPods-SKUtilsTests.a */; };
 		A502C798213EED4400A63432 /* TextInputsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C797213EED4400A63432 /* TextInputsBuilder.swift */; };
 		A502C7A3213EEDE100A63432 /* XibLoadableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A2213EEDE100A63432 /* XibLoadableBuilder.swift */; };
+		A502C7A5213EEF4400A63432 /* AppSettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A4213EEF4400A63432 /* AppSettingsBuilder.swift */; };
+		A502C7A7213EEF7300A63432 /* ImagePickerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A6213EEF7300A63432 /* ImagePickerBuilder.swift */; };
+		A502C7A9213EEFA800A63432 /* ServicePermissionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A8213EEFA800A63432 /* ServicePermissionsBuilder.swift */; };
+		A502C7AB213EEFD700A63432 /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */; };
 		A50713B9213188CF00586D0E /* SKUtils.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A50713B7213188CE00586D0E /* SKUtils.xcdatamodeld */; };
 		A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */; };
 		A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375820A2FAB700BC7C7D /* DesignableView.swift */; };
@@ -132,6 +136,10 @@
 		6A4260814E174C9FAD83EA78 /* libPods-SKUtilsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKUtilsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A502C797213EED4400A63432 /* TextInputsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsBuilder.swift; sourceTree = "<group>"; };
 		A502C7A2213EEDE100A63432 /* XibLoadableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadableBuilder.swift; sourceTree = "<group>"; };
+		A502C7A4213EEF4400A63432 /* AppSettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsBuilder.swift; sourceTree = "<group>"; };
+		A502C7A6213EEF7300A63432 /* ImagePickerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerBuilder.swift; sourceTree = "<group>"; };
+		A502C7A8213EEFA800A63432 /* ServicePermissionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePermissionsBuilder.swift; sourceTree = "<group>"; };
+		A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
 		A50713B8213188CE00586D0E /* SKUtils.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SKUtils.xcdatamodel; sourceTree = "<group>"; };
 		A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerPresenter.swift; sourceTree = "<group>"; };
 		A511375820A2FAB700BC7C7D /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
@@ -304,6 +312,7 @@
 		A502C79A213EEDA200A63432 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				A502C7A4213EEF4400A63432 /* AppSettingsBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 		A502C79B213EEDA700A63432 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				A502C7A6213EEF7300A63432 /* ImagePickerBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -318,6 +328,7 @@
 		A502C79C213EEDAD00A63432 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				A502C7A8213EEFA800A63432 /* ServicePermissionsBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -325,6 +336,7 @@
 		A502C79D213EEDB200A63432 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -1420,6 +1432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A502C7A5213EEF4400A63432 /* AppSettingsBuilder.swift in Sources */,
 				A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */,
 				A59698EE213EEBC6007FB480 /* AlertControllerShowingBuilder.swift in Sources */,
 				A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */,
@@ -1439,6 +1452,7 @@
 				A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */,
 				A5875610213EA1ED0025D3FE /* ExamplesViewController.swift in Sources */,
 				A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */,
+				A502C7A9213EEFA800A63432 /* ServicePermissionsBuilder.swift in Sources */,
 				A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */,
 				A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */,
 				A5CDADE620F6275F00E199E9 /* ToPresenter.swift in Sources */,
@@ -1487,9 +1501,11 @@
 				A59698F3213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift in Sources */,
 				A59C85FB20DE69CD0049BEA0 /* UIView+Animations.swift in Sources */,
 				A502C798213EED4400A63432 /* TextInputsBuilder.swift in Sources */,
+				A502C7AB213EEFD700A63432 /* NetworkBuilder.swift in Sources */,
 				A5875606213E8DBD0025D3FE /* AppDelegateRouter.swift in Sources */,
 				A511380F20A3095B00BC7C7D /* ModuleBuilderN.swift in Sources */,
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
+				A502C7A7213EEF7300A63432 /* ImagePickerBuilder.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
 				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,

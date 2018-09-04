@@ -20,24 +20,18 @@ protocol NetworkInterface: class, ActivityViewable, AlertViewable {
     
 }
 
-protocol NetworkOutput {
-    
-    func viewDidLoad()
+protocol NetworkOutput: ViewLifecycleOutput {
     
 }
 
 class NetworkPresenter: NSObject {
     
     private weak var view: NetworkInterface?
+    private var ipDetectingService: IpDetectingService
     
-    private var servicesRepository: ServicesRepository
-    private var ipDetectingService: IpDetectingService?
-    
-    init(with view: NetworkInterface, servicesRepository: ServicesRepository) {
+    init(with view: NetworkInterface, ipDetectingService: IpDetectingService) {
         self.view = view
-        self.servicesRepository = servicesRepository
-//        self.ipDetectingService = servicesRepository.getService()
-//        self.authentificationService = servicesRepository.getService()
+        self.ipDetectingService = ipDetectingService
     }
     
 }
@@ -60,7 +54,7 @@ extension NetworkPresenter: NetworkOutput {
                 print(error?.localizedDescription ?? "no error")
         })
         // #7 use service to execute request
-        ipDetectingService?.detectIp(handlers: handlers)
+        ipDetectingService.detectIp(handlers: handlers)
     }
     
 }

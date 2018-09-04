@@ -15,6 +15,7 @@ protocol ServicesRepository {
     func networkErrorParser() -> ErrorParsable
     func networkService(with reAuthorizer: ReAuthorizable?) -> NetworkService
     func authentificationService() -> ReAuthorizable
+    func ipDetectingService() -> IpDetectingService
     
 }
 
@@ -22,9 +23,13 @@ struct DefaultServiceRepository: ServicesRepository {
 
     static let shared: ServicesRepository = DefaultServiceRepository()
     
-    let defaultNetworkService: NetworkService = {
-       return DefaultServiceRepository.shared.networkService(with: DefaultServiceRepository.shared.authentificationService())
-    }()
+    let defaultNetworkService: NetworkService
+    
+    init() {
+        let networkService = DefaultNetworkService(errorParser: NetworkErrorParser())
+        let authService = AuthentificationService(networkService: networkService)
+        defaultNetworkService = DefaultNetworkService(reAuthorizer: authService, errorParser: NetworkErrorParser())
+    }
     
     func networkErrorParser() -> ErrorParsable {
         return NetworkErrorParser()
