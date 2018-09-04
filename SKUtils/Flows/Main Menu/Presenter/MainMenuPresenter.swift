@@ -30,13 +30,14 @@ protocol MainMenuOutput {
 class MainMenuPresenter: NSObject {
     
     private weak var view: MainMenuInterface?
-    private var transitioningDelegate: DefaultTransitioningDelegate = {
+    private var transitioningDelegate: TransitioningDelegate = {
         return DefaultTransitioningDelegate(animatedTransitioning: Page(transitionDirection: .fromLeft))
     }()
-    private var customTransitioningDelegate: DefaultTransitioningDelegate = {
+    private var customTransitioningDelegate: TransitioningDelegate = {
         return DefaultTransitioningDelegate(animatedTransitioning: ZoomSlide(transitionDirection: .fromBottom),
                                             presentationControllerProvider: { (presented, presenting, _) -> UIPresentationController? in
-            let presentationController = DefaultPresentationController(presentedViewController: presented, presenting: presenting)
+                                                let presentationController = DefaultPresentationController(presentedViewController: presented,
+                                                                                                           presenting: presenting)
                                                 presentationController.position = Position(x: .center, y: .center)
                                                 return presentationController
         })
