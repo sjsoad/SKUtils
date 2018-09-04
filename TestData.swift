@@ -6,10 +6,7 @@
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
-import Foundation
-import UIKit
 import SKImagePreviewing
-import SKDataSources
 
 class TestsDataProvider {
     

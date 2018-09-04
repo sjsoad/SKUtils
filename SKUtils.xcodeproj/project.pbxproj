@@ -82,8 +82,6 @@
 		A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */; };
 		A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */; };
 		A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */; };
-		A5A9FF0E2133D0BF00B976AA /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9FF0C2133D0BF00B976AA /* User+CoreDataProperties.swift */; };
-		A5A9FF0F2133D0BF00B976AA /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9FF0D2133D0BF00B976AA /* User+CoreDataClass.swift */; };
 		A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */; };
 		A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */; };
 		A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */; };
@@ -211,8 +209,6 @@
 		A5A5754A20DB73D70052498D /* TransformAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformAnimationProvider.swift; sourceTree = "<group>"; };
 		A5A5754B20DB73D70052498D /* AlphaAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAnimationProvider.swift; sourceTree = "<group>"; };
 		A5A5754C20DB73D70052498D /* UITableView+ReloadAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadAnimation.swift"; sourceTree = "<group>"; };
-		A5A9FF0C2133D0BF00B976AA /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		A5A9FF0D2133D0BF00B976AA /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A5BF216120AEBF8D0064B3F8 /* ActivityViewablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewablePresenter.swift; sourceTree = "<group>"; };
 		A5BF216220AEBF8D0064B3F8 /* ActivityViewableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewableViewController.swift; sourceTree = "<group>"; };
 		A5BF216320AEBF8D0064B3F8 /* ActivityViewableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewableViewController.xib; sourceTree = "<group>"; };
@@ -431,8 +427,6 @@
 		A511381020A31A2500BC7C7D /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				A5A9FF0D2133D0BF00B976AA /* User+CoreDataClass.swift */,
-				A5A9FF0C2133D0BF00B976AA /* User+CoreDataProperties.swift */,
 				A511381120A31A3100BC7C7D /* Example.swift */,
 			);
 			path = "Data Models";
@@ -1443,7 +1437,6 @@
 				A5F6C30520EF9AC2005C9DC2 /* UIViewController+Animations.swift in Sources */,
 				A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
-				A5A9FF0F2133D0BF00B976AA /* User+CoreDataClass.swift in Sources */,
 				A5875634213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
@@ -1462,7 +1455,6 @@
 				A5CDADE020F6275000E199E9 /* FromPresenter.swift in Sources */,
 				A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
-				A5A9FF0E2133D0BF00B976AA /* User+CoreDataProperties.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */,

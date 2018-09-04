@@ -11,11 +11,11 @@ import SKDataSources
 import SKCustomNavigation
 import SKAnimator
 
-class ExamplesViewController: UIViewController, ExamplesInterface {
+class ExamplesViewController: UIViewController, ExamplesInterface, AnimationControllerProvider {
 
     var presenter: ExamplesOutput?
 
-    var animatedTransitioning: CustomAnimatedTransitioning? = Page(transitionDirection: .fromRight)
+    var animatedTransitioning: CustomAnimatedTransitioning? = Page(transitionDirection: .fromLeft)
     
     @IBOutlet private weak var tableView: UITableView!
     

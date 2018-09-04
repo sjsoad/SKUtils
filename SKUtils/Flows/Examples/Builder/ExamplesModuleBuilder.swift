@@ -8,9 +8,9 @@
 
 import UIKit
 
-struct ExamplesModuleBuilder: ModuleBuilder {
+struct ExamplesModuleBuilder {
     
-    func build() -> UIViewController {
+    static func build() -> UIViewController {
         let viewController = ExamplesViewController()
         let router = ExamplesRouter(with: viewController, examples: TestsDataProvider.examples())
         let presenter = ExamplesPresenter(with: viewController, router: router, examples: TestsDataProvider.examples())

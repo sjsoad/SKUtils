@@ -19,25 +19,26 @@ class AppDelegateRouter: AppDelegateRoutable {
 
     private weak var window: UIWindow?
     
-//    private var navControllerDelegate: DefaultNavigationControllerDelegate?
+    private var navControllerDelegate: DefaultNavigationControllerDelegate?
     
     init(with window: UIWindow?) {
         self.window = window
     }
     
     func startApplication() {
-        let examplesModule = ExamplesModuleBuilder().build()
+        let examplesModule = ExamplesModuleBuilder.build()
         let navigationController = UINavigationController(rootViewController: examplesModule)
+        navigationController.delegate = delegate(for: navigationController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
     
     // MARK: - Private -
     
-//    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
-//        let panInteractionController = PanInteractionController(navigationController: navigationController)
-//        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
-//        return navControllerDelegate
-//    }
+    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
+        let panInteractionController = PanInteractionController(navigationController: navigationController)
+        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
+        return navControllerDelegate
+    }
     
 }
