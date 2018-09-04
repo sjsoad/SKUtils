@@ -19,18 +19,18 @@ def shared_pods
     pod 'SKPickerViewManager'#, :path => '/Users/Sergey/Work/Pods/PickerViewManager'
     pod 'SKXibLoadableView'#, :path => '/Users/Sergey/Work/Pods/XibLoadableView'
     pod 'SKAppSettingsShowing'#, :path => '/Users/Sergey/Work/Pods/AppSettingsShowing'
-    pod 'SKImagePicking', :path => '/Users/Sergey/Work/Pods/ImagePicking'
+    pod 'SKImagePicking'#, :path => '/Users/Sergey/Work/Pods/ImagePicking'
     pod 'SKImagePreviewing', :path => '/Users/Sergey/Work/Pods/Image-Previewing'
     
     # Capabilities permissions
 
-    pod 'SKServicePermissions', :path => '/Users/Sergey/Work/Pods/ServicePermission'
-    pod 'SKBluetoothPermissions', :path => '/Users/Sergey/Work/Pods/BluetoothPermissions'
-    pod 'SKCameraPermissions', :path => '/Users/Sergey/Work/Pods/CameraPermissions'
-    pod 'SKPhotosPermissions', :path => '/Users/Sergey/Work/Pods/PhotosPermissions'
-    pod 'SKContactsPermissions', :path => '/Users/Sergey/Work/Pods/ContactsPermissions'
-    pod 'SKMicrophonePermissions', :path => '/Users/Sergey/Work/Pods/MicrophonePermissions'
-    pod 'SKLocationPermissions', :path => '/Users/Sergey/Work/Pods/LocationPermissions'
+    pod 'SKServicePermissions'#, :path => '/Users/Sergey/Work/Pods/ServicePermission'
+    pod 'SKBluetoothPermissions'#, :path => '/Users/Sergey/Work/Pods/BluetoothPermissions'
+    pod 'SKCameraPermissions'#, :path => '/Users/Sergey/Work/Pods/CameraPermissions'
+    pod 'SKPhotosPermissions'#, :path => '/Users/Sergey/Work/Pods/PhotosPermissions'
+    pod 'SKContactsPermissions'#, :path => '/Users/Sergey/Work/Pods/ContactsPermissions'
+    pod 'SKMicrophonePermissions'#, :path => '/Users/Sergey/Work/Pods/MicrophonePermissions'
+    pod 'SKLocationPermissions'#, :path => '/Users/Sergey/Work/Pods/LocationPermissions'
 
     # Services
 
@@ -40,7 +40,7 @@ def shared_pods
 
     # Data Sources
     
-    pod 'SKDataSources', :path => '/Users/Sergey/Work/Pods/DataSources'
+    pod 'SKDataSources'#, :path => '/Users/Sergey/Work/Pods/DataSources'
     
     # Networking
     
