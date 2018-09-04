@@ -23,7 +23,6 @@ class AuthentificationService: ReAuthorizable {
         DispatchQueue.global().asyncAfter(deadline: .now() + 5) {
             completion(request)
         }
-        
     }
     
 }

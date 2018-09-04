@@ -13,30 +13,31 @@ import SKCustomNavigation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private var appDelegateRouter: AppDelegateRoutable?
     
-    private var navControllerDelegate: DefaultNavigationControllerDelegate?
+//    private var navControllerDelegate: DefaultNavigationControllerDelegate?
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        startApplication()
+        appDelegateRouter = AppDelegateRouter(with: window)
+        appDelegateRouter?.startApplication()
         return true
     }
     
     // MARK: - Private -
     
-    private func startApplication() {
+//    private func startApplication() {
 //        let mainMenuVC = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
 //        let navigationController = UINavigationController(rootViewController: mainMenuVC)
 //        navigationController.delegate = delegate(for: navigationController)
 //        window?.rootViewController = navigationController
-    }
+//    }
     
-    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
-        let panInteractionController = PanInteractionController(navigationController: navigationController)
-        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
-        return navControllerDelegate
-    }
+//    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
+//        let panInteractionController = PanInteractionController(navigationController: navigationController)
+//        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
+//        return navControllerDelegate
+//    }
     
 }

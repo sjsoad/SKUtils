@@ -9,12 +9,13 @@
 // disable some swiftlint rules for this file
 
 // swiftlint:disable cyclomatic_complexity
+// swiftlint:disable function_body_length
 
 import Foundation
 import SKDataSources
 import SKCustomNavigation
 
-protocol MainMenuInterface: class, Navigatable {
+protocol MainMenuInterface: class {
     
     func set(dataSource: TableViewArrayDataSource)
     
@@ -157,7 +158,7 @@ extension MainMenuPresenter: MainMenuOutput {
         default: print("not implemented case")
         }
         guard let viewController = interface else { return }
-        view?.navigationController?.pushViewController(viewController, animated: true)
+//        view?.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
@@ -165,3 +166,4 @@ extension MainMenuPresenter: MainMenuOutput {
 // enable swiftlint rules disabled for this file
 
 // swiftlint:enable cyclomatic_complexity
+// swiftlint:enable function_body_length
