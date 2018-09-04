@@ -1,8 +1,8 @@
 //
-//  MainMenuViewController.swift
+//  ExamplesViewController.swift
 //  SKUtils
 //
-//  Created by Sergey Kostyan on 09.05.2018.
+//  Created by Sergey on 04.09.2018.
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
@@ -11,16 +11,20 @@ import SKDataSources
 import SKCustomNavigation
 import SKAnimator
 
-class MainMenuViewController: UIViewController, MainMenuInterface, AnimationControllerProvider {
+class ExamplesViewController: UIViewController, ExamplesInterface {
 
-    var presenter: MainMenuOutput?
-    
+    var presenter: ExamplesOutput?
+
     var animatedTransitioning: CustomAnimatedTransitioning? = Page(transitionDirection: .fromRight)
     
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Lifecycle -
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reload))
@@ -28,23 +32,25 @@ class MainMenuViewController: UIViewController, MainMenuInterface, AnimationCont
         presenter?.viewDidLoad()
     }
     
+    // MARK: - Actions -
+    
     @objc func reload() {
         // Animation examples
         // 1
-//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.flipFromBottom()])
+        //        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.flipFromBottom()])
         // 2
-//        tableView.reload(with: [AlphaAnimationProvider()])
+        //        tableView.reload(with: [AlphaAnimationProvider()])
         // 3
         tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromVertical(position: tableView.bounds.maxY)],
                          animatorProvider: ControlPointAnimatorProvider())
         // 4
-//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromVertical(position: -tableView.bounds.maxY)])
+        //        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromVertical(position: -tableView.bounds.maxY)])
         // 3
-//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromHorizontal(position: tableView.bounds.maxX)],
-//                         animatorProvider: SpringAnimatorProvider())
+        //        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromHorizontal(position: tableView.bounds.maxX)],
+        //                         animatorProvider: SpringAnimatorProvider())
         // 4
-//        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromHorizontal(position: -tableView.bounds.maxX)],
-//                         animatorProvider: SpringAnimatorProvider())
+        //        tableView.reload(with: [AlphaAnimationProvider(), TransformAnimationProvider.moveFromHorizontal(position: -tableView.bounds.maxX)],
+        //                         animatorProvider: SpringAnimatorProvider())
     }
     
     // MARK: - Private -
@@ -54,7 +60,7 @@ class MainMenuViewController: UIViewController, MainMenuInterface, AnimationCont
         tableView.register(cellNib, forCellReuseIdentifier: MainMenuCell.reuseIdentifier)
     }
     
-    // MARK: - MainMenuInterface -
+    // MARK: - ExamplesInterface -
     
     func set(dataSource: TableViewArrayDataSource) {
         tableView.dataSource = dataSource
@@ -63,7 +69,7 @@ class MainMenuViewController: UIViewController, MainMenuInterface, AnimationCont
     
 }
 
-extension MainMenuViewController: UITableViewDelegate {
+extension ExamplesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return .none
@@ -73,5 +79,5 @@ extension MainMenuViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         presenter?.viewTriggeredCellSelection(at: indexPath)
     }
-    
+
 }

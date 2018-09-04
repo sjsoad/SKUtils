@@ -24,4 +24,23 @@ class TestsDataProvider {
                 ImagePreviewItem(imageURL: URL(string: thirdLink))]
     }
     
+    class func examples() -> [Example] {
+        return [Example(title: "Activity Viewable Example", builder: ActivityViewableModuleBuilder())/*,
+                Example(title: "Alert Viewable Example", type: .alertViewable),
+                Example(title: "Alert Controller Showing Example", type: .alertControllerShowing),
+                Example(title: "Text Inputs Manager View Example", type: .inputsManagerInView),
+                Example(title: "Text Inputs Manager Scroll Example", type: .inputsManagerInScroll),
+                Example(title: "Text Inputs + Picker View Manager Example", type: .textInputs),
+                Example(title: "Xib Loadable Example", type: .xibLoadable),
+                Example(title: "App Settings Example", type: .appSettings),
+                Example(title: "Image Picking Example", type: .imagePicking),
+                Example(title: "Service Permissions Example", type: .servicePermissions),
+                Example(title: "Network Example", type: .networking),
+                Example(title: "Custom Modal Transition Example", type: .modalTransition),
+                Example(title: "Custom Presentation Example", type: .customPresentation),
+                Example(title: "Image Previewing Example", type: .imagePreviewing),
+                Example(title: "View Animations Example", type: .viewAnimations),
+                Example(title: "Subviews Animations Example", type: .subviewsAnimations)*/]
+    }
+    
 }

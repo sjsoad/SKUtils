@@ -24,9 +24,9 @@ class MainMenuCellPresenter: DataSourceObjectPresenter {
     private weak var view: MainMenuCellInterface?
     
     private(set) var reuseIdentifier: String
-    private(set) var model: Example
+    private(set) var model: TitleProvidable
     
-    init(with objectModel: Example, cellIdentifier: String) {
+    init(with objectModel: TitleProvidable, cellIdentifier: String) {
         self.model = objectModel
         self.reuseIdentifier = cellIdentifier
     }

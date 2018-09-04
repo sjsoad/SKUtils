@@ -61,7 +61,7 @@ PODS:
   - SKTextInputs (0.0.5):
     - SKPickerViewManager
   - SKTextInputsManager (0.1.0)
-  - SKValidationService (0.0.3)
+  - SKValidationService (0.0.4)
   - SKXibLoadableView (0.0.1)
   - SwiftLint (0.27.0)
   - SwiftyDrop (4.1.0)
@@ -168,7 +168,7 @@ SPEC CHECKSUMS:
   SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
   SKTextInputs: 4478b69fc4db468ea27b5f833f89d252674571ac
   SKTextInputsManager: e9511905db3d32b1714629f56254e984bf90d5d0
-  SKValidationService: d5d4f1a8f03e0e2a5f1d12e481133306d7b86cda
+  SKValidationService: f1b7ef7d0d895f80352d20c3305b933c04c81aae
   SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57

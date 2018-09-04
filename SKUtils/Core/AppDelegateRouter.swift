@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SKCustomNavigation
 
 protocol AppDelegateRoutable {
     
@@ -18,13 +19,25 @@ class AppDelegateRouter: AppDelegateRoutable {
 
     private weak var window: UIWindow?
     
+//    private var navControllerDelegate: DefaultNavigationControllerDelegate?
+    
     init(with window: UIWindow?) {
         self.window = window
     }
     
     func startApplication() {
-        
+        let examplesModule = ExamplesModuleBuilder().build()
+        let navigationController = UINavigationController(rootViewController: examplesModule)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
+    
+    // MARK: - Private -
+    
+//    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
+//        let panInteractionController = PanInteractionController(navigationController: navigationController)
+//        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
+//        return navControllerDelegate
+//    }
     
 }

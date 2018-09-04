@@ -15,10 +15,7 @@
 		A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375920A2FAB700BC7C7D /* UIView+Load.swift */; };
 		A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */; };
 		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
-		A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380620A307B700BC7C7D /* MainMenuViewController.swift */; };
-		A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A511380720A307B700BC7C7D /* MainMenuViewController.xib */; };
-		A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */; };
-		A511380F20A3095B00BC7C7D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380E20A3095B00BC7C7D /* ModuleBuilder.swift */; };
+		A511380F20A3095B00BC7C7D /* ModuleBuilderN.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380E20A3095B00BC7C7D /* ModuleBuilderN.swift */; };
 		A511381220A31A3100BC7C7D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381120A31A3100BC7C7D /* Example.swift */; };
 		A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381820A31B3300BC7C7D /* MainMenuCell.swift */; };
 		A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381920A31B3300BC7C7D /* MainMenuCellPresenter.swift */; };
@@ -45,6 +42,15 @@
 		A576814F20B148A5003F3C68 /* TextInputsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A576814C20B148A5003F3C68 /* TextInputsViewController.xib */; };
 		A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875603213E862B0025D3FE /* DefaultServiceRepository.swift */; };
 		A5875606213E8DBD0025D3FE /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875605213E8DBD0025D3FE /* AppDelegateRouter.swift */; };
+		A587560D213EA1ED0025D3FE /* ExamplesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875607213EA1ED0025D3FE /* ExamplesPresenter.swift */; };
+		A587560E213EA1ED0025D3FE /* ExamplesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875608213EA1ED0025D3FE /* ExamplesRouter.swift */; };
+		A5875610213EA1ED0025D3FE /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A587560A213EA1ED0025D3FE /* ExamplesViewController.swift */; };
+		A5875612213EA1ED0025D3FE /* ExamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A587560C213EA1ED0025D3FE /* ExamplesViewController.xib */; };
+		A5875628213EAF360025D3FE /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875627213EAF360025D3FE /* ModuleBuilder.swift */; };
+		A587562A213EAFAB0025D3FE /* ExamplesModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875629213EAFAB0025D3FE /* ExamplesModuleBuilder.swift */; };
+		A587562C213EB0C60025D3FE /* Popable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A587562B213EB0C60025D3FE /* Popable.swift */; };
+		A5875630213EB42A0025D3FE /* ViewLifecycleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A587562F213EB42A0025D3FE /* ViewLifecycleOutput.swift */; };
+		A5875634213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875633213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift */; };
 		A5889AD6212EDC2400B840FC /* TextInputsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5889AD5212EDC2400B840FC /* TextInputsManagerTests.swift */; };
 		A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DC16E20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift */; };
 		A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5930C6420B591FF0080B982 /* IpDetectingService.swift */; };
@@ -124,10 +130,7 @@
 		A511375920A2FAB700BC7C7D /* UIView+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Load.swift"; sourceTree = "<group>"; };
 		A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
 		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
-		A511380620A307B700BC7C7D /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		A511380720A307B700BC7C7D /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
-		A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
-		A511380E20A3095B00BC7C7D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		A511380E20A3095B00BC7C7D /* ModuleBuilderN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderN.swift; sourceTree = "<group>"; };
 		A511381120A31A3100BC7C7D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		A511381820A31B3300BC7C7D /* MainMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
 		A511381920A31B3300BC7C7D /* MainMenuCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCellPresenter.swift; sourceTree = "<group>"; };
@@ -155,6 +158,15 @@
 		A576814C20B148A5003F3C68 /* TextInputsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputsViewController.xib; sourceTree = "<group>"; };
 		A5875603213E862B0025D3FE /* DefaultServiceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultServiceRepository.swift; sourceTree = "<group>"; };
 		A5875605213E8DBD0025D3FE /* AppDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
+		A5875607213EA1ED0025D3FE /* ExamplesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesPresenter.swift; sourceTree = "<group>"; };
+		A5875608213EA1ED0025D3FE /* ExamplesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesRouter.swift; sourceTree = "<group>"; };
+		A587560A213EA1ED0025D3FE /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
+		A587560C213EA1ED0025D3FE /* ExamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamplesViewController.xib; sourceTree = "<group>"; };
+		A5875627213EAF360025D3FE /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		A5875629213EAFAB0025D3FE /* ExamplesModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesModuleBuilder.swift; sourceTree = "<group>"; };
+		A587562B213EB0C60025D3FE /* Popable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popable.swift; sourceTree = "<group>"; };
+		A587562F213EB42A0025D3FE /* ViewLifecycleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLifecycleOutput.swift; sourceTree = "<group>"; };
+		A5875633213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewableModuleBuilder.swift; sourceTree = "<group>"; };
 		A5889AC9212EDBE100B840FC /* SKUtilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKUtilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5889ACD212EDBE100B840FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5889AD4212EDC2400B840FC /* SKUtilsUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKUtilsUITests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -312,37 +324,10 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A511380220A307A600BC7C7D /* Main Menu */ = {
-			isa = PBXGroup;
-			children = (
-				A511380320A307A600BC7C7D /* Presenter */,
-				A511380420A307A600BC7C7D /* View */,
-			);
-			path = "Main Menu";
-			sourceTree = "<group>";
-		};
-		A511380320A307A600BC7C7D /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				A511380B20A307D100BC7C7D /* MainMenuPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		A511380420A307A600BC7C7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A511381320A31AF400BC7C7D /* Cell */,
-				A511380620A307B700BC7C7D /* MainMenuViewController.swift */,
-				A511380720A307B700BC7C7D /* MainMenuViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		A511380D20A3095000BC7C7D /* Module Builder */ = {
 			isa = PBXGroup;
 			children = (
-				A511380E20A3095B00BC7C7D /* ModuleBuilder.swift */,
+				A511380E20A3095B00BC7C7D /* ModuleBuilderN.swift */,
 			);
 			path = "Module Builder";
 			sourceTree = "<group>";
@@ -355,16 +340,6 @@
 				A511381120A31A3100BC7C7D /* Example.swift */,
 			);
 			path = "Data Models";
-			sourceTree = "<group>";
-		};
-		A511381320A31AF400BC7C7D /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				A511381820A31B3300BC7C7D /* MainMenuCell.swift */,
-				A511381C20A31B5000BC7C7D /* MainMenuCell.xib */,
-				A511381920A31B3300BC7C7D /* MainMenuCellPresenter.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		A520FA8F20B17AE300E4E219 /* Xib Loadable Example */ = {
@@ -507,6 +482,7 @@
 		A54DE4452090DD97001C4410 /* SKUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A587562D213EB3E90025D3FE /* Common */,
 				A511381020A31A2500BC7C7D /* Data Models */,
 				A5D6A8182090E69700DF7495 /* Core */,
 				A5D6A8112090E69700DF7495 /* Flows */,
@@ -548,6 +524,103 @@
 				A576814C20B148A5003F3C68 /* TextInputsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A5875613213EA1F80025D3FE /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				A5875631213EB7710025D3FE /* Builder */,
+				A5875614213EA2100025D3FE /* Presenter */,
+				A5875615213EA2100025D3FE /* Router */,
+				A5875616213EA2100025D3FE /* View */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		A5875614213EA2100025D3FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5875607213EA1ED0025D3FE /* ExamplesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5875615213EA2100025D3FE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A5875608213EA1ED0025D3FE /* ExamplesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A5875616213EA2100025D3FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5875617213EA2100025D3FE /* Cell */,
+				A587560A213EA1ED0025D3FE /* ExamplesViewController.swift */,
+				A587560C213EA1ED0025D3FE /* ExamplesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5875617213EA2100025D3FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A511381820A31B3300BC7C7D /* MainMenuCell.swift */,
+				A511381C20A31B5000BC7C7D /* MainMenuCell.xib */,
+				A511381920A31B3300BC7C7D /* MainMenuCellPresenter.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A5875625213EAF1A0025D3FE /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A5875627213EAF360025D3FE /* ModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A5875626213EAF270025D3FE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A587562B213EB0C60025D3FE /* Popable.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A587562D213EB3E90025D3FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A587562E213EB3FC0025D3FE /* Protocols */,
+				A5875626213EAF270025D3FE /* Router */,
+				A5875625213EAF1A0025D3FE /* Builder */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A587562E213EB3FC0025D3FE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A587562F213EB42A0025D3FE /* ViewLifecycleOutput.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A5875631213EB7710025D3FE /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A5875629213EAFAB0025D3FE /* ExamplesModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A5875632213EB9AC0025D3FE /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A5875633213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		A5889ACA212EDBE100B840FC /* SKUtilsUITests */ = {
@@ -696,6 +769,7 @@
 		A5BF215E20AEB5730064B3F8 /* Activity Viewable Example */ = {
 			isa = PBXGroup;
 			children = (
+				A5875632213EB9AC0025D3FE /* Builder */,
 				A5BF215F20AEB5730064B3F8 /* Presenter */,
 				A5BF216020AEB5730064B3F8 /* View */,
 			);
@@ -862,7 +936,7 @@
 		A5D6A8112090E69700DF7495 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				A511380220A307A600BC7C7D /* Main Menu */,
+				A5875613213EA1F80025D3FE /* Examples */,
 				A5BF215E20AEB5730064B3F8 /* Activity Viewable Example */,
 				A5BF216720AEC6AD0064B3F8 /* Alert Viewable Example */,
 				A5BF217020AECB430064B3F8 /* Alert Controller Showing Example */,
@@ -1047,8 +1121,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5875612213EA1ED0025D3FE /* ExamplesViewController.xib in Resources */,
 				A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */,
-				A511380A20A307B700BC7C7D /* MainMenuViewController.xib in Resources */,
 				A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */,
 				A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */,
 				A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */,
@@ -1226,6 +1300,7 @@
 			files = (
 				A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */,
 				A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */,
+				A587562C213EB0C60025D3FE /* Popable.swift in Sources */,
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
 				A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */,
 				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
@@ -1233,17 +1308,20 @@
 				A5A5755020DB73D70052498D /* AlphaAnimationProvider.swift in Sources */,
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A5A9FF0F2133D0BF00B976AA /* User+CoreDataClass.swift in Sources */,
+				A5875634213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
 				A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */,
 				A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */,
+				A5875610213EA1ED0025D3FE /* ExamplesViewController.swift in Sources */,
 				A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */,
 				A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */,
 				A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */,
 				A5CDADE620F6275F00E199E9 /* ToPresenter.swift in Sources */,
 				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
+				A5875628213EAF360025D3FE /* ModuleBuilder.swift in Sources */,
 				A5CDADE020F6275000E199E9 /* FromPresenter.swift in Sources */,
 				A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
@@ -1260,28 +1338,30 @@
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
 				A576814D20B148A5003F3C68 /* TextInputsPresenter.swift in Sources */,
 				A5CDADE720F6275F00E199E9 /* ToViewController.swift in Sources */,
+				A5875630213EB42A0025D3FE /* ViewLifecycleOutput.swift in Sources */,
+				A587560E213EA1ED0025D3FE /* ExamplesRouter.swift in Sources */,
 				A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
 				A5CDADE120F6275000E199E9 /* FromViewController.swift in Sources */,
 				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
 				A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */,
+				A587560D213EA1ED0025D3FE /* ExamplesPresenter.swift in Sources */,
 				A595D21A20C0353600330556 /* DefaultAppSettingsAlertStringsProvider.swift in Sources */,
 				A520FAB620B1B0FC00E4E219 /* ImagePickerViewController.swift in Sources */,
 				A5BF218C20AEFA890064B3F8 /* TextInputsManagerViewController.swift in Sources */,
 				A5F47B5F20C910240073FDC8 /* ModalNavigationPresenter.swift in Sources */,
 				A59DFFCF2111C941004F41B9 /* AsyncOperation.swift in Sources */,
-				A511380C20A307D100BC7C7D /* MainMenuPresenter.swift in Sources */,
 				A5930C6520B591FF0080B982 /* IpDetectingService.swift in Sources */,
 				A520FA9A20B17B4400E4E219 /* CustomView.swift in Sources */,
+				A587562A213EAFAB0025D3FE /* ExamplesModuleBuilder.swift in Sources */,
 				A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */,
-				A511380920A307B700BC7C7D /* MainMenuViewController.swift in Sources */,
 				A5BF216D20AEC6CF0064B3F8 /* AlertViewablePresenter.swift in Sources */,
 				A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */,
 				A5F6C30720EF9BE8005C9DC2 /* UIViewPropertyAnimator+Chain.swift in Sources */,
 				A5445C1120DD2B5B00B03832 /* TestData.swift in Sources */,
 				A59C85FB20DE69CD0049BEA0 /* UIView+Animations.swift in Sources */,
 				A5875606213E8DBD0025D3FE /* AppDelegateRouter.swift in Sources */,
-				A511380F20A3095B00BC7C7D /* ModuleBuilder.swift in Sources */,
+				A511380F20A3095B00BC7C7D /* ModuleBuilderN.swift in Sources */,
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,

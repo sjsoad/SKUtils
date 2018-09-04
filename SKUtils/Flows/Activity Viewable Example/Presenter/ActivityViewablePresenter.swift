@@ -26,8 +26,11 @@ class ActivityViewablePresenter: NSObject {
     
     private weak var view: ActivityViewableInterface?
     
-    init(with view: ActivityViewableInterface) {
+    private var router: Popable
+    
+    init(with view: ActivityViewableInterface, router: Popable) {
         self.view = view
+        self.router = router
     }
     
 }
