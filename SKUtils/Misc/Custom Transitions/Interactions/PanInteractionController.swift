@@ -20,7 +20,7 @@ class PanInteractionController: NSObject, InteractionController, UIGestureRecogn
     
     // MARK: - InteractionControlling -
     
-    open weak var interactionDelegate: InteractionControllerDelegate?
+    open weak var interactionDelegate: InteractionControllingDelegate?
     open var interactionInProgress = false
     
     func activate() {
