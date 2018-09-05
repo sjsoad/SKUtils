@@ -19,7 +19,7 @@ class AppDelegateRouter: AppDelegateRoutable {
 
     private weak var window: UIWindow?
     
-    private var navControllerDelegate: DefaultNavigationControllerDelegate?
+    private var navControllerDelegate: NavigationControllerDelegate?
     
     init(with window: UIWindow?) {
         self.window = window
@@ -35,7 +35,7 @@ class AppDelegateRouter: AppDelegateRoutable {
     
     // MARK: - Private -
     
-    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
+    private func delegate(for navigationController: UINavigationController) -> NavigationControllerDelegate? {
         let panInteractionController = PanInteractionController(navigationController: navigationController)
         navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
         return navControllerDelegate

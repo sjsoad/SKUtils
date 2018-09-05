@@ -9,7 +9,7 @@
 import UIKit
 import SKCustomNavigation
 
-class PanInteractionController: NSObject, InteractionControlling, UIGestureRecognizerDelegate {
+class PanInteractionController: NSObject, InteractionController, UIGestureRecognizerDelegate {
 
     // MARK: - Your properties -
     
@@ -20,7 +20,7 @@ class PanInteractionController: NSObject, InteractionControlling, UIGestureRecog
     
     // MARK: - InteractionControlling -
     
-    open weak var interactionDelegate: InteractionControllingDelegate?
+    open weak var interactionDelegate: InteractionControllerDelegate?
     open var interactionInProgress = false
     
     func activate() {

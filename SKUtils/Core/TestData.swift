@@ -21,8 +21,8 @@ class TestsDataProvider {
                 ImagePreviewItem(imageURL: URL(string: thirdLink))]
     }
     
-    class func examples() -> [Example] {
-        return [Example(title: "Activity Viewable Example", builder: ActivityViewableModuleBuilder()),
+    class func examples() -> [[Example]] {
+        return [[Example(title: "Activity Viewable Example", builder: ActivityViewableModuleBuilder()),
                 Example(title: "Alert Viewable Example", builder: AlertViewableBuilder()),
                 Example(title: "Alert Controller Showing Example", builder: AlertControllerShowingBuilder()),
                 Example(title: "Text Inputs Manager View Example", builder: TextInputsManagerViewBuilder()),
@@ -32,12 +32,12 @@ class TestsDataProvider {
                 Example(title: "App Settings Example", builder: AppSettingsBuilder()),
                 Example(title: "Image Picking Example", builder: ImagePickerBuilder()),
                 Example(title: "Service Permissions Example", builder: ServicePermissionsBuilder()),
-                Example(title: "Network Example", builder: NetworkBuilder())/*,
-                Example(title: "Custom Modal Transition Example", type: .modalTransition),
-                Example(title: "Custom Presentation Example", type: .customPresentation),
-                Example(title: "Image Previewing Example", type: .imagePreviewing),
+                Example(title: "Network Example", builder: NetworkBuilder())],
+                [Example(title: "Custom Modal Transition Example", builder: ModalNavigationBuilder()),
+                Example(title: "Custom Presentation Example", builder: CustomPresentationBuilder())]]
+                /*Example(title: "Image Previewing Example", type: .imagePreviewing),
                 Example(title: "View Animations Example", type: .viewAnimations),
-                Example(title: "Subviews Animations Example", type: .subviewsAnimations)*/]
+                Example(title: "Subviews Animations Example", type: .subviewsAnimations)*/
     }
     
 }

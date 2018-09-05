@@ -75,6 +75,8 @@
 		A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */; };
 		A59C85F920DE69170049BEA0 /* ViewAnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */; };
 		A59C85FB20DE69CD0049BEA0 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85FA20DE69CD0049BEA0 /* UIView+Animations.swift */; };
+		A59CB8A7213FD76A004E6259 /* ModalNavigationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59CB8A6213FD76A004E6259 /* ModalNavigationBuilder.swift */; };
+		A59CB8A9213FD7D5004E6259 /* CustomPresentationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59CB8A8213FD7D5004E6259 /* CustomPresentationBuilder.swift */; };
 		A59DFFCF2111C941004F41B9 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DFFCE2111C941004F41B9 /* AsyncOperation.swift */; };
 		A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */; };
 		A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5754920DB73D70052498D /* ViewAnimationProvider.swift */; };
@@ -201,6 +203,8 @@
 		A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsViewController.swift; sourceTree = "<group>"; };
 		A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAnimationsViewController.xib; sourceTree = "<group>"; };
 		A59C85FA20DE69CD0049BEA0 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		A59CB8A6213FD76A004E6259 /* ModalNavigationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationBuilder.swift; sourceTree = "<group>"; };
+		A59CB8A8213FD7D5004E6259 /* CustomPresentationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationBuilder.swift; sourceTree = "<group>"; };
 		A59DFFCE2111C941004F41B9 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		A5A4DA3F20B6BC9A005F55B0 /* AuthentificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
 		A5A5754920DB73D70052498D /* ViewAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationProvider.swift; sourceTree = "<group>"; };
@@ -331,34 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		A502C79E213EEDB700A63432 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		A502C79F213EEDBE00A63432 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		A502C7A0213EEDCA00A63432 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		A502C7A1213EEDD000A63432 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -551,7 +527,6 @@
 		A54DE43A2090DD97001C4410 = {
 			isa = PBXGroup;
 			children = (
-				A5445C1020DD2B5B00B03832 /* TestData.swift */,
 				A54DE4452090DD97001C4410 /* SKUtils */,
 				A5D56A5120B29E9500A4985B /* SKUtilsTests */,
 				A5889ACA212EDBE100B840FC /* SKUtilsUITests */,
@@ -838,7 +813,6 @@
 		A59C85F120DE68E30049BEA0 /* View Animations */ = {
 			isa = PBXGroup;
 			children = (
-				A502C79F213EEDBE00A63432 /* Builder */,
 				A59C85F220DE68E30049BEA0 /* Presenter */,
 				A59C85F320DE68E30049BEA0 /* View */,
 			);
@@ -861,6 +835,15 @@
 				A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A59CB8A5213FD72F004E6259 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A59CB8A6213FD76A004E6259 /* ModalNavigationBuilder.swift */,
+				A59CB8A8213FD7D5004E6259 /* CustomPresentationBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		A5A4DA3E20B6BC8D005F55B0 /* Authentification Service */ = {
@@ -989,7 +972,6 @@
 		A5CDADD120F6200900E199E9 /* From */ = {
 			isa = PBXGroup;
 			children = (
-				A502C7A0213EEDCA00A63432 /* Builder */,
 				A5CDADD220F6200900E199E9 /* Presenter */,
 				A5CDADD320F6200900E199E9 /* View */,
 			);
@@ -1016,7 +998,6 @@
 		A5CDADD420F6200900E199E9 /* To */ = {
 			isa = PBXGroup;
 			children = (
-				A502C7A1213EEDD000A63432 /* Builder */,
 				A5CDADD520F6200900E199E9 /* Presenter */,
 				A5CDADD620F6200900E199E9 /* View */,
 			);
@@ -1101,6 +1082,7 @@
 		A5D6A8182090E69700DF7495 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A5445C1020DD2B5B00B03832 /* TestData.swift */,
 				A5930C6620B592540080B982 /* Network Requests */,
 				A511380D20A3095000BC7C7D /* Module Builder */,
 				A51137FC20A305E100BC7C7D /* Services */,
@@ -1113,7 +1095,7 @@
 		A5F47B5920C90FE80073FDC8 /* Custom Modal Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				A502C79E213EEDB700A63432 /* Builder */,
+				A59CB8A5213FD72F004E6259 /* Builder */,
 				A5F47B5B20C910090073FDC8 /* Presenter */,
 				A5F47B5A20C910090073FDC8 /* View */,
 			);
@@ -1292,7 +1274,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AERecord/AERecord.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -1363,7 +1345,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7201312A314754A73FEACC49 /* [CP] Check Pods Manifest.lock */ = {
@@ -1453,6 +1435,7 @@
 				A58DC16F20DC0CA400831114 /* UICollectionView+ReloadAnimation.swift in Sources */,
 				A5930C6920B5935B0080B982 /* IpDetectingResponse.swift in Sources */,
 				A5BF216E20AEC6CF0064B3F8 /* AlertViewableViewController.swift in Sources */,
+				A59CB8A9213FD7D5004E6259 /* CustomPresentationBuilder.swift in Sources */,
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
@@ -1469,6 +1452,7 @@
 				A587560E213EA1ED0025D3FE /* ExamplesRouter.swift in Sources */,
 				A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
+				A59CB8A7213FD76A004E6259 /* ModalNavigationBuilder.swift in Sources */,
 				A5CDADE120F6275000E199E9 /* FromViewController.swift in Sources */,
 				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
 				A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */,
@@ -1668,10 +1652,7 @@
 				DEVELOPMENT_TEAM = 29H3T5527V;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1688,10 +1669,7 @@
 				DEVELOPMENT_TEAM = 29H3T5527V;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1706,11 +1684,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SKUtilsUITests/Text Inputs Manager Tests/SKUtilsUITests-Bridging-Header.h";
@@ -1728,11 +1702,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SKUtilsUITests/Text Inputs Manager Tests/SKUtilsUITests-Bridging-Header.h";
@@ -1749,11 +1719,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1769,11 +1735,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

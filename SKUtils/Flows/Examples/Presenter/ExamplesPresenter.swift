@@ -27,13 +27,13 @@ class ExamplesPresenter: NSObject {
     
     private var router: ExamplesRoutable
     
-    private var examples: [TitleProvidable]
+    private var examples: [[TitleProvidable]]
     
     private lazy var dataSource: TableViewArrayDataSource = { [unowned self] in
         return createDataSource(from: examples)
     }()
     
-    init(with view: ExamplesInterface, router: ExamplesRoutable, examples: [TitleProvidable]) {
+    init(with view: ExamplesInterface, router: ExamplesRoutable, examples: [[TitleProvidable]]) {
         self.view = view
         self.router = router
         self.examples = examples
@@ -41,12 +41,11 @@ class ExamplesPresenter: NSObject {
     
     // MARK: - Private -
     
-    private func createDataSource(from list: [TitleProvidable]) -> TableViewArrayDataSource {
-        let items: [DataSourceObjectPresenter] = list.map({ MainMenuCellPresenter(with: $0, cellIdentifier: MainMenuCell.reuseIdentifier) })
-        let section = SectionModel(withItems: items)
-        return TableViewArrayDataSource(with: [section])
+    private func createDataSource(from list: [[TitleProvidable]]) -> TableViewArrayDataSource {
+        let sections = list.map({ SectionModel(withItems: $0.map({ MainMenuCellPresenter(with: $0, cellIdentifier: MainMenuCell.reuseIdentifier) })) })
+        return TableViewArrayDataSource(with: sections)
     }
-    
+
 }
 
 // MARK: - ExamplesOutput -
@@ -58,7 +57,7 @@ extension ExamplesPresenter: ExamplesOutput {
     }
     
     func viewTriggeredCellSelection(at indexPath: IndexPath) {
-        router.pushModule(at: indexPath)
+        router.showExample(at: indexPath)
     }
     
 }

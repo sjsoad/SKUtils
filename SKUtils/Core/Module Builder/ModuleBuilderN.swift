@@ -11,12 +11,6 @@ import SKImagePreviewing
 
 //struct ModuleBuilder {
 
-//    static func modalNavigationModule() -> UIViewController {
-//        let viewController = ModalNavigationViewController()
-//        let presenter = ModalNavigationPresenter(with: viewController)
-//        viewController.presenter = presenter
-//        return viewController
-//    }
 //
 //    static func imagePreviewingModule() -> UIViewController {
 //        let previewItems = TestsDataProvider.imagesForPreview()
