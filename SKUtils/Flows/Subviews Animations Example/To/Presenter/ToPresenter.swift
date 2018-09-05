@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ToInterface: class, Navigatable {
+protocol ToInterface: class {
     
 }
 
@@ -33,7 +33,7 @@ class ToPresenter: NSObject {
 extension ToPresenter: ToOutput {
 
     func viewTriggeredBackEvent() {
-        view?.navigationController?.popViewController(animated: true)
+//        view?.navigationController?.popViewController(animated: true)
     }
 
 }

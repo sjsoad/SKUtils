@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol FromInterface: class, Navigatable {
+protocol FromInterface: class {
     
 }
 
@@ -33,8 +33,8 @@ class FromPresenter: NSObject {
 extension FromPresenter: FromOutput {
 
     func viewTriggeredActionEvent() {
-        let toVC = ModuleBuilder.toModule()
-        view?.navigationController?.pushViewController(toVC, animated: true)
+//        let toVC = ModuleBuilder.toModule()
+//        view?.navigationController?.pushViewController(toVC, animated: true)
     }
 
 }

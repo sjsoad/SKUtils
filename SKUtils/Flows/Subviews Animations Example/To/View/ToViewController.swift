@@ -17,14 +17,6 @@ class ToViewController: UIViewController, ToInterface {
     @IBOutlet private weak var backButton: UIButton!
     
     // MARK: - Lifecycle -
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     // MARK: - IBActions -
     
@@ -33,11 +25,5 @@ class ToViewController: UIViewController, ToInterface {
     }
     
     // MARK: - ToInterface -
-    
-    // MARK: - SubviewsForAnimatiedTransitionProvider -
-    
-    var viewsToAnimate: [UIView] {
-        return [pictureView, backButton]
-    }
     
 }

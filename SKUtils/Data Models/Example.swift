@@ -8,14 +8,21 @@
 
 import UIKit
 
-class Example: NSObject {
+protocol TitleProvidable {
+    
+    var title: String { get set }
+    
+}
+
+protocol BuilderProvidable {
+    
+    var builder: ModuleBuilder { get }
+    
+}
+
+struct Example: TitleProvidable, BuilderProvidable {
 
     var title: String
-    var type: ModuleType
-    
-    init(title: String, type: ModuleType) {
-        self.title = title
-        self.type = type
-    }
+    var builder: ModuleBuilder
     
 }

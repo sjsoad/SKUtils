@@ -29,10 +29,4 @@ class FromViewController: UIViewController, FromInterface, AnimationControllerPr
     
     // MARK: - FromInterface -
     
-    // MARK: - SubviewsForAnimatiedTransitionProvider -
-    
-    var viewsToAnimate: [UIView] {
-        return [pictureView, actionButton]
-    }
-    
 }

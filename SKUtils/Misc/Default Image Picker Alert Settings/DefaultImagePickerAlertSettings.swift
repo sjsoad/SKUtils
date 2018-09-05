@@ -11,17 +11,17 @@ import SKImagePicking
 
 // WARNING: You can create class that conforms to ImagePickerAlertSettingsProviding and make assign values in init
 
-class DefaultImagePickerAlertSettings: ImagePickerAlertSettingsProviding {
+struct DefaultImagePickerAlertSettings: ImagePickerAlertSettingsProviding {
     
-    private(set) var prefferedStyle: UIAlertControllerStyle
-    private(set) var alertTitle: String?
-    private(set) var alertMessage: String?
-    private(set) var cameraActionTitle: String
-    private(set) var libraryActionTitle: String
-    private(set) var cancelActionTitle: String
+    let prefferedStyle: UIAlertControllerStyle
+    let alertTitle: String?
+    let alertMessage: String?
+    let cameraActionTitle: String
+    let libraryActionTitle: String
+    let cancelActionTitle: String
     
-    public required init(prefferedStyle: UIAlertControllerStyle = .actionSheet, alertTitle: String? = nil, alertMessage: String? = nil,
-                         cameraActionTitle: String = "Camera", libraryActionTitle: String = "Photo Library", cancelActionTitle: String = "Cancel") {
+    public init(prefferedStyle: UIAlertControllerStyle = .actionSheet, alertTitle: String? = nil, alertMessage: String? = nil,
+                cameraActionTitle: String = "Camera", libraryActionTitle: String = "Photo Library", cancelActionTitle: String = "Cancel") {
         self.prefferedStyle = prefferedStyle
         self.alertTitle = alertTitle
         self.alertMessage = alertMessage

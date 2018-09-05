@@ -7,56 +7,19 @@
 //
 
 import UIKit
-import SKNetworkingLib
-import Alamofire
-import SKCustomNavigation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    var servicesRepository = ServicesRepository()
-    
-//    private var navControllerDelegate: DefaultNavigationControllerDelegate?
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    private var appDelegateRouter: AppDelegateRoutable?
+        
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        setup(servicesRepository: servicesRepository)
-        startApplication()
+        appDelegateRouter = AppDelegateRouter(with: window)
+        appDelegateRouter?.startApplication()
         return true
     }
-    
-    // MARK: - Private -
-    
-    private func setup(servicesRepository: ServicesRepository) {
-        // AuthentificationService
-        let networkErrorParser = NetworkErrorParser()
-        let networkService = DefaultNetworkService(errorParser: networkErrorParser)
-        let authentificationService = AuthentificationService(networkService: networkService)
-        servicesRepository.registerService(service: authentificationService)
-        
-        // DefaultNetworkService
-        let defaultNetworkService = DefaultNetworkService(reAuthorizer: authentificationService, errorParser: networkErrorParser)
-        servicesRepository.registerService(service: defaultNetworkService)
-        
-        // Other
-        let ipDetectingService = IpDetectingService(networkService: defaultNetworkService)
-        servicesRepository.registerService(service: ipDetectingService)
-    }
-    
-    private func startApplication() {
-        let mainMenuVC = ModuleBuilder.mainMenuModule(servicesRepository: servicesRepository)
-        let navigationController = UINavigationController(rootViewController: mainMenuVC)
-//        navigationController.delegate = delegate(for: navigationController)
-        window?.rootViewController = navigationController
-    }
-    
-//    private func delegate(for navigationController: UINavigationController) -> DefaultNavigationControllerDelegate? {
-//        let panInteractionController = PanInteractionController(navigationController: navigationController)
-//        navControllerDelegate = DefaultNavigationControllerDelegate(with: panInteractionController)
-//        return navControllerDelegate
-//    }
     
 }
