@@ -29,7 +29,7 @@ PODS:
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
   - SKCoreDataStack (0.0.1)
-  - SKCustomNavigation (0.1.1):
+  - SKCustomNavigation (0.1.2):
     - SKAnimator
   - SKDataSources (0.0.6)
   - SKImagePicking (0.0.8):
@@ -155,7 +155,7 @@ SPEC CHECKSUMS:
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
-  SKCustomNavigation: 598cd8d28b146e4f1b5102f2feb76e05e3adc48a
+  SKCustomNavigation: 0cf5badf9a902e94c1b800fb5db4430f5850a3a7
   SKDataSources: 1f7f155cc79d917a6e284d89260473b51555a6f6
   SKImagePicking: d8335707cc016e4042cf09451818984a2b33bdd3
   SKImagePreviewing: de71b789bea76410774bd14adf55bb12f1b1d546

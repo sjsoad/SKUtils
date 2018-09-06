@@ -42,7 +42,8 @@ class ExamplesPresenter: NSObject {
     // MARK: - Private -
     
     private func createDataSource(from list: [[TitleProvidable]]) -> TableViewArrayDataSource {
-        let sections = list.map({ SectionModel(withItems: $0.map({ MainMenuCellPresenter(with: $0, cellIdentifier: MainMenuCell.reuseIdentifier) })) })
+        let sections = list.map({ SectionModel(withItems: $0.map({ MainMenuCellPresenter(with: $0,
+                                                                                         cellIdentifier: MainMenuCell.reuseIdentifier) })) })
         return TableViewArrayDataSource(with: sections)
     }
 
