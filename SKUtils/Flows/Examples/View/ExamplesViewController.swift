@@ -15,7 +15,7 @@ class ExamplesViewController: UIViewController, ExamplesInterface, AnimationCont
 
     var presenter: ExamplesOutput?
 
-    var animatedTransitioning: CustomAnimatedTransitioning? = Page(transitionDirection: .fromLeft)
+    var animatedTransitioning: CustomAnimatedTransitioning? = Push(transitionDirection: .fromLeft)
     
     @IBOutlet private weak var tableView: UITableView!
     

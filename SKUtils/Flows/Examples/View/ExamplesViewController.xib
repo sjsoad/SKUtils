@@ -36,6 +36,9 @@
                 <constraint firstItem="fwJ-ZV-ZKT" firstAttribute="bottom" secondItem="77p-7v-efm" secondAttribute="bottom" id="ntC-Nt-BZU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="subviewsMathing" value="YES"/>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>

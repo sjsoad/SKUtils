@@ -22,8 +22,11 @@ class ToPresenter: NSObject {
     
     private weak var view: ToInterface?
     
-    init(with view: ToInterface) {
+    private var router: Popable
+    
+    init(with view: ToInterface, _ router: Popable) {
         self.view = view
+        self.router = router
     }
     
 }
@@ -33,7 +36,7 @@ class ToPresenter: NSObject {
 extension ToPresenter: ToOutput {
 
     func viewTriggeredBackEvent() {
-//        view?.navigationController?.popViewController(animated: true)
+        router.popViewController(animated: true)
     }
 
 }

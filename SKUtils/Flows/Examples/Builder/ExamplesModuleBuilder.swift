@@ -12,8 +12,8 @@ struct ExamplesModuleBuilder {
     
     static func build() -> UIViewController {
         let viewController = ExamplesViewController()
-        let router = ExamplesRouter(with: viewController, examples: TestsDataProvider.examples())
-        let presenter = ExamplesPresenter(with: viewController, router: router, examples: TestsDataProvider.examples())
+        let router = ExamplesRouter(with: viewController, TestsDataProvider.examples())
+        let presenter = ExamplesPresenter(with: viewController, router, TestsDataProvider.examples())
         viewController.presenter = presenter
         return viewController
     }

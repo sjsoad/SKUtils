@@ -33,7 +33,7 @@ class ExamplesPresenter: NSObject {
         return createDataSource(from: examples)
     }()
     
-    init(with view: ExamplesInterface, router: ExamplesRoutable, examples: [[TitleProvidable]]) {
+    init(with view: ExamplesInterface, _ router: ExamplesRoutable, _ examples: [[TitleProvidable]]) {
         self.view = view
         self.router = router
         self.examples = examples

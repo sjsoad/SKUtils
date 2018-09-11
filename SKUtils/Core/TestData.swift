@@ -32,12 +32,13 @@ class TestsDataProvider {
                 Example(title: "App Settings Example", builder: AppSettingsBuilder()),
                 Example(title: "Image Picking Example", builder: ImagePickerBuilder()),
                 Example(title: "Service Permissions Example", builder: ServicePermissionsBuilder()),
-                Example(title: "Network Example", builder: NetworkBuilder())],
+                Example(title: "Network Example", builder: NetworkBuilder()),
+                Example(title: "Subviews Animations Example", builder: FromModuleBuilder())],
                 [Example(title: "Custom Modal Transition Example", builder: ModalNavigationBuilder()),
                 Example(title: "Custom Presentation Example", builder: CustomPresentationBuilder())]]
                 /*Example(title: "Image Previewing Example", type: .imagePreviewing),
                 Example(title: "View Animations Example", type: .viewAnimations),
-                Example(title: "Subviews Animations Example", type: .subviewsAnimations)*/
+                */
     }
     
 }

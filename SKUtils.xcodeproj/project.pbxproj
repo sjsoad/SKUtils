@@ -71,6 +71,9 @@
 		A59698EE213EEBC6007FB480 /* AlertControllerShowingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698ED213EEBC6007FB480 /* AlertControllerShowingBuilder.swift */; };
 		A59698F1213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698F0213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift */; };
 		A59698F3213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698F2213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift */; };
+		A5993C02214792C4001E3653 /* ToModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5993C01214792C4001E3653 /* ToModuleBuilder.swift */; };
+		A5993C052147932B001E3653 /* FromModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5993C042147932B001E3653 /* FromModuleBuilder.swift */; };
+		A5993C0A2147948B001E3653 /* FromRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5993C092147948B001E3653 /* FromRouter.swift */; };
 		A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */; };
 		A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */; };
 		A59C85F920DE69170049BEA0 /* ViewAnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */; };
@@ -199,6 +202,9 @@
 		A59698ED213EEBC6007FB480 /* AlertControllerShowingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerShowingBuilder.swift; sourceTree = "<group>"; };
 		A59698F0213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerViewBuilder.swift; sourceTree = "<group>"; };
 		A59698F2213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerScrollBuilder.swift; sourceTree = "<group>"; };
+		A5993C01214792C4001E3653 /* ToModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToModuleBuilder.swift; sourceTree = "<group>"; };
+		A5993C042147932B001E3653 /* FromModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromModuleBuilder.swift; sourceTree = "<group>"; };
+		A5993C092147948B001E3653 /* FromRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromRouter.swift; sourceTree = "<group>"; };
 		A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsPresenter.swift; sourceTree = "<group>"; };
 		A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsViewController.swift; sourceTree = "<group>"; };
 		A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAnimationsViewController.xib; sourceTree = "<group>"; };
@@ -810,6 +816,30 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		A5993C00214792B2001E3653 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A5993C01214792C4001E3653 /* ToModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A5993C032147931F001E3653 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A5993C042147932B001E3653 /* FromModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A5993C082147948B001E3653 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A5993C092147948B001E3653 /* FromRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		A59C85F120DE68E30049BEA0 /* View Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -972,6 +1002,8 @@
 		A5CDADD120F6200900E199E9 /* From */ = {
 			isa = PBXGroup;
 			children = (
+				A5993C082147948B001E3653 /* Router */,
+				A5993C032147931F001E3653 /* Builder */,
 				A5CDADD220F6200900E199E9 /* Presenter */,
 				A5CDADD320F6200900E199E9 /* View */,
 			);
@@ -998,6 +1030,7 @@
 		A5CDADD420F6200900E199E9 /* To */ = {
 			isa = PBXGroup;
 			children = (
+				A5993C00214792B2001E3653 /* Builder */,
 				A5CDADD520F6200900E199E9 /* Presenter */,
 				A5CDADD620F6200900E199E9 /* View */,
 			);
@@ -1419,11 +1452,13 @@
 				A5875634213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
+				A5993C0A2147948B001E3653 /* FromRouter.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
 				A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */,
 				A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */,
 				A5875610213EA1ED0025D3FE /* ExamplesViewController.swift in Sources */,
 				A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */,
+				A5993C052147932B001E3653 /* FromModuleBuilder.swift in Sources */,
 				A502C7A9213EEFA800A63432 /* ServicePermissionsBuilder.swift in Sources */,
 				A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */,
 				A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */,
@@ -1449,6 +1484,7 @@
 				A5875630213EB42A0025D3FE /* ViewLifecycleOutput.swift in Sources */,
 				A502C7A3213EEDE100A63432 /* XibLoadableBuilder.swift in Sources */,
 				A59698F1213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift in Sources */,
+				A5993C02214792C4001E3653 /* ToModuleBuilder.swift in Sources */,
 				A587560E213EA1ED0025D3FE /* ExamplesRouter.swift in Sources */,
 				A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
@@ -1652,7 +1688,10 @@
 				DEVELOPMENT_TEAM = 29H3T5527V;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1669,7 +1708,10 @@
 				DEVELOPMENT_TEAM = 29H3T5527V;
 				INFOPLIST_FILE = SKUtils/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sk.SKUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1684,7 +1726,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SKUtilsUITests/Text Inputs Manager Tests/SKUtilsUITests-Bridging-Header.h";
@@ -1702,7 +1748,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SKUtilsUITests/Text Inputs Manager Tests/SKUtilsUITests-Bridging-Header.h";
@@ -1719,7 +1769,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1735,7 +1789,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SKUtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappsolutions.SKUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

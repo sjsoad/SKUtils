@@ -62,7 +62,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="fwJ-ZV-ZKT"/>
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="boolean" keyPath="subviewsAnimationEnabled" value="YES"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="subviewsMathing" value="YES"/>
             </userDefinedRuntimeAttributes>
         </view>
     </objects>

@@ -21,9 +21,11 @@ protocol FromOutput {
 class FromPresenter: NSObject {
     
     private weak var view: FromInterface?
+    private var router: FromRoutable
     
-    init(with view: FromInterface) {
+    init(with view: FromInterface, _ router: FromRoutable) {
         self.view = view
+        self.router = router
     }
     
 }
@@ -33,8 +35,7 @@ class FromPresenter: NSObject {
 extension FromPresenter: FromOutput {
 
     func viewTriggeredActionEvent() {
-//        let toVC = ModuleBuilder.toModule()
-//        view?.navigationController?.pushViewController(toVC, animated: true)
+        router.showToExample()
     }
 
 }

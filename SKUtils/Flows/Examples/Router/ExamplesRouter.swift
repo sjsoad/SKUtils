@@ -15,15 +15,15 @@ protocol ExamplesRoutable {
     
 }
 
-class ExamplesRouter: ExamplesRoutable {
+struct ExamplesRouter: ExamplesRoutable {
     
-    public private(set) weak var viewController: UIViewController?
+    private weak var viewController: UIViewController?
     private var examples: [[BuilderProvidable]]
     private var customModalTransition: TransitioningDelegate = {
         return DefaultTransitioningDelegate(animatedTransitioning: Page(transitionDirection: .fromTop))
     }()
     
-    init(with viewController: UIViewController, examples: [[BuilderProvidable]]) {
+    init(with viewController: UIViewController, _ examples: [[BuilderProvidable]]) {
         self.viewController = viewController
         self.examples = examples
     }
