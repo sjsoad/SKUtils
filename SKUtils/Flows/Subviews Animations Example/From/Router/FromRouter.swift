@@ -14,7 +14,7 @@ protocol FromRoutable {
     
 }
 
-struct FromRouter: FromRoutable {
+class FromRouter: FromRoutable {
 
     private weak var viewController: UIViewController?
     

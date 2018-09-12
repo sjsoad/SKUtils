@@ -15,7 +15,7 @@ protocol ExamplesRoutable {
     
 }
 
-struct ExamplesRouter: ExamplesRoutable {
+class ExamplesRouter: ExamplesRoutable {
     
     private weak var viewController: UIViewController?
     private var examples: [[BuilderProvidable]]
