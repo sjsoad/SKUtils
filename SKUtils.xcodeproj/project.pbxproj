@@ -73,6 +73,7 @@
 		A59A4BBF214F7FEA0092ABC7 /* ExampleCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A4BBD214F7FEA0092ABC7 /* ExampleCellPresenter.swift */; };
 		A59A4BC0214F7FEA0092ABC7 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A4BBE214F7FEA0092ABC7 /* ExampleCell.swift */; };
 		A59A4BC2214F806D0092ABC7 /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59A4BC1214F806D0092ABC7 /* ExampleCell.xib */; };
+		A59A4BD6214FA8E10092ABC7 /* ImagePreviewingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A4BD5214FA8E10092ABC7 /* ImagePreviewingBuilder.swift */; };
 		A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */; };
 		A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */; };
 		A59C85F920DE69170049BEA0 /* ViewAnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */; };
@@ -203,6 +204,7 @@
 		A59A4BBD214F7FEA0092ABC7 /* ExampleCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCellPresenter.swift; sourceTree = "<group>"; };
 		A59A4BBE214F7FEA0092ABC7 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
 		A59A4BC1214F806D0092ABC7 /* ExampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
+		A59A4BD5214FA8E10092ABC7 /* ImagePreviewingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewingBuilder.swift; sourceTree = "<group>"; };
 		A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsPresenter.swift; sourceTree = "<group>"; };
 		A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsViewController.swift; sourceTree = "<group>"; };
 		A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAnimationsViewController.xib; sourceTree = "<group>"; };
@@ -830,6 +832,22 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		A59A4BD3214FA8D10092ABC7 /* Image Previewing */ = {
+			isa = PBXGroup;
+			children = (
+				A59A4BD4214FA8D10092ABC7 /* Builder */,
+			);
+			path = "Image Previewing";
+			sourceTree = "<group>";
+		};
+		A59A4BD4214FA8D10092ABC7 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A59A4BD5214FA8E10092ABC7 /* ImagePreviewingBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		A59C85F120DE68E30049BEA0 /* View Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,6 +1082,7 @@
 		A5D6A8112090E69700DF7495 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				A59A4BD3214FA8D10092ABC7 /* Image Previewing */,
 				A5875613213EA1F80025D3FE /* Examples */,
 				A5BF215E20AEB5730064B3F8 /* Activity Viewable Example */,
 				A5BF216720AEC6AD0064B3F8 /* Alert Viewable Example */,
@@ -1299,6 +1318,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AERecord/AERecord.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlertActionBuilder/AlertActionBuilder.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SKActivityViewable/SKActivityViewable.framework",
@@ -1314,6 +1334,7 @@
 				"${BUILT_PRODUCTS_DIR}/SKCustomNavigation/SKCustomNavigation.framework",
 				"${BUILT_PRODUCTS_DIR}/SKDataSources/SKDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/SKImagePicking/SKImagePicking.framework",
+				"${BUILT_PRODUCTS_DIR}/SKImagePreviewing/SKImagePreviewing.framework",
 				"${BUILT_PRODUCTS_DIR}/SKLocalDataStorage/SKLocalDataStorage.framework",
 				"${BUILT_PRODUCTS_DIR}/SKLocationPermissions/SKLocationPermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKMicrophonePermissions/SKMicrophonePermissions.framework",
@@ -1331,6 +1352,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AERecord.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertActionBuilder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKActivityViewable.framework",
@@ -1346,6 +1368,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCustomNavigation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePicking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePreviewing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocalDataStorage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocationPermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKMicrophonePermissions.framework",
@@ -1448,6 +1471,7 @@
 				A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */,
 				A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */,
 				A5CDADE620F6275F00E199E9 /* ToPresenter.swift in Sources */,
+				A59A4BD6214FA8E10092ABC7 /* ImagePreviewingBuilder.swift in Sources */,
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
 				A5875628213EAF360025D3FE /* ModuleBuilder.swift in Sources */,
 				A5CDADE020F6275000E199E9 /* FromPresenter.swift in Sources */,
