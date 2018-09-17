@@ -27,7 +27,7 @@ PODS:
     - SKServicePermissions
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
-  - SKCustomNavigation (0.1.2):
+  - SKCustomNavigation (0.1.3):
     - SKAnimator
   - SKDataSources (0.1.2)
   - SKImagePicking (0.0.8):
@@ -141,7 +141,7 @@ SPEC CHECKSUMS:
   SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
-  SKCustomNavigation: dce1ebb5301c368984e60e8c2513ef830737432e
+  SKCustomNavigation: db47c2d5df674cba76b33a68128ce92d34a4505b
   SKDataSources: 52733db07b5e6a84cf1e12e34a668c0b17b34de9
   SKImagePicking: d8335707cc016e4042cf09451818984a2b33bdd3
   SKImagePreviewing: ce25d5ed8b70badcade74836fdb4eef5cca5a542
