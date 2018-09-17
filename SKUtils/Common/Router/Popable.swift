@@ -13,7 +13,7 @@ protocol Popable {
     func popViewController(animated: Bool)
 }
 
-struct DefaultPopRouter: Popable {
+class DefaultPopRouter: Popable {
     
     private weak var viewController: UIViewController?
     

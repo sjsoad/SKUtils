@@ -4,8 +4,6 @@ def shared_pods
     
     use_frameworks!
 	pod 'SwiftLint'
-    pod 'AlamofireImage'
-    pod 'ObjectMapper'
     
     # UI components
     
@@ -20,8 +18,8 @@ def shared_pods
     pod 'SKXibLoadableView'
     pod 'SKAppSettingsShowing'
     pod 'SKImagePicking'
-    pod 'SKImagePreviewing'
-    
+#    pod 'SKImagePreviewing'
+
     # Capabilities permissions
 
     pod 'SKServicePermissions'

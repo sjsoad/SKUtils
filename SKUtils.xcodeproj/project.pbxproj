@@ -17,14 +17,9 @@
 		A502C7AB213EEFD700A63432 /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */; };
 		A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */; };
 		A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375820A2FAB700BC7C7D /* DesignableView.swift */; };
-		A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375920A2FAB700BC7C7D /* UIView+Load.swift */; };
 		A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */; };
 		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
-		A511380F20A3095B00BC7C7D /* ModuleBuilderN.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511380E20A3095B00BC7C7D /* ModuleBuilderN.swift */; };
 		A511381220A31A3100BC7C7D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381120A31A3100BC7C7D /* Example.swift */; };
-		A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381820A31B3300BC7C7D /* MainMenuCell.swift */; };
-		A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381920A31B3300BC7C7D /* MainMenuCellPresenter.swift */; };
-		A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A511381C20A31B5000BC7C7D /* MainMenuCell.xib */; };
 		A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FA9220B17B1900E4E219 /* XibLoadablePresenter.swift */; };
 		A520FA9620B17B1900E4E219 /* XibLoadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FA9320B17B1900E4E219 /* XibLoadableViewController.swift */; };
 		A520FA9720B17B1900E4E219 /* XibLoadableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FA9420B17B1900E4E219 /* XibLoadableViewController.xib */; };
@@ -71,6 +66,12 @@
 		A59698EE213EEBC6007FB480 /* AlertControllerShowingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698ED213EEBC6007FB480 /* AlertControllerShowingBuilder.swift */; };
 		A59698F1213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698F0213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift */; };
 		A59698F3213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59698F2213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift */; };
+		A5993C02214792C4001E3653 /* ToModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5993C01214792C4001E3653 /* ToModuleBuilder.swift */; };
+		A5993C052147932B001E3653 /* FromModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5993C042147932B001E3653 /* FromModuleBuilder.swift */; };
+		A5993C0A2147948B001E3653 /* FromRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5993C092147948B001E3653 /* FromRouter.swift */; };
+		A59A4BBF214F7FEA0092ABC7 /* ExampleCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A4BBD214F7FEA0092ABC7 /* ExampleCellPresenter.swift */; };
+		A59A4BC0214F7FEA0092ABC7 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A4BBE214F7FEA0092ABC7 /* ExampleCell.swift */; };
+		A59A4BC2214F806D0092ABC7 /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59A4BC1214F806D0092ABC7 /* ExampleCell.xib */; };
 		A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */; };
 		A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */; };
 		A59C85F920DE69170049BEA0 /* ViewAnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */; };
@@ -141,14 +142,9 @@
 		A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
 		A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerPresenter.swift; sourceTree = "<group>"; };
 		A511375820A2FAB700BC7C7D /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
-		A511375920A2FAB700BC7C7D /* UIView+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Load.swift"; sourceTree = "<group>"; };
 		A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
 		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
-		A511380E20A3095B00BC7C7D /* ModuleBuilderN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderN.swift; sourceTree = "<group>"; };
 		A511381120A31A3100BC7C7D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
-		A511381820A31B3300BC7C7D /* MainMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
-		A511381920A31B3300BC7C7D /* MainMenuCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCellPresenter.swift; sourceTree = "<group>"; };
-		A511381C20A31B5000BC7C7D /* MainMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
 		A520FA9220B17B1900E4E219 /* XibLoadablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadablePresenter.swift; sourceTree = "<group>"; };
 		A520FA9320B17B1900E4E219 /* XibLoadableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadableViewController.swift; sourceTree = "<group>"; };
 		A520FA9420B17B1900E4E219 /* XibLoadableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibLoadableViewController.xib; sourceTree = "<group>"; };
@@ -199,6 +195,12 @@
 		A59698ED213EEBC6007FB480 /* AlertControllerShowingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerShowingBuilder.swift; sourceTree = "<group>"; };
 		A59698F0213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerViewBuilder.swift; sourceTree = "<group>"; };
 		A59698F2213EEC3B007FB480 /* TextInputsManagerScrollBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputsManagerScrollBuilder.swift; sourceTree = "<group>"; };
+		A5993C01214792C4001E3653 /* ToModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToModuleBuilder.swift; sourceTree = "<group>"; };
+		A5993C042147932B001E3653 /* FromModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromModuleBuilder.swift; sourceTree = "<group>"; };
+		A5993C092147948B001E3653 /* FromRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromRouter.swift; sourceTree = "<group>"; };
+		A59A4BBD214F7FEA0092ABC7 /* ExampleCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCellPresenter.swift; sourceTree = "<group>"; };
+		A59A4BBE214F7FEA0092ABC7 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
+		A59A4BC1214F806D0092ABC7 /* ExampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
 		A59C85F420DE69170049BEA0 /* ViewAnimationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsPresenter.swift; sourceTree = "<group>"; };
 		A59C85F520DE69170049BEA0 /* ViewAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsViewController.swift; sourceTree = "<group>"; };
 		A59C85F620DE69170049BEA0 /* ViewAnimationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAnimationsViewController.xib; sourceTree = "<group>"; };
@@ -372,7 +374,6 @@
 			isa = PBXGroup;
 			children = (
 				A511375820A2FAB700BC7C7D /* DesignableView.swift */,
-				A511375920A2FAB700BC7C7D /* UIView+Load.swift */,
 				A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */,
 				A511375B20A2FAB700BC7C7D /* Optional.swift */,
 			);
@@ -388,14 +389,6 @@
 				A5875603213E862B0025D3FE /* DefaultServiceRepository.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		A511380D20A3095000BC7C7D /* Module Builder */ = {
-			isa = PBXGroup;
-			children = (
-				A511380E20A3095B00BC7C7D /* ModuleBuilderN.swift */,
-			);
-			path = "Module Builder";
 			sourceTree = "<group>";
 		};
 		A511381020A31A2500BC7C7D /* Data Models */ = {
@@ -634,9 +627,9 @@
 		A5875617213EA2100025D3FE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				A511381820A31B3300BC7C7D /* MainMenuCell.swift */,
-				A511381C20A31B5000BC7C7D /* MainMenuCell.xib */,
-				A511381920A31B3300BC7C7D /* MainMenuCellPresenter.swift */,
+				A59A4BBD214F7FEA0092ABC7 /* ExampleCellPresenter.swift */,
+				A59A4BBE214F7FEA0092ABC7 /* ExampleCell.swift */,
+				A59A4BC1214F806D0092ABC7 /* ExampleCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -810,6 +803,30 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		A5993C00214792B2001E3653 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A5993C01214792C4001E3653 /* ToModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A5993C032147931F001E3653 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A5993C042147932B001E3653 /* FromModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A5993C082147948B001E3653 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A5993C092147948B001E3653 /* FromRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		A59C85F120DE68E30049BEA0 /* View Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -972,6 +989,8 @@
 		A5CDADD120F6200900E199E9 /* From */ = {
 			isa = PBXGroup;
 			children = (
+				A5993C082147948B001E3653 /* Router */,
+				A5993C032147931F001E3653 /* Builder */,
 				A5CDADD220F6200900E199E9 /* Presenter */,
 				A5CDADD320F6200900E199E9 /* View */,
 			);
@@ -998,6 +1017,7 @@
 		A5CDADD420F6200900E199E9 /* To */ = {
 			isa = PBXGroup;
 			children = (
+				A5993C00214792B2001E3653 /* Builder */,
 				A5CDADD520F6200900E199E9 /* Presenter */,
 				A5CDADD620F6200900E199E9 /* View */,
 			);
@@ -1084,7 +1104,6 @@
 			children = (
 				A5445C1020DD2B5B00B03832 /* TestData.swift */,
 				A5930C6620B592540080B982 /* Network Requests */,
-				A511380D20A3095000BC7C7D /* Module Builder */,
 				A51137FC20A305E100BC7C7D /* Services */,
 				A5D6A8192090E69700DF7495 /* AppDelegate.swift */,
 				A5875605213E8DBD0025D3FE /* AppDelegateRouter.swift */,
@@ -1229,12 +1248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5875612213EA1ED0025D3FE /* ExamplesViewController.xib in Resources */,
-				A511381D20A31B5000BC7C7D /* MainMenuCell.xib in Resources */,
 				A5BF216620AEBF8D0064B3F8 /* ActivityViewableViewController.xib in Resources */,
 				A5930C7820B5A08F0080B982 /* NetworkViewController.xib in Resources */,
 				A520FAB720B1B0FC00E4E219 /* ImagePickerViewController.xib in Resources */,
 				A520FAA520B181A900E4E219 /* AppSettingsViewController.xib in Resources */,
 				A59C85F920DE69170049BEA0 /* ViewAnimationsViewController.xib in Resources */,
+				A59A4BC2214F806D0092ABC7 /* ExampleCell.xib in Resources */,
 				A5CDADE820F6275F00E199E9 /* ToViewController.xib in Resources */,
 				A5BF217820AECB5B0064B3F8 /* AlertControllerShowingViewController.xib in Resources */,
 				A5CDADE220F6275000E199E9 /* FromViewController.xib in Resources */,
@@ -1274,13 +1293,11 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AERecord/AERecord.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlertActionBuilder/AlertActionBuilder.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SKActivityViewable/SKActivityViewable.framework",
 				"${BUILT_PRODUCTS_DIR}/SKAlertControllerBuilder/SKAlertControllerBuilder.framework",
 				"${BUILT_PRODUCTS_DIR}/SKAlertControllerShowing/SKAlertControllerShowing.framework",
@@ -1293,7 +1310,6 @@
 				"${BUILT_PRODUCTS_DIR}/SKCustomNavigation/SKCustomNavigation.framework",
 				"${BUILT_PRODUCTS_DIR}/SKDataSources/SKDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/SKImagePicking/SKImagePicking.framework",
-				"${BUILT_PRODUCTS_DIR}/SKImagePreviewing/SKImagePreviewing.framework",
 				"${BUILT_PRODUCTS_DIR}/SKLocalDataStorage/SKLocalDataStorage.framework",
 				"${BUILT_PRODUCTS_DIR}/SKLocationPermissions/SKLocationPermissions.framework",
 				"${BUILT_PRODUCTS_DIR}/SKMicrophonePermissions/SKMicrophonePermissions.framework",
@@ -1311,10 +1327,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AERecord.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertActionBuilder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKActivityViewable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAlertControllerBuilder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAlertControllerShowing.framework",
@@ -1327,7 +1341,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCustomNavigation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePicking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKImagePreviewing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocalDataStorage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKLocationPermissions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKMicrophonePermissions.framework",
@@ -1343,7 +1356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7201312A314754A73FEACC49 /* [CP] Check Pods Manifest.lock */ = {
@@ -1406,6 +1419,7 @@
 				A502C7A5213EEF4400A63432 /* AppSettingsBuilder.swift in Sources */,
 				A5664FD920C98E26000AD03F /* PanInteractionController.swift in Sources */,
 				A59698EE213EEBC6007FB480 /* AlertControllerShowingBuilder.swift in Sources */,
+				A59A4BC0214F7FEA0092ABC7 /* ExampleCell.swift in Sources */,
 				A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */,
 				A587562C213EB0C60025D3FE /* Popable.swift in Sources */,
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
@@ -1417,16 +1431,17 @@
 				A5875634213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
 				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
+				A5993C0A2147948B001E3653 /* FromRouter.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
 				A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */,
-				A511375F20A2FAB700BC7C7D /* UIView+Load.swift in Sources */,
 				A5875610213EA1ED0025D3FE /* ExamplesViewController.swift in Sources */,
+				A59A4BBF214F7FEA0092ABC7 /* ExampleCellPresenter.swift in Sources */,
 				A59C85F720DE69170049BEA0 /* ViewAnimationsPresenter.swift in Sources */,
+				A5993C052147932B001E3653 /* FromModuleBuilder.swift in Sources */,
 				A502C7A9213EEFA800A63432 /* ServicePermissionsBuilder.swift in Sources */,
 				A59C85F820DE69170049BEA0 /* ViewAnimationsViewController.swift in Sources */,
 				A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */,
 				A5CDADE620F6275F00E199E9 /* ToPresenter.swift in Sources */,
-				A511381A20A31B3300BC7C7D /* MainMenuCell.swift in Sources */,
 				A520FAB520B1B0FC00E4E219 /* ImagePickerPresenter.swift in Sources */,
 				A5875628213EAF360025D3FE /* ModuleBuilder.swift in Sources */,
 				A5CDADE020F6275000E199E9 /* FromPresenter.swift in Sources */,
@@ -1438,7 +1453,6 @@
 				A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
 				A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */,
-				A511381B20A31B3300BC7C7D /* MainMenuCellPresenter.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
 				A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */,
 				A5D6A81D2090E69700DF7495 /* AppDelegate.swift in Sources */,
@@ -1447,6 +1461,7 @@
 				A5875630213EB42A0025D3FE /* ViewLifecycleOutput.swift in Sources */,
 				A502C7A3213EEDE100A63432 /* XibLoadableBuilder.swift in Sources */,
 				A59698F1213EEC2F007FB480 /* TextInputsManagerViewBuilder.swift in Sources */,
+				A5993C02214792C4001E3653 /* ToModuleBuilder.swift in Sources */,
 				A587560E213EA1ED0025D3FE /* ExamplesRouter.swift in Sources */,
 				A5875604213E862B0025D3FE /* DefaultServiceRepository.swift in Sources */,
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
@@ -1473,7 +1488,6 @@
 				A502C798213EED4400A63432 /* TextInputsBuilder.swift in Sources */,
 				A502C7AB213EEFD700A63432 /* NetworkBuilder.swift in Sources */,
 				A5875606213E8DBD0025D3FE /* AppDelegateRouter.swift in Sources */,
-				A511380F20A3095B00BC7C7D /* ModuleBuilderN.swift in Sources */,
 				A520FA9520B17B1900E4E219 /* XibLoadablePresenter.swift in Sources */,
 				A502C7A7213EEF7300A63432 /* ImagePickerBuilder.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,

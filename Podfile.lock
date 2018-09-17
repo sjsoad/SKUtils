@@ -1,13 +1,10 @@
 PODS:
   - AERecord (4.1.0)
   - Alamofire (4.7.3)
-  - AlamofireImage (3.4.0):
-    - Alamofire (~> 4.7)
   - AlertActionBuilder (0.0.8)
   - NVActivityIndicatorView (4.3.0):
     - NVActivityIndicatorView/Presenter (= 4.3.0)
   - NVActivityIndicatorView/Presenter (4.3.0)
-  - ObjectMapper (3.3.0)
   - SKActivityViewable (0.0.2):
     - NVActivityIndicatorView
   - SKAlertControllerBuilder (0.0.5):
@@ -30,7 +27,7 @@ PODS:
     - SKServicePermissions
   - SKCustomNavigation (0.1.2):
     - SKAnimator
-  - SKDataSources (0.0.6)
+  - SKDataSources (0.0.7)
   - SKImagePicking (0.0.8):
     - AlertActionBuilder
     - SKAlertControllerBuilder
@@ -38,9 +35,6 @@ PODS:
     - SKAppSettingsShowing
     - SKCameraPermissions
     - SKPhotosPermissions
-  - SKImagePreviewing (0.0.2):
-    - AlamofireImage
-    - SKDataSources
   - SKLocalDataStorage (0.0.3):
     - AERecord
   - SKLocationPermissions (0.0.3):
@@ -66,9 +60,7 @@ PODS:
   - SwiftyDrop (4.1.0)
 
 DEPENDENCIES:
-  - AlamofireImage
   - AlertActionBuilder
-  - ObjectMapper
   - SKActivityViewable
   - SKAlertControllerBuilder
   - SKAlertControllerShowing
@@ -81,7 +73,6 @@ DEPENDENCIES:
   - SKCustomNavigation
   - SKDataSources
   - SKImagePicking
-  - SKImagePreviewing
   - SKLocalDataStorage
   - SKLocationPermissions
   - SKMicrophonePermissions
@@ -99,10 +90,8 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AERecord
     - Alamofire
-    - AlamofireImage
     - AlertActionBuilder
     - NVActivityIndicatorView
-    - ObjectMapper
     - SKActivityViewable
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
@@ -115,7 +104,6 @@ SPEC REPOS:
     - SKCustomNavigation
     - SKDataSources
     - SKImagePicking
-    - SKImagePreviewing
     - SKLocalDataStorage
     - SKLocationPermissions
     - SKMicrophonePermissions
@@ -133,10 +121,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  AlamofireImage: 5f79836de27236819b13b27d0c97be6c205976fe
   AlertActionBuilder: d8301a634daec34d3986ea24b4faaadbf2472b84
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
-  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
   SKAlertControllerBuilder: 3e00f3d4e44f8a50193f608115819ddce0c83af2
   SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
@@ -147,9 +133,8 @@ SPEC CHECKSUMS:
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCustomNavigation: dce1ebb5301c368984e60e8c2513ef830737432e
-  SKDataSources: 1f7f155cc79d917a6e284d89260473b51555a6f6
+  SKDataSources: 0f809b18ff81fbfa6fe89e09cfa8d89994d5ac2d
   SKImagePicking: d8335707cc016e4042cf09451818984a2b33bdd3
-  SKImagePreviewing: beb608a63cc0c560810027acb71fedea65241438
   SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
   SKLocationPermissions: 9eb44edf1e24269b4707d92768f6c559e096f967
   SKMicrophonePermissions: 54849d5100b08365db3f0d63aae9489968bbf398
@@ -164,6 +149,6 @@ SPEC CHECKSUMS:
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 2dfe815a204f81b861d6a8475188304b98ea19ee
+PODFILE CHECKSUM: 6b333d777b86541978a371eae2635886c5a53f50
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.5.3

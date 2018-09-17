@@ -1,28 +1,27 @@
 //
-//  MainMenuCellPresenter.swift
+//  ExampleCellPresenter.swift
 //  SKUtils
 //
-//  Created by Sergey Kostyan on 09.05.2018.
+//  Created by Sergey on 17.09.2018.
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
 import Foundation
 import SKDataSources
 
-protocol MainMenuCellInterface: class {
+protocol ExampleInterface: class {
     
     func set(_ title: String?)
     
 }
 
-protocol MainMenuCellOutput {
+protocol ExampleOutput {
     
 }
 
-class MainMenuCellPresenter: DataSourceObjectPresenter {
+class ExampleCellPresenter {
     
-    private weak var view: MainMenuCellInterface?
-    
+    private weak var view: ExampleInterface?
     private(set) var reuseIdentifier: String
     private(set) var model: TitleProvidable
     
@@ -30,21 +29,23 @@ class MainMenuCellPresenter: DataSourceObjectPresenter {
         self.model = objectModel
         self.reuseIdentifier = cellIdentifier
     }
+}
+
+// MARK: - ExampleOutput -
+
+extension ExampleCellPresenter: ExampleOutput {
     
-    // MARK: - DataSourceObjectPresenter -
+}
+
+// MARK: - PresenterType -
+
+extension ExampleCellPresenter: PresenterType {
     
-    func set(view: UIView) {
-        self.view = view as? MainMenuCellInterface
+    func set(view: ViewType) {
+        self.view = view as? ExampleInterface
     }
     
     func configure() {
         view?.set(model.title)
     }
-    
-}
-
-// MARK: - MainMenuCellOutput -
-
-extension MainMenuCellPresenter: MainMenuCellOutput {
-    
 }
