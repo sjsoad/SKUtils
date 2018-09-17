@@ -56,13 +56,13 @@ class ExamplesViewController: UIViewController, ExamplesInterface, AnimationCont
     // MARK: - Private -
     
     private func setup(tableView: UITableView) {
-        let cellNib = UINib(nibName: MainMenuCell.nibName, bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: MainMenuCell.reuseIdentifier)
+        let cellNib = UINib(nibName: ExampleCell.nibName, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: ExampleCell.reuseIdentifier)
     }
     
     // MARK: - ExamplesInterface -
     
-    func set(dataSource: TableViewArrayDataSource) {
+    func set(dataSource: TableViewArrayDataSourceRepresentable) {
         tableView.dataSource = dataSource
         reload()
     }

@@ -11,7 +11,7 @@ import SKDataSources
 
 protocol ExamplesInterface: class {
     
-    func set(dataSource: TableViewArrayDataSource)
+    func set(dataSource: TableViewArrayDataSourceRepresentable)
     
 }
 
@@ -26,10 +26,8 @@ class ExamplesPresenter: NSObject {
     private weak var view: ExamplesInterface?
     
     private var router: ExamplesRoutable
-    
     private var examples: [[TitleProvidable]]
-    
-    private lazy var dataSource: TableViewArrayDataSource = { [unowned self] in
+    private lazy var dataSource: TableViewArrayDataSourceRepresentable = { [unowned self] in
         return createDataSource(from: examples)
     }()
     
@@ -41,9 +39,9 @@ class ExamplesPresenter: NSObject {
     
     // MARK: - Private -
     
-    private func createDataSource(from list: [[TitleProvidable]]) -> TableViewArrayDataSource {
-        let sections = list.map({ SectionModel(withItems: $0.map({ MainMenuCellPresenter(with: $0,
-                                                                                         cellIdentifier: MainMenuCell.reuseIdentifier) })) })
+    private func createDataSource(from list: [[TitleProvidable]]) -> TableViewArrayDataSourceRepresentable {
+        let sections = list.map({ DefaultSection(with: $0.map({ ExampleCellPresenter(with: $0,
+                                                                                     cellIdentifier: ExampleCell.reuseIdentifier) })) })
         return TableViewArrayDataSource(with: sections)
     }
 
