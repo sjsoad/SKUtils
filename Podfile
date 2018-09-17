@@ -18,7 +18,7 @@ def shared_pods
     pod 'SKXibLoadableView'
     pod 'SKAppSettingsShowing'
     pod 'SKImagePicking'
-#    pod 'SKImagePreviewing'
+    pod 'SKImagePreviewing'
 
     # Capabilities permissions
 
