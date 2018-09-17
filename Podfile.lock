@@ -30,7 +30,7 @@ PODS:
   - SKCoreDataStack (0.0.1)
   - SKCustomNavigation (0.1.2):
     - SKAnimator
-  - SKDataSources (0.1.0)
+  - SKDataSources (0.1.2)
   - SKImagePicking (0.0.8):
     - AlertActionBuilder
     - SKAlertControllerBuilder
@@ -78,9 +78,9 @@ DEPENDENCIES:
   - SKContactsPermissions
   - SKCoreDataStack (from `/Users/Sergey/Work/Pods/CoreDataStack`)
   - SKCustomNavigation (from `/Users/Sergey/Work/Pods/CustomNavigation`)
-  - SKDataSources (from `/Users/Sergey/Work/Pods/DataSources`)
+  - SKDataSources
   - SKImagePicking
-  - SKImagePreviewing (from `/Users/Sergey/Work/Pods/Image-Previewing`)
+  - SKImagePreviewing
   - SKLocalDataStorage
   - SKLocationPermissions
   - SKMicrophonePermissions
@@ -110,7 +110,9 @@ SPEC REPOS:
     - SKBluetoothPermissions
     - SKCameraPermissions
     - SKContactsPermissions
+    - SKDataSources
     - SKImagePicking
+    - SKImagePreviewing
     - SKLocalDataStorage
     - SKLocationPermissions
     - SKMicrophonePermissions
@@ -130,10 +132,6 @@ EXTERNAL SOURCES:
     :path: "/Users/Sergey/Work/Pods/CoreDataStack"
   SKCustomNavigation:
     :path: "/Users/Sergey/Work/Pods/CustomNavigation"
-  SKDataSources:
-    :path: "/Users/Sergey/Work/Pods/DataSources"
-  SKImagePreviewing:
-    :path: "/Users/Sergey/Work/Pods/Image-Previewing"
 
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
@@ -152,9 +150,9 @@ SPEC CHECKSUMS:
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
   SKCustomNavigation: 0cf5badf9a902e94c1b800fb5db4430f5850a3a7
-  SKDataSources: e68991cca175706c5b6fb37828234277cf3fcc62
+  SKDataSources: 52733db07b5e6a84cf1e12e34a668c0b17b34de9
   SKImagePicking: d8335707cc016e4042cf09451818984a2b33bdd3
-  SKImagePreviewing: 14e3356d92e8a205a261cf7efc347fa7e3705813
+  SKImagePreviewing: ce25d5ed8b70badcade74836fdb4eef5cca5a542
   SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
   SKLocationPermissions: 9eb44edf1e24269b4707d92768f6c559e096f967
   SKMicrophonePermissions: 54849d5100b08365db3f0d63aae9489968bbf398
@@ -169,6 +167,6 @@ SPEC CHECKSUMS:
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 72bca9d537e7476b8f14f854c25030add71c86ed
+PODFILE CHECKSUM: 95ec83f8bf47460ab4d39ca6cd7927105d986f75
 
 COCOAPODS: 1.5.3
