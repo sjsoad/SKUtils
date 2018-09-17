@@ -28,7 +28,7 @@ PODS:
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
   - SKCoreDataStack (0.0.1)
-  - SKCustomNavigation (0.1.2):
+  - SKCustomNavigation (0.1.3):
     - SKAnimator
   - SKDataSources (0.1.2)
   - SKImagePicking (0.0.8):
@@ -77,7 +77,7 @@ DEPENDENCIES:
   - SKCameraPermissions
   - SKContactsPermissions
   - SKCoreDataStack (from `/Users/Sergey/Work/Pods/CoreDataStack`)
-  - SKCustomNavigation (from `/Users/Sergey/Work/Pods/CustomNavigation`)
+  - SKCustomNavigation
   - SKDataSources
   - SKImagePicking
   - SKImagePreviewing
@@ -110,6 +110,7 @@ SPEC REPOS:
     - SKBluetoothPermissions
     - SKCameraPermissions
     - SKContactsPermissions
+    - SKCustomNavigation
     - SKDataSources
     - SKImagePicking
     - SKImagePreviewing
@@ -130,8 +131,6 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   SKCoreDataStack:
     :path: "/Users/Sergey/Work/Pods/CoreDataStack"
-  SKCustomNavigation:
-    :path: "/Users/Sergey/Work/Pods/CustomNavigation"
 
 SPEC CHECKSUMS:
   AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
@@ -149,7 +148,7 @@ SPEC CHECKSUMS:
   SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
   SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
   SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
-  SKCustomNavigation: 0cf5badf9a902e94c1b800fb5db4430f5850a3a7
+  SKCustomNavigation: db47c2d5df674cba76b33a68128ce92d34a4505b
   SKDataSources: 52733db07b5e6a84cf1e12e34a668c0b17b34de9
   SKImagePicking: d8335707cc016e4042cf09451818984a2b33bdd3
   SKImagePreviewing: ce25d5ed8b70badcade74836fdb4eef5cca5a542
@@ -167,6 +166,6 @@ SPEC CHECKSUMS:
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 95ec83f8bf47460ab4d39ca6cd7927105d986f75
+PODFILE CHECKSUM: 5bfd69289cd8b7a741eadaf851c8f9ff6c850210
 
 COCOAPODS: 1.5.3
