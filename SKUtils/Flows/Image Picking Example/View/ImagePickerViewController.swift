@@ -31,7 +31,7 @@ class ImagePickerViewController: UIViewController, ImagePickerInterface {
 // #4 implement UIImagePickerControllerDelegate methods
 extension ImagePickerViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         picker.dismiss(animated: true, completion: nil)
         presenter?.viewTriggedImageSelectionEvent(with: info)
     }
