@@ -15,14 +15,12 @@ def shared_pods
     pod 'SKTextInputsManager'
     pod 'SKTextInputs'
     pod 'SKPickerViewManager'
-    pod 'SKXibLoadableView'
     pod 'SKAppSettingsShowing'
     pod 'SKImagePicking'
     pod 'SKImagePreviewing'
 
     # Capabilities permissions
 
-    pod 'SKServicePermissions'
     pod 'SKBluetoothPermissions'
     pod 'SKCameraPermissions'
     pod 'SKPhotosPermissions'

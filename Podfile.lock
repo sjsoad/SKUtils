@@ -1,68 +1,56 @@
 PODS:
-  - AERecord (4.1.0)
+  - AERecord (4.1.2)
   - Alamofire (4.7.3)
-  - AlamofireImage (3.4.0):
+  - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
-  - AlertActionBuilder (0.0.8)
-  - NVActivityIndicatorView (4.3.0):
-    - NVActivityIndicatorView/Presenter (= 4.3.0)
-  - NVActivityIndicatorView/Presenter (4.3.0)
-  - SKActivityViewable (0.0.2):
+  - AlertActionBuilder (0.1.0)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - SKActivityViewable (0.0.3):
     - NVActivityIndicatorView
-  - SKAlertControllerBuilder (0.0.5):
+  - SKAlertControllerBuilder (0.0.7):
     - AlertActionBuilder
-  - SKAlertControllerShowing (0.1.2):
+  - SKAlertControllerShowing (0.1.4):
     - AlertActionBuilder
     - SKAlertControllerBuilder
-  - SKAlertViewable (0.0.2):
-    - SwiftyDrop
-  - SKAnimator (0.0.2)
-  - SKAppSettingsShowing (0.1.0):
+  - SKAlertViewable (0.0.3)
+  - SKAnimator (0.0.4)
+  - SKAppSettingsShowing (0.1.6):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
-  - SKBluetoothPermissions (0.0.3):
-    - SKServicePermissions
-  - SKCameraPermissions (0.0.3):
-    - SKServicePermissions
-  - SKContactsPermissions (0.0.3):
-    - SKServicePermissions
-  - SKCustomNavigation (0.1.3):
+  - SKBluetoothPermissions (0.0.4)
+  - SKCameraPermissions (0.0.5)
+  - SKContactsPermissions (0.0.5)
+  - SKCustomNavigation (0.1.6):
     - SKAnimator
-  - SKDataSources (0.1.2)
-  - SKImagePicking (0.0.8):
+  - SKDataSources (0.1.5)
+  - SKImagePicking (0.1.1):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
     - SKAppSettingsShowing
     - SKCameraPermissions
     - SKPhotosPermissions
-  - SKImagePreviewing (0.0.3):
+  - SKImagePreviewing (0.0.5):
     - AlamofireImage
     - SKDataSources
-  - SKLocalDataStorage (0.0.3):
+  - SKLocalDataStorage (0.0.4):
     - AERecord
-  - SKLocationPermissions (0.0.3):
-    - SKServicePermissions
-  - SKMicrophonePermissions (0.0.3):
-    - SKServicePermissions
-  - SKNetworkingLib (0.0.8):
+  - SKLocationPermissions (0.0.6)
+  - SKMicrophonePermissions (0.0.6)
+  - SKNetworkingLib (0.1.0):
     - Alamofire
-    - NVActivityIndicatorView
     - SKActivityViewable
     - SKAlertViewable
-    - SwiftyDrop
-  - SKPhotosPermissions (0.0.3):
-    - SKServicePermissions
-  - SKPickerViewManager (0.0.4)
-  - SKServicePermissions (0.0.1)
-  - SKTextInputs (0.0.6):
+  - SKPhotosPermissions (0.0.6)
+  - SKPickerViewManager (0.0.5)
+  - SKTextInputs (0.0.9):
     - SKPickerViewManager
-  - SKTextInputsManager (0.1.1)
-  - SKValidationService (0.0.6)
-  - SKXibLoadableView (0.0.1)
+  - SKTextInputsManager (0.1.3)
+  - SKValidationService (0.0.7)
   - SwiftLint (0.27.0)
-  - SwiftyDrop (4.1.0)
 
 DEPENDENCIES:
   - AlertActionBuilder
@@ -85,11 +73,9 @@ DEPENDENCIES:
   - SKNetworkingLib
   - SKPhotosPermissions
   - SKPickerViewManager
-  - SKServicePermissions
   - SKTextInputs
   - SKTextInputsManager
   - SKValidationService
-  - SKXibLoadableView
   - SwiftLint
 
 SPEC REPOS:
@@ -118,47 +104,41 @@ SPEC REPOS:
     - SKNetworkingLib
     - SKPhotosPermissions
     - SKPickerViewManager
-    - SKServicePermissions
     - SKTextInputs
     - SKTextInputsManager
     - SKValidationService
-    - SKXibLoadableView
     - SwiftLint
-    - SwiftyDrop
 
 SPEC CHECKSUMS:
-  AERecord: 8dcaff86717951c50b463d1f130f2f57f7c8dbec
+  AERecord: ee8e773baa650731f06e89546a8f97e28fe00c32
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  AlamofireImage: 5f79836de27236819b13b27d0c97be6c205976fe
-  AlertActionBuilder: d8301a634daec34d3986ea24b4faaadbf2472b84
-  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
-  SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
-  SKAlertControllerBuilder: 3e00f3d4e44f8a50193f608115819ddce0c83af2
-  SKAlertControllerShowing: f4dcb1b918ab70094ea4712877d1ade8ca4299c7
-  SKAlertViewable: f647b9a4d94c48267140bb1b4aba69a16e2b9ec6
-  SKAnimator: 35a71ae524636f263fb2916a186451a11a02ff3c
-  SKAppSettingsShowing: 7d2eb6a266a56a064509a82b2cbe79ed60de3937
-  SKBluetoothPermissions: 6abf8612131b5fb60d35973e3f98bb647373a40d
-  SKCameraPermissions: d5da7192bf51beea2e3eafe9b783aac577c7ca73
-  SKContactsPermissions: 4d020f4b68512fe81dad957df0161476463d37da
-  SKCustomNavigation: db47c2d5df674cba76b33a68128ce92d34a4505b
-  SKDataSources: 52733db07b5e6a84cf1e12e34a668c0b17b34de9
-  SKImagePicking: d8335707cc016e4042cf09451818984a2b33bdd3
-  SKImagePreviewing: ce25d5ed8b70badcade74836fdb4eef5cca5a542
-  SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
-  SKLocationPermissions: 9eb44edf1e24269b4707d92768f6c559e096f967
-  SKMicrophonePermissions: 54849d5100b08365db3f0d63aae9489968bbf398
-  SKNetworkingLib: f29023f41f74680d7c5652340ec7c29fc23224b0
-  SKPhotosPermissions: f4e3422ff8c8ecfc468e55b2ea33b5221391ec25
-  SKPickerViewManager: 2739e959f2cb815d0dcb3dd78fee278da90f5abe
-  SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
-  SKTextInputs: 984f29ebf79ab4839b415c88a26d2861b722668b
-  SKTextInputsManager: 076db1a25ad2f231dda1e125ecfacbdcb574ff7e
-  SKValidationService: edd9edae2a92a8915f51fdbf6b35345b5ab21570
-  SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
+  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  AlertActionBuilder: 99155b80aa3c07fbc129a9a42e67f20db0bc8030
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  SKActivityViewable: b7903988fb525cb7c9a843b4af9191972a22886d
+  SKAlertControllerBuilder: e528d6c3d86645defb352ef7b62b8931c4961452
+  SKAlertControllerShowing: c9ecb687a25c547c47a74d86cab65e87349ac4c9
+  SKAlertViewable: 4c0a57be31de9483b420893d11fbb842dd646dab
+  SKAnimator: 5627068c93b14c1e079e414566bc7bbb856ace61
+  SKAppSettingsShowing: 0944a552bb15ac69b74645af8e0d9bbb99a9bdcd
+  SKBluetoothPermissions: 2c440c62a9bb68ad75efd71e7917f9bd86b4138a
+  SKCameraPermissions: 0c71b811ac4ab21880ea6c977edcc19af268f3ce
+  SKContactsPermissions: d17a6997f33a468862ddde6a3697c6e20a3c6c99
+  SKCustomNavigation: a75e1adb53915afc7a9c4b3064675a3ad442da08
+  SKDataSources: d57b2c4ac6cb4c55a3eb30a177e8459e940badce
+  SKImagePicking: 01432aa79237cd64c633f31feff68063913f3ac9
+  SKImagePreviewing: b400df61052b9170266929f51c0372ae8cc4bf16
+  SKLocalDataStorage: b5852faf943ba98765c4feb712e8fefb16df98da
+  SKLocationPermissions: b3b6367c2fa09bc971b5629d349ebc37ac63042d
+  SKMicrophonePermissions: b50140087758f15ac96e8eb724e6004d4e488e9c
+  SKNetworkingLib: 2f476eb63e4ca97392ab262a7806f9b769ce01b7
+  SKPhotosPermissions: 47a0d2c69ff58f6ba05b55193c6c1f3d72f4a3f8
+  SKPickerViewManager: 027e88d3462343b344fe38644da518cbf420cfb4
+  SKTextInputs: 2cb8b68e66fe1b52a36e5b8ae2eff7fade192775
+  SKTextInputsManager: a431d8011cd81492a582198e4fbeaf9ed57fd4e1
+  SKValidationService: 1adc07932733563ad994be092743e67fdf7f726d
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
-  SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 83dde10f849f2de5d07e09b7cc668944309560c2
+PODFILE CHECKSUM: 540b8a0a537030460b60e74cf30022c934b85fc8
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1

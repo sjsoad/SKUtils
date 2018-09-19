@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 // #1 import modules
 import SKAlertViewable
-import SwiftyDrop
 
 // #2 make sure your interface conforms to protocol AlertViewable
 protocol AlertViewableInterface: class, AlertViewable {
@@ -38,8 +37,8 @@ class AlertViewablePresenter: NSObject {
 extension AlertViewablePresenter: AlertViewableOutput {
 
     func viewTriggredShowAlertEvent() {
-        // #3 call show method with message and state, for more details check SwiftyDrop github
-        view?.show(message: "Alert Viewable Example", for: .info)
+        // #3 call show method with message
+        view?.show(message: "Alert Viewable Example", dismissAfter: 3)
     }
 
 }

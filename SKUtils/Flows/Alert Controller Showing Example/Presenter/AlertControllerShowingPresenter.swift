@@ -34,7 +34,7 @@ class AlertControllerShowingPresenter: NSObject {
     
     // MARK: - Private -
     
-    private func showAlertController(with style: UIAlertControllerStyle, sender: UIView? = nil) {
+    private func showAlertController(with style: UIAlertController.Style, sender: UIView? = nil) {
         // #3 use AlertActionConfig for creating alert controller actions
         let defaultAction = AlertActionConfig(title: "Default Action", style: .default) { (_) in
             print("action handler")
