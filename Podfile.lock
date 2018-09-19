@@ -1,36 +1,34 @@
 PODS:
-  - AERecord (4.1.1)
+  - AERecord (4.1.2)
   - Alamofire (4.7.3)
   - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
-  - AlertActionBuilder (0.0.9)
-  - NVActivityIndicatorView (4.3.0):
-    - NVActivityIndicatorView/Presenter (= 4.3.0)
-  - NVActivityIndicatorView/Presenter (4.3.0)
-  - SKActivityViewable (0.0.2):
+  - AlertActionBuilder (0.1.0)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - SKActivityViewable (0.0.3):
     - NVActivityIndicatorView
-  - SKAlertControllerBuilder (0.0.6):
+  - SKAlertControllerBuilder (0.0.7):
     - AlertActionBuilder
   - SKAlertControllerShowing (0.1.3):
     - AlertActionBuilder
     - SKAlertControllerBuilder
-  - SKAlertViewable (0.0.2):
-    - SwiftyDrop
-  - SKAnimator (0.0.3)
-  - SKAppSettingsShowing (0.1.5):
+  - SKAlertViewable (0.0.3)
+  - SKAnimator (0.0.4)
+  - SKAppSettingsShowing (0.1.6):
     - AlertActionBuilder
     - SKAlertControllerBuilder
     - SKAlertControllerShowing
-  - SKBluetoothPermissions (0.0.3):
-    - SKServicePermissions
+  - SKBluetoothPermissions (0.0.4)
   - SKCameraPermissions (0.0.3):
     - SKServicePermissions
   - SKContactsPermissions (0.0.3):
     - SKServicePermissions
   - SKCoreDataStack (0.0.1)
-  - SKCustomNavigation (0.1.5):
+  - SKCustomNavigation (0.1.6):
     - SKAnimator
-  - SKDataSources (0.1.3)
+  - SKDataSources (0.1.5)
   - SKImagePicking (0.1.0):
     - AlertActionBuilder
     - SKAlertControllerBuilder
@@ -41,29 +39,24 @@ PODS:
   - SKImagePreviewing (0.0.4):
     - AlamofireImage
     - SKDataSources
-  - SKLocalDataStorage (0.0.3):
+  - SKLocalDataStorage (0.0.4):
     - AERecord
   - SKLocationPermissions (0.0.3):
     - SKServicePermissions
   - SKMicrophonePermissions (0.0.3):
     - SKServicePermissions
-  - SKNetworkingLib (0.0.8):
+  - SKNetworkingLib (0.0.9):
     - Alamofire
-    - NVActivityIndicatorView
     - SKActivityViewable
     - SKAlertViewable
-    - SwiftyDrop
-  - SKPhotosPermissions (0.0.3):
-    - SKServicePermissions
-  - SKPickerViewManager (0.0.4)
+  - SKPhotosPermissions (0.0.5)
+  - SKPickerViewManager (0.0.5)
   - SKServicePermissions (0.0.1)
-  - SKTextInputs (0.0.8):
+  - SKTextInputs (0.0.9):
     - SKPickerViewManager
-  - SKTextInputsManager (0.1.2)
-  - SKValidationService (0.0.6)
-  - SKXibLoadableView (0.0.1)
+  - SKTextInputsManager (0.1.3)
+  - SKValidationService (0.0.7)
   - SwiftLint (0.27.0)
-  - SwiftyDrop (4.1.0)
 
 DEPENDENCIES:
   - AlertActionBuilder
@@ -73,25 +66,23 @@ DEPENDENCIES:
   - SKAlertViewable
   - SKAnimator
   - SKAppSettingsShowing
-  - SKBluetoothPermissions (from `/Users/Sergey/Work/Pods/BluetoothPermissions`)
+  - SKBluetoothPermissions
   - SKCameraPermissions (from `/Users/Sergey/Work/Pods/CameraPermissions`)
   - SKContactsPermissions (from `/Users/Sergey/Work/Pods/ContactsPermissions`)
   - SKCoreDataStack (from `/Users/Sergey/Work/Pods/CoreDataStack`)
   - SKCustomNavigation
   - SKDataSources
-  - SKImagePicking
-  - SKImagePreviewing
+  - SKImagePicking (from `/Users/Sergey/Work/Pods/ImagePicking`)
+  - SKImagePreviewing (from `/Users/Sergey/Work/Pods/Image-Previewing`)
   - SKLocalDataStorage
   - SKLocationPermissions (from `/Users/Sergey/Work/Pods/LocationPermissions`)
   - SKMicrophonePermissions (from `/Users/Sergey/Work/Pods/MicrophonePermissions`)
-  - SKNetworkingLib
-  - SKPhotosPermissions (from `/Users/Sergey/Work/Pods/PhotosPermissions`)
+  - SKNetworkingLib (from `/Users/Sergey/Work/Pods/Networking`)
+  - SKPhotosPermissions
   - SKPickerViewManager
-  - SKServicePermissions (from `/Users/Sergey/Work/Pods/ServicePermission`)
   - SKTextInputs
   - SKTextInputsManager
   - SKValidationService
-  - SKXibLoadableView
   - SwiftLint
 
 SPEC REPOS:
@@ -107,72 +98,68 @@ SPEC REPOS:
     - SKAlertViewable
     - SKAnimator
     - SKAppSettingsShowing
+    - SKBluetoothPermissions
     - SKCustomNavigation
     - SKDataSources
-    - SKImagePicking
-    - SKImagePreviewing
     - SKLocalDataStorage
-    - SKNetworkingLib
+    - SKPhotosPermissions
     - SKPickerViewManager
+    - SKServicePermissions
     - SKTextInputs
     - SKTextInputsManager
     - SKValidationService
-    - SKXibLoadableView
     - SwiftLint
-    - SwiftyDrop
 
 EXTERNAL SOURCES:
-  SKBluetoothPermissions:
-    :path: "/Users/Sergey/Work/Pods/BluetoothPermissions"
   SKCameraPermissions:
     :path: "/Users/Sergey/Work/Pods/CameraPermissions"
   SKContactsPermissions:
     :path: "/Users/Sergey/Work/Pods/ContactsPermissions"
   SKCoreDataStack:
     :path: "/Users/Sergey/Work/Pods/CoreDataStack"
+  SKImagePicking:
+    :path: "/Users/Sergey/Work/Pods/ImagePicking"
+  SKImagePreviewing:
+    :path: "/Users/Sergey/Work/Pods/Image-Previewing"
   SKLocationPermissions:
     :path: "/Users/Sergey/Work/Pods/LocationPermissions"
   SKMicrophonePermissions:
     :path: "/Users/Sergey/Work/Pods/MicrophonePermissions"
-  SKPhotosPermissions:
-    :path: "/Users/Sergey/Work/Pods/PhotosPermissions"
-  SKServicePermissions:
-    :path: "/Users/Sergey/Work/Pods/ServicePermission"
+  SKNetworkingLib:
+    :path: "/Users/Sergey/Work/Pods/Networking"
 
 SPEC CHECKSUMS:
-  AERecord: 6c9f441eac168623a61c60f52987f3e4886c4098
+  AERecord: ee8e773baa650731f06e89546a8f97e28fe00c32
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
-  AlertActionBuilder: 5a0c0ed71fe8ce5905a24950d85526028eadbe0d
-  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
-  SKActivityViewable: 99141b71f692de559d9756d57ad658dab9d26c6d
-  SKAlertControllerBuilder: 0aeb78cde7c7131dbbad3b7512f0c6d5d580a2f2
+  AlertActionBuilder: 99155b80aa3c07fbc129a9a42e67f20db0bc8030
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  SKActivityViewable: b7903988fb525cb7c9a843b4af9191972a22886d
+  SKAlertControllerBuilder: e528d6c3d86645defb352ef7b62b8931c4961452
   SKAlertControllerShowing: 4f8fd627d29b2432883f9cd7f237ae3da172fb30
-  SKAlertViewable: f647b9a4d94c48267140bb1b4aba69a16e2b9ec6
-  SKAnimator: af770d9535fb92a29568030d43ef476a42c15516
-  SKAppSettingsShowing: 90e2e0e772652ad9cb3d1d1b05d186eee5c1514f
-  SKBluetoothPermissions: fa62e511ef35dceb2fa2fc041a9142fbee62a947
+  SKAlertViewable: 4c0a57be31de9483b420893d11fbb842dd646dab
+  SKAnimator: 5627068c93b14c1e079e414566bc7bbb856ace61
+  SKAppSettingsShowing: 0944a552bb15ac69b74645af8e0d9bbb99a9bdcd
+  SKBluetoothPermissions: 2c440c62a9bb68ad75efd71e7917f9bd86b4138a
   SKCameraPermissions: 4e2927d4d359eaa261ba301784b9f5efe7259117
   SKContactsPermissions: cf412c22758c5f8d8a29d67ef8e2e0ada84d6af2
   SKCoreDataStack: 71db9df93d8cb01039ae57c2b7b178118c02ec83
-  SKCustomNavigation: ee46be1bf1eaae4fc6b0fd68c61691390e9ec332
-  SKDataSources: 214fd68c5fe03f3b3f0d93c5c59794b1839350eb
-  SKImagePicking: 774a371dc16e914489c6b2e00702dfa8abd7a4b2
-  SKImagePreviewing: c53a181aeb1f34fcf82d919452e1c75b051d3bdf
-  SKLocalDataStorage: 41c17407e57fdfcf7477752e45e37f1954b362c9
+  SKCustomNavigation: a75e1adb53915afc7a9c4b3064675a3ad442da08
+  SKDataSources: d57b2c4ac6cb4c55a3eb30a177e8459e940badce
+  SKImagePicking: 4cd95ce6c6ec40fb760eb89d216bc6d5fcd6da66
+  SKImagePreviewing: c328bac4b152e7b53b2410ef68a137bebd6aaa91
+  SKLocalDataStorage: b5852faf943ba98765c4feb712e8fefb16df98da
   SKLocationPermissions: db2205f94fd5bba246b428b7447c87a7b6220761
   SKMicrophonePermissions: 8d22b390e3e372749014f08e06d500bd78bb2f3f
-  SKNetworkingLib: f29023f41f74680d7c5652340ec7c29fc23224b0
-  SKPhotosPermissions: a1eb67132dab47fa948876333ec190629732f118
-  SKPickerViewManager: 2739e959f2cb815d0dcb3dd78fee278da90f5abe
-  SKServicePermissions: e44db83279e5b9c412718519c8247890da27693f
-  SKTextInputs: 525210a8edbb670f6cd70fa19e52692eeb38d901
-  SKTextInputsManager: b3da1c048fd8483627cd82e74e8d1585921c3c47
-  SKValidationService: edd9edae2a92a8915f51fdbf6b35345b5ab21570
-  SKXibLoadableView: db6c4a8ba9ec3abbb11fad91c788b24671be8128
+  SKNetworkingLib: 1ec47fc93639ae818d9d379a7e2017c431600987
+  SKPhotosPermissions: e9e3e858b339ec9dc886a0afc4393cc218c3f108
+  SKPickerViewManager: 027e88d3462343b344fe38644da518cbf420cfb4
+  SKServicePermissions: a88738892141dc5e79371664986b46f38aaeb223
+  SKTextInputs: 2cb8b68e66fe1b52a36e5b8ae2eff7fade192775
+  SKTextInputsManager: a431d8011cd81492a582198e4fbeaf9ed57fd4e1
+  SKValidationService: 1adc07932733563ad994be092743e67fdf7f726d
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
-  SwiftyDrop: bdcaa52e6127790f2e382df4fd56c32da8b8cc57
 
-PODFILE CHECKSUM: 4ed699b835ec668114849b3ad12fd4ac55899a87
+PODFILE CHECKSUM: 88a8e0ad3c645b3e68101db46bf53c164aae068c
 
 COCOAPODS: 1.5.3
