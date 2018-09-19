@@ -46,12 +46,13 @@ class ServicePermissionsPresenter: NSObject, AppSettingsShowing {
     private weak var view: ServicePermissionsInterface?
     
     // #3 create permissions object
-    private let bluetoothPermissions = BluetoothPermissions()
-    private let locationPermissions = LocationPermissions() // can set auth type .requestAlwaysAuthorization or requestWhenInUseAuthorization
-    private let microphonePermissions = MicrophonePermissions()
-    private let cameraPermissions = CameraPermissions()
-    private let photosPermissions = PhotoLibraryPermissions()
-    private let contactsPermissions = ContactsPermissions()
+    private let bluetoothPermissions: BluetoothPermissions = DefaultBluetoothPermissions()
+    // can set auth type .requestAlwaysAuthorization or requestWhenInUseAuthorization
+    private let locationPermissions: LocationPermissions = DefaultLocationPermissions()
+    private let microphonePermissions: MicrophonePermissions = DefaultMicrophonePermissions()
+    private let cameraPermissions: CameraPermissions = DefaultCameraPermissions()
+    private let photosPermissions: PhotoLibraryPermissions = DefaultPhotoLibraryPermissions()
+    private let contactsPermissions: ContactsPermissions = DefaultContactsPermissions()
     
     init(with view: ServicePermissionsInterface) {
         self.view = view

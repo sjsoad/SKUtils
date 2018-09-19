@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 // #1 import module
 import SKImagePicking
 import SKCameraPermissions
@@ -38,8 +37,8 @@ class ImagePickerPresenter: NSObject, ImagePicking {
     // #5 implement all necessary things of ImagePicking protocol
     // MARK: - ImagePicking -
     
-    private(set) var cameraPermissions: CameraPermissions? = CameraPermissions()
-    private(set) var photoLibraryPermissions: PhotoLibraryPermissions? = PhotoLibraryPermissions()
+    private(set) var cameraPermissions: CameraPermissions? = DefaultCameraPermissions()
+    private(set) var photoLibraryPermissions: PhotoLibraryPermissions? = DefaultPhotoLibraryPermissions()
     
     var imagePickingInterface: ImagePickingInterface? {
         return view
@@ -86,9 +85,9 @@ extension ImagePickerPresenter: ImagePickerOutput {
         
     }
     
-    func viewTriggedImageSelectionEvent(with info: [UIImagePickerController.InfoKey: Any]) {
+    func viewTriggedImageSelectionEvent(with info: [String: Any]) {
         // #7 handle selection
-        let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage
         view?.set(image: image)
     }
     

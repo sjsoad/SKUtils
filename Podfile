@@ -22,11 +22,11 @@ def shared_pods
     # Capabilities permissions
 
     pod 'SKBluetoothPermissions'#, :path => '/Users/Sergey/Work/Pods/BluetoothPermissions'
-    pod 'SKCameraPermissions', :path => '/Users/Sergey/Work/Pods/CameraPermissions'
+    pod 'SKCameraPermissions'#, :path => '/Users/Sergey/Work/Pods/CameraPermissions'
     pod 'SKPhotosPermissions'#, :path => '/Users/Sergey/Work/Pods/PhotosPermissions'
-    pod 'SKContactsPermissions', :path => '/Users/Sergey/Work/Pods/ContactsPermissions'
-    pod 'SKMicrophonePermissions', :path => '/Users/Sergey/Work/Pods/MicrophonePermissions'
-    pod 'SKLocationPermissions', :path => '/Users/Sergey/Work/Pods/LocationPermissions'
+    pod 'SKContactsPermissions'#, :path => '/Users/Sergey/Work/Pods/ContactsPermissions'
+    pod 'SKMicrophonePermissions'#, :path => '/Users/Sergey/Work/Pods/MicrophonePermissions'
+    pod 'SKLocationPermissions'#, :path => '/Users/Sergey/Work/Pods/LocationPermissions'
 
     # Services
 
@@ -40,7 +40,7 @@ def shared_pods
     
     # Networking
     
-    pod 'SKNetworkingLib', :path => '/Users/Sergey/Work/Pods/Networking'
+    pod 'SKNetworkingLib'#, :path => '/Users/Sergey/Work/Pods/Networking'
     
     # Custom Navigation
     

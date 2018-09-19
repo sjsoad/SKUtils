@@ -28,15 +28,14 @@ class TestsDataProvider {
                 Example(title: "Text Inputs Manager View Example", builder: TextInputsManagerViewBuilder()),
                 Example(title: "Text Inputs Manager Scroll Example", builder: TextInputsManagerScrollBuilder()),
                 Example(title: "Text Inputs + Picker View Manager Example", builder: TextInputsBuilder()),
-                Example(title: "Xib Loadable Example", builder: XibLoadableBuilder()),
                 Example(title: "App Settings Example", builder: AppSettingsBuilder()),
                 Example(title: "Image Picking Example", builder: ImagePickerBuilder()),
                 Example(title: "Service Permissions Example", builder: ServicePermissionsBuilder()),
                 Example(title: "Network Example", builder: NetworkBuilder()),
-                Example(title: "Subviews Animations Example", builder: FromModuleBuilder()),
+                /*Example(title: "Subviews Animations Example", builder: FromModuleBuilder()),*/
                 Example(title: "Image Previewing Example", builder: ImagePreviewingBuilder())],
-                [Example(title: "Custom Modal Transition Example", builder: ModalNavigationBuilder()),
-                Example(title: "Custom Presentation Example", builder: CustomPresentationBuilder())]]
+                [Example(title: "Custom Modal Transition Example", builder: ModalNavigationBuilder())/*,
+                Example(title: "Custom Presentation Example", builder: CustomPresentationBuilder())*/]]
                 /*Example(title: "View Animations Example", type: .viewAnimations)*/
     }
     
