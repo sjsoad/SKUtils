@@ -1,5 +1,5 @@
 //
-//  ZoomableImageViewT.swift
+//  ZoomableImageView.swift
 //  Hanabi
 //
 //  Created by Sergey Kostyan on 10/5/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZoomableImageViewT: UIView {
+class ZoomableImageView: UIView {
     
     private lazy var scrollView: UIScrollView? = { [unowned self] in
         let scrollView = UIScrollView(withDelegate: self)
@@ -124,7 +124,7 @@ class ZoomableImageViewT: UIView {
     
 }
 
-extension ZoomableImageViewT: UIScrollViewDelegate {
+extension ZoomableImageView: UIScrollViewDelegate {
 
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView

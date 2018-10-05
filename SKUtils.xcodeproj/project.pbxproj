@@ -15,7 +15,6 @@
 		A502C7A9213EEFA800A63432 /* ServicePermissionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7A8213EEFA800A63432 /* ServicePermissionsBuilder.swift */; };
 		A502C7AB213EEFD700A63432 /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */; };
 		A50EE36420B0B322007DAFAD /* TextInputsManagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */; };
-		A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375820A2FAB700BC7C7D /* DesignableView.swift */; };
 		A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */; };
 		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
 		A511381220A31A3100BC7C7D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381120A31A3100BC7C7D /* Example.swift */; };
@@ -105,6 +104,9 @@
 		A5F47B6120C910240073FDC8 /* ModalNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F47B5E20C910240073FDC8 /* ModalNavigationViewController.xib */; };
 		A5F6C30520EF9AC2005C9DC2 /* UIViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6C30420EF9AC2005C9DC2 /* UIViewController+Animations.swift */; };
 		A5F6C30720EF9BE8005C9DC2 /* UIViewPropertyAnimator+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6C30620EF9BE8005C9DC2 /* UIViewPropertyAnimator+Chain.swift */; };
+		A5F9C65C2167A5A800B7D0DF /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9C65B2167A5A800B7D0DF /* ZoomableImageView.swift */; };
+		A5F9C65F2167A73800B7D0DF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9C65E2167A73800B7D0DF /* UIView.swift */; };
+		A5F9C6622167A74400B7D0DF /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9C6612167A74300B7D0DF /* UIGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,7 +137,6 @@
 		A502C7A8213EEFA800A63432 /* ServicePermissionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePermissionsBuilder.swift; sourceTree = "<group>"; };
 		A502C7AA213EEFD700A63432 /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
 		A50EE36320B0B322007DAFAD /* TextInputsManagerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputsManagerPresenter.swift; sourceTree = "<group>"; };
-		A511375820A2FAB700BC7C7D /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
 		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		A511381120A31A3100BC7C7D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
@@ -232,6 +233,9 @@
 		A5F47B5E20C910240073FDC8 /* ModalNavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalNavigationViewController.xib; sourceTree = "<group>"; };
 		A5F6C30420EF9AC2005C9DC2 /* UIViewController+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Animations.swift"; sourceTree = "<group>"; };
 		A5F6C30620EF9BE8005C9DC2 /* UIViewPropertyAnimator+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Chain.swift"; sourceTree = "<group>"; };
+		A5F9C65B2167A5A800B7D0DF /* ZoomableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
+		A5F9C65E2167A73800B7D0DF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A5F9C6612167A74300B7D0DF /* UIGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizer.swift; sourceTree = "<group>"; };
 		D552F8AD29741206B67E18A3 /* Pods_SKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB398974DA59C56A2EF3141 /* Pods-SKUtilsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKUtilsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKUtilsTests/Pods-SKUtilsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -355,7 +359,8 @@
 		A511375720A2FAB700BC7C7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A511375820A2FAB700BC7C7D /* DesignableView.swift */,
+				A5F9C6602167A74300B7D0DF /* UIGestureRecognizer */,
+				A5F9C65D2167A73800B7D0DF /* View */,
 				A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */,
 				A511375B20A2FAB700BC7C7D /* Optional.swift */,
 			);
@@ -487,6 +492,7 @@
 		A54DE4452090DD97001C4410 /* SKUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A5F9C6592167A5A800B7D0DF /* Custom UI */,
 				A587562D213EB3E90025D3FE /* Common */,
 				A511381020A31A2500BC7C7D /* Data Models */,
 				A5D6A8182090E69700DF7495 /* Core */,
@@ -1099,6 +1105,38 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		A5F9C6592167A5A800B7D0DF /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				A5F9C65A2167A5A800B7D0DF /* Zoomable Image View */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		A5F9C65A2167A5A800B7D0DF /* Zoomable Image View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F9C65B2167A5A800B7D0DF /* ZoomableImageView.swift */,
+			);
+			path = "Zoomable Image View";
+			sourceTree = "<group>";
+		};
+		A5F9C65D2167A73800B7D0DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F9C65E2167A73800B7D0DF /* UIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F9C6602167A74300B7D0DF /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				A5F9C6612167A74300B7D0DF /* UIGestureRecognizer.swift */,
+			);
+			path = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1388,9 +1426,9 @@
 				A5BF216520AEBF8D0064B3F8 /* ActivityViewableViewController.swift in Sources */,
 				A5875634213EB9C30025D3FE /* ActivityViewableModuleBuilder.swift in Sources */,
 				A511376120A2FAB700BC7C7D /* Optional.swift in Sources */,
-				A511375E20A2FAB700BC7C7D /* DesignableView.swift in Sources */,
 				A5993C0A2147948B001E3653 /* FromRouter.swift in Sources */,
 				A5A4DA4020B6BC9A005F55B0 /* AuthentificationService.swift in Sources */,
+				A5F9C65C2167A5A800B7D0DF /* ZoomableImageView.swift in Sources */,
 				A5F47B6020C910240073FDC8 /* ModalNavigationViewController.swift in Sources */,
 				A5875610213EA1ED0025D3FE /* ExamplesViewController.swift in Sources */,
 				A59A4BBF214F7FEA0092ABC7 /* ExampleCellPresenter.swift in Sources */,
@@ -1411,6 +1449,7 @@
 				A5BF216420AEBF8D0064B3F8 /* ActivityViewablePresenter.swift in Sources */,
 				A5A5755120DB73D70052498D /* UITableView+ReloadAnimation.swift in Sources */,
 				A5BF217620AECB5B0064B3F8 /* AlertControllerShowingPresenter.swift in Sources */,
+				A5F9C6622167A74400B7D0DF /* UIGestureRecognizer.swift in Sources */,
 				A520FAAD20B1962F00E4E219 /* ServicePermissionsViewController.swift in Sources */,
 				A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */,
 				A5A5754F20DB73D70052498D /* TransformAnimationProvider.swift in Sources */,
@@ -1425,6 +1464,7 @@
 				A5930C6A20B5935B0080B982 /* IpDetectingRequest.swift in Sources */,
 				A59CB8A7213FD76A004E6259 /* ModalNavigationBuilder.swift in Sources */,
 				A5CDADE120F6275000E199E9 /* FromViewController.swift in Sources */,
+				A5F9C65F2167A73800B7D0DF /* UIView.swift in Sources */,
 				A5BF217720AECB5B0064B3F8 /* AlertControllerShowingViewController.swift in Sources */,
 				A5930C7720B5A08F0080B982 /* NetworkViewController.swift in Sources */,
 				A587560D213EA1ED0025D3FE /* ExamplesPresenter.swift in Sources */,
