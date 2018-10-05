@@ -2,37 +2,35 @@
 
 # UI components  
 
-pod 'SKAlertControllerBuilder'  
-pod 'AlertActionBuilder'  
-pod 'SKTextInputsManager'  
-pod 'SKPickerViewManager'  
-pod 'SKTextInputs'  
-pod 'SKAlertControllerShowing'  
-pod 'SKAppSettingsShowing'  
-pod 'SKImagePicking'  
-pod 'SKActivityViewable'  
-pod 'SKAlertViewable'  
-pod 'SKXibLoadableView'  
-pod 'SKImagePreviewing'  
+  pod 'SKActivityViewable'
+  pod 'SKAlertViewable'
+  pod 'AlertActionBuilder'
+  pod 'SKAlertControllerBuilder'
+  pod 'SKAlertControllerShowing'
+  pod 'SKTextInputsManager'
+  pod 'SKTextInputs'
+  pod 'SKPickerViewManager'
+  pod 'SKAppSettingsShowing'
+  pod 'SKImagePicking'
+  pod 'SKImagePreviewing'
 
 # Capabilities permissions  
-
-pod 'SKServicePermissions'  
-pod 'SKBluetoothPermissions'  
-pod 'SKCameraPermissions'  
-pod 'SKPhotosPermissions'  
-pod 'SKContactsPermissions'  
-pod 'SKMicrophonePermissions'  
-pod 'SKLocationPermissions'  
+ 
+  pod 'SKBluetoothPermissions'  
+  pod 'SKCameraPermissions'  
+  pod 'SKPhotosPermissions'  
+  pod 'SKContactsPermissions'  
+  pod 'SKMicrophonePermissions'  
+  pod 'SKLocationPermissions'  
 
 # Services  
 
-pod 'SKLocalDataStorage'  
-pod 'SKValidationService'  
+  pod 'SKLocalDataStorage'  
+  pod 'SKValidationService'  
 
 # Data Sources  
 
-pod 'SKDataSources'  
+    pod 'SKDataSources'  
 
 # Networking  
 
@@ -40,8 +38,8 @@ pod 'SKNetworkingLib'
 
 # Custom Navigation
 
-pod 'SKCustomNavigation'  
+  pod 'SKCustomNavigation'  
 
 # Animations  
 
-pod 'SKAnimator'  
+  pod 'SKAnimator'  
