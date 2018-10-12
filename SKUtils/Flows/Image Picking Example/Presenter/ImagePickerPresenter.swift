@@ -85,9 +85,9 @@ extension ImagePickerPresenter: ImagePickerOutput {
         
     }
     
-    func viewTriggedImageSelectionEvent(with info: [String: Any]) {
+    func viewTriggedImageSelectionEvent(with info: [UIImagePickerController.InfoKey: Any]) {
         // #7 handle selection
-        let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage
+        let image = info[.originalImage] as? UIImage
         view?.set(image: image)
     }
     
