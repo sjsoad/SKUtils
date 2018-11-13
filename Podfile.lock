@@ -70,7 +70,7 @@ DEPENDENCIES:
   - SKLocalDataStorage
   - SKLocationPermissions
   - SKMicrophonePermissions
-  - SKNetworkingLib
+  - SKNetworkingLib (from `~/Projects/Networking`)
   - SKPhotosPermissions
   - SKPickerViewManager
   - SKTextInputs
@@ -101,13 +101,16 @@ SPEC REPOS:
     - SKLocalDataStorage
     - SKLocationPermissions
     - SKMicrophonePermissions
-    - SKNetworkingLib
     - SKPhotosPermissions
     - SKPickerViewManager
     - SKTextInputs
     - SKTextInputsManager
     - SKValidationService
     - SwiftLint
+
+EXTERNAL SOURCES:
+  SKNetworkingLib:
+    :path: "~/Projects/Networking"
 
 SPEC CHECKSUMS:
   AERecord: ee8e773baa650731f06e89546a8f97e28fe00c32
@@ -131,7 +134,7 @@ SPEC CHECKSUMS:
   SKLocalDataStorage: b5852faf943ba98765c4feb712e8fefb16df98da
   SKLocationPermissions: b3b6367c2fa09bc971b5629d349ebc37ac63042d
   SKMicrophonePermissions: b50140087758f15ac96e8eb724e6004d4e488e9c
-  SKNetworkingLib: 2f476eb63e4ca97392ab262a7806f9b769ce01b7
+  SKNetworkingLib: 0b086f1ce57c6f609b9a741d4c0ff97d11ffa5cf
   SKPhotosPermissions: 47a0d2c69ff58f6ba05b55193c6c1f3d72f4a3f8
   SKPickerViewManager: f7a121262da9ed166eb9b06568229000ec88e1c3
   SKTextInputs: 2cb8b68e66fe1b52a36e5b8ae2eff7fade192775
@@ -139,6 +142,6 @@ SPEC CHECKSUMS:
   SKValidationService: 1adc07932733563ad994be092743e67fdf7f726d
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 540b8a0a537030460b60e74cf30022c934b85fc8
+PODFILE CHECKSUM: 25f257c98d1db8f2acfcce544e3dd7d21fe9d8fe
 
 COCOAPODS: 1.5.3

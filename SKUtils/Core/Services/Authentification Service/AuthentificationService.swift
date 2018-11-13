@@ -6,7 +6,6 @@
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
-import UIKit
 import SKNetworkingLib
 
 class AuthentificationService: ReAuthorizable {
@@ -19,7 +18,7 @@ class AuthentificationService: ReAuthorizable {
     
     // MARK: - ReAuthorizable -
     
-    func reAuthAndRepeat<RequestType>(_ request: RequestType, completion: @escaping (RequestType?) -> Void) {
+    func reAuthAndRepeat<RequestType>(_ request: RequestType, completion: @escaping (RequestType) -> Void) where RequestType: APIRequesting {
         DispatchQueue.global().asyncAfter(deadline: .now() + 5) {
             completion(request)
         }

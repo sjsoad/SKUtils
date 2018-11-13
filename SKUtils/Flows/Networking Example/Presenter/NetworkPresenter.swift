@@ -49,7 +49,7 @@ extension NetworkPresenter: NetworkOutput {
         let handlers = NetworkHandlers<IpDetectingResponse>(successHandler: { [weak self] (response) in
             guard let ipAddress = response.result else { return }
             self?.view?.set(ipAddress: ipAddress)
-        }, executingHandler: requestExecutingHandler(), errorHandler: requestErrorHandler(), requestHandler: { (request, error) in
+        }, executingHandler: handleExecuting, errorHandler: handleError, requestHandler: { (request, error) in
             print(request ?? "no request")
             print(error?.localizedDescription ?? "no error")
         })

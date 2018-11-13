@@ -12,7 +12,8 @@ import SKNetworkingLib
 struct IpDetectingRequest: APIRequesting {
     
     // MARK: - APIRequesting -
-    
+
+    var HTTPMethod: RequestMethod { return .get }
     var requestType: RequestType { return .simple(nil) }
     var urlString: String { return "https://api.ipify.org?format=json" }
     
