@@ -19,6 +19,8 @@
 		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
 		A511381220A31A3100BC7C7D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381120A31A3100BC7C7D /* Example.swift */; };
 		A51C8C4B21A814440020B258 /* IpAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C8C4A21A814440020B258 /* IpAddress.swift */; };
+		A51C8C5221A84E5C0020B258 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C8C5121A84E5C0020B258 /* RequestAdapter.swift */; };
+		A51C8C5421A8502A0020B258 /* RequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C8C5321A8502A0020B258 /* RequestRetrier.swift */; };
 		A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAA020B181A900E4E219 /* AppSettingsPresenter.swift */; };
 		A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAA120B181A900E4E219 /* AppSettingsViewController.swift */; };
 		A520FAA520B181A900E4E219 /* AppSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAA220B181A900E4E219 /* AppSettingsViewController.xib */; };
@@ -143,6 +145,8 @@
 		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		A511381120A31A3100BC7C7D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		A51C8C4A21A814440020B258 /* IpAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpAddress.swift; sourceTree = "<group>"; };
+		A51C8C5121A84E5C0020B258 /* RequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
+		A51C8C5321A8502A0020B258 /* RequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRetrier.swift; sourceTree = "<group>"; };
 		A520FAA020B181A900E4E219 /* AppSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsPresenter.swift; sourceTree = "<group>"; };
 		A520FAA120B181A900E4E219 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		A520FAA220B181A900E4E219 /* AppSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppSettingsViewController.xib; sourceTree = "<group>"; };
@@ -375,6 +379,8 @@
 		A51137FC20A305E100BC7C7D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A51C8C5021A84E520020B258 /* Request Retrier */,
+				A51C8C4F21A84E480020B258 /* Request Adapter */,
 				A5A4DA3E20B6BC8D005F55B0 /* Authentification Service */,
 				A5930C6D20B59BAD0080B982 /* Network Error Parser */,
 				A5930C6320B591F10080B982 /* IpDetectingService */,
@@ -390,6 +396,22 @@
 				A51C8C4A21A814440020B258 /* IpAddress.swift */,
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		A51C8C4F21A84E480020B258 /* Request Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A51C8C5121A84E5C0020B258 /* RequestAdapter.swift */,
+			);
+			path = "Request Adapter";
+			sourceTree = "<group>";
+		};
+		A51C8C5021A84E520020B258 /* Request Retrier */ = {
+			isa = PBXGroup;
+			children = (
+				A51C8C5321A8502A0020B258 /* RequestRetrier.swift */,
+			);
+			path = "Request Retrier";
 			sourceTree = "<group>";
 		};
 		A520FA9D20B1818E00E4E219 /* App Settings Showing Example */ = {
@@ -1443,6 +1465,7 @@
 				A5A5754E20DB73D70052498D /* ViewAnimationProvider.swift in Sources */,
 				A587562C213EB0C60025D3FE /* Popable.swift in Sources */,
 				A576814E20B148A5003F3C68 /* TextInputsViewController.swift in Sources */,
+				A51C8C5421A8502A0020B258 /* RequestRetrier.swift in Sources */,
 				A5930C7620B5A08F0080B982 /* NetworkPresenter.swift in Sources */,
 				A520FAAC20B1962F00E4E219 /* ServicePermissionsPresenter.swift in Sources */,
 				A5F6C30520EF9AC2005C9DC2 /* UIViewController+Animations.swift in Sources */,
@@ -1511,6 +1534,7 @@
 				A5875606213E8DBD0025D3FE /* AppDelegateRouter.swift in Sources */,
 				A51C8C4B21A814440020B258 /* IpAddress.swift in Sources */,
 				A502C7A7213EEF7300A63432 /* ImagePickerBuilder.swift in Sources */,
+				A51C8C5221A84E5C0020B258 /* RequestAdapter.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
 				A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */,

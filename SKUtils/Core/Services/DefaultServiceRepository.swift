@@ -6,15 +6,15 @@
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
-import UIKit
+import Alamofire
 import SKNetworkingLib
 
 protocol ServicesRepository {
     
     var defaultNetworkService: NetworkService { get }
     func networkErrorParser() -> ErrorParsable
-    func networkService(with reAuthorizer: ReAuthorizable?) -> NetworkService
-    func authentificationService() -> ReAuthorizable
+    func networkService() -> NetworkService
+    func authentificationService() -> AuthentificationService
     func ipDetectingService() -> IpDetectingService
     
 }
@@ -26,21 +26,25 @@ struct DefaultServiceRepository: ServicesRepository {
     let defaultNetworkService: NetworkService
     
     init() {
-        let networkService = DefaultNetworkService(errorParser: NetworkErrorParser())
-        let authService = AuthentificationService(networkService: networkService)
-        defaultNetworkService = DefaultNetworkService(reAuthorizer: authService, errorParser: NetworkErrorParser())
+        let sessionManager = SessionManager()
+        sessionManager.retrier = nil
+        sessionManager.adapter = nil
+        let requestExecutor = DefaultRequestExecutor(sessionManager: sessionManager)
+        let networkService = DefaultNetworkService(requestExecutor: requestExecutor, errorParser: NetworkErrorParser())
+        let authService = DefaultAuthentificationService(networkService: networkService)
+        defaultNetworkService = DefaultNetworkService(errorParser: NetworkErrorParser())
     }
     
     func networkErrorParser() -> ErrorParsable {
         return NetworkErrorParser()
     }
     
-    func networkService(with reAuthorizer: ReAuthorizable? = nil) -> NetworkService {
-        return DefaultNetworkService(reAuthorizer: reAuthorizer, errorParser: networkErrorParser())
+    func networkService() -> NetworkService {
+        return DefaultNetworkService(errorParser: networkErrorParser())
     }
     
-    func authentificationService() -> ReAuthorizable {
-        return AuthentificationService(networkService: networkService())
+    func authentificationService() -> AuthentificationService {
+        return DefaultAuthentificationService(networkService: networkService())
     }
     
     func ipDetectingService() -> IpDetectingService {

@@ -8,7 +8,14 @@
 
 import SKNetworkingLib
 
-class AuthentificationService: ReAuthorizable {
+protocol AuthentificationService {
+    
+    var accessToken: String? { get }
+    func login()
+    func refreshToken(with completion: () -> Void)
+}
+
+class DefaultAuthentificationService {
     
     private var networkService: NetworkService
     
@@ -16,13 +23,21 @@ class AuthentificationService: ReAuthorizable {
         self.networkService = networkService
     }
     
-    // MARK: - ReAuthorizable -
+}
+
+// MARK: - AuthentificationService -
+
+extension DefaultAuthentificationService: AuthentificationService {
     
-    func reAuthAndRepeat<RequestType>(_ request: RequestType, completion: @escaping (RequestType) -> Void) where RequestType: APIRequesting {
-        // request.accessToken = new access token
-        DispatchQueue.global().asyncAfter(deadline: .now() + 5) {
-            completion(request)
-        }
+    var accessToken: String? { return nil }
+    
+    func login() {
+        // save auth credentials
+    }
+    
+    func refreshToken(with completion: () -> Void) {
+        // refresh token
+        completion()
     }
     
 }
