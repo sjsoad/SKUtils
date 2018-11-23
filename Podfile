@@ -4,6 +4,7 @@ def shared_pods
     
     use_frameworks!
 	pod 'SwiftLint'
+    pod 'ObjectMapper'
     
     # UI components
     
@@ -39,7 +40,7 @@ def shared_pods
     
     # Networking
     
-    pod 'SKNetworkingLib', :path => '~/Work/Pods/Networking'
+    pod 'SKNetworkingLib', :path => '~/Projects/Networking'
     
     # Custom Navigation
     

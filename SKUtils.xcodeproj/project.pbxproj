@@ -18,6 +18,7 @@
 		A511376020A2FAB700BC7C7D /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */; };
 		A511376120A2FAB700BC7C7D /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511375B20A2FAB700BC7C7D /* Optional.swift */; };
 		A511381220A31A3100BC7C7D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511381120A31A3100BC7C7D /* Example.swift */; };
+		A51C8C4B21A814440020B258 /* IpAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C8C4A21A814440020B258 /* IpAddress.swift */; };
 		A520FAA320B181A900E4E219 /* AppSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAA020B181A900E4E219 /* AppSettingsPresenter.swift */; };
 		A520FAA420B181A900E4E219 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FAA120B181A900E4E219 /* AppSettingsViewController.swift */; };
 		A520FAA520B181A900E4E219 /* AppSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A520FAA220B181A900E4E219 /* AppSettingsViewController.xib */; };
@@ -141,6 +142,7 @@
 		A511375A20A2FAB700BC7C7D /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
 		A511375B20A2FAB700BC7C7D /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		A511381120A31A3100BC7C7D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		A51C8C4A21A814440020B258 /* IpAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpAddress.swift; sourceTree = "<group>"; };
 		A520FAA020B181A900E4E219 /* AppSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsPresenter.swift; sourceTree = "<group>"; };
 		A520FAA120B181A900E4E219 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		A520FAA220B181A900E4E219 /* AppSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppSettingsViewController.xib; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				A511381120A31A3100BC7C7D /* Example.swift */,
+				A51C8C4A21A814440020B258 /* IpAddress.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -1310,12 +1313,13 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AERecord/AERecord.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlertActionBuilder/AlertActionBuilder.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SKActivityViewable/SKActivityViewable.framework",
 				"${BUILT_PRODUCTS_DIR}/SKAlertControllerBuilder/SKAlertControllerBuilder.framework",
 				"${BUILT_PRODUCTS_DIR}/SKAlertControllerShowing/SKAlertControllerShowing.framework",
@@ -1346,6 +1350,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertActionBuilder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKActivityViewable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAlertControllerBuilder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKAlertControllerShowing.framework",
@@ -1371,7 +1376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKUtils/Pods-SKUtils-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7201312A314754A73FEACC49 /* [CP] Check Pods Manifest.lock */ = {
@@ -1504,6 +1509,7 @@
 				A502C798213EED4400A63432 /* TextInputsBuilder.swift in Sources */,
 				A502C7AB213EEFD700A63432 /* NetworkBuilder.swift in Sources */,
 				A5875606213E8DBD0025D3FE /* AppDelegateRouter.swift in Sources */,
+				A51C8C4B21A814440020B258 /* IpAddress.swift in Sources */,
 				A502C7A7213EEF7300A63432 /* ImagePickerBuilder.swift in Sources */,
 				A595D21C20C0355B00330556 /* DefaultImagePickerAlertSettings.swift in Sources */,
 				A5930C6F20B59BBB0080B982 /* NetworkErrorParser.swift in Sources */,
