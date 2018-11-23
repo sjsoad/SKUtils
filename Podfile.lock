@@ -50,7 +50,7 @@ PODS:
     - SKPickerViewManager
   - SKTextInputsManager (0.1.3)
   - SKValidationService (0.0.7)
-  - SwiftLint (0.27.0)
+  - SwiftLint (0.28.1)
 
 DEPENDENCIES:
   - AlertActionBuilder
@@ -70,7 +70,7 @@ DEPENDENCIES:
   - SKLocalDataStorage
   - SKLocationPermissions
   - SKMicrophonePermissions
-  - SKNetworkingLib (from `~/Projects/Networking`)
+  - SKNetworkingLib (from `~/Work/Pods/Networking`)
   - SKPhotosPermissions
   - SKPickerViewManager
   - SKTextInputs
@@ -110,7 +110,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   SKNetworkingLib:
-    :path: "~/Projects/Networking"
+    :path: "~/Work/Pods/Networking"
 
 SPEC CHECKSUMS:
   AERecord: ee8e773baa650731f06e89546a8f97e28fe00c32
@@ -140,8 +140,8 @@ SPEC CHECKSUMS:
   SKTextInputs: 2cb8b68e66fe1b52a36e5b8ae2eff7fade192775
   SKTextInputsManager: a431d8011cd81492a582198e4fbeaf9ed57fd4e1
   SKValidationService: 1adc07932733563ad994be092743e67fdf7f726d
-  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  SwiftLint: 7f5f7de0da74a649b16616cb5246ae323489656e
 
-PODFILE CHECKSUM: 25f257c98d1db8f2acfcce544e3dd7d21fe9d8fe
+PODFILE CHECKSUM: 113803c50c98c5b0fb10760ca414adcfe9bae6f9
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1

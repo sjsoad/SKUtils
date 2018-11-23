@@ -11,6 +11,8 @@ import SKNetworkingLib
 
 struct IpDetectingRequest: APIRequesting {
     
+    var accessToken: String?
+    
     // MARK: - APIRequesting -
 
     var HTTPMethod: RequestMethod { return .get }

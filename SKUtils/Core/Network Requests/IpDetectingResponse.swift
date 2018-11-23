@@ -10,13 +10,13 @@ import SKNetworkingLib
 
 class IpDetectingResponse: APIResponsing {
     
-    var result: String?
+    typealias InputValueType = [String: Any]
+    typealias ResultValueType = String
     
-    required init(with value: Any) {
-        guard let json = value as? [String: Any] else {
-            result = nil
-            return
-        }
-        result = json["ip"] as? String
+    var result: String?
+
+    required init(with value: [String: Any]?) {
+        result = value?["ip"] as? String
     }
+    
 }

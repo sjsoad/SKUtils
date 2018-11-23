@@ -39,7 +39,7 @@ def shared_pods
     
     # Networking
     
-    pod 'SKNetworkingLib', :path => '~/Projects/Networking'
+    pod 'SKNetworkingLib', :path => '~/Work/Pods/Networking'
     
     # Custom Navigation
     

@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import UIKit
 // #1 import modules
 import SKActivityViewable
 import SKAlertViewable
 import SKNetworkingLib
+import Alamofire
 
 // #2 add support of protocols: ActivityViewable, AlertViewable
 protocol NetworkInterface: class, ActivityViewable, AlertViewable {
@@ -46,12 +46,10 @@ extension NetworkPresenter: NetworkOutput {
         // executingHandler: use default to show UI blocker, or custom if you need some specific actions
         // errorHandler: use default to show error message, or custom if you need some specific actions
         // requestHandler: if you need to store request object
-        let handlers = NetworkHandlers<IpDetectingResponse>(successHandler: { [weak self] (response) in
-            guard let ipAddress = response.result else { return }
+        let handlers = NetworkHandlers<IpDetectingResponse>(successHandler: { [weak self] (ipAddress) in
             self?.view?.set(ipAddress: ipAddress)
-        }, executingHandler: handleExecuting, errorHandler: handleError, requestHandler: { (request, error) in
-            print(request ?? "no request")
-            print(error?.localizedDescription ?? "no error")
+            }, executingHandler: handleExecuting, errorHandler: handleError, requestHandler: { (result) in
+                result.value.map({ print($0) })
         })
         // #7 use service to execute request
         ipDetectingService.detectIp(handlers: handlers)
