@@ -8,11 +8,10 @@
 
 import SKNetworkingLib
 
-protocol AuthentificationService {
+protocol AuthentificationService: TokenRefreshingService {
     
     var accessToken: String? { get }
     func login()
-    func refreshToken(with completion: () -> Void)
 }
 
 class DefaultAuthentificationService {
@@ -35,9 +34,8 @@ extension DefaultAuthentificationService: AuthentificationService {
         // save auth credentials
     }
     
-    func refreshToken(with completion: () -> Void) {
-        // refresh token
-        completion()
+    func refreshToken(with completion: @escaping TokenRefreshingHandler) {
+        completion(true)
     }
     
 }

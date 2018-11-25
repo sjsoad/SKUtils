@@ -11,7 +11,7 @@ import SKNetworkingLib
 
 protocol ServicesRepository {
     
-    var defaultNetworkService: NetworkService { get }
+    var mainNetworkService: NetworkService { get }
     func networkErrorParser() -> ErrorParsable
     func networkService() -> NetworkService
     func authentificationService() -> AuthentificationService
@@ -23,16 +23,20 @@ struct DefaultServiceRepository: ServicesRepository {
 
     static let shared: ServicesRepository = DefaultServiceRepository()
     
-    let defaultNetworkService: NetworkService
+    let mainNetworkService: NetworkService
     
     init() {
+        // Create simple network service for refreshing token
+        let simpleNetworkService = DefaultNetworkService(errorParser: NetworkErrorParser())
+        // Create service for storing auth credentials and refreshing token
+        let authService = DefaultAuthentificationService(networkService: simpleNetworkService)
+        // Create new SessionManager
         let sessionManager = SessionManager()
-        sessionManager.retrier = nil
-        sessionManager.adapter = nil
-        let requestExecutor = DefaultRequestExecutor(sessionManager: sessionManager)
-        let networkService = DefaultNetworkService(requestExecutor: requestExecutor, errorParser: NetworkErrorParser())
-        let authService = DefaultAuthentificationService(networkService: networkService)
-        defaultNetworkService = DefaultNetworkService(errorParser: NetworkErrorParser())
+        // Set retrier and/or adapter
+        sessionManager.retrier = DefaultRequestRetrier(with: authService)
+        sessionManager.adapter = DefaultRequestAdapter(with: authService)
+        // Create new service with advanced SessionManager
+        mainNetworkService = DefaultNetworkService(with: sessionManager, errorParser: NetworkErrorParser())
     }
     
     func networkErrorParser() -> ErrorParsable {
@@ -48,7 +52,7 @@ struct DefaultServiceRepository: ServicesRepository {
     }
     
     func ipDetectingService() -> IpDetectingService {
-        return DefaultIpDetectingService(networkService: defaultNetworkService)
+        return DefaultIpDetectingService(networkService: mainNetworkService)
     }
 
 }

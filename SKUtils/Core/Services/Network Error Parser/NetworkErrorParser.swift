@@ -6,7 +6,6 @@
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
-import Foundation
 import SKNetworkingLib
 
 class NetworkErrorParser: ErrorParsable {

@@ -58,9 +58,7 @@ extension NetworkPresenter: NetworkOutput {
 //        })
         let handlers = NetworkHandlers<GenericMappableResponse<IpAddress>>(successHandler: { [weak self] (ipAddress) in
             self?.view?.set(ipAddress: ipAddress.ipAddress)
-        }, executingHandler: handleExecuting, errorHandler: handleError, requestHandler: { (result) in
-            result.value.map({ print($0) })
-        })
+        }, executingHandler: handleExecuting, errorHandler: handleError)
         // #7 use service to execute request
         ipDetectingService.detectIp(handlers: handlers)
     }
