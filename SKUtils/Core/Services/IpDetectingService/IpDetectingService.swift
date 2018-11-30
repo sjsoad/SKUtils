@@ -27,7 +27,7 @@ class DefaultIpDetectingService: IpDetectingService {
     
     func detectIp<ResponseType: APIResponsing>(handlers: NetworkHandlers<ResponseType>) {
         let request = IpDetectingRequest()
-        networkService.execute(request, with: handlers)
+        networkService.executeJSON(request, with: handlers)
     }
     
 }

@@ -1,8 +1,8 @@
 PODS:
   - AERecord (4.1.2)
-  - Alamofire (4.7.3)
-  - AlamofireImage (3.4.1):
-    - Alamofire (~> 4.7)
+  - Alamofire (4.8.0)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
   - AlertActionBuilder (0.1.0)
   - NVActivityIndicatorView (4.4.0):
     - NVActivityIndicatorView/Presenter (= 4.4.0)
@@ -51,7 +51,7 @@ PODS:
     - SKPickerViewManager
   - SKTextInputsManager (0.1.3)
   - SKValidationService (0.0.7)
-  - SwiftLint (0.28.1)
+  - SwiftLint (0.29.1)
 
 DEPENDENCIES:
   - AlertActionBuilder
@@ -72,7 +72,7 @@ DEPENDENCIES:
   - SKLocalDataStorage
   - SKLocationPermissions
   - SKMicrophonePermissions
-  - SKNetworkingLib (from `~/Work/Pods/Networking`)
+  - SKNetworkingLib (from `~/Projects/Networking`)
   - SKPhotosPermissions
   - SKPickerViewManager
   - SKTextInputs
@@ -113,12 +113,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   SKNetworkingLib:
-    :path: "~/Work/Pods/Networking"
+    :path: "~/Projects/Networking"
 
 SPEC CHECKSUMS:
   AERecord: ee8e773baa650731f06e89546a8f97e28fe00c32
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   AlertActionBuilder: 99155b80aa3c07fbc129a9a42e67f20db0bc8030
   NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
@@ -144,8 +144,8 @@ SPEC CHECKSUMS:
   SKTextInputs: 2cb8b68e66fe1b52a36e5b8ae2eff7fade192775
   SKTextInputsManager: a431d8011cd81492a582198e4fbeaf9ed57fd4e1
   SKValidationService: 1adc07932733563ad994be092743e67fdf7f726d
-  SwiftLint: 7f5f7de0da74a649b16616cb5246ae323489656e
+  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: 553f9e35fae64027ab2295468f7b639bede30518
+PODFILE CHECKSUM: 2a68303dbfbec9e2b80f519208d41843a7cffbb0
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.5.3
