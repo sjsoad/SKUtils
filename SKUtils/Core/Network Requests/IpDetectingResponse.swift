@@ -51,12 +51,11 @@ class GenericMappableResponse<Result: Mappable>: APIResponsing {
 
 class GenericMappableSequenceResponse<Result: Mappable>: APIResponsing {
     
-    typealias InputValueType = [[String: Any]]
     typealias ResultValueType = [Result]
     
     private(set) var result: [Result]?
     
-    required init(with value: InputValueType?) {
+    required init(with value: [[String: Any]]?) {
         value.map({ result = $0.compactMap({ Result(JSON: $0) }) })
     }
     
