@@ -6,7 +6,6 @@
 //  Copyright © 2018 Sergey Kostyan. All rights reserved.
 //
 
-import UIKit
 import SKNetworkingLib
 
 protocol IpDetectingService {
@@ -27,7 +26,10 @@ class DefaultIpDetectingService: IpDetectingService {
     
     func detectIp<ResponseType: APIResponsing>(handlers: NetworkHandlers<ResponseType>) {
         let request = IpDetectingRequest()
-        networkService.executeJSON(request, with: handlers)
+        networkService.execute(request, with: handlers)
+//        networkService.execute(request, with: handlers, { result in
+//            
+//        })
     }
     
 }

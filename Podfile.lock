@@ -72,7 +72,7 @@ DEPENDENCIES:
   - SKLocalDataStorage
   - SKLocationPermissions
   - SKMicrophonePermissions
-  - SKNetworkingLib (from `~/Work/Pods/Networking`)
+  - SKNetworkingLib (from `~/Projects/Networking`)
   - SKPhotosPermissions
   - SKPickerViewManager
   - SKTextInputs
@@ -113,7 +113,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   SKNetworkingLib:
-    :path: "~/Work/Pods/Networking"
+    :path: "~/Projects/Networking"
 
 SPEC CHECKSUMS:
   AERecord: ee8e773baa650731f06e89546a8f97e28fe00c32
@@ -146,6 +146,6 @@ SPEC CHECKSUMS:
   SKValidationService: 1adc07932733563ad994be092743e67fdf7f726d
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: 553f9e35fae64027ab2295468f7b639bede30518
+PODFILE CHECKSUM: 2a68303dbfbec9e2b80f519208d41843a7cffbb0
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.5.3

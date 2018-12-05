@@ -9,14 +9,14 @@
 import Foundation
 import SKNetworkingLib
 
-struct IpDetectingRequest: APIDataRequesting {
-    
+struct IpDetectingRequest: APIUploadRequesting {
+
     var accessToken: String?
     
     // MARK: - APIRequesting -
 
     var HTTPMethod: RequestMethod { return .get }
-    var requestType: DataRequestType { return .simple(nil) }
+    var requestType: UploadRequestType { return .uploadData("Some".data!) }
     var urlString: String { return "https://api.ipify.org?format=json" }
     
 }

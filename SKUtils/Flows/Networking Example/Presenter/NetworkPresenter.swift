@@ -46,19 +46,17 @@ extension NetworkPresenter: NetworkOutput {
         // executingHandler: use default to show UI blocker, or custom if you need some specific actions
         // errorHandler: use default to show error message, or custom if you need some specific actions
         // requestHandler: if you need to store request object
-//        let handlers = NetworkHandlers<IpDetectingResponse>(successHandler: { [weak self] (ipAddress) in
-//            self?.view?.set(ipAddress: ipAddress)
-//            }, executingHandler: handleExecuting, errorHandler: handleError, requestHandler: { (result) in
-//                result.value.map({ print($0) })
-//        })
+        let handlers = NetworkHandlers<IpDetectingResponse>(successHandler: { [weak self] (ipAddress) in
+            self?.view?.set(ipAddress: ipAddress)
+            }, executingHandler: handleExecuting, errorHandler: handleError)
 //        let handlers = NetworkHandlers<GenericResponse<String>>(successHandler: { [weak self] (ipAddress) in
 //            self?.view?.set(ipAddress: ipAddress)
 //        }, executingHandler: handleExecuting, errorHandler: handleError, requestHandler: { (result) in
 //            result.value.map({ print($0) })
 //        })
-        let handlers = NetworkHandlers<GenericMappableResponse<IpAddress>>(successHandler: { [weak self] (ipAddress) in
-            self?.view?.set(ipAddress: ipAddress.ipAddress)
-        }, executingHandler: handleExecuting, errorHandler: handleError)
+//        let handlers = NetworkHandlers<GenericMappableResponse<IpAddress>>(successHandler: { [weak self] (ipAddress) in
+//            self?.view?.set(ipAddress: ipAddress.ipAddress)
+//        }, executingHandler: handleExecuting, errorHandler: handleError)
         // #7 use service to execute request
         ipDetectingService.detectIp(handlers: handlers)
     }
