@@ -11,15 +11,12 @@ import SKNetworkingLib
 import ObjectMapper
 
 class IpDetectingResponse: APIResponsing {
-    
-    typealias ResponseType = Data
-    typealias ResultValueType = String
-    
+
     private(set) var result: String?
 
-    required init(with value: ResponseType?) {
-//        guard let json = value as? [String: Any] else { return }
-//        result = json["ip"] as? String
+    required init(with value: Any?) {
+        guard let json = value as? [String: Any] else { return }
+        result = json["ip"] as? String
     }
     
 }
