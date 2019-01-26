@@ -63,43 +63,43 @@ Monad
     >-> (pronounced "Monadic compose") (left associative)  
     <-< (pronounced "Monadic compose") (right associative)  
 
-func customPrint(value: Any) {
-    print(value)
-}
+func customPrint(value: Any) {  
+    print(value)  
+}  
 
-print("*********")
+print("*********")  
 
-customPrint -<< [1, 2, 3, 4, 5]
-customPrint -<< nil
-customPrint -<< "not nil"
+customPrint -<< [1, 2, 3, 4, 5]  
+customPrint -<< nil  
+customPrint -<< "not nil"  
 
-print("*********")
+print("*********")  
 
-[1, 2, 3, 4, 5] >>- customPrint
-nil >>- customPrint
-"not nil" >>- customPrint
+[1, 2, 3, 4, 5] >>- customPrint  
+nil >>- customPrint  
+"not nil" >>- customPrint  
 
-print("*********")
+print("*********")  
 
-print("not nil" <|> "another value") // Optional("not nil")
-print(nil <|> "another value") // Optional("another value")
+print("not nil" <|> "another value") // Optional("not nil")  
+print(nil <|> "another value") // Optional("another value")  
 
-print("*********")
+print("*********")  
 
-print(["array"] + pure("some string")) // ["array", "some string"]
+print(["array"] + pure("some string")) // ["array", "some string"]  
 
-print("*********")
+print("*********")  
 
-customPrint <*> [1, 2, 3, 4, 5] // prints array
-customPrint <*> "value" // prints value
-customPrint <*> nil // not printing
+customPrint <*> [1, 2, 3, 4, 5] // prints array  
+customPrint <*> "value" // prints value  
+customPrint <*> nil // not printing  
 
-print("*********")
+print("*********")  
 
-customPrint <^> [1, 2, 3, 4, 5] // print each value
-customPrint <^> "value" // value
-customPrint <^> nil // not printing
+customPrint <^> [1, 2, 3, 4, 5] // print each value  
+customPrint <^> "value" // value  
+customPrint <^> nil // not printing  
 
-print("*********")
+print("*********")  
 
-customPrint <*> (nil <|> "not nil") // not nil
+customPrint <*> (nil <|> "not nil") // not nil  
